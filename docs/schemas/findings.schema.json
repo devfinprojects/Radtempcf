@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/devfinprojects/Radtempcf/main/docs/schemas/findings.schema.json",
+  "title": "Findings Section",
+  "description": "Schema for findings sections in radiology reports",
+  "type": "object",
+  "properties": {
+    "sections": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/findingSection"
+      },
+      "description": "Array of finding sections"
+    },
+    "technique": {
+      "type": "string",
+      "description": "Imaging technique description"
+    },
+    "comparison": {
+      "type": "string",
+      "description": "Comparison with prior studies"
+    },
+    "limitations": {
+      "type": "string",
+      "description": "Study limitations if any"
+    }
+  },
+  "definitions": {
+    "findingSection": {
+      "type": "object",
+      "required": ["name", "content"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Section name (e.g., Cardiovascular, Pulmonary)"
+        },
+        "content": {
+          "type": "string",
+          "description": "Finding content or template"
+        },
+        "normalVariant": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether this is a normal finding"
+        },
+        "critical": {
+          "type": "boolean",
+          "default": false,
+          "description": "Critical finding requiring immediate attention"
+        },
+        "optional": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether this section is optional"
+        }
+      }
+    }
+  }
+}

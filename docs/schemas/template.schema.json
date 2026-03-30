@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/devfinprojects/Radtempcf/main/docs/schemas/template.schema.json",
+  "title": "Radiology Template",
+  "description": "Base schema for radiology report templates",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "version",
+    "modality",
+    "findings",
+    "impression"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Unique identifier for the template"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "Template name"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version of the template"
+    },
+    "description": {
+      "type": "string",
+      "description": "Brief description of the template"
+    },
+    "modality": {
+      "type": "string",
+      "enum": [
+        "x-ray",
+        "ct",
+        "mri",
+        "ultrasound",
+        "nuclear",
+        "fluoroscopy",
+        "mammography",
+        "angiography"
+      ],
+      "description": "Imaging modality"
+    },
+    "bodyRegion": {
+      "type": "string",
+      "description": "Body region examined"
+    },
+    "subspecialty": {
+      "type": "string",
+      "description": "Medical subspecialty"
+    },
+    "metadata": {
+      "$ref": "metadata.schema.json"
+    },
+    "findings": {
+      "$ref": "findings.schema.json"
+    },
+    "impression": {
+      "type": "string",
+      "description": "Clinical impression section"
+    },
+    "rads": {
+      "$ref": "rads.schema.json",
+      "description": "RADS classification if applicable"
+    },
+    "ai": {
+      "$ref": "ai.schema.json",
+      "description": "AI integration data if applicable"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "author": {
+      "type": "string",
+      "description": "Template author"
+    },
+    "license": {
+      "type": "string",
+      "description": "Template license"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Searchable tags"
+    }
+  }
+}

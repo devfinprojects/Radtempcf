@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/devfinprojects/Radtempcf/main/docs/schemas/metadata.schema.json",
+  "title": "Template Metadata",
+  "description": "Metadata for radiology report templates",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Display title of the template"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed description"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "emergency",
+        "routine",
+        "screening",
+        "followup",
+        "preoperative",
+        "postoperative"
+      ],
+      "description": "Template category"
+    },
+    "clinicalContext": {
+      "type": "string",
+      "description": "Clinical context for use"
+    },
+    "language": {
+      "type": "string",
+      "default": "en",
+      "description": "Template language (ISO 639-1)"
+    },
+    "organization": {
+      "type": "string",
+      "description": "Healthcare organization"
+    },
+    "department": {
+      "type": "string",
+      "description": "Department name"
+    },
+    "approvalStatus": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "review",
+        "approved",
+        "deprecated"
+      ],
+      "default": "draft"
+    },
+    "reviewers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of reviewers"
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Medical literature references"
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Search keywords"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/devfinprojects/Radtempcf/main/docs/schemas/rads.schema.json",
+  "title": "RADS Classification",
+  "description": "Schema for Reporting and Data Systems (RADS) classifications",
+  "type": "object",
+  "properties": {
+    "system": {
+      "type": "string",
+      "enum": ["CIRADS", "LI-RADS", "TI-RADS", "PI-RADS", "VI-RADS", "O-RADS", "BI-RADS"],
+      "description": "RADS system type"
+    },
+    "category": {
+      "type": "string",
+      "description": "Classification category (e.g., LI-RADS 5, TI-RADS 4)"
+    },
+    "score": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Numeric score if applicable"
+    },
+    "assessment": {
+      "type": "string",
+      "description": "Text assessment description"
+    },
+    "recommendation": {
+      "type": "string",
+      "description": "Follow-up recommendation"
+    },
+    "lesionLocation": {
+      "type": "string",
+      "description": "Location of the lesion"
+    },
+    "size": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string",
+          "enum": ["mm", "cm"]
+        }
+      },
+      "description": "Lesion size"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Assessment date"
+    }
+  },
+  "required": ["system", "category"],
+  "additionalProperties": false
+}

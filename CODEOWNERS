@@ -1,0 +1,13 @@
+# Code Owners
+
+# Default owner for everything
+* @devfinprojects
+
+# Template schemas
+/docs/schemas/ @devfinprojects
+
+# CI/CD workflows
+/.github/workflows/ @devfinprojects
+
+# API endpoints
+/api/ @devfinprojects
