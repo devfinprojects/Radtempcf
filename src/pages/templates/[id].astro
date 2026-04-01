@@ -7,8 +7,14 @@ export function getStaticPaths() {
     'chest-xray-chest',
     'chest-lung-ct',
     'neuro-brain-ct',
-    'abdo-ct',
-    'emergency-stroke-ct'
+    'neuro-brain-mri-t2-flair',
+    'neuro-brain-mri-stroke',
+    'emergency-stroke-ct',
+    'abdo-kidney-ct',
+    'cardiac-mri',
+    'cardiac-ct-coronary',
+    'breast-screening-mammo',
+    'breast-mri',
   ];
   return templateIds.map(id => ({
     params: { id }

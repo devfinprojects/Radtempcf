@@ -4,16 +4,16 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 // Sample template data (would be loaded from templates directory)
 const templates = [
-  { id: 'brain-ct-stroke', name: 'Brain CT - Stroke', modality: 'CT', bodyRegion: 'Brain', rads: null, category: 'Neuroradiology' },
-  { id: 'brain-mri-t2', name: 'Brain MRI - T2 FLAIR', modality: 'MRI', bodyRegion: 'Brain', rads: null, category: 'Neuroradiology' },
-  { id: 'chest-ct-angles', name: 'Chest CT - Lung Windows', modality: 'CT', bodyRegion: 'Chest', rads: null, category: 'Thoracic' },
-  { id: 'abd-ct-liver', name: 'Abdominal CT - Liver', modality: 'CT', bodyRegion: 'Abdomen', rads: 'LI-RADS', category: 'Abdominal' },
-  { id: 'kidney-mri', name: 'Kidney MRI', modality: 'MRI', bodyRegion: 'Abdomen', rads: 'RI-RADS', category: 'Abdominal' },
-  { id: 'prostate-mpi', name: 'Prostate MRI', modality: 'MRI', bodyRegion: 'Pelvis', rads: 'PI-RADS', category: 'Genitourinary' },
-  { id: 'thyroid-us', name: 'Thyroid Ultrasound', modality: 'Ultrasound', bodyRegion: 'Neck', rads: 'TI-RADS', category: 'Neuroradiology' },
-  { id: 'breast-mammo', name: 'Mammography', modality: 'X-Ray', bodyRegion: 'Breast', rads: 'BI-RADS', category: 'Breast' },
-  { id: 'lung-nodule', name: 'Lung Nodule CT', modality: 'CT', bodyRegion: 'Chest', rads: 'VI-RADS', category: 'Thoracic' },
-  { id: 'spine-mri', name: 'Spine MRI', modality: 'MRI', bodyRegion: 'Spine', rads: null, category: 'Musculoskeletal' },
+  { id: 'emergency-stroke-ct', name: 'Emergency CT Stroke Protocol', modality: 'CT', bodyRegion: 'Brain', rads: null, category: 'Emergency' },
+  { id: 'neuro-brain-mri-t2-flair', name: 'Brain MRI - T2 FLAIR', modality: 'MRI', bodyRegion: 'Brain', rads: null, category: 'Neuroradiology' },
+  { id: 'chest-lung-ct', name: 'Chest CT - Lung Windows', modality: 'CT', bodyRegion: 'Chest', rads: null, category: 'Thoracic' },
+  { id: 'abdo-liver-ct', name: 'Abdominal CT - Liver', modality: 'CT', bodyRegion: 'Abdomen', rads: 'LI-RADS', category: 'Abdominal' },
+  { id: 'abdo-kidney-ct', name: 'Kidney CT', modality: 'CT', bodyRegion: 'Abdomen', rads: 'RI-RADS', category: 'Abdominal' },
+  { id: 'cardiac-mri', name: 'Cardiac MRI', modality: 'MRI', bodyRegion: 'Chest', rads: null, category: 'Cardiac' },
+  { id: 'breast-mri', name: 'Breast MRI', modality: 'MRI', bodyRegion: 'Breast', rads: 'BI-RADS', category: 'Breast' },
+  { id: 'breast-screening-mammo', name: 'Mammography', modality: 'X-Ray', bodyRegion: 'Breast', rads: 'BI-RADS', category: 'Breast' },
+  { id: 'chest-xray-chest', name: 'Chest X-Ray', modality: 'X-Ray', bodyRegion: 'Chest', rads: null, category: 'Thoracic' },
+  { id: 'neuro-spine-cervical-mri', name: 'Spine MRI', modality: 'MRI', bodyRegion: 'Spine', rads: null, category: 'Musculoskeletal' },
 ];
 
 // Get URL parameters for filtering
