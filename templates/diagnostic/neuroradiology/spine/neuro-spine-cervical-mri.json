@@ -1,0 +1,68 @@
+{
+  "id": "neuro-spine-cervical-mri",
+  "name": "Cervical Spine MRI Without Contrast",
+  "version": "1.0.0",
+  "description": "Standard cervical spine MRI report template without contrast for evaluation of spinal cord and canal pathology",
+  "modality": "mri",
+  "bodyRegion": "spine",
+  "subspecialty": "neuroradiology",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["spine", "cervical", "mri", "neuroradiology", "c-spine", "spinal cord"],
+    "cptCodes": ["72141"],
+    "radlexCodes": ["RID10501", "RID10502"]
+  },
+  "findings": {
+    "technique": "MRI of the cervical spine was performed including T1-weighted, T2-weighted, and STIR sequences in sagittal and axial planes.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Vertebral Bodies",
+        "content": "The cervical vertebral bodies demonstrate [normal height / no compression fracture / no bony lesion]. The bone marrow signal is [normal / no abnormal signal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Disc Levels",
+        "content": "At each disc level from C2-C3 through C7-T1, the intervertebral discs demonstrate [normal height / no bulge / no protrusion / no herniation]. No significant disc disease.",
+        "normalVariant": true
+      },
+      {
+        "name": "Spinal Canal",
+        "content": "The spinal canal is [patent / adequate in diameter / shows mild stenosis at C[X]/C[X] level]. No mass lesion in the canal.",
+        "normalVariant": true
+      },
+      {
+        "name": "Spinal Cord",
+        "content": "The spinal cord demonstrates [normal T2 signal / no cord compression / no cord edema / no myelomalacia]. The cord is [normal in caliber / no atrophy].",
+        "normalVariant": true
+      },
+      {
+        "name": "Neural Foramina",
+        "content": "The bilateral neural foramina are [patent / adequate in size / no foraminal narrowing]. No nerve root compression.",
+        "normalVariant": true
+      },
+      {
+        "name": "Posterior Elements",
+        "content": "The posterior elements including the pedicles, laminae, and spinous processes are [intact / no fracture / no lesion]. The ligamentum flavum is [not hypertrophied / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Prevertebral Soft Tissues",
+        "content": "The prevertebral soft tissues are [unremarkable / no abnormal signal / no mass]. No retropharyngeal abnormality.",
+        "normalVariant": true
+      },
+      {
+        "name": "Epidural Space",
+        "content": "The epidural space is [normal / no mass / no abnormal enhancement]. No epidural fibrosis or lipomatosis.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal cervical spine MRI.\n2. No disc herniation, spinal canal stenosis, or cord abnormality identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

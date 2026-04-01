@@ -1,0 +1,35 @@
+{
+  "id": "chest-pleura-ct",
+  "name": "Chest CT Pleura",
+  "version": "1.0.0",
+  "description": "CT chest focused on pleural evaluation",
+  "modality": "ct",
+  "bodyRegion": "chest",
+  "subspecialty": "chest",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["chest", "pleura", "ct", "effusion", "pleural"]
+  },
+  "findings": {
+    "technique": "CT of the chest was performed with pleural windows.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Right Pleura",
+        "content": "Right pleural space [no effusion / no thickening / no mass].",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Pleura",
+        "content": "Left pleural space [no effusion / no thickening / no mass].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal pleural spaces.\n2. No pleural effusion or thickening.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

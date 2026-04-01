@@ -1,0 +1,45 @@
+{
+  "id": "ir-drainage-ct",
+  "name": "CT-Guided Drainage",
+  "version": "1.0.0",
+  "description": "Interventional radiology CT-guided drainage procedure report template",
+  "modality": "ct",
+  "bodyRegion": "various",
+  "subspecialty": "interventional-radiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["interventional", "drainage", "ct-guided", "abscess"]
+  },
+  "findings": {
+    "technique": "CT-guided percutaneous drainage catheter placement performed using [8F/10F/12F] catheter. Patient positioned [prone/supine/lateral] for optimal access to [collection location]. Pre-procedure CT demonstrates [X]cm [fluid collection/abscess] in [location].",
+    "comparison": "Pre-procedure imaging shows [fluid collection description] concerning for [abscess/seroma/lymphocele].",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Target Assessment",
+        "content": "Target fluid collection measured approximately [X]cm in greatest dimension. Located [X]cm from skin surface. Adjacent structures: [list adjacent organs/vessels].",
+        "normalVariant": false
+      },
+      {
+        "name": "Access Route",
+        "content": "[Posterior/Anterior/Lateral] approach selected to avoid [lung/pleura/bowel/vessel]. Safe trajectory confirmed on planning images.",
+        "normalVariant": false
+      },
+      {
+        "name": "Drainage Procedure",
+        "content": "Local anesthesia with [lidocaine] administered. [Trocar/Seldinger] technique used to advance drainage catheter into collection. [X]ml of [purulent/bloody/serous] fluid aspirated. Catheter successfully positioned.",
+        "normalVariant": false
+      },
+      {
+        "name": "Post-Procedure",
+        "content": "Post-procedure CT confirms catheter tip within collection with [no residual pneumothorax/small pneumothorax/hematoma]. Catheter secured to skin with [sutures/adhesive].",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. CT-guided percutaneous drainage of [location] fluid collection performed.\n2. [X]ml of [purulent/bloody/serous] fluid aspirated.\n3. [X]F drainage catheter successfully placed and secured.\n4. [No immediate complications / Complications as noted]: [describe].\n5. Drain output to be monitored. Catheter to remain until output <[X]ml/day.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

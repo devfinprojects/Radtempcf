@@ -5,10 +5,16 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "astro build",
     "lint": "eslint . --ext .ts,.js",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "validate": "ajv compile -s docs/schemas/template.schema.json",
+    "validate:schema": "node scripts/validators/schema-validator.ts",
+    "validate:radlex": "node scripts/validators/radlex-validator.ts",
+    "validate:snomed": "node scripts/validators/snomed-validator.ts",
+    "test:browser": "playwright test",
+    "test:a11y": "playwright test --project=accessibility",
+    "test:perf": "lighthouse https://radtemp.example.com --output=json --output-path=lhr.json",
     "deploy": "wrangler deploy"
   },
   "keywords": [
@@ -21,19 +27,24 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@astrojs/cloudflare": "^13.1.6",
     "ajv": "^8.12.0",
-    "ajv-formats": "^2.1.1"
+    "ajv-formats": "^2.1.1",
+    "astro": "^6.1.1"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.8.0",
+    "@playwright/test": "^1.40.0",
+    "@types/jest": "^29.5.0",
     "@types/node": "^20.10.0",
-    "typescript": "^5.3.0",
-    "eslint": "^8.55.0",
     "@typescript-eslint/eslint-plugin": "^6.13.0",
     "@typescript-eslint/parser": "^6.13.0",
-    "prettier": "^3.1.0",
-    "wrangler": "^3.15.0",
+    "eslint": "^8.55.0",
     "jest": "^29.7.0",
-    "@types/jest": "^29.5.0"
+    "lighthouse": "^11.4.0",
+    "prettier": "^3.1.0",
+    "typescript": "^6.0.2",
+    "wrangler": "^4.61.1"
   },
   "engines": {
     "node": ">=18.0.0"

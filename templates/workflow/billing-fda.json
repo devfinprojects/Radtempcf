@@ -1,0 +1,203 @@
+{
+  "id": "workflow-billing-fda",
+  "name": "FDA AI Compliance",
+  "version": "1.0.0",
+  "description": "FDA requirements for AI/ML-based medical devices in radiology workflow",
+  "category": "workflow-billing",
+  "priority": "P2",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["fda", "compliance", "ai", "machine-learning", "medical-device"]
+  },
+  "fdaRequirements": {
+    "deviceClassification": {
+      "classifications": [
+        {
+          "class": "Class I",
+          "description": "Low risk - General controls",
+          "examples": ["Picture archiving software", "Basic viewers"]
+        },
+        {
+          "class": "Class II",
+          "description": "Moderate risk - 510(k) required",
+          "examples": ["AI-assisted detection", "CAD systems", "structured reporting tools"]
+        },
+        {
+          "class": "Class III",
+          "description": "High risk - PMA required",
+          "examples": ["AI diagnostic algorithms with autonomous decision making"]
+        }
+      ]
+    },
+    "510kSubmission": {
+      "whenRequired": "For Class II devices",
+      "contents": [
+        "Device description",
+        "Predicate device comparison",
+        "Substantial equivalence data",
+        "Performance testing",
+        "Labeling"
+      ],
+      "specialConsiderations": {
+        "aiSpecific": [
+          "Training data description",
+          "Algorithm validation",
+          "Performance metrics",
+          "Edge case handling",
+          "Human-AI interaction description"
+        ]
+      }
+    },
+    "softwareAsMedicalDevice": {
+      "samdCriteria": {
+        "intendedUse": "Intended to treat, diagnose, cure, mitigate, or prevent disease",
+        "medicalPurpose": "Software that makes decisions for medical purposes"
+      },
+      "exclusions": {
+        "notSAMD": [
+          "Software for administrative functions",
+          "Software for lifestyle/wellness",
+          "Software that only transforms data",
+          "Software for clinical workflow support without diagnostic claim"
+        ]
+      }
+    },
+    "clinicalValidation": {
+      "performanceMetrics": {
+        "diagnosticAccuracy": [
+          "Sensitivity",
+          "Specificity",
+          "Positive predictive value",
+          "Negative predictive value",
+          "AUC-ROC"
+        ],
+        "clinicalUtility": [
+          "Impact on diagnostic accuracy",
+          "Effect on clinical workflow",
+          "User acceptance"
+        ],
+        "safetyMetrics": [
+          "False positive rate",
+          "False negative rate",
+          "Adverse events"
+        ]
+      },
+      "validationRequirements": {
+        "trainingData": {
+          "description": "Data used to develop the algorithm",
+          "requirements": [
+            "Representative of target population",
+            "Properly labeled/annotated",
+            "Sufficient sample size",
+            "Diverse demographic representation"
+          ]
+        },
+        "testingData": {
+          "description": "Independent data for validation",
+          "requirements": [
+            "Independent from training data",
+            "Prospective collection when possible",
+            "Multi-site validation",
+            "Real-world performance monitoring"
+          ]
+        }
+      }
+    },
+    "labelingRequirements": {
+      "mustInclude": [
+        "Intended use",
+        "Indications for use",
+        "Device description",
+        "Contraindications",
+        "Warnings",
+        "Precautions",
+        "Instructions for use",
+        "Performance characteristics",
+        "FDA clearance number"
+      ],
+      "aiSpecific": [
+        "Algorithm version",
+        "Input requirements",
+        "Known limitations",
+        "Performance data summary",
+        "Human-AI workflow description"
+      ]
+    },
+    "postMarketSurveillance": {
+      "requirements": [
+        "Adverse event reporting",
+        "Performance monitoring",
+        "Software updates tracking",
+        "Labeling changes"
+      ],
+      "uniqueDeviceIdentification": {
+        "required": true,
+        "description": "UDI for device tracking and adverse event reporting"
+      }
+    }
+  },
+  "workflowIntegration": {
+    "aiAlgorithmDeployment": {
+      "preDeployment": [
+        "Verify FDA clearance/approval",
+        "Verify intended use matches deployment context",
+        "Staff training",
+        "Integration testing",
+        "Protocol development"
+      ],
+      "deployment": [
+        "AI results available to radiologist",
+        "Radiologist retains final judgment",
+        "Documentation of AI use",
+        "Quality monitoring"
+      ],
+      "postDeployment": [
+        "Performance monitoring",
+        "Feedback collection",
+        "Periodic validation",
+        "Update management"
+      ]
+    },
+    "documentation": {
+      "algorithmDetails": {
+        "name": "",
+        "version": "",
+        "vendor": "",
+        "fdaNumber": "",
+        "intendedUse": "",
+        "deploymentContext": ""
+      },
+      "usageLog": {
+        "studyId": "",
+        "aiResult": "",
+        "radiologistReview": "",
+        "overrideReason": "",
+        "finalDecision": ""
+      }
+    }
+  },
+  "complianceChecklist": {
+    "preDeployment": [
+      "FDA clearance verified",
+      "Algorithm intended use matches deployment",
+      "Staff trained on AI system",
+      "Protocols established",
+      "Quality metrics defined"
+    ],
+    "operational": [
+      "AI results documented in report",
+      "Radiologist review documented",
+      "Overrides recorded with reasons",
+      "Performance monitored"
+    ],
+    "reporting": [
+      "Adverse events reported to FDA",
+      "Periodic performance reviews",
+      "Updates tracked and validated"
+    ]
+  },
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

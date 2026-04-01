@@ -1,0 +1,45 @@
+{
+  "id": "musk-hip-mri",
+  "name": "Hip MRI",
+  "version": "1.0.0",
+  "description": "MRI of the hip for labrum, cartilage, and avascular necrosis evaluation",
+  "modality": "mri",
+  "bodyRegion": "musculoskeletal",
+  "subspecialty": "musculoskeletal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["musculoskeletal", "hip", "mri", "labrum", "cartilage"]
+  },
+  "findings": {
+    "technique": "MRI of the hip was performed with T1, T2, and fat-saturated sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Acetabular Labrum",
+        "content": "Acetabular labrum [is intact / no tear / no degeneration].",
+        "normalVariant": true
+      },
+      {
+        "name": "Articular Cartilage",
+        "content": "Articular cartilage [is intact / no delamination / no full-thickness defect].",
+        "normalVariant": true
+      },
+      {
+        "name": "Femoral Head",
+        "content": "Femoral head [normal signal / no AVN changes / no collapse].",
+        "normalVariant": true
+      },
+      {
+        "name": "Iliopsoas Bursa",
+        "content": "Iliopsoas bursa [no effusion / not distended].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No labral tear.\n2. No evidence of avascular necrosis.\n3. Normal hip MRI.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "neuro-spine-thoracic-ct",
+  "name": "Thoracic Spine CT",
+  "version": "1.0.0",
+  "description": "Thoracic spine CT for trauma and bony evaluation",
+  "modality": "ct",
+  "bodyRegion": "spine",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["spine", "thoracic", "ct", "trauma", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "CT of the thoracic spine without contrast was performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Vertebral Bodies",
+        "content": "Thoracic vertebral bodies [show normal alignment / no compression fracture / no bony lesion]. Vertebral body heights are preserved.",
+        "normalVariant": true
+      },
+      {
+        "name": "Pedicles and Pars",
+        "content": "Pedicles and pars interarticularis [are intact / no fracture / no spondylolysis].",
+        "normalVariant": true
+      },
+      {
+        "name": "Spinal Canal",
+        "content": "Spinal canal is [patent / no stenosis / no retropulsion].",
+        "normalVariant": true
+      },
+      {
+        "name": "Ribs and Sternum",
+        "content": "Adjacent ribs and sternum [are intact / no fracture].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No acute thoracic spine fracture.\n2. Normal alignment.\n3. No acute finding.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

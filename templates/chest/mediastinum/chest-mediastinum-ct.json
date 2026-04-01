@@ -1,0 +1,55 @@
+{
+  "id": "chest-mediastinum-ct",
+  "name": "Chest CT With Contrast - Mediastinum",
+  "version": "1.0.0",
+  "description": "Chest CT with contrast focused on mediastinal evaluation",
+  "modality": "ct",
+  "bodyRegion": "mediastinum",
+  "subspecialty": "chest",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["chest", "mediastinum", "ct", "contrast", "thoracic"]
+  },
+  "findings": {
+    "technique": "CT of the chest with intravenous contrast was performed from the lung apices through the adrenals.",
+    "comparison": "No prior imaging for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Mediastinal Lymph Nodes",
+        "content": "Mediastinal lymph nodes [are not pathologically enlarged / the largest node measures ___ cm short axis]. No mass or abnormal enhancement pattern.",
+        "normalVariant": true
+      },
+      {
+        "name": "Aorta",
+        "content": "The thoracic aorta [is normal in caliber / no dissection or aneurysm / no intramural hematoma]. No abnormal enhancement.",
+        "normalVariant": true
+      },
+      {
+        "name": "Pulmonary Arteries",
+        "content": "The main pulmonary artery [is normal in size / shows no filling defect / no pulmonary embolism]. Branch pulmonary arteries [are patent / no abnormality].",
+        "normalVariant": true
+      },
+      {
+        "name": "Superior Vena Cava",
+        "content": "The SVC [is patent / shows no stenosis or thrombosis / is normal in contour].",
+        "normalVariant": true
+      },
+      {
+        "name": "Esophagus",
+        "content": "The esophagus [is normal in caliber / shows no filling defect or mass]. Wall enhancement is [normal / not thickened].",
+        "normalVariant": true
+      },
+      {
+        "name": "Thymus",
+        "content": "The thymus [is normal in appearance / shows no mass or abnormal enhancement]. No thymic lesion identified.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. [No mediastinal mass or lymphadenopathy / Normal mediastinal contour].\n2. [No evidence of pulmonary embolism / No acute finding].\n3. [Recommend routine follow-up / No further workup recommended].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

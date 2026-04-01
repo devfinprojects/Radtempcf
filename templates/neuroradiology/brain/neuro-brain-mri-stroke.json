@@ -1,0 +1,45 @@
+{
+  "id": "neuro-brain-mri-stroke",
+  "name": "Brain MRI Stroke Protocol",
+  "version": "1.0.0",
+  "description": "Comprehensive brain MRI stroke protocol including DWI, PWI, and MRA",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "stroke", "dwi", "pwi", "mra", "acute stroke"]
+  },
+  "findings": {
+    "technique": "MRI brain performed including DWI, perfusion-weighted imaging, and MR angiography.",
+    "comparison": "No prior MRI studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Diffusion-Weighted Imaging",
+        "content": "No areas of restricted diffusion to suggest acute infarction. No acute territorial or lacunar infarcts.",
+        "normalVariant": true
+      },
+      {
+        "name": "Perfusion-Weighted Imaging",
+        "content": "No perfusion defects identified. Normal cerebral blood flow and volume.",
+        "normalVariant": true
+      },
+      {
+        "name": "MR Angiography - Intracranial",
+        "content": "Intracranial arteries show [normal caliber / no stenosis / no occlusion]. Circle of Willis is intact.",
+        "normalVariant": true
+      },
+      {
+        "name": "MR Angiography - Extracranial",
+        "content": "Extracranial carotid and vertebral arteries show [no significant stenosis / no occlusion / normal flow].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No acute infarction on DWI.\n2. Normal perfusion study.\n3. No large vessel occlusion on MRA.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

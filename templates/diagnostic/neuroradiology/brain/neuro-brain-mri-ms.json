@@ -1,0 +1,78 @@
+{
+  "id": "neuro-brain-mri-ms",
+  "name": "Brain MRI Multiple Sclerosis Protocol",
+  "version": "1.0.0",
+  "description": "Dedicated brain MRI protocol for evaluation of multiple sclerosis with demyelinating plaques",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "multiple sclerosis", "ms", "demyelination", "neuroradiology", "white matter"],
+    "cptCodes": ["70551", "70553"],
+    "radlexCodes": ["RID10456", "RID10457", "RID28722"]
+  },
+  "findings": {
+    "technique": "Dedicated multiple sclerosis protocol MRI including sagittal FLAIR, axial T2, FLAIR, diffusion-weighted, and post-contrast T1 sequences through the brain.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Periventricular White Matter",
+        "content": "The periventricular white matter demonstrates [no T2/FLAIR hyperintense lesions / no demyelinating plaques]. No periventricular lesions identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Juxtacortical White Matter",
+        "content": "The juxtacortical white matter demonstrates [no T2/FLAIR hyperintense lesions / no demyelinating plaques]. No juxtacortical lesions.",
+        "normalVariant": true
+      },
+      {
+        "name": "Deep White Matter",
+        "content": "The deep white matter demonstrates [no T2/FLAIR hyperintense lesions / no deep white matter lesions]. No focal lesions.",
+        "normalVariant": true
+      },
+      {
+        "name": "Infratentorial Lesions",
+        "content": "The cerebellum and brainstem demonstrate [no T2/FLAIR hyperintense lesions / no infratentorial lesions]. No lesions in the cerebellar peduncles or pons.",
+        "normalVariant": true
+      },
+      {
+        "name": "Corpus Callosum",
+        "content": "The corpus callosum demonstrates [no T2/FLAIR hyperintense lesions / no callosal lesions]. The callosomarginal and pericallosal arteries are normal.",
+        "normalVariant": true
+      },
+      {
+        "name": "Cortical Lesions",
+        "content": "The cerebral cortex demonstrates [no T2/FLAIR hyperintense lesions / no cortical lesions]. No cortical involvement.",
+        "normalVariant": true
+      },
+      {
+        "name": "Gadolinium Enhancement",
+        "content": "Post-contrast images demonstrate [no enhancing lesions / no active demyelination / no enhancing plaques]. No blood-brain barrier disruption.",
+        "normalVariant": true
+      },
+      {
+        "name": "Ventricles",
+        "content": "The ventricular system is [normal in size / not dilated]. No abnormal enhancement around the ventricles.",
+        "normalVariant": true
+      },
+      {
+        "name": "Spinal Cord",
+        "content": "Although dedicated spinal cord imaging was not performed, there is no evidence of cord expansion or abnormal signal to suggest acute demyelination.",
+        "normalVariant": true
+      },
+      {
+        "name": "Other Findings",
+        "content": "No chronic microvascular ischemic changes. No mass lesion or infection.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal brain MRI for MS evaluation.\n2. No demyelinating plaques identified to suggest multiple sclerosis.\n3. No active enhancing lesions to suggest acute demyelination.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

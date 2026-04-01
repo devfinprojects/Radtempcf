@@ -1,0 +1,185 @@
+{
+  "id": "workflow-billing-eu-ai",
+  "name": "EU AI Act Compliance",
+  "version": "1.0.0",
+  "description": "European Union AI Act compliance requirements for radiology AI systems",
+  "category": "workflow-billing",
+  "priority": "P2",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["eu-ai-act", "compliance", "regulation", "artificial-intelligence", "europe"]
+  },
+  "euAiActRequirements": {
+    "riskClassification": {
+      "unacceptableRisk": {
+        "description": "Banned AI systems",
+        "examples": ["Social scoring systems", "Manipulation techniques"]
+      },
+      "highRisk": {
+        "description": "Subject to strict requirements - includes medical devices",
+        "examples": ["AI diagnostic systems", "AI triage systems", "AI screening tools"],
+        "requirements": [
+          "Risk assessment",
+          "Data governance",
+          "Technical documentation",
+          "Transparency",
+          "Human oversight",
+          "Accuracy/robustness/cybersecurity"
+        ]
+      },
+      "limitedRisk": {
+        "description": "Transparency obligations",
+        "examples": ["Chatbots", "AI-generated content detection"]
+      },
+      "minimalRisk": {
+        "description": "No specific obligations",
+        "examples": ["Spam filters", "Recommendation systems"]
+      }
+    },
+    "highRiskRequirements": {
+      "riskManagement": {
+        "description": "Systematic risk assessment throughout lifecycle",
+        "requirements": [
+          "Identify known risks",
+          "Identify reasonably foreseeable risks",
+          "Mitigation measures",
+          "Post-market monitoring"
+        ]
+      },
+      "dataGovernance": {
+        "description": "Data practices for training/validation",
+        "requirements": [
+          "Relevant data quality standards",
+          "Appropriate data collection",
+          "Bias detection and correction",
+          "Data subjects rights protection"
+        ]
+      },
+      "technicalDocumentation": {
+        "description": "Comprehensive system documentation",
+        "requirements": [
+          "System capabilities and limitations",
+          "Training data characteristics",
+          "Development process",
+          "Validation and testing results"
+        ]
+      },
+      "recordKeeping": {
+        "description": "Automated logging of system operation",
+        "requirements": [
+          "Logging capabilities",
+          "Traceability",
+          "Audit trail",
+          "Data retention"
+        ]
+      },
+      "transparency": {
+        "description": "Information for users",
+        "requirements": [
+          "AI system identification",
+          "Capabilities and limitations",
+          "Human oversight instructions",
+          "Output interpretation guidance"
+        ]
+      },
+      "humanOversight": {
+        "description": "Human control mechanisms",
+        "requirements": [
+          "Human-in-the-loop",
+          "Human-on-the-loop",
+          "Human-in-command",
+          "Override capabilities"
+        ]
+      },
+      "accuracyRobustness": {
+        "description": "Performance requirements",
+        "requirements": [
+          "Appropriate accuracy metrics",
+          "Robustness to edge cases",
+          "Cybersecurity measures",
+          "Fail-safe mechanisms"
+        ]
+      }
+    }
+  },
+  "radiologySpecific": {
+    "medicalDeviceIntegration": {
+      "description": "AI systems as medical devices in EU",
+      "regulations": [
+        "MDR (Medical Device Regulation 2017/745)",
+        "IVDR (In Vitro Diagnostic Regulation 2017/746)",
+        "AI Act high-risk requirements"
+      ],
+      "conformityAssessment": {
+        "classIIa": "Notified body involvement",
+        "classIIb": "Notified body involvement",
+        "classIII": "Notified body involvement"
+      }
+    },
+    "clinicalValidation": {
+      "description": "Evidence requirements for radiology AI",
+      "requirements": [
+        "Clinical performance data",
+        "Multi-site validation",
+        "Population representativeness",
+        "Bias evaluation",
+        "Clinical utility evidence"
+      ]
+    },
+    "postMarketSurveillance": {
+      "description": "Ongoing monitoring requirements",
+      "requirements": [
+        "Systematic data collection",
+        "Adverse event reporting",
+        "Performance drift monitoring",
+        "Periodic review"
+      ]
+    }
+  },
+  "implementationChecklist": {
+    "riskAssessment": [
+      "Classification determination",
+      "High-risk requirements mapping",
+      "Known risks identification",
+      "Mitigation measures"
+    ],
+    "technicalMeasures": [
+      "Data governance procedures",
+      "Transparency mechanisms",
+      "Human oversight protocols",
+      "Logging systems"
+    ],
+    "organizationalMeasures": [
+      "AI governance structure",
+      "Staff training",
+      "Incident response procedures",
+      "Documentation management"
+    ],
+    "documentation": [
+      "Technical file",
+      "Risk assessment",
+      "Conformity declaration",
+      "Post-market surveillance plan"
+    ]
+  },
+  "timeline": {
+    "phasedImplementation": {
+      "phase1": {
+        "description": "Prohibited AI ban",
+        "deadline": "Immediate"
+      },
+      "phase2": {
+        "description": "High-risk systems requirements begin",
+        "deadline": "2025"
+      },
+      "phase3": {
+        "description": "Full compliance required",
+        "deadline": "2026-2027"
+      }
+    }
+  },
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

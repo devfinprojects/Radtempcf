@@ -1,0 +1,58 @@
+{
+  "id": "pediatric-brain-us",
+  "name": "Pediatric Brain Ultrasound",
+  "version": "1.0.0",
+  "description": "Cranial ultrasound for evaluation of neonatal intracranial pathology through the anterior fontanelle",
+  "modality": "us",
+  "bodyRegion": "brain",
+  "subspecialty": "pediatric",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["pediatric", "brain", "ultrasound", "cranial", "neonatal", "infant"],
+    "cptCodes": ["76506"],
+    "radlexCodes": ["RID10700", "RID10701"]
+  },
+  "findings": {
+    "technique": "Cranial ultrasound was performed through the anterior fontanelle in coronal and sagittal planes.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None. Evaluation limited to structures accessible through the anterior fontanelle.",
+    "sections": [
+      {
+        "name": "Lateral Ventricles",
+        "content": "The lateral ventricles are [normal in size / not dilated / no ventriculomegaly]. The ventricular walls are [smooth / no irregularities].",
+        "normalVariant": true
+      },
+      {
+        "name": "Third and Fourth Ventricles",
+        "content": "The third and fourth ventricles are [normal in size / not dilated]. No obstruction identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Brain Parenchyma",
+        "content": "The brain parenchyma demonstrates [normal echogenicity / no intraventricular hemorrhage / no periventricular leukomalacia]. The cortical sulci are [developing normally / visible].",
+        "normalVariant": true
+      },
+      {
+        "name": "Germinal Matrix",
+        "content": "The germinal matrix is [not prominent / no hemorrhage / no calcification]. No germinal matrix hemorrhage.",
+        "normalVariant": true
+      },
+      {
+        "name": "Cerebellum",
+        "content": "The cerebellum is [normal in size / normal echogenicity]. The cerebellar vermis is [intact / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Midline Structures",
+        "content": "The midline structures are [midline / no shift]. The corpus callosum is [intact / visible].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal pediatric cranial ultrasound.\n2. No intraventricular hemorrhage or structural abnormality identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

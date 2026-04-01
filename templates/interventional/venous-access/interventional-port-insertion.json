@@ -1,0 +1,40 @@
+{
+  "id": "interventional-port-insertion",
+  "name": "PortCath Insertion",
+  "version": "1.0.0",
+  "description": "Implantable port catheter placement for chemotherapy access",
+  "modality": "angiography",
+  "bodyRegion": "chest",
+  "subspecialty": "interventional",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["interventional", "port", "catheter", "chemotherapy", "venous access"]
+  },
+  "findings": {
+    "technique": "Implantable port catheter was placed under fluoroscopic guidance.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Venous Access",
+        "content": "Right/left subclavian vein [successfully accessed / no pneumothorax].",
+        "normalVariant": true
+      },
+      {
+        "name": "Catheter Position",
+        "content": "Catheter tip [positioned in SVC / appropriate location]. No kinking or malposition.",
+        "normalVariant": true
+      },
+      {
+        "name": "Port Pocket",
+        "content": "Port pocket [created without complication / good hemostasis].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Successful port placement.\n2. Proper catheter position confirmed.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

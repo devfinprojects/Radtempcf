@@ -1,0 +1,40 @@
+{
+  "id": "nuclear-bone-scan",
+  "name": "Bone Scan",
+  "version": "1.0.0",
+  "description": "Technetium-99m bone scintigraphy for bone metastasis evaluation",
+  "modality": "nuclear",
+  "bodyRegion": "skeleton",
+  "subspecialty": "nuclear",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["nuclear", "bone", "scan", "scintigraphy", "metastasis"]
+  },
+  "findings": {
+    "technique": "Whole-body bone scintigraphy was performed with Tc-99m MDP.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Axial Skeleton",
+        "content": "Spine and ribs [no abnormal uptake / no hot spots]. Normal physiologic uptake.",
+        "normalVariant": true
+      },
+      {
+        "name": "Appendicular Skeleton",
+        "content": "Long bones [no focal abnormal uptake]. Joints [normal physiologic uptake].",
+        "normalVariant": true
+      },
+      {
+        "name": "Skull",
+        "content": "Skull [normal uptake / no focal lesions].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No focal bone lesions identified.\n2. Normal bone scan.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

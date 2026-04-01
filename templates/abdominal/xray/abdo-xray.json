@@ -1,0 +1,40 @@
+{
+  "id": "abdo-xray",
+  "name": "Abdominal X-Ray",
+  "version": "1.0.0",
+  "description": "Abdominal radiograph for bowel and organ evaluation",
+  "modality": "xr",
+  "bodyRegion": "abdomen",
+  "subspecialty": "abdominal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["abdomen", "xray", "radiograph", "kidney", "bowel"]
+  },
+  "findings": {
+    "technique": "Supine and upright abdominal radiographs were obtained.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Bowel Gas",
+        "content": "Bowel gas pattern [is normal / no obstruction / no free air]. No pneumobilia.",
+        "normalVariant": true
+      },
+      {
+        "name": "Kidneys",
+        "content": "Kidney silhouettes [are normal / no nephrolithiasis]. Psoas margins are clear.",
+        "normalVariant": true
+      },
+      {
+        "name": "Liver and Spleen",
+        "content": "Liver and spleen [are unremarkable / no calcifications].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal abdominal radiograph.\n2. No bowel obstruction or free air.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

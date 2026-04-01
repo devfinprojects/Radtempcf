@@ -1,0 +1,145 @@
+{
+  "id": "workflow-addenda",
+  "name": "Structured Addenda Template",
+  "version": "1.0.0",
+  "description": "Structured addenda template for radiology report amendments with standardized categorization",
+  "category": "workflow-addenda",
+  "priority": "P2",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["addenda", "amendment", "structured-reporting", "quality"]
+  },
+  "addendumTypes": [
+    {
+      "type": "clinical-correction",
+      "code": "AC1",
+      "description": "Correction based on new clinical information",
+      "examples": [
+        "Additional clinical history provided",
+        "Surgical findings available",
+        "Laboratory results received"
+      ],
+      "requiresNotification": true,
+      "documentationRequired": true
+    },
+    {
+      "type": "peer-review",
+      "code": "AC2",
+      "description": "Modification following peer review",
+      "examples": [
+        "Discrepancy identified by peer reviewer",
+        "Educational feedback incorporated",
+        "Quality improvement initiative"
+      ],
+      "requiresNotification": false,
+      "documentationRequired": true
+    },
+    {
+      "type": "imaging-correlation",
+      "code": "AC3",
+      "description": "Addition based on prior imaging comparison",
+      "examples": [
+        "Comparison with prior studies",
+        "Trend analysis of findings",
+        "Interval change description"
+      ],
+      "requiresNotification": false,
+      "documentationRequired": true
+    },
+    {
+      "type": "critical-finding",
+      "code": "AC4",
+      "description": "Communication of critical finding not originally reported",
+      "examples": [
+        "Incidental critical finding",
+        "Re-interpretation requiring urgent attention"
+      ],
+      "requiresNotification": true,
+      "documentationRequired": true
+    },
+    {
+      "type": "quality-correction",
+      "code": "AC5",
+      "description": "Correction of errors or omissions",
+      "examples": [
+        "Typos or factual errors",
+        "Missing pertinent findings",
+        "Technical corrections"
+      ],
+      "requiresNotification": false,
+      "documentationRequired": true
+    },
+    {
+      "type": "follow-up",
+      "code": "AC6",
+      "description": "Addition of follow-up recommendations",
+      "examples": [
+        "Updated recommendations based on guidelines",
+        "Additional imaging suggestions",
+        "Clinical referral recommendations"
+      ],
+      "requiresNotification": false,
+      "documentationRequired": true
+    }
+  ],
+  "addendumStructure": {
+    "header": {
+      "addendumNumber": "",
+      "originalReportDate": "",
+      "addendumDate": "",
+      "radiologistName": "",
+      "reasonForAddendum": ""
+    },
+    "sections": {
+      "summaryOfChange": {
+        "type": "Brief description of what was changed or added",
+        "required": true
+      },
+      "originalFinding": {
+        "type": "Original text (if modifying existing content)",
+        "required": false
+      },
+      "modifiedFinding": {
+        "type": "Updated or new text",
+        "required": true
+      },
+      "clinicalSignificance": {
+        "type": "Impact on patient care",
+        "required": true
+      },
+      "communication": {
+        "type": "Details of any physician notification",
+        "required": false
+      }
+    }
+  },
+  "documentation": {
+    "tracking": {
+      "addendumId": "",
+      "linkedStudyId": "",
+      "originalReportId": "",
+      "createdBy": "",
+      "createdAt": "",
+      "verifiedBy": "",
+      "verifiedAt": ""
+    },
+    "versionControl": {
+      "versionNumber": "",
+      "previousVersion": "",
+      "changeHistory": []
+    }
+  },
+  "qualityMetrics": {
+    "trackingEnabled": true,
+    "categoriesTracked": [
+      "Type of addendum",
+      "Reason for addendum",
+      "Time to addendum",
+      "Radiologist performance"
+    ]
+  },
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

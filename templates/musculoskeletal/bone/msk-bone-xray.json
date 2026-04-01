@@ -1,0 +1,45 @@
+{
+  "id": "msk-bone-xray",
+  "name": "Bone Radiograph",
+  "version": "1.0.0",
+  "description": "Standard musculoskeletal bone radiograph template",
+  "modality": "x-ray",
+  "bodyRegion": "bone",
+  "subspecialty": "musculoskeletal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["musculoskeletal", "bone", "x-ray", "radiograph"]
+  },
+  "findings": {
+    "technique": "Radiographs of the [anatomic region] were obtained in [standard projections].",
+    "comparison": "No prior imaging for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Bone Cortex",
+        "content": "Bone cortex [is intact / no cortical break / no fracture identified]. No periosteal reaction.",
+        "normalVariant": true
+      },
+      {
+        "name": "Bone Medullary Canal",
+        "content": "Medullary canal [is intact / no lytic or blastic lesion / no abnormal mineralization].",
+        "normalVariant": true
+      },
+      {
+        "name": "Joint Spaces",
+        "content": "Joint spaces [are preserved / no joint space narrowing / no osteoarthritis]. No effusion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Soft Tissues",
+        "content": "Soft tissues [are unremarkable / no soft tissue mass / no calcification].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. [No acute fracture / No acute abnormality].\n2. [No bony lesion / Recommend further workup if clinically indicated].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

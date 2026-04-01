@@ -1,0 +1,58 @@
+{
+  "id": "abdominal-pancreas-ct",
+  "name": "Pancreas CT",
+  "version": "1.0.0",
+  "description": "CT of the pancreas for evaluation of pancreatic pathology",
+  "modality": "ct",
+  "bodyRegion": "abdomen",
+  "subspecialty": "abdominal",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["abdomen", "ct", "pancreas", "pancreatic", "abdominal"],
+    "cptCodes": ["74177"],
+    "radlexCodes": ["RID10312", "RID10313"]
+  },
+  "findings": {
+    "technique": "Contrast-enhanced CT of the abdomen was performed with pancreatic protocol imaging.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Pancreatic Head",
+        "content": "The pancreatic head demonstrates [normal morphology / no mass / no dilation]. The pancreatic duct is [not dilated / normal caliber].",
+        "normalVariant": true
+      },
+      {
+        "name": "Pancreatic Body and Tail",
+        "content": "The pancreatic body and tail demonstrate [normal morphology / no mass / no atrophy]. No pancreatic ductal dilation.",
+        "normalVariant": true
+      },
+      {
+        "name": "Pancreatic Parenchyma",
+        "content": "The pancreatic parenchyma demonstrates [homogeneous enhancement / no abnormal enhancement / no lesion].",
+        "normalVariant": true
+      },
+      {
+        "name": "Peripancreatic Tissue",
+        "content": "The peripancreatic tissues demonstrate [no stranding / no fluid / no inflammation]. No peripancreatic fluid collection.",
+        "normalVariant": true
+      },
+      {
+        "name": "Bile Duct",
+        "content": "The common bile duct is [not dilated / normal caliber]. No biliary obstruction.",
+        "normalVariant": true
+      },
+      {
+        "name": "Liver",
+        "content": "The liver demonstrates [no mass / no lesion / normal attenuation]. No hepatic metastasis.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal pancreas CT.\n2. No mass, cyst, or inflammatory process involving the pancreas.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

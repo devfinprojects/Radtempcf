@@ -1,0 +1,50 @@
+{
+  "id": "cardiac-ct-coronary",
+  "name": "Cardiac CT Coronary Angiography",
+  "version": "1.0.0",
+  "description": "Cardiac CT coronary angiography template",
+  "modality": "ct",
+  "bodyRegion": "heart",
+  "subspecialty": "cardiac",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["cardiac", "heart", "ct", "coronary", "angiography"]
+  },
+  "findings": {
+    "technique": "Cardiac CT with ECG gating was performed with intravenous contrast.",
+    "comparison": "No prior cardiac CT for comparison.",
+    "limitations": "None.",
+    "sections": [
+      {
+        "name": "Left Main Coronary Artery",
+        "content": "Left main: [Patent / Mild stenosis / Moderately diseased]. No calcification.",
+        "normalVariant": true
+      },
+      {
+        "name": "LAD",
+        "content": "LAD: [Patent / Mild stenosis / Moderate stenosis]. [Calcification present / No significant calcification].",
+        "normalVariant": true
+      },
+      {
+        "name": "LCx",
+        "content": "LCx: [Patent / Mild stenosis / Moderate stenosis]. [Calcification present / No significant calcification].",
+        "normalVariant": true
+      },
+      {
+        "name": "RCA",
+        "content": "RCA: [Patent / Mild stenosis / Moderate stenosis]. [Calcification present / No significant calcification].",
+        "normalVariant": true
+      },
+      {
+        "name": "Cardiac Chambers",
+        "content": "Chambers: [Normal size / No thrombus / No mass] identified.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. [Coronary arteries: No significant stenosis / Non-obstructive CAD].\n2. [Agatston score: __ / Calcium score available].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

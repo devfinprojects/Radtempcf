@@ -1,0 +1,50 @@
+{
+  "id": "incidental-liver",
+  "name": "Hepatic Incidentaloma",
+  "version": "1.0.0",
+  "description": "Report template for incidental hepatic lesions identified on imaging performed for other indications",
+  "modality": "ct",
+  "bodyRegion": "abdomen",
+  "subspecialty": "abdominal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["incidental", "liver", "hepatic", "mass", "hepatic incidentaloma"]
+  },
+  "findings": {
+    "technique": "CT [abdomen/chest/CTA] performed for [other clinical indication]. Liver windowing reviewed.",
+    "comparison": "No prior liver imaging available for comparison. [Prior imaging from X date reviewed] - [lesion is new/stable/interval change].",
+    "limitations": "None - adequate visualization of liver.",
+    "sections": [
+      {
+        "name": "Hepatic Lesion",
+        "content": "Incidental hepatic [lesion/mass/nodule] identified in [right/left] lobe. Size: [X]cm. Location: [segment X]. [Solitary / Multiple - number: X] lesions.",
+        "normalVariant": false
+      },
+      {
+        "name": "Characterization",
+        "content": "Attenuation: [X]HU (pre-contrast). Arterial phase: [no enhancement / peripheral rim enhancement / central enhancement / hyperenhancement]. Portal venous phase: [isodense to liver / hypodense / washout]. Delayed phase: [hypodense / persistent enhancement].",
+        "normalVariant": false
+      },
+      {
+        "name": "Morphology",
+        "content": "Margin: [well-defined / irregular / infiltrative]. Capsular enhancement: [present/absent]. Internal characteristics: [homogeneous / heterogeneous / cystic / necrotic / calcifications].",
+        "normalVariant": false
+      },
+      {
+        "name": "Background Liver",
+        "content": "Liver parenchyma: [normal / fatty infiltration / cirrhosis / heterogeneous]. Liver size: [normal / enlarged / small]. [Portal hypertension: present/absent]. Spleen: [normal / enlarged].",
+        "normalVariant": false
+      },
+      {
+        "name": "Additional Findings",
+        "content": "Additional hepatic lesions: [present/absent]. [Biliary dilation: present/absent]. [Lymphadenopathy: present/absent]. [Extrahepatic metastasis: present/absent].",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. Incidental hepatic [lesion/mass] in [right/left] lobe measuring [X]cm\n2. [LI-RADS category: LR-X / Not applicable - lesions less likely to be HCC in non-cirrhotic liver]\n3. [Imaging characteristics most consistent with: hemangioma / focal nodular hyperplasia / hepatic adenoma / metastatic disease / HCC / indeterminate]\n4. [Follow-up in X months / MRI with gadoxetate / Biopsy / Surgical consultation] recommended\n5. Underlying liver: [normal / steatosis / cirrhosis]",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

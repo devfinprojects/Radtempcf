@@ -1,0 +1,68 @@
+{
+  "id": "rads-cirads",
+  "name": "CIRADS (Chest Imaging Reporting and Data System)",
+  "version": "1.0.0",
+  "description": "CIRADS classification template for lung cancer screening CT assessment",
+  "modality": "ct",
+  "bodyRegion": "chest",
+  "subspecialty": "chest",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["rads", "lung", "cirads", "ct", "screening", "cancer"]
+  },
+  "rads": {
+    "system": "CIRADS",
+    "category": "CIRADS 3",
+    "score": 3,
+    "assessment": "Intermediate risk of malignancy",
+    "recommendation": "6-month follow-up CT recommended",
+    "lesionLocation": "[Right/Left] upper/mid/lower lobe",
+    "size": {
+      "value": 0.8,
+      "unit": "cm"
+    },
+    "date": "2026-03-30"
+  },
+  "findings": {
+    "technique": "Low-dose non-contrast chest CT performed for lung cancer screening at [X]mAs with [reconstruction algorithm]. 3D volume rendered images obtained.",
+    "comparison": "Comparison made with [prior CT] from [date]. [New / Interval change / Stable] finding.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Nodule Type",
+        "content": "Nodule type: [solid / part-solid / ground glass / calcified].",
+        "normalVariant": false
+      },
+      {
+        "name": "Size",
+        "content": "Mean longest diameter: [X]mm. Volume: [X]mm3.",
+        "normalVariant": false
+      },
+      {
+        "name": "Location",
+        "content": "Location: [right/left] [upper/mid/lower] lobe. [Central/Peripheral]. Distance to pleura: [X]mm.",
+        "normalVariant": false
+      },
+      {
+        "name": "Morphology",
+        "content": "Morphology: [smooth / lobulated / spiculated]. Border: [well-defined / poorly-defined].",
+        "normalVariant": false
+      },
+      {
+        "name": "Density",
+        "content": "Attenuation: [X] HU. Internal characteristics: [homogeneous / heterogeneous / cavitation / calcification].",
+        "normalVariant": false
+      },
+      {
+        "name": "Growth Assessment",
+        "content": "Volume doubling time: [X] days. [Consistent / Not consistent] with benign etiology.",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. CIRADS [X]: [category description]\n2. [Nodule type] nodule in [location] measuring [X]mm\n3. [Risk assessment and reasoning]\n4. [Follow-up / PET / Biopsy / Surgical consultation] recommended\n5. Additional findings: [list]",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

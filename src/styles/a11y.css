@@ -1,0 +1,331 @@
+/**
+ * Accessibility (a11y) Styles
+ * WCAG 2.1 AA Compliance - Ensures accessibility for all users
+ */
+
+/* Focus styles for keyboard navigation */
+:focus {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* High contrast focus for better visibility */
+@media (prefers-contrast: high) {
+  :focus-visible {
+    outline: 3px solid #000;
+    outline-offset: 3px;
+  }
+}
+
+/* Skip to main content link */
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-primary);
+  color: #fff;
+  padding: 12px 24px;
+  z-index: 9999;
+  font-weight: 600;
+  border-radius: 0 0 8px 8px;
+  transition: top 0.2s ease-in-out;
+}
+
+.skip-to-content:focus {
+  top: 0;
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Screen reader only content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Make sr-only content visible when focused */
+.sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 8px 16px;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  :root {
+    --color-primary: #0056b3;
+    --color-border: #000;
+  }
+  
+  body {
+    border: 2px solid currentColor;
+  }
+  
+  a, button {
+    text-decoration: underline;
+  }
+  
+  button, input, select, textarea {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Minimum touch target size (44x44px per WCAG) */
+button,
+a[href],
+input,
+select,
+textarea,
+[tabindex]:not([tabindex="-1"]) {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Ensure sufficient color contrast ratios */
+:root {
+  /* Colors with WCAG AA compliant contrast ratios */
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #4a4a4a;
+  --color-text-disabled: #767676;
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f5f5f5;
+  --color-border: #d1d5db;
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-error: #dc2626;
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+}
+
+/* Dark mode colors */
+.dark {
+  --color-text-primary: #f3f4f6;
+  --color-text-secondary: #d1d5db;
+  --color-text-disabled: #9ca3af;
+  --color-bg-primary: #111827;
+  --color-bg-secondary: #1f2937;
+  --color-border: #374151;
+  --color-primary: #3b82f6;
+  --color-primary-hover: #60a5fa;
+  --color-error: #ef4444;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+}
+
+/* Text with minimum contrast ratio of 4.5:1 */
+body {
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+}
+
+/* Large text (18px+ or 14px+ bold) has minimum contrast of 3:1 */
+h1, h2, h3, h4, h5, h6,
+.text-lg, .text-xl, .text-2xl {
+  color: var(--color-text-primary);
+}
+
+/* Links and interactive elements */
+a, button, [role="button"] {
+  color: var(--color-primary);
+}
+
+a:hover, button:hover {
+  color: var(--color-primary-hover);
+}
+
+/* Error states with sufficient contrast */
+.error-message, .text-error {
+  color: var(--color-error);
+}
+
+/* ARIA attributes styling */
+[aria-disabled="true"],
+[aria-hidden="true"] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+[aria-expanded="false"] .icon-expanded,
+[aria-expanded="true"] .icon-collapsed {
+  display: none;
+}
+
+[aria-pressed="true"] {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Live region for screen reader announcements */
+[aria-live] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+[aria-live]:focus {
+  display: block;
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 8px;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Table accessibility */
+table {
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
+
+[dir="rtl"] th {
+  text-align: right;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid var(--color-border);
+}
+
+caption {
+  padding: 8px;
+  font-weight: 600;
+}
+
+/* Form accessibility */
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.required::after {
+  content: " *";
+  color: var(--color-error);
+}
+
+.error-input {
+  border-color: var(--color-error) !important;
+}
+
+.error-input:focus {
+  outline-color: var(--color-error);
+}
+
+/* Tooltip accessibility */
+[role="tooltip"] {
+  position: absolute;
+  background: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  max-width: 250px;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Keyboard shortcut indicators */
+kbd {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-family: monospace;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  box-shadow: 0 2px 0 var(--color-border);
+}
+
+/* Visible focus indicator for all interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Modal/dialog accessibility */
+[role="dialog"],
+[role="alertdialog"] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: var(--color-bg-primary);
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+[role="dialog"]::backdrop,
+[role="alertdialog"]::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Loading state accessibility */
+[aria-busy="true"] {
+  position: relative;
+}
+
+[aria-busy="true"]::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

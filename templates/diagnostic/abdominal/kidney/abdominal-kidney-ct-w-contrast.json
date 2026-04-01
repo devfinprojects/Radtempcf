@@ -1,0 +1,73 @@
+{
+  "id": "abdominal-kidney-ct-w-contrast",
+  "name": "Kidney CT With Contrast",
+  "version": "1.0.0",
+  "description": "Contrast-enhanced CT of the kidneys for evaluation of renal masses, stones, and collecting system pathology",
+  "modality": "ct",
+  "bodyRegion": "abdomen",
+  "subspecialty": "abdominal",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["abdomen", "ct", "contrast", "kidney", "renal", "abdominal", "urography"],
+    "cptCodes": ["74177"],
+    "radlexCodes": ["RID10312", "RID10313"]
+  },
+  "findings": {
+    "technique": "Contrast-enhanced CT of the abdomen was performed with corticomedullary and excretory phase imaging.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Right Kidney",
+        "content": "The right kidney measures approximately [X cm] in longitudinal dimension and demonstrates [normal cortical attenuation / no mass / no lesion]. No renal vein thrombosis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Kidney",
+        "content": "The left kidney measures approximately [X cm] in longitudinal dimension and demonstrates [normal cortical attenuation / no mass / no lesion]. No renal vein thrombosis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Collecting System",
+        "content": "The bilateral renal collecting systems are [not dilated / no hydronephrosis]. No filling defect or urothelial thickening.",
+        "normalVariant": true
+      },
+      {
+        "name": "Ureters",
+        "content": "The bilateral ureters are [patent / no obstruction / no dilation]. No obstructing stone or stricture.",
+        "normalVariant": true
+      },
+      {
+        "name": "Renal Vasculature",
+        "content": "The bilateral renal arteries are [patent / no stenosis / no aneurysm]. The renal veins are [patent / no thrombosis].",
+        "normalVariant": true
+      },
+      {
+        "name": "Perirenal Space",
+        "content": "The perirenal fat is [unremarkable / no stranding / no hemorrhage]. No perirenal mass or collection.",
+        "normalVariant": true
+      },
+      {
+        "name": "Bladder",
+        "content": "The bladder is [not distended / no wall thickening / no mass]. No filling defect.",
+        "normalVariant": true
+      },
+      {
+        "name": "Adrenal Glands",
+        "content": "The bilateral adrenal glands are [normal / no mass / no hyperplasia].",
+        "normalVariant": true
+      },
+      {
+        "name": "Liver and Spleen",
+        "content": "The liver and spleen are [unremarkable / no mass / no lesion].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal contrast-enhanced CT kidneys.\n2. No renal mass, stone, or collecting system abnormality identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,23 @@
+{
+  "projectName": "RadTempCF",
+  "projectOwner": "radtempcf",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributorsPerLine": 7,
+  "contributorsSortBy": "contributions",
+  "contributorTemplate": "<a href=\"<%= url %>\"><img src=\"<%= avatar %>\" title=\"<%= name %>\" width=\"<%= size %>\" height=\"<%= size %>\"></a><% if (index < contributors.length - 1) { %>,<% } %>",
+  "linkTemplate": "<a href=\"<%= url %>\"><img align=\"left\" src=\"<%= avatar %>\" title=\"<%= name %>\" width=\"<%= size %>\" height=\"<%= size %>\" /></a>",
+  "sortBy": "contributions",
+  "skipCi": true,
+  "bots": [
+    "dependabot[bot]",
+    "renovate[bot]",
+    "all-contributors[bot]"
+  ],
+  "contributors": []
+}

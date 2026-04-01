@@ -1,0 +1,45 @@
+{
+  "id": "neuro-brain-mri-t1",
+  "name": "Brain MRI T1 Pre-Contrast",
+  "version": "1.0.0",
+  "description": "Brain MRI T1-weighted pre-contrast sequence for anatomical evaluation",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "t1", "neuroradiology", "pre-contrast"]
+  },
+  "findings": {
+    "technique": "Multiplanar T1-weighted images were obtained before contrast administration.",
+    "comparison": "No prior MRI studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Parenchyma",
+        "content": "The cerebral parenchyma demonstrates [normal T1 signal intensity / no abnormal T1 hyperintensity / no mass or lesion].",
+        "normalVariant": true
+      },
+      {
+        "name": "Ventricles",
+        "content": "The ventricular system is [normal in size / not dilated]. No effacement or mass effect.",
+        "normalVariant": true
+      },
+      {
+        "name": "Midline Structures",
+        "content": "Midline structures are [midline / centered]. No shift or herniation.",
+        "normalVariant": true
+      },
+      {
+        "name": "Cisterns and Sulci",
+        "content": "The basal cisterns are [patent / open]. Cortical sulci are [normal in appearance / not prominent].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal pre-contrast T1 study.\n2. No abnormal T1 signal abnormality identified.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

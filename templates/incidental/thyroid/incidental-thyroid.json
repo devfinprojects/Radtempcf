@@ -1,0 +1,45 @@
+{
+  "id": "incidental-thyroid",
+  "name": "Thyroid Incidentaloma",
+  "version": "1.0.0",
+  "description": "Report template for incidental thyroid nodules identified on imaging performed for other indications",
+  "modality": "ct",
+  "bodyRegion": "neck",
+  "subspecialty": "head-neck",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["incidental", "thyroid", "nodule", "thyroid incidentaloma"]
+  },
+  "findings": {
+    "technique": "CT [neck/chest/CTA] performed for [other clinical indication]. Axial images reviewed through thyroid bed.",
+    "comparison": "No prior neck imaging available for comparison.",
+    "limitations": "Limited assessment due to non-dedicated neck CT protocol. Ultrasound correlation recommended.",
+    "sections": [
+      {
+        "name": "Thyroid Nodule",
+        "content": "Incidental thyroid nodule identified in [right/left] [lobe/isthmus]. Size: [X]cm. Location: [upper/mid/lower] pole. Density: [X]HU (pre-contrast). Enhancement: [mild/moderate/marked].",
+        "normalVariant": false
+      },
+      {
+        "name": "Nodule Characteristics",
+        "content": "Margin: [well-defined / irregular / lobulated]. Calcifications: [present/absent] - [macrocalcifications / punctate]. Cystic change: [present/absent].",
+        "normalVariant": false
+      },
+      {
+        "name": "Additional Findings",
+        "content": "Additional nodules: [present/absent]. If present: [number], largest: [X]cm. [Lymphadenopathy: present/absent]. [Tracheal deviation: present/absent].",
+        "normalVariant": false
+      },
+      {
+        "name": "Thyroid Gland",
+        "content": "Overall thyroid size: [enlarged/normal/atrophic]. Parenchyma: [homogeneous/heterogeneous]. [Diffuse abnormalities: present/absent].",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. Incidental thyroid nodule in [right/left] lobe measuring [X]cm\n2. ACR TI-RADS [X]: [category] - follow-up recommendations per guidelines\n3. [Ultrasound correlation / Biopsy] recommended based on nodule characteristics and size threshold\n4. Clinical correlation and endocrinology consultation recommended",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

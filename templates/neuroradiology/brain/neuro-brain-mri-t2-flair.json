@@ -1,0 +1,45 @@
+{
+  "id": "neuro-brain-mri-t2",
+  "name": "Brain MRI T2/FLAIR",
+  "version": "1.0.0",
+  "description": "Brain MRI T2-weighted and FLAIR sequence for fluid and lesion detection",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "t2", "flair", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "Axial T2-weighted and FLAIR images were obtained through the brain.",
+    "comparison": "No prior MRI studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Parenchyma",
+        "content": "The cerebral parenchyma demonstrates [normal T2 signal / no abnormal hyperintensity / no demyelinating lesions].",
+        "normalVariant": true
+      },
+      {
+        "name": "White Matter",
+        "content": "White matter shows [normal signal / no white matter lesions / no patches of abnormal FLAIR signal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Ventricles",
+        "content": "The ventricular system is [normal in size / no periventricular hyperintensity]. No hydrocephalus.",
+        "normalVariant": true
+      },
+      {
+        "name": "Cortex",
+        "content": "Cortical gray matter [has normal thickness / no cortical lesions / no signal abnormality].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal T2/FLAIR study.\n2. No abnormal T2 or FLAIR signal abnormalities identified.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,186 @@
+---
+// Template Browser - Main template listing page
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// Sample template data (would be loaded from templates directory)
+const templates = [
+  { id: 'brain-ct-stroke', name: 'Brain CT - Stroke', modality: 'CT', bodyRegion: 'Brain', rads: null, category: 'Neuroradiology' },
+  { id: 'brain-mri-t2', name: 'Brain MRI - T2 FLAIR', modality: 'MRI', bodyRegion: 'Brain', rads: null, category: 'Neuroradiology' },
+  { id: 'chest-ct-angles', name: 'Chest CT - Lung Windows', modality: 'CT', bodyRegion: 'Chest', rads: null, category: 'Thoracic' },
+  { id: 'abd-ct-liver', name: 'Abdominal CT - Liver', modality: 'CT', bodyRegion: 'Abdomen', rads: 'LI-RADS', category: 'Abdominal' },
+  { id: 'kidney-mri', name: 'Kidney MRI', modality: 'MRI', bodyRegion: 'Abdomen', rads: 'RI-RADS', category: 'Abdominal' },
+  { id: 'prostate-mpi', name: 'Prostate MRI', modality: 'MRI', bodyRegion: 'Pelvis', rads: 'PI-RADS', category: 'Genitourinary' },
+  { id: 'thyroid-us', name: 'Thyroid Ultrasound', modality: 'Ultrasound', bodyRegion: 'Neck', rads: 'TI-RADS', category: 'Neuroradiology' },
+  { id: 'breast-mammo', name: 'Mammography', modality: 'X-Ray', bodyRegion: 'Breast', rads: 'BI-RADS', category: 'Breast' },
+  { id: 'lung-nodule', name: 'Lung Nodule CT', modality: 'CT', bodyRegion: 'Chest', rads: 'VI-RADS', category: 'Thoracic' },
+  { id: 'spine-mri', name: 'Spine MRI', modality: 'MRI', bodyRegion: 'Spine', rads: null, category: 'Musculoskeletal' },
+];
+
+// Get URL parameters for filtering
+const url = new URL(Astro.request.url);
+const searchQuery = url.searchParams.get('search') || '';
+const modalityFilter = url.searchParams.get('modality') || '';
+const bodyRegionFilter = url.searchParams.get('bodyRegion') || '';
+const radsFilter = url.searchParams.get('rads') || '';
+
+// Filter templates
+let filteredTemplates = [...templates];
+
+if (searchQuery) {
+  const query = searchQuery.toLowerCase();
+  filteredTemplates = filteredTemplates.filter(t => 
+    t.name.toLowerCase().includes(query) || 
+    t.category.toLowerCase().includes(query)
+  );
+}
+
+if (modalityFilter) {
+  filteredTemplates = filteredTemplates.filter(t => t.modality === modalityFilter);
+}
+
+if (bodyRegionFilter) {
+  filteredTemplates = filteredTemplates.filter(t => t.bodyRegion === bodyRegionFilter);
+}
+
+if (radsFilter) {
+  filteredTemplates = filteredTemplates.filter(t => t.rads === radsFilter);
+}
+
+// Get unique filter options
+const modalities = [...new Set(templates.map(t => t.modality))];
+const bodyRegions = [...new Set(templates.map(t => t.bodyRegion))];
+const radsSystems = [...new Set(templates.map(t => t.rads).filter(Boolean))];
+
+const title = searchQuery ? `Search: ${searchQuery}` : 'All Templates';
+---
+
+<BaseLayout title={title}>
+  <div class="container mx-auto px-4 py-8">
+    <div class="flex flex-col lg:flex-row gap-8">
+      <!-- Filters Sidebar -->
+      <aside class="lg:w-64 flex-shrink-0">
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 sticky top-24">
+          <h2 class="text-lg font-semibold mb-4">Filters</h2>
+          
+          <form action="/templates" method="get">
+            <!-- Search -->
+            <div class="mb-4">
+              <label for="search" class="block text-sm font-medium mb-1">Search</label>
+              <input 
+                type="text" 
+                name="search" 
+                id="search"
+                value={searchQuery}
+                placeholder="Search templates..."
+                class="w-full px-3 py-2 border rounded-lg dark:bg-gray-700 dark:border-gray-600"
+              />
+            </div>
+            
+            <!-- Modality Filter -->
+            <div class="mb-4">
+              <label for="modality" class="block text-sm font-medium mb-1">Modality</label>
+              <select 
+                name="modality" 
+                id="modality"
+                class="w-full px-3 py-2 border rounded-lg dark:bg-gray-700 dark:border-gray-600"
+              >
+                <option value="">All Modalities</option>
+                {modalities.map(m => (
+                  <option value={m} selected={m === modalityFilter}>{m}</option>
+                ))}
+              </select>
+            </div>
+            
+            <!-- Body Region Filter -->
+            <div class="mb-4">
+              <label for="bodyRegion" class="block text-sm font-medium mb-1">Body Region</label>
+              <select 
+                name="bodyRegion" 
+                id="bodyRegion"
+                class="w-full px-3 py-2 border rounded-lg dark:bg-gray-700 dark:border-gray-600"
+              >
+                <option value="">All Regions</option>
+                {bodyRegions.map(b => (
+                  <option value={b} selected={b === bodyRegionFilter}>{b}</option>
+                ))}
+              </select>
+            </div>
+            
+            <!-- RADS Filter -->
+            <div class="mb-4">
+              <label for="rads" class="block text-sm font-medium mb-1">RADS Classification</label>
+              <select 
+                name="rads" 
+                id="rads"
+                class="w-full px-3 py-2 border rounded-lg dark:bg-gray-700 dark:border-gray-600"
+              >
+                <option value="">All RADS</option>
+                {radsSystems.map(r => (
+                  <option value={r} selected={r === radsFilter}>{r}</option>
+                ))}
+              </select>
+            </div>
+            
+            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+              Apply Filters
+            </button>
+          </form>
+        </div>
+      </aside>
+      
+      <!-- Templates Grid -->
+      <div class="flex-1">
+        <div class="flex items-center justify-between mb-6">
+          <h1 class="text-2xl font-bold">{filteredTemplates.length} Templates</h1>
+          <select class="px-3 py-2 border rounded-lg dark:bg-gray-800 dark:border-gray-700">
+            <option value="name">Sort by Name</option>
+            <option value="modality">Sort by Modality</option>
+            <option value="category">Sort by Category</option>
+          </select>
+        </div>
+        
+        {filteredTemplates.length === 0 ? (
+          <div class="text-center py-12">
+            <p class="text-gray-600 dark:text-gray-400 mb-4">No templates found matching your criteria.</p>
+            <a href="/templates" class="text-blue-600 hover:underline">Clear filters</a>
+          </div>
+        ) : (
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {filteredTemplates.map(template => (
+              <a href={`/templates/${template.id}`} class="block bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition p-6">
+                <h3 class="text-lg font-semibold mb-2">{template.name}</h3>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded">
+                    {template.modality}
+                  </span>
+                  <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded">
+                    {template.bodyRegion}
+                  </span>
+                  {template.rads && (
+                    <span class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded">
+                      {template.rads}
+                    </span>
+                  )}
+                </div>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">{template.category}</p>
+              </a>
+            ))}
+          </div>
+        )}
+        
+        <!-- Pagination -->
+        {filteredTemplates.length > 0 && (
+          <div class="flex justify-center mt-8">
+            <nav class="flex gap-2">
+              <a href="?page=1" class="px-4 py-2 border rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">1</a>
+              <a href="?page=2" class="px-4 py-2 border rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">2</a>
+              <a href="?page=3" class="px-4 py-2 border rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">3</a>
+              <span class="px-4 py-2">...</span>
+              <a href="?page=10" class="px-4 py-2 border rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">10</a>
+            </nav>
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

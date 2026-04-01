@@ -1,0 +1,58 @@
+{
+  "id": "nm-bone-scan",
+  "name": "Bone Scintigraphy",
+  "version": "1.0.0",
+  "description": "Technetium-99m bone scan for evaluation of skeletal metastasis and bone pathology",
+  "modality": "nm",
+  "bodyRegion": "skeletal",
+  "subspecialty": "nuclear-medicine",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["nuclear medicine", "bone scan", "scintigraphy", "technetium", "bone metastasis"],
+    "cptCodes": ["78300"],
+    "radlexCodes": ["RID10810", "RID10811"]
+  },
+  "findings": {
+    "technique": "Whole-body bone scintigraphy was performed following IV administration of Tc-99m MDP. SPECT/CT of specific areas was performed for correlation.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Skull",
+        "content": "The skull demonstrates [no abnormal uptake / symmetric physiologic uptake]. No focal lesion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Spine",
+        "content": "The cervical, thoracic, and lumbar spine demonstrate [no abnormal uptake / no focal lesions / symmetric uptake]. No pathological fracture.",
+        "normalVariant": true
+      },
+      {
+        "name": "Thorax",
+        "content": "The ribs and sternum demonstrate [no abnormal uptake / no focal lesions]. No fracture.",
+        "normalVariant": true
+      },
+      {
+        "name": "Pelvis",
+        "content": "The pelvis demonstrates [no abnormal uptake / symmetric SI joint uptake]. No lytic or blastic lesion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Extremities",
+        "content": "The long bones demonstrate [no abnormal uptake / no focal lesions]. The joints demonstrate [no abnormal increased uptake / physiologic distribution].",
+        "normalVariant": true
+      },
+      {
+        "name": "Soft Tissues",
+        "content": "The soft tissues demonstrate [no abnormal soft tissue uptake]. No paraneoplastic syndrome.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal whole-body bone scan.\n2. No evidence of skeletal metastasis or pathological process.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

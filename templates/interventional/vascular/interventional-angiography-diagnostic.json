@@ -1,0 +1,68 @@
+{
+  "id": "interventional-angiography-diagnostic",
+  "name": "Diagnostic Cerebral Angiogram",
+  "version": "1.0.0",
+  "description": "Diagnostic cerebral angiography report template for evaluation of intracranial vasculature",
+  "modality": "dsa",
+  "bodyRegion": "brain",
+  "subspecialty": "neuro-interventional",
+  "clinicalContext": "interventional",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["interventional", "angiography", "diagnostic", "cerebral", "dsa", "neuro"],
+    "cptCodes": ["35475", "36141"],
+    "radlexCodes": ["RID12920", "RID12921"]
+  },
+  "findings": {
+    "technique": "Diagnostic cerebral angiography was performed via right femoral artery approach using a 5F catheter. Selective injections of the bilateral internal carotid arteries, external carotid arteries, and vertebral arteries were performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Internal Carotid Injection",
+        "content": "The internal carotid artery demonstrates [normal caliber / no stenosis / no aneurysm / no dissection]. The intracranial circulation is [normal / patent].",
+        "normalVariant": true
+      },
+      {
+        "name": "Anterior Cerebral Artery",
+        "content": "The A1 segment of the anterior cerebral artery is [present / hypoplastic]. The A2 segment and distal branches are [normal / patent].",
+        "normalVariant": true
+      },
+      {
+        "name": "Middle Cerebral Artery",
+        "content": "The M1 segment of the middle cerebral artery is [normal / no stenosis / no occlusion]. The M2 branches are [normal / patent].",
+        "normalVariant": true
+      },
+      {
+        "name": "Posterior Cerebral Artery",
+        "content": "The P1 segment of the posterior cerebral artery is [present / hypoplastic]. The P2-P4 segments are [normal / patent].",
+        "normalVariant": true
+      },
+      {
+        "name": "Vertebrobasilar Injection",
+        "content": "The vertebral artery is [patent / normal]. The basilar artery is [normal / no aneurysm]. The posterior inferior cerebellar artery is [visualized / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Circle of Willis",
+        "content": "The circle of Willis is [complete / incomplete]. The anterior and posterior communicating arteries are [patent / present].",
+        "normalVariant": true
+      },
+      {
+        "name": "External Carotid",
+        "content": "The external carotid artery and its branches are [normal / no pathology]. The middle meningeal artery is [patent / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Venous Phase",
+        "content": "The venous phase demonstrates [normal venous drainage / no dural sinus thrombosis / no venous congestion].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal diagnostic cerebral angiogram.\n2. No aneurysm, stenosis, or vascular malformation identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

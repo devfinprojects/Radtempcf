@@ -1,0 +1,45 @@
+{
+  "id": "neuro-spine-lumbar-mri",
+  "name": "Lumbar Spine MRI",
+  "version": "1.0.0",
+  "description": "Lumbar spine MRI for disc and nerve root evaluation",
+  "modality": "mri",
+  "bodyRegion": "spine",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["spine", "lumbar", "mri", "disc", "radiculopathy", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "MRI of the lumbar spine with sagittal T1, T2, and axial T2 sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Spinal Canal",
+        "content": "Spinal canal is [patent / no significant stenosis] at all levels.",
+        "normalVariant": true
+      },
+      {
+        "name": "Disc Levels",
+        "content": "L1-L2: [normal / no herniation]. L2-L3: [normal / no herniation]. L3-L4: [normal / no herniation]. L4-L5: [normal / no herniation]. L5-S1: [normal / no herniation].",
+        "normalVariant": true
+      },
+      {
+        "name": " Nerve Roots",
+        "content": "Cauda equina [appears normal / no compression / no mass]. Nerve roots are patent within the lateral recesses.",
+        "normalVariant": true
+      },
+      {
+        "name": "Facet Joints",
+        "content": "Facet joints [show no hypertrophy / no arthritis].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No significant spinal stenosis.\n2. No disc herniation.\n3. Normal lumbar spine MRI.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

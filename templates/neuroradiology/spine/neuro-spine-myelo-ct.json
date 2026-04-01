@@ -1,0 +1,45 @@
+{
+  "id": "neuro-spine-myelo-ct",
+  "name": "CT Myelogram Spine",
+  "version": "1.0.0",
+  "description": "CT myelography for detailed evaluation of spinal canal and nerve roots",
+  "modality": "ct",
+  "bodyRegion": "spine",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["spine", "myelogram", "ct", "nerve root", "stenosis"]
+  },
+  "findings": {
+    "technique": "CT myelography of the spine was performed following intrathecal contrast administration.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Spinal Canal",
+        "content": "Spinal canal shows [no filling defect / no complete block / no mass]. Contrast flows freely through the subarachnoid space.",
+        "normalVariant": true
+      },
+      {
+        "name": "Nerve Roots",
+        "content": "Nerve roots [are well opacified / symmetric / no displacement] in the cauda equina.",
+        "normalVariant": true
+      },
+      {
+        "name": "Lateral Recesses",
+        "content": "Lateral recesses are [patent / no narrowing] at all levels.",
+        "normalVariant": true
+      },
+      {
+        "name": "Neural Foramina",
+        "content": "Neural foramina [are patent / no stenosis] bilaterally.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal CT myelogram.\n2. No evidence of spinal stenosis or nerve root compression.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

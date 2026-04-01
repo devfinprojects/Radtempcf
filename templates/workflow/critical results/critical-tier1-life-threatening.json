@@ -1,0 +1,95 @@
+{
+  "id": "critical-tier1-life-threatening",
+  "name": "Critical Result - Tier 1 (Life-Threatening)",
+  "version": "1.0.0",
+  "description": "Tier 1 critical results requiring immediate verbal communication to referring physician - life-threatening conditions requiring emergent intervention",
+  "category": "critical-results",
+  "tier": 1,
+  "priority": "P1",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["critical-results", "tier1", "life-threatening", "emergent"]
+  },
+  "criticalFindings": {
+    "communicationRequired": true,
+    " communicationMethod": "、电话联系",
+    "timeframe": "立即 - 必须在报告完成后15分钟内联系",
+    "escalationPath": ["值班主治医师", "急诊科", "重症监护室"],
+    "documentationRequired": true
+  },
+  "conditions": [
+    {
+      "code": "CTR001",
+      "name": "主动脉夹层",
+      "description": "CT血管造影显示主动脉夹层征象",
+      "clinicalSignificance": "危及生命的急诊情况，需要立即外科干预"
+    },
+    {
+      "code": "CTR002",
+      "name": "大量气胸（>30%）或张力性气胸",
+      "description": "胸部影像显示大量气胸或张力性气胸",
+      "clinicalSignificance": "危及生命的急诊情况，需要立即胸腔引流"
+    },
+    {
+      "code": "CTR003",
+      "name": "大面积肺栓塞",
+      "description": "CT肺动脉造影显示主肺动脉或双侧肺动脉栓塞",
+      "clinicalSignificance": "危及生命的急诊情况，需要立即溶栓或取栓"
+    },
+    {
+      "code": "CTR004",
+      "name": "颅内大出血（幕上>30ml或幕下>10ml）",
+      "description": "CT显示颅内大量出血伴中线移位",
+      "clinicalSignificance": "危及生命的急诊情况，需要立即神经外科评估"
+    },
+    {
+      "code": "CTR005",
+      "name": "急性心肌梗死伴室壁瘤破裂风险",
+      "description": "心脏CT/MRI显示室壁瘤破裂征象",
+      "clinicalSignificance": "危及生命的急诊情况，需要立即心外科评估"
+    },
+    {
+      "code": "CTR006",
+      "name": "腹腔大量出血",
+      "description": "CT显示腹腔积血估计>500ml",
+      "clinicalSignificance": "危及生命的急诊情况，需要立即外科干预"
+    },
+    {
+      "code": "CTR007",
+      "name": "肠系膜上动脉栓塞",
+      "description": "CT血管造影显示肠系膜上动脉栓塞",
+      "clinicalSignificance": "危及生命的急诊情况，需要立即血管外科干预"
+    },
+    {
+      "code": "CTR008",
+      "name": "肢体急性缺血（动脉栓塞IV期）",
+      "description": "影像显示肢体急性缺血IV期（坏疽期）",
+      "clinicalSignificance": "危及生命的急诊情况，需要立即血管外科干预"
+    }
+  ],
+  "communicationTemplate": {
+    "verbalNotification": {
+      "script": "您好，我是[放射科医师姓名]，正在报告[检查类型]检查。我发现了一例需要立即处理的危急情况：[患者姓名]，[检查日期]的影像显示[具体发现]。这一发现需要紧急临床关注，建议立即[建议的处理措施]。您可以安排会诊吗？",
+      "documentationElements": ["通知时间", "通知人", "接收人", "通知方式", "具体发现", "临床建议", "接收人反馈"]
+    },
+    "writtenDocumentation": {
+      "findings": "影像发现：[具体描述]",
+      "clinicalSignificance": "临床意义：[为什么这是危急情况]",
+      "recommendedAction": "建议措施：[具体建议]",
+      "communicationRecord": {
+        "notifiedBy": "",
+        "notifiedAt": "",
+        "notifiedMethod": "",
+        "recipientName": "",
+        "recipientRole": "",
+        "acknowledged": true,
+        "acknowledgedAt": "",
+        "actionTaken": ""
+      }
+    }
+  },
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

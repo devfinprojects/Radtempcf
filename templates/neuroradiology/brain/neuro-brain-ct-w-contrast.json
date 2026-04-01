@@ -1,0 +1,45 @@
+{
+  "id": "neuro-brain-ct-w-contrast",
+  "name": "Brain CT With Contrast",
+  "version": "1.0.0",
+  "description": "Brain CT report template with intravenous contrast for enhanced lesion detection",
+  "modality": "ct",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "ct", "contrast", "neuroradiology", "lesion-detection"]
+  },
+  "findings": {
+    "technique": "Axial images were obtained from the skull base through the vertex following intravenous contrast administration.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Parenchyma",
+        "content": "The cerebral parenchyma demonstrates [no abnormal contrast enhancement / no mass or lesion / no hemorrhage]. Gray-white matter differentiation is [preserved / adequate].",
+        "normalVariant": true
+      },
+      {
+        "name": "Ventricles",
+        "content": "The ventricular system is [normal in size / not dilated]. No abnormal enhancement within the ventricles.",
+        "normalVariant": true
+      },
+      {
+        "name": "Midline Structures",
+        "content": "Midline structures are [midline / centered]. No evidence of herniation.",
+        "normalVariant": true
+      },
+      {
+        "name": "Vascular Structures",
+        "content": "The dural venous sinuses are [patent / no filling defect]. No abnormal vascular enhancement.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal contrast-enhanced study.\n2. No abnormal enhancement or mass identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

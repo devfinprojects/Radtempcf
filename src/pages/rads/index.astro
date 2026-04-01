@@ -1,0 +1,118 @@
+---
+// RADS Classifications Hub Page
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const radsSystems = [
+  { 
+    id: 'li', 
+    name: 'LI-RADS', 
+    fullName: 'Liver Imaging Reporting and Data System', 
+    category: 'Liver',
+    version: '2018',
+    description: 'Standardized imaging criteria for hepatocellular carcinoma surveillance in cirrhosis.',
+    link: '/rads/li'
+  },
+  { 
+    id: 'pi', 
+    name: 'PI-RADS', 
+    fullName: 'Prostate Imaging Reporting and Data System', 
+    category: 'Prostate',
+    version: '2.0',
+    description: 'Standardized assessment for prostate cancer detection using multiparametric MRI.',
+    link: '/rads/pi'
+  },
+  { 
+    id: 'ti', 
+    name: 'TI-RADS', 
+    fullName: 'Thyroid Imaging Reporting and Data System', 
+    category: 'Thyroid',
+    version: '2017',
+    description: 'Risk stratification for thyroid nodules based on ultrasound characteristics.',
+    link: '/rads/ti'
+  },
+  { 
+    id: 'ri', 
+    name: 'RI-RADS', 
+    fullName: 'Renal Imaging Reporting and Data System', 
+    category: 'Kidney',
+    version: '1.0',
+    description: 'Classification system for characterization of renal masses.',
+    link: '/rads/ri'
+  },
+  { 
+    id: 'vi', 
+    name: 'VI-RADS', 
+    fullName: 'VINRAD - Lung-RADS', 
+    category: 'Lung',
+    version: '2014',
+    description: 'Classification for lung nodules detected on CT screening.',
+    link: '/rads/vi'
+  },
+  { 
+    id: 'bi', 
+    name: 'BI-RADS', 
+    fullName: 'Breast Imaging Reporting and Data System', 
+    category: 'Breast',
+    version: '2013',
+    description: 'Standardized reporting for mammography, ultrasound, and breast MRI.',
+    link: '/rads/bi'
+  },
+  { 
+    id: 'o', 
+    name: 'O-RADS', 
+    fullName: 'Ovarian-Adnexal Reporting and Data System', 
+    category: 'Ovary',
+    version: '2020',
+    description: 'Risk stratification for adnexal masses using ultrasound.',
+    link: '/rads/o'
+  },
+  { 
+    id: 'ci', 
+    name: 'CIRADS', 
+    fullName: ' Cardiovascular Imaging Reporting and Data System', 
+    category: 'Cardiac',
+    version: '1.0',
+    description: 'Standardized reporting for cardiac imaging findings.',
+    link: '/rads/ci'
+  },
+];
+---
+
+<BaseLayout title="RADS Classifications">
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4">RADS Classifications</h1>
+    <p class="text-xl text-gray-600 dark:text-gray-400 mb-12">
+      Standardized reporting systems for imaging findings. Each RADS system provides consistent terminology and risk stratification.
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {radsSystems.map(rads => (
+        <a href={rads.link} class="block bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition p-6">
+          <div class="flex items-start justify-between">
+            <div>
+              <h2 class="text-xl font-semibold mb-1">{rads.name}</h2>
+              <p class="text-sm text-blue-600 dark:text-blue-400 mb-2">{rads.fullName}</p>
+            </div>
+            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-sm rounded">v{rads.version}</span>
+          </div>
+          <p class="text-gray-600 dark:text-gray-400 mb-3">{rads.description}</p>
+          <div class="flex items-center text-sm text-gray-500">
+            <span class="mr-4">Category: {rads.category}</span>
+            <span class="text-blue-600">View Classification →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+    
+    <!-- Additional Info -->
+    <div class="mt-12 bg-blue-50 dark:bg-gray-800 rounded-lg p-6">
+      <h2 class="text-xl font-semibold mb-4">What is RADS?</h2>
+      <p class="text-gray-700 dark:text-gray-300 mb-4">
+        RADS (Reporting and Data Systems) are standardized classification systems developed by the American College of Radiology to reduce variability in imaging reports and improve communication between radiologists and clinicians.
+      </p>
+      <p class="text-gray-700 dark:text-gray-300">
+        Each system provides categories with defined imaging criteria and management recommendations, enabling consistent patient care across different healthcare providers.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,58 @@
+{
+  "id": "breast-mri",
+  "name": "Breast MRI",
+  "version": "1.0.0",
+  "description": "Dedicated breast MRI for evaluation of breast pathology with contrast enhancement",
+  "modality": "mri",
+  "bodyRegion": "breast",
+  "subspecialty": "breast-imaging",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["breast", "mri", "bi-rads", "breast mri", "contrast"],
+    "cptCodes": ["77046"],
+    "radlexCodes": ["RID10650", "RID10651"]
+  },
+  "findings": {
+    "technique": "Dedicated breast MRI was performed with T1, T2, and contrast-enhanced sequences in axial and sagittal planes.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Right Breast",
+        "content": "The right breast demonstrates [no mass / no abnormal enhancement / no focal abnormality]. The fibroglandular tissue is [normal / appropriate for density].",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Breast",
+        "content": "The left breast demonstrates [no mass / no abnormal enhancement / no focal abnormality]. The fibroglandular tissue is [normal / appropriate for density].",
+        "normalVariant": true
+      },
+      {
+        "name": "Enhancement Pattern",
+        "content": "There is [no non-mass like enhancement / no ductal enhancement / no regional enhancement] identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Axillae",
+        "content": "The bilateral axillae demonstrate [no pathologically enlarged lymph nodes / no abnormal lymph nodes]. No axillary mass.",
+        "normalVariant": true
+      },
+      {
+        "name": "Implants",
+        "content": "If present, the breast implants are [intact / no rupture / no intracapsular rupture / no extracapsular rupture].",
+        "normalVariant": true
+      },
+      {
+        "name": "Kinetic Analysis",
+        "content": "The enhancement kinetics demonstrate [no rapid wash-in / no suspicious curve type]. All findings show [benign / background] enhancement pattern.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "BI-RADS Category 1: Negative. No suspicious finding on breast MRI.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "chest-lung-ct-hrct",
+  "name": "Chest CT High-Resolution (HRCT)",
+  "version": "1.0.0",
+  "description": "High-resolution CT of the chest for evaluation of interstitial lung disease and diffuse pulmonary pathology",
+  "modality": "ct",
+  "bodyRegion": "chest",
+  "subspecialty": "chest-thoracic",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["chest", "ct", "hrct", "high resolution", "interstitial lung disease", "ild", "thoracic"],
+    "cptCodes": ["71250"],
+    "radlexCodes": ["RID10310", "RID10311"]
+  },
+  "findings": {
+    "technique": "High-resolution CT of the chest was performed with 1-1.5 mm sections at 10 mm intervals through the lungs in inspiration and expiration.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Pattern Recognition",
+        "content": "There is [no reticular pattern / no ground-glass opacity / no nodular pattern / no cystic pattern] identified to suggest interstitial lung disease.",
+        "normalVariant": true
+      },
+      {
+        "name": "Lung Parenchyma",
+        "content": "The lung parenchyma demonstrates [no honeycombing / no traction bronchiectasis / no architectural distortion]. The alveolar spaces are [clear / no consolidation].",
+        "normalVariant": true
+      },
+      {
+        "name": "Distribution",
+        "content": "There is [no peripheral / no central / no upper lobe / no lower lobe] predominance of abnormalities.",
+        "normalVariant": true
+      },
+      {
+        "name": "Bronchi and Bronchioles",
+        "content": "The airways demonstrate [no bronchial wall thickening / no bronchiectasis / no tree-in-bud opacities]. The bronchi are [patent / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Vessels",
+        "content": "The pulmonary vessels are [normal in caliber / no pulmonary arterial hypertension]. No embolic disease.",
+        "normalVariant": true
+      },
+      {
+        "name": "Lymph Nodes",
+        "content": "The mediastinal and hilar lymph nodes are [not enlarged / no lymphadenopathy]. No abnormal lymph node enlargement.",
+        "normalVariant": true
+      },
+      {
+        "name": "Pleura",
+        "content": "The bilateral pleura demonstrate [no thickening / no plaques / no calcification]. No pleural effusion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Expiratory Images",
+        "content": "The expiratory images demonstrate [no air-trapping / no mosaic attenuation]. No small airway disease.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal high-resolution chest CT.\n2. No interstitial lung disease, ground-glass opacity, or honeycombing identified.\n3. No evidence of small airway disease on expiratory images.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

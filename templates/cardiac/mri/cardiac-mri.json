@@ -1,0 +1,45 @@
+{
+  "id": "cardiac-mri",
+  "name": "Cardiac MRI",
+  "version": "1.0.0",
+  "description": "Cardiac MRI for comprehensive cardiac evaluation including function and tissue characterization",
+  "modality": "mri",
+  "bodyRegion": "chest",
+  "subspecialty": "cardiac",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["cardiac", "heart", "mri", "cmr", "function"]
+  },
+  "findings": {
+    "technique": "Cardiac MRI was performed with cine imaging, T1/T2 mapping, and late gadolinium enhancement.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Left Ventricle",
+        "content": "Left ventricle [normal systolic function / LVEF __% / no regional wall motion abnormality]. No LV hypertrophy.",
+        "normalVariant": true
+      },
+      {
+        "name": "Right Ventricle",
+        "content": "Right ventricle [normal size / normal function / RVEF __%]. No RV dysfunction.",
+        "normalVariant": true
+      },
+      {
+        "name": "Myocardium",
+        "content": "Myocardium [no late gadolinium enhancement / no fibrosis / no infarction pattern].",
+        "normalVariant": true
+      },
+      {
+        "name": "Valves",
+        "content": "Cardiac valves [appear normal / no significant regurgitation / no stenosis].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal cardiac MRI.\n2. Normal biventricular function.\n3. No myocardial fibrosis or scar.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

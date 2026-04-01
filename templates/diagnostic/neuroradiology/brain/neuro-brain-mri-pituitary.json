@@ -1,0 +1,73 @@
+{
+  "id": "neuro-brain-mri-pituitary",
+  "name": "Brain MRI Pituitary Protocol",
+  "version": "1.0.0",
+  "description": "Dedicated brain MRI protocol for evaluation of the pituitary gland and sella region",
+  "modality": "mri",
+  "bodyRegion": "sella",
+  "subspecialty": "neuroradiology",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "pituitary", "sella", "pituitary adenoma", "neuroradiology"],
+    "cptCodes": ["70551", "70553"],
+    "radlexCodes": ["RID10456", "RID10457", "RID28715"]
+  },
+  "findings": {
+    "technique": "Dedicated pituitary protocol MRI including thin-slice sagittal and coronal T1, T2, FLAIR, and post-contrast T1 sequences through the sella region.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Pituitary Gland",
+        "content": "The pituitary gland measures approximately [X mm in craniocaudal dimension] and demonstrates [normal T1 signal / homogeneous signal / no mass lesion]. The gland is [normally positioned / partially empty sella / asymmetric].",
+        "normalVariant": true
+      },
+      {
+        "name": "Pituitary Microadenoma",
+        "content": "There is [no hypointense lesion on T1 / no focal lesion / no adenoma identified] within the pituitary gland.",
+        "normalVariant": true
+      },
+      {
+        "name": "Macroadenoma",
+        "content": "There is [no sellar mass / no macroadenoma / no suprasellar extension]. The optic chiasm is [not elevated / not compressed].",
+        "normalVariant": true
+      },
+      {
+        "name": "Post-Contrast Enhancement",
+        "content": "Following contrast administration, the pituitary gland demonstrates [homogeneous enhancement / no abnormal enhancement / no delayed enhancement].",
+        "normalVariant": true
+      },
+      {
+        "name": "Suprasellar Region",
+        "content": "The suprasellar region demonstrates [no mass / no abnormal enhancement / no cyst]. The infundibulum is [midline / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Optic Chiasm",
+        "content": "The optic chiasm is [normal in position / not elevated / not displaced]. No abnormal signal in the chiasm.",
+        "normalVariant": true
+      },
+      {
+        "name": "Cavernous Sinus",
+        "content": "The bilateral cavernous sinuses are [patent / unremarkable]. The carotid arteries are [normal in course / not encased / no narrowing]. No abnormal cavernous sinus enhancement.",
+        "normalVariant": true
+      },
+      {
+        "name": "Sella Turcica",
+        "content": "The sella turcica demonstrates [normal morphology / no bony erosion / no abnormal mineralization]. The dorsum sellae is intact.",
+        "normalVariant": true
+      },
+      {
+        "name": "Hypothalamus and Mammillary Bodies",
+        "content": "The hypothalamus demonstrates [normal signal / no abnormality]. The mammillary bodies are [intact / normal].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal pituitary MRI.\n2. No sellar or suprasellar mass identified.\n3. The pituitary gland is normal in size and morphology.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

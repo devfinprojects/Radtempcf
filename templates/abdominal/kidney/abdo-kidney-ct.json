@@ -1,0 +1,50 @@
+{
+  "id": "abdo-kidney-ct",
+  "name": "Abdomen CT With Contrast - Kidneys",
+  "version": "1.0.0",
+  "description": "Abdomen CT with contrast focused on renal evaluation",
+  "modality": "ct",
+  "bodyRegion": "kidney",
+  "subspecialty": "abdominal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["abdomen", "kidney", "renal", "ct", "contrast"]
+  },
+  "findings": {
+    "technique": "CT of the abdomen and pelvis with intravenous contrast was performed.",
+    "comparison": "No prior imaging for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Right Kidney",
+        "content": "Right kidney: [Measures __ cm in length / No hydronephrosis / No renal mass identified / No perinephric stranding]. Corticomedullary differentiation [is preserved / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Kidney",
+        "content": "Left kidney: [Measures __ cm in length / No hydronephrosis / No renal mass identified / No perinephric stranding]. Corticomedullary differentiation [is preserved / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Adrenal Glands",
+        "content": "Right adrenal: [normal / no mass]. Left adrenal: [normal / no mass]. No adrenal nodule identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Ureters",
+        "content": "Both ureters [are not dilated / no evidence of obstruction]. No calculus identified in the ureter.",
+        "normalVariant": true
+      },
+      {
+        "name": "Bladder",
+        "content": "The bladder [is adequately distended / shows no wall thickening / no filling defect]. No mass identified.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. [No renal mass or hydronephrosis / Both kidneys unremarkable].\n2. [No adrenal mass / Normal adrenal glands].\n3. [No acute finding / Recommend routine follow-up if indicated].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

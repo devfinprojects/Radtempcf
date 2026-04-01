@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/devfinprojects/Radtempcf/main/mappings/loinc.schema.json",
+  "title": "LOINC Document Code Mapping",
+  "description": "Mapping of radiology template types to LOINC document codes",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "templateId": {
+      "type": "string",
+      "description": "Reference to template ID"
+    },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["templateType", "loincCode", "loincTerm"],
+        "properties": {
+          "templateType": {
+            "type": "string",
+            "description": "Template type or modality"
+          },
+          "loincCode": {
+            "type": "string",
+            "pattern": "^\\d{3,5}(-\\d{1,4})?$",
+            "description": "LOINC code"
+          },
+          "loincTerm": {
+            "type": "string",
+            "description": "Official LOINC term name"
+          },
+          "loincClass": {
+            "type": "string",
+            "description": "LOINC class"
+          }
+        }
+      }
+    },
+    "version": {
+      "type": "string",
+      "default": "1.0.0"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "neuro-brain-mri-ms",
+  "name": "Brain MRI Multiple Sclerosis Protocol",
+  "version": "1.0.0",
+  "description": "Brain MRI protocol for multiple sclerosis evaluation with FLAIR, T1, and magnetization transfer imaging",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "multiple sclerosis", "ms", "demyelination", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "MRI brain with MS protocol including sagittal FLAIR, axial T1, T2, FLAIR, and post-contrast sequences.",
+    "comparison": "No prior MRI studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Periventricular",
+        "content": "No periventricular white matter lesions. No demyelinating plaques adjacent to lateral ventricles.",
+        "normalVariant": true
+      },
+      {
+        "name": "Juxtacortical",
+        "content": "No juxtacortical lesions. No lesions involving the subcortical U-fibers.",
+        "normalVariant": true
+      },
+      {
+        "name": "Infratentorial",
+        "content": "Posterior fossa is [unremarkable / no lesions in the brainstem or cerebellum]. No lesions in the corpus callosum.",
+        "normalVariant": true
+      },
+      {
+        "name": "Post-Contrast",
+        "content": "No enhancing lesions. No active demyelination with contrast enhancement.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No plaques of multiple sclerosis identified.\n2. No demyelinating lesions.\n3. Normal MS protocol study.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

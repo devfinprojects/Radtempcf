@@ -1,0 +1,63 @@
+{
+  "id": "nm-pet-whole-body",
+  "name": "PET/CT Whole Body",
+  "version": "1.0.0",
+  "description": "FDG PET/CT whole body imaging for oncologic evaluation and staging",
+  "modality": "pet-ct",
+  "bodyRegion": "whole-body",
+  "subspecialty": "nuclear-medicine",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["nuclear medicine", "pet", "pet-ct", "fdg", "oncology", "whole body", "cancer staging"],
+    "cptCodes": ["78815", "78816"],
+    "radlexCodes": ["RID10800", "RID10801"]
+  },
+  "findings": {
+    "technique": "FDG PET/CT was performed from the skull base to the mid-thighs following approximately [X] mCi of FDG administration. Low-dose CT was used for attenuation correction and localization.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Brain",
+        "content": "The brain demonstrates [no abnormal FDG uptake / physiologic distribution]. No hypermetabolic foci to suggest metastatic disease.",
+        "normalVariant": true
+      },
+      {
+        "name": "Head and Neck",
+        "content": "The head and neck demonstrate [no abnormal FDG uptake / physiologic distribution]. No hypermetabolic lymph nodes or masses.",
+        "normalVariant": true
+      },
+      {
+        "name": "Chest",
+        "content": "The lungs demonstrate [no hypermetabolic nodules / no abnormal FDG uptake]. The mediastinal lymph nodes demonstrate [no abnormal FDG uptake / physiologic activity].",
+        "normalVariant": true
+      },
+      {
+        "name": "Abdomen and Pelvis",
+        "content": "The liver demonstrates [no abnormal FDG uptake / physiologic distribution]. The spleen is [unremarkable]. No hypermetabolic masses in the abdomen or pelvis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Musculoskeletal",
+        "content": "The bones demonstrate [no abnormal FDG uptake / no hypermetabolic lesions to suggest metastatic disease].",
+        "normalVariant": true
+      },
+      {
+        "name": "Lymph Nodes",
+        "content": "There is [no pathologically enlarged lymph nodes / no hypermetabolic lymphadenopathy] identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Bone Marrow",
+        "content": "The bone marrow demonstrates [physiologic FDG uptake / no abnormal hypermetabolic activity].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal FDG PET/CT whole body study.\n2. No evidence of hypermetabolic malignancy or metastatic disease.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,77 @@
+---
+// Modalities Index Page
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const modalities = [
+  { 
+    id: 'ct', 
+    name: 'CT', 
+    fullName: 'Computed Tomography', 
+    count: 150, 
+    description: 'Cross-sectional imaging using X-rays and computer processing.',
+    templates: ['Brain CT - Stroke', 'Chest CT - Lung', 'Abdomen CT - Liver', 'Spine CT']
+  },
+  { 
+    id: 'mri', 
+    name: 'MRI', 
+    fullName: 'Magnetic Resonance Imaging', 
+    count: 120, 
+    description: 'Uses strong magnetic fields and radio waves to create detailed images.',
+    templates: ['Brain MRI - T2 FLAIR', 'Spine MRI', 'Prostate MRI', 'Abdomen MRI']
+  },
+  { 
+    id: 'x-ray', 
+    name: 'X-Ray', 
+    fullName: 'Plain Radiography', 
+    count: 100, 
+    description: 'Traditional X-ray imaging for bones and chest.',
+    templates: ['Chest X-Ray', 'Bone X-Ray', 'Mammography', 'Abdominal X-Ray']
+  },
+  { 
+    id: 'ultrasound', 
+    name: 'Ultrasound', 
+    fullName: 'Diagnostic Ultrasound', 
+    count: 80, 
+    description: 'Uses sound waves to create images of internal structures.',
+    templates: ['Thyroid Ultrasound', 'Abdominal Ultrasound', 'Obstetric Ultrasound', 'Vascular Ultrasound']
+  },
+  { 
+    id: 'nuclear', 
+    name: 'Nuclear', 
+    fullName: 'Nuclear Medicine & PET', 
+    count: 60, 
+    description: 'Uses radioactive tracers to visualize organ function.',
+    templates: ['PET/CT Brain', 'Bone Scan', 'Cardiac PET', 'Thyroid Scan']
+  },
+  { 
+    id: 'fluoroscopy', 
+    name: 'Fluoroscopy', 
+    fullName: 'Fluoroscopic Studies', 
+    count: 40, 
+    description: 'Real-time X-ray imaging for dynamic studies.',
+    templates: ['Upper GI', 'Barium Enema', 'Myelogram', 'Hysterosalpingogram']
+  },
+];
+---
+
+<BaseLayout title="Modalities">
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4">Imaging Modalities</h1>
+    <p class="text-xl text-gray-600 dark:text-gray-400 mb-12">
+      Browse templates by imaging modality - the technique used to acquire the medical images.
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {modalities.map(modality => (
+        <a href={`/modalities/${modality.id}`} class="block bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-semibold">{modality.name}</h2>
+            <span class="text-2xl font-bold text-blue-600">{modality.count}</span>
+          </div>
+          <p class="text-gray-600 dark:text-gray-400 mb-4">{modality.fullName}</p>
+          <p class="text-sm text-gray-500 dark:text-gray-500">{modality.description}</p>
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

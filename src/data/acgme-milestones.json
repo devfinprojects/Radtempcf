@@ -1,0 +1,261 @@
+{
+  "$schema": "https://radreport.org/schemas/acgme.json",
+  "title": "ACGME Milestone Mapping for Radiology",
+  "description": "Maps radiology report templates to ACGME Milestones for resident education and assessment",
+  "version": "1.0.0",
+  "lastUpdated": "2026-03-30",
+  "milestones": {
+    "patientCare": {
+      "level1": {
+        "description": "Demonstrates knowledge of patient care elements in radiology reports",
+        "indicators": [
+          "Identifies basic anatomy in imaging studies",
+          "Recognizes normal vs abnormal findings",
+          "Uses appropriate radiology terminology"
+        ]
+      },
+      "level2": {
+        "description": "Applies patient care knowledge to routine radiology interpretation",
+        "indicators": [
+          "Accurately describes imaging findings",
+          "Formulates basic differential diagnoses",
+          "Uses standardized reporting language"
+        ]
+      },
+      "level3": {
+        "description": "Independently interprets common radiology studies",
+        "indicators": [
+          "Provides complete and accurate reports",
+          "Appropriately correlates clinical findings",
+          "Recommends appropriate follow-up"
+        ]
+      },
+      "level4": {
+        "description": "Manages complex radiology cases independently",
+        "indicators": [
+          "Interprets advanced imaging studies",
+          "Integrates multiple imaging modalities",
+          "Provides expert consultation"
+        ]
+      },
+      "level5": {
+        "description": "Serves as expert consultant and educator",
+        "indicators": [
+          "Leads quality improvement initiatives",
+          "Mentors junior residents",
+          "Contributes to scholarship in area of expertise"
+        ]
+      }
+    },
+    "medicalKnowledge": {
+      "level1": {
+        "description": "Demonstrates basic medical knowledge relevant to radiology",
+        "indicators": [
+          "Knows anatomy and pathophysiology",
+          "Understands imaging modalities and techniques",
+          "Aware of radiation safety principles"
+        ]
+      },
+      "level2": {
+        "description": "Applies medical knowledge to imaging interpretation",
+        "indicators": [
+          "Correlates imaging with clinical presentation",
+          "Understands disease processes and progression",
+          "Knows appropriate imaging workups"
+        ]
+      },
+      "level3": {
+        "description": "Demonstrates in-depth knowledge of radiology subspecialties",
+        "indicators": [
+          "Expert knowledge in chosen subspecialty",
+          "Understands advanced imaging protocols",
+          "Aware of emerging technologies"
+        ]
+      },
+      "level4": {
+        "description": "Demonstrates mastery of radiology knowledge",
+        "indicators": [
+          "Contributes to educational resources",
+          "Participates in research activities",
+          "Provides expert opinions"
+        ]
+      },
+      "level5": {
+        "description": "Recognized as expert in radiology domain",
+        "indicators": [
+          "Published expert in field",
+          "Leader in professional organizations",
+          "Innovator in practice"
+        ]
+      }
+    },
+    "practiceBasedLearning": {
+      "level1": {
+        "description": "Identifies learning opportunities in radiology practice",
+        "indicators": [
+          "Acknowledges knowledge gaps",
+          "Uses educational resources appropriately",
+          "Responds to feedback"
+        ]
+      },
+      "level2": {
+        "description": "Uses evidence-based medicine in practice",
+        "indicators": [
+          "Searches literature for answers",
+          "Applies guidelines to practice",
+          "Participates in conferences"
+        ]
+      },
+      "level3": {
+        "description": "Independently improves practice through evidence",
+        "indicators": [
+          "Critically appraises literature",
+          "Implements practice changes",
+          "Teaches others"
+        ]
+      },
+      "level4": {
+        "description": "Leads practice improvement initiatives",
+        "indicators": [
+          "Designs quality improvement projects",
+          "Analyzes practice patterns",
+          "Mentors peers"
+        ]
+      },
+      "level5": {
+        "description": "Transforms practice through scholarship",
+        "indicators": [
+          "Leads institutional change",
+          "Publishes improvement work",
+          "National expert in area"
+        ]
+      }
+    },
+    "interpersonalSkills": {
+      "level1": {
+        "description": "Communicates effectively with patients and team",
+        "indicators": [
+          "Uses clear language in reports",
+          "Respects patient confidentiality",
+          "Professional demeanor"
+        ]
+      },
+      "level2": {
+        "description": "Communicates complex findings effectively",
+        "indicators": [
+          "Clearly conveys urgent findings",
+          "Provides appropriate recommendations",
+          "Documents communication"
+        ]
+      },
+      "level3": {
+        "description": "Effectively communicates in challenging situations",
+        "indicators": [
+          "Communicates critical results appropriately",
+          "Handles difficult conversations",
+          "Collaborates with multidisciplinary teams"
+        ]
+      },
+      "level4": {
+        "description": "Serves as communication leader",
+        "indicators": [
+          "Leads team discussions",
+          "Mentors communication skills",
+          "Improves communication systems"
+        ]
+      },
+      "level5": {
+        "description": "Model for excellence in communication",
+        "indicators": [
+          "National presenter on communication",
+          "Develops communication curricula",
+          "Expert consultant"
+        ]
+      }
+    },
+    "professionalism": {
+      "level1": {
+        "description": "Demonstrates professional behaviors",
+        "indicators": [
+          "Punctual and prepared",
+          "Honest and ethical",
+          "Respectful to all"
+        ]
+      },
+      "level2": {
+        "description": "Takes ownership of professional responsibilities",
+        "indicators": [
+          "Completes tasks reliably",
+          "Acknowledges errors appropriately",
+          "Manages workload effectively"
+        ]
+      },
+      "level3": {
+        "description": "Models professionalism in complex situations",
+        "indicators": [
+          "Handles stress appropriately",
+          "Advocates for patients",
+          "Maintains work-life balance"
+        ]
+      },
+      "level4": {
+        "description": "Leads professionalism initiatives",
+        "indicators": [
+          "Mentors professional development",
+          "Addresses professionalism issues",
+          "Improves systems"
+        ]
+      },
+      "level5": {
+        "description": "Recognized as professional leader",
+        "indicators": [
+          "Awarded for professionalism",
+          "National leadership role",
+          "Role model for specialty"
+        ]
+      }
+    },
+    "systemsBasedPractice": {
+      "level1": {
+        "description": "Understands healthcare systems relevant to radiology",
+        "indicators": [
+          "Aware of healthcare delivery systems",
+          "Uses electronic health records",
+          "Understands billing and coding"
+        ]
+      },
+      "level2": {
+        "description": "Uses resources effectively in healthcare system",
+        "indicators": [
+          "Appropriately orders imaging",
+          "Understands utilization management",
+          "Participates in quality activities"
+        ]
+      },
+      "level3": {
+        "description": "Optimizes system resources for patient care",
+        "indicators": [
+          "Improves workflow efficiency",
+          "Advocates for patients in system",
+          "Uses evidence-based resource allocation"
+        ]
+      },
+      "level4": {
+        "description": "Leads system improvement initiatives",
+        "indicators": [
+          "Leads quality improvement projects",
+          "Designs new systems",
+          "Mentors others in systems"
+        ]
+      },
+      "level5": {
+        "description": "Transforms healthcare systems",
+        "indicators": [
+          "National leader in health systems",
+          "Innovates practice models",
+          "Impacts health policy"
+        ]
+      }
+    }
+  }
+}

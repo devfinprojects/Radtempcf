@@ -1,0 +1,68 @@
+{
+  "id": "rads-pirads",
+  "name": "PI-RADS (Prostate Imaging Reporting and Data System)",
+  "version": "1.0.0",
+  "description": "PI-RADS v2.1 classification template for prostate MRI assessment",
+  "modality": "mri",
+  "bodyRegion": "prostate",
+  "subspecialty": "genitourinary",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["rads", "prostate", "pi-rads", "mri", "cancer"]
+  },
+  "rads": {
+    "system": "PI-RADS",
+    "category": "PI-RADS 4",
+    "score": 4,
+    "assessment": "Clinically significant cancer is likely to be present",
+    "recommendation": "Targeted biopsy recommended",
+    "lesionLocation": "Peripheral zone, [right/left] apex/mid/base",
+    "size": {
+      "value": 1.2,
+      "unit": "cm"
+    },
+    "date": "2026-03-30"
+  },
+  "findings": {
+    "technique": "Multiparametric prostate MRI performed at [X]T including T2-weighted, DWI (b-values: 50, 500, 1000, 2000), and dynamic contrast-enhanced sequences. PI-RADS v2.1 scoring applied.",
+    "comparison": "Comparison made with [prior MRI / prior biopsy] from [date].",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "T2-Weighted",
+        "content": "Peripheral zone: [homogeneous intermediate signal / focal hypointense area] in [location]. [Transition zone:nodular BPH / focal abnormality] identified.",
+        "normalVariant": false
+      },
+      {
+        "name": "DWI",
+        "content": "DWI demonstrates [focal restricted diffusion / ADC map shows focal low signal] in [location] measuring [X]mm. Maximum b2000 signal: [high/intermediate/low].",
+        "normalVariant": false
+      },
+      {
+        "name": "DCE",
+        "content": "Dynamic contrast-enhanced: [focal early enhancement / no focal enhancement / negative] in [location]. [Positive / Negative] for extracapsular extension.",
+        "normalVariant": false
+      },
+      {
+        "name": "Peripheral Zone Score",
+        "content": "PI-RADS score for peripheral zone lesion: [1-5]. DWI contributes [X] points.",
+        "normalVariant": false
+      },
+      {
+        "name": "Transition Zone Score",
+        "content": "PI-RADS score for transition zone lesion: [1-5]. T2W contributes [X] points.",
+        "normalVariant": false
+      },
+      {
+        "name": "ECE Assessment",
+        "content": "Extracapsular extension: [Present / Absent / Indeterminate]. Neurovascular bundle: [involved / not involved].",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. PI-RADS [X]: [category description]\n2. [Dominant lesion location] with [size] measurement\n3. [ECE: present/absent]. [Seminal vesicle invasion: present/absent]. [Lymph nodes: abnormal/normal].\n4. Targeted biopsy to [location] recommended.\n5. Overall assessment: [clinical significance and recommendations]",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

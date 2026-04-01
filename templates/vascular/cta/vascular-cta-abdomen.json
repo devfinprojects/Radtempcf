@@ -1,0 +1,40 @@
+{
+  "id": "vascular-cta-abdomen",
+  "name": "CTA Abdominal Aorta",
+  "version": "1.0.0",
+  "description": "CT angiography of the abdominal aorta for aneurysm and stenosis evaluation",
+  "modality": "ct",
+  "bodyRegion": "vascular",
+  "subspecialty": "vascular",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["vascular", "aorta", "cta", "aneurysm", "abdomen"]
+  },
+  "findings": {
+    "technique": "CT angiography of the abdomen was performed following intravenous contrast.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Abdominal Aorta",
+        "content": "Abdominal aorta [no aneurysm / no dilatation / normal caliber]. No dissection.",
+        "normalVariant": true
+      },
+      {
+        "name": "Renal Arteries",
+        "content": "Renal arteries [are patent / no stenosis / no fibromuscular dysplasia] bilaterally.",
+        "normalVariant": true
+      },
+      {
+        "name": "Iliac Arteries",
+        "content": "Common iliac arteries [are patent / no stenosis / no aneurysm] bilaterally.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No abdominal aortic aneurysm.\n2. No renal artery stenosis.\n3. Normal abdominal vascular CTA.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

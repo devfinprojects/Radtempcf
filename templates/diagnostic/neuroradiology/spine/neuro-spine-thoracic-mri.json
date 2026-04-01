@@ -1,0 +1,68 @@
+{
+  "id": "neuro-spine-thoracic-mri",
+  "name": "Thoracic Spine MRI Without Contrast",
+  "version": "1.0.0",
+  "description": "Standard thoracic spine MRI report template without contrast for evaluation of spinal cord and canal pathology",
+  "modality": "mri",
+  "bodyRegion": "spine",
+  "subspecialty": "neuroradiology",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["spine", "thoracic", "mri", "neuroradiology", "t-spine", "spinal cord"],
+    "cptCodes": ["72146"],
+    "radlexCodes": ["RID10501", "RID10502"]
+  },
+  "findings": {
+    "technique": "MRI of the thoracic spine was performed including T1-weighted, T2-weighted, and STIR sequences in sagittal and axial planes.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Vertebral Bodies",
+        "content": "The thoracic vertebral bodies from T1 through T12 demonstrate [normal height / no compression fracture / no bony lesion]. The bone marrow signal is [normal / no abnormal signal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Disc Levels",
+        "content": "At each disc level from T1-T2 through T11-T12, the intervertebral discs demonstrate [normal height / no bulge / no protrusion / no herniation]. No significant disc disease.",
+        "normalVariant": true
+      },
+      {
+        "name": "Spinal Canal",
+        "content": "The spinal canal is [patent / adequate in diameter]. No significant canal stenosis. No mass lesion in the canal.",
+        "normalVariant": true
+      },
+      {
+        "name": "Spinal Cord",
+        "content": "The thoracic spinal cord demonstrates [normal T2 signal / no cord compression / no cord edema / no myelomalacia]. The cord is [normal in caliber / no atrophy]. The conus medullaris is at the [T12 / L1] level.",
+        "normalVariant": true
+      },
+      {
+        "name": "Neural Foramina",
+        "content": "The bilateral neural foramina are [patent / adequate in size / no foraminal narrowing]. No nerve root compression.",
+        "normalVariant": true
+      },
+      {
+        "name": "Posterior Elements",
+        "content": "The posterior elements including the pedicles, laminae, facet joints, and spinous processes are [intact / no fracture / no lesion]. The ligamentum flavum is [not hypertrophied / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Paravertebral Soft Tissues",
+        "content": "The paravertebral soft tissues are [unremarkable / no abnormal signal / no mass]. No paraspinal abnormality.",
+        "normalVariant": true
+      },
+      {
+        "name": "Epidural Space",
+        "content": "The epidural space is [normal / no mass / no abnormal enhancement]. No epidural fibrosis or lipomatosis.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal thoracic spine MRI.\n2. No disc herniation, spinal canal stenosis, or cord abnormality identified.\n3. The conus medullaris is at normal T12/L1 level.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "pediatric-brain-us",
+  "name": "Pediatric Head Ultrasound",
+  "version": "1.0.0",
+  "description": "Head ultrasound for neonatal intracranial evaluation",
+  "modality": "us",
+  "bodyRegion": "brain",
+  "subspecialty": "pediatric",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["pediatric", "head", "ultrasound", "neonate", "intracranial"]
+  },
+  "findings": {
+    "technique": "Transfontanellar head ultrasound was performed through the anterior fontanelle.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Ventricles",
+        "content": "Lateral ventricles [are normal in size / no dilatation / no hemorrhage]. Third ventricle [normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Parenchyma",
+        "content": "Brain parenchyma [shows normal echogenicity / no hemorrhage / no cystic changes].",
+        "normalVariant": true
+      },
+      {
+        "name": "Germinal Matrix",
+        "content": "Germinal matrix [no echogenic focus / no hemorrhage].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal neonatal head ultrasound.\n2. No intraventricular hemorrhage.\n3. No structural abnormality.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

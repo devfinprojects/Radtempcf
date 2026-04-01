@@ -1,0 +1,157 @@
+{
+  "templateId": "loinc-mapping-base",
+  "mappings": [
+    {
+      "templateType": "Brain CT",
+      "loincCode": "36643-5",
+      "loincTerm": "CT Brain",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Brain MRI",
+      "loincCode": "36657-5",
+      "loincTerm": "MRI Brain",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Spine MRI",
+      "loincCode": "36656-7",
+      "loincTerm": "MRI Spine",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Spine CT",
+      "loincCode": "36642-7",
+      "loincTerm": "CT Spine",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Chest CT",
+      "loincCode": "36646-8",
+      "loincTerm": "CT Chest",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Chest X-ray",
+      "loincCode": "36625-2",
+      "loincTerm": "Chest X-ray",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Chest MRI",
+      "loincCode": "36655-9",
+      "loincTerm": "MRI Chest",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Abdomen CT",
+      "loincCode": "36637-9",
+      "loincTerm": "CT Abdomen",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Abdomen MRI",
+      "loincCode": "36653-4",
+      "loincTerm": "MRI Abdomen",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Abdomen Ultrasound",
+      "loincCode": "36801-1",
+      "loincTerm": "US Abdomen",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Pelvis CT",
+      "loincCode": "36638-7",
+      "loincTerm": "CT Pelvis",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Pelvis MRI",
+      "loincCode": "36654-2",
+      "loincTerm": "MRI Pelvis",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Mammogram",
+      "loincCode": "36623-7",
+      "loincTerm": "Mammography",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Cardiac CT",
+      "loincCode": "36640-3",
+      "loincTerm": "CT Heart",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Cardiac MRI",
+      "loincCode": "36652-6",
+      "loincTerm": "MRI Heart",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Vascular CTA",
+      "loincCode": "36754-0",
+      "loincTerm": "CT Angiography",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Vascular MRA",
+      "loincCode": "36755-7",
+      "loincTerm": "MR Angiography",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Bone X-ray",
+      "loincCode": "36636-1",
+      "loincTerm": "X-ray Skeletal",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "PET Scan",
+      "loincCode": "36751-8",
+      "loincTerm": "PET",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Nuclear Medicine",
+      "loincCode": "36749-2",
+      "loincTerm": "Nuclear medicine study",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Head CT",
+      "loincCode": "36644-3",
+      "loincTerm": "CT Head",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Neck CT",
+      "loincCode": "36639-5",
+      "loincTerm": "CT Neck",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Liver CT",
+      "loincCode": "36637-9",
+      "loincTerm": "CT Abdomen",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": "Kidney CT",
+      "loincCode": "36637-9",
+      "loincTerm": "CT Abdomen",
+      "loincClass": "RAD"
+    },
+    {
+      "templateType": " Thyroid Ultrasound",
+      "loincCode": "36801-1",
+      "loincTerm": "US Neck",
+      "loincClass": "RAD"
+    }
+  ],
+  "version": "1.0.0",
+  "lastUpdated": "2026-03-30T17:35:00.000Z"
+}

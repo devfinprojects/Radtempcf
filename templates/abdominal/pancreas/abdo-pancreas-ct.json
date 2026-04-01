@@ -1,0 +1,45 @@
+{
+  "id": "abdo-pancreas-ct",
+  "name": "Abdomen CT Pancreas Protocol",
+  "version": "1.0.0",
+  "description": "CT of the abdomen with pancreatic protocol for pancreas evaluation",
+  "modality": "ct",
+  "bodyRegion": "abdomen",
+  "subspecialty": "abdominal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["abdomen", "pancreas", "ct", "contrast", "pancreatic"]
+  },
+  "findings": {
+    "technique": "CT of the abdomen with pancreatic protocol including arterial and portal venous phases.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Pancreas",
+        "content": "Pancreas [is normal in size / no mass / no ductal dilation / no pancreatitis].",
+        "normalVariant": true
+      },
+      {
+        "name": "Pancreatic Duct",
+        "content": "Pancreatic duct [is not dilated / normal caliber].",
+        "normalVariant": true
+      },
+      {
+        "name": "Peripancreatic Tissue",
+        "content": "Peripancreatic fat [is clean / no stranding / no fluid collections].",
+        "normalVariant": true
+      },
+      {
+        "name": "Liver and Spleen",
+        "content": "Liver and spleen [are unremarkable / no focal lesions].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal pancreas.\n2. No pancreatic mass or pancreatitis.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

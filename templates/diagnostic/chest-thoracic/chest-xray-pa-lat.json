@@ -1,0 +1,63 @@
+{
+  "id": "chest-xray-pa-lat",
+  "name": "Chest X-Ray PA and Lateral",
+  "version": "1.0.0",
+  "description": "Standard chest radiograph with PA and lateral views for evaluation of thoracic pathology",
+  "modality": "xr",
+  "bodyRegion": "chest",
+  "subspecialty": "chest-thoracic",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["chest", "xray", "xr", "pa", "lateral", "radiograph", "thoracic"],
+    "cptCodes": ["71046"],
+    "radlexCodes": ["RID10290", "RID10291"]
+  },
+  "findings": {
+    "technique": "PA and lateral chest radiographs were obtained.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Lungs",
+        "content": "The lungs are [clear / no consolidation / no mass / no infiltrate]. The lung volumes are [adequate / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Pulmonary Vessels",
+        "content": "The pulmonary vessels are [normal in caliber / not enlarged / no engorgement]. The hilum is [normal / not enlarged].",
+        "normalVariant": true
+      },
+      {
+        "name": "Heart and Mediastinum",
+        "content": "The heart size is [normal / not enlarged]. The mediastinal contours are [normal / no mass / no widening]. The trachea is [midline / not deviated].",
+        "normalVariant": true
+      },
+      {
+        "name": "Pleura",
+        "content": "The bilateral pleura demonstrate [no effusion / no thickening / no pneumothorax]. No pleural-based masses.",
+        "normalVariant": true
+      },
+      {
+        "name": "Osseous",
+        "content": "The thoracic vertebrae and ribs demonstrate [no fracture / no lytic or blastic lesion]. No bony abnormality.",
+        "normalVariant": true
+      },
+      {
+        "name": "Soft Tissues",
+        "content": "The chest wall soft tissues are [unremarkable / no mass / no infiltrate].",
+        "normalVariant": true
+      },
+      {
+        "name": "Upper Abdomen",
+        "content": "The bilateral hemidiaphragms are [intact / well-visualized]. The costophrenic angles are [sharp / no blunting].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal chest radiograph.\n2. No acute cardiopulmonary process.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

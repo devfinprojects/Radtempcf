@@ -1,0 +1,45 @@
+{
+  "id": "chest-xray-chest",
+  "name": "Chest X-Ray",
+  "version": "1.0.0",
+  "description": "Chest radiograph for thoracic evaluation",
+  "modality": "xr",
+  "bodyRegion": "chest",
+  "subspecialty": "chest",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["chest", "xray", "radiograph", "pa", "ap"]
+  },
+  "findings": {
+    "technique": "Frontal and lateral chest radiographs were obtained.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Lungs",
+        "content": "Lungs [are clear / no consolidation / no effusion]. No pneumothorax.",
+        "normalVariant": true
+      },
+      {
+        "name": "Heart",
+        "content": "Heart [normal size / no cardiomegaly]. Cardiac silhouette is normal.",
+        "normalVariant": true
+      },
+      {
+        "name": "Mediastinum",
+        "content": "Mediastinal and hilar structures [are normal / no lymphadenopathy].",
+        "normalVariant": true
+      },
+      {
+        "name": "Bones",
+        "content": "Osseous structures [no fracture / no destructive lesions].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal chest radiograph.\n2. No acute cardiopulmonary abnormality.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

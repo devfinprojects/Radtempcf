@@ -1,0 +1,45 @@
+{
+  "id": "msk-joint-mri",
+  "name": "Joint MRI",
+  "version": "1.0.0",
+  "description": "Standard musculoskeletal joint MRI template",
+  "modality": "mri",
+  "bodyRegion": "joint",
+  "subspecialty": "musculoskeletal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["musculoskeletal", "joint", "mri"]
+  },
+  "findings": {
+    "technique": "MRI of the [joint] was performed using standard protocols.",
+    "comparison": "No prior imaging for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": " ligaments",
+        "content": "[Joint] ligaments [are intact / no tear / no sprain] identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Meniscus/Cartilage",
+        "content": "The [meniscus/cartilage] [is intact / no tear / no degeneration].",
+        "normalVariant": true
+      },
+      {
+        "name": "Tendons",
+        "content": "[Joint] tendons [are intact / no tear / no tendinopathy].",
+        "normalVariant": true
+      },
+      {
+        "name": "Bones",
+        "content": "Bone [no fracture / no contusion / no osteochondral lesion] identified.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. [No acute abnormality / Ligaments intact].\n2. [Recommend physical therapy / No surgical intervention required].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

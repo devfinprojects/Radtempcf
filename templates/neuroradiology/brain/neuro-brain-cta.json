@@ -1,0 +1,45 @@
+{
+  "id": "neuro-brain-cta",
+  "name": "Brain CT Angiography",
+  "version": "1.0.0",
+  "description": "Brain CT angiography for evaluation of intracranial and extracranial vasculature",
+  "modality": "ct",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "cta", "angiography", "vessels", "neuroradiology", "stroke"]
+  },
+  "findings": {
+    "technique": "CT angiography of the head and neck was performed following intravenous contrast administration.",
+    "comparison": "No prior CTA studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Intracranial Arteries",
+        "content": "Intracranial internal carotid arteries: [patent / no stenosis / no aneurysm]. MCA, ACA, and PCA: [normal caliber / no stenosis / no occlusion].",
+        "normalVariant": true
+      },
+      {
+        "name": "Circle of Willis",
+        "content": "Circle of Willis is [complete / intact / no aneurysm / no fenestration].",
+        "normalVariant": true
+      },
+      {
+        "name": "Posterior Circulation",
+        "content": "Vertebral arteries: [patent / equal caliber / no dissection]. Basilar artery: [patent / no stenosis / no aneurysm].",
+        "normalVariant": true
+      },
+      {
+        "name": "Venous Sinuses",
+        "content": "Dural venous sinuses are [patent / no thrombosis / no filling defect]. Superior sagittal sinus is normal.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No aneurysm identified.\n2. No large vessel occlusion.\n3. Normal CTA of the brain.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

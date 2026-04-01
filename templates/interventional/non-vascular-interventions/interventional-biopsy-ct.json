@@ -1,0 +1,53 @@
+{
+  "id": "interventional-biopsy-ct",
+  "name": "CT-Guided Biopsy",
+  "version": "1.0.0",
+  "description": "CT-guided percutaneous biopsy procedure report template",
+  "modality": "biopsy",
+  "bodyRegion": "general",
+  "subspecialty": "interventional",
+  "clinicalContext": "interventional",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["interventional", "biopsy", "ct-guided", "procedure", "percutaneous"],
+    "cptCodes": ["32554"],
+    "radlexCodes": ["RID12920", "RID12921"]
+  },
+  "findings": {
+    "technique": "CT-guided percutaneous biopsy was performed using [X gauge] needle. The patient was positioned [supine/prone/decubitus] and the target was localized.",
+    "comparison": "N/A",
+    "limitations": "N/A",
+    "sections": [
+      {
+        "name": "Target Lesion",
+        "content": "The target lesion is located in the [location] and measures approximately [X] cm in greatest dimension.",
+        "normalVariant": true
+      },
+      {
+        "name": "Approach",
+        "content": "The biopsy needle was advanced via a [posterior/lateral/anterior] approach through the [organ/tissue] into the target lesion under CT guidance.",
+        "normalVariant": true
+      },
+      {
+        "name": "Procedure",
+        "content": "[X] passes were obtained through the lesion. Specimens were obtained for [cytology / pathology / microbiology].",
+        "normalVariant": true
+      },
+      {
+        "name": "Complications",
+        "content": "No immediate complication. No pneumothorax / no hemorrhage / no pain reported.",
+        "normalVariant": true
+      },
+      {
+        "name": "Post-Procedure",
+        "content": "Post-procedure scan demonstrates [no complication / no pneumothorax / no active bleeding]. The patient tolerated the procedure well.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "CT-guided percutaneous biopsy of [location] was performed without complication.\nSpecimens submitted for pathological analysis.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

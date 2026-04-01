@@ -1,0 +1,35 @@
+{
+  "id": "interventional-uterine-fibroid",
+  "name": "Uterine Fibroid Embolization",
+  "version": "1.0.0",
+  "description": "Uterine artery embolization for fibroid treatment",
+  "modality": "angiography",
+  "bodyRegion": "pelvis",
+  "subspecialty": "interventional",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["interventional", "ufe", "fibroid", "embolization", "uterine"]
+  },
+  "findings": {
+    "technique": "Uterine artery embolization was performed for fibroid treatment.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Uterine Arteries",
+        "content": "Right uterine artery [successfully embolized / complete stasis]. Left uterine artery [successfully embolized / complete stasis].",
+        "normalVariant": true
+      },
+      {
+        "name": "Anastomoses",
+        "content": "No significant extrauterine embolization. Ovarian artery collateral supply minimal.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Successful bilateral UAE performed.\n2. Complete stasis achieved bilaterally.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

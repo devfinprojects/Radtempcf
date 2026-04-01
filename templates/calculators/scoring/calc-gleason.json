@@ -1,0 +1,133 @@
+{
+  "id": "calc-gleason",
+  "name": "Gleason Score Calculator",
+  "version": "1.0.0",
+  "description": "Prostate cancer Gleason scoring system calculator with ISUP Grade Group conversion",
+  "modality": "calculator",
+  "bodyRegion": "prostate",
+  "subspecialty": "genitourinary",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["calculator", "gleason", "prostate", "cancer", "scoring", "isup"]
+  },
+  "calculator": {
+    "name": "Gleason Score Calculator",
+    "description": "Calculate Gleason score and ISUP Grade Group from primary and secondary patterns",
+    "inputs": [
+      {
+        "name": "primaryPattern",
+        "type": "select",
+        "label": "Primary Pattern (Most Common)",
+        "options": ["Pattern 3", "Pattern 4", "Pattern 5"]
+      },
+      {
+        "name": "secondaryPattern",
+        "type": "select",
+        "label": "Secondary Pattern (Second Most Common)",
+        "options": ["Pattern 3", "Pattern 4", "Pattern 5", "None (only primary)"]
+      },
+      {
+        "name": "tertiaryPattern",
+        "type": "select",
+        "label": "Tertiary Pattern (If Present)",
+        "options": ["None", "Pattern 3", "Pattern 4", "Pattern 5"]
+      },
+      {
+        "name": "specimenType",
+        "type": "select",
+        "label": "Specimen Type",
+        "options": ["Core biopsy", "Radical prostatectomy", "TURP", "Multiparametric MRI"]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "gleasonScore",
+        "label": "Gleason Score",
+        "description": "Combined primary + secondary pattern"
+      },
+      {
+        "name": "gleasonGrade",
+        "label": "Gleason Grade",
+        "description": "Sum of primary and secondary patterns (6-10)"
+      },
+      {
+        "name": "isupGradeGroup",
+        "label": "ISUP Grade Group",
+        "description": "Standardized grade grouping (1-5)"
+      },
+      {
+        "name": "prognosis",
+        "label": "Prognosis Category",
+        "description": "Favorable, Intermediate, or Unfavorable"
+      },
+      {
+        "name": "riskCategory",
+        "label": "NCCN Risk Category",
+        "description": "Based on Gleason score, PSA, and stage"
+      }
+    ],
+    "gradeMapping": [
+      {
+        "gleasonScore": "3+3=6",
+        "gleasonGrade": 6,
+        "isupGradeGroup": 1,
+        "prognosis": "Favorable",
+        "riskCategory": "Very Low / Low"
+      },
+      {
+        "gleasonScore": "3+4=7",
+        "gleasonGrade": 7,
+        "isupGradeGroup": 2,
+        "prognosis": "Favorable",
+        "riskCategory": "Intermediate Favorable"
+      },
+      {
+        "gleasonScore": "4+3=7",
+        "gleasonGrade": 7,
+        "isupGradeGroup": 3,
+        "prognosis": "Intermediate",
+        "riskCategory": "Intermediate Unfavorable"
+      },
+      {
+        "gleasonScore": "3+5=8",
+        "gleasonGrade": 8,
+        "isupGradeGroup": 4,
+        "prognosis": "Unfavorable",
+        "riskCategory": "High"
+      },
+      {
+        "gleasonScore": "5+3=8",
+        "gleasonGrade": 8,
+        "isupGradeGroup": 4,
+        "prognosis": "Unfavorable",
+        "riskCategory": "High"
+      },
+      {
+        "gleasonScore": "4+5=9",
+        "gleasonGrade": 9,
+        "isupGradeGroup": 5,
+        "prognosis": "Very Unfavorable",
+        "riskCategory": "Very High"
+      },
+      {
+        "gleasonScore": "5+4=9",
+        "gleasonGrade": 9,
+        "isupGradeGroup": 5,
+        "prognosis": "Very Unfavorable",
+        "riskCategory": "Very High"
+      },
+      {
+        "gleasonScore": "5+5=10",
+        "gleasonGrade": 10,
+        "isupGradeGroup": 5,
+        "prognosis": "Very Unfavorable",
+        "riskCategory": "Very High"
+      }
+    ],
+    "notes": "Tertiary pattern of 5 in Gleason 4+3=7 upgrades to ISUP Grade Group 4 (Grade Group migration)"
+  },
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "screening-lung-ct-low-dose",
+  "name": "Lung Cancer Screening CT (Low Dose)",
+  "version": "1.0.0",
+  "description": "Low-dose CT for lung cancer screening in high-risk patients per NLST criteria",
+  "modality": "ldct",
+  "bodyRegion": "chest",
+  "subspecialty": "screening",
+  "clinicalContext": "screening",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["screening", "lung", "cancer", "low dose", "ldct", "nlst", "lung-rads"],
+    "cptCodes": ["71250"],
+    "radlexCodes": ["RID10310", "RID10311"]
+  },
+  "findings": {
+    "technique": "Low-dose non-contrast CT of the chest was performed for lung cancer screening according to NLST protocol.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Lungs",
+        "content": "The lungs demonstrate [no nodules / no solid nodules / no subsolid nodules]. The parenchyma is [clear / no ground-glass opacities / no interstitial changes].",
+        "normalVariant": true
+      },
+      {
+        "name": "Nodules",
+        "content": "There are [no pulmonary nodules / no suspicious nodules] identified. No nodule requiring follow-up.",
+        "normalVariant": true
+      },
+      {
+        "name": "Airway",
+        "content": "The trachea and main bronchi are [patent / no obstruction / no stenosis]. No endobronchial lesion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Mediastinum",
+        "content": "The mediastinum demonstrates [no lymphadenopathy / no masses / no abnormalities]. The hila are [unremarkable].",
+        "normalVariant": true
+      },
+      {
+        "name": "Pleura",
+        "content": "The bilateral pleura demonstrate [no thickening / no effusion / no plaques]. No pleural abnormalities.",
+        "normalVariant": true
+      },
+      {
+        "name": "Cardiac Silhouette",
+        "content": "The cardiac silhouette is [normal / no cardiomegaly]. No acute cardiopulmonary process.",
+        "normalVariant": true
+      },
+      {
+        "name": "Upper Abdomen",
+        "content": "The upper abdomen is [unremarkable / no concerning findings] visualized on the inferior cuts.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "Lung-RADS Category 1: Negative. No lung nodules identified. Low probability of malignancy.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

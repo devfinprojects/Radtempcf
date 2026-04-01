@@ -1,0 +1,45 @@
+{
+  "id": "nuclear-pet-whole-body",
+  "name": "PET-CT Whole Body",
+  "version": "1.0.0",
+  "description": "Whole-body PET-CT for oncologic staging and evaluation",
+  "modality": "pet-ct",
+  "bodyRegion": "whole-body",
+  "subspecialty": "nuclear",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["nuclear", "pet-ct", "whole-body", "oncology", "staging"]
+  },
+  "findings": {
+    "technique": "Whole-body PET-CT was performed with FDG.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Head and Neck",
+        "content": "Head and neck [no FDG-avid lesions]. No pathologic lymph nodes.",
+        "normalVariant": true
+      },
+      {
+        "name": "Chest",
+        "content": "Chest [no FDG-avid pulmonary nodules / no mediastinal lymphadenopathy].",
+        "normalVariant": true
+      },
+      {
+        "name": "Abdomen and Pelvis",
+        "content": "Abdomen and pelvis [no FDG-avid masses / no organ involvement].",
+        "normalVariant": true
+      },
+      {
+        "name": "Skeleton",
+        "content": "Skeleton [no focal FDG-avid lesions].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No evidence of FDG-avid malignancy.\n2. Normal whole-body PET-CT.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

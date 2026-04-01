@@ -1,0 +1,45 @@
+{
+  "id": "breast-mri",
+  "name": "Breast MRI",
+  "version": "1.0.0",
+  "description": "Breast MRI with contrast for breast cancer screening and evaluation",
+  "modality": "mri",
+  "bodyRegion": "breast",
+  "subspecialty": "breast",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["breast", "mri", "cancer", "screening", "contrast"]
+  },
+  "findings": {
+    "technique": "Bilateral breast MRI was performed with T1, T2, and dynamic contrast sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Right Breast",
+        "content": "Right breast [no mass / no enhancement / no suspicious findings]. No abnormal non-mass enhancement.",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Breast",
+        "content": "Left breast [no mass / no enhancement / no suspicious findings]. No abnormal non-mass enhancement.",
+        "normalVariant": true
+      },
+      {
+        "name": "Axillae",
+        "content": "Axillary lymph nodes [are not enlarged / no pathologic nodes] bilaterally.",
+        "normalVariant": true
+      },
+      {
+        "name": "Background Parenchymal Enhancement",
+        "content": "Background parenchymal enhancement [is minimal / not significant].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No suspicious enhancement or masses in either breast.\n2. No abnormal axillary lymph nodes.\n3. Normal breast MRI.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

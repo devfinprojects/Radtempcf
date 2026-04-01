@@ -1,0 +1,50 @@
+{
+  "id": "neuro-spine-mri",
+  "name": "Lumbar Spine MRI Without Contrast",
+  "version": "1.0.0",
+  "description": "Standard lumbar spine MRI report template without contrast",
+  "modality": "mri",
+  "bodyRegion": "spine",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["spine", "mri", "lumbar", "neuroradiology", "non-contrast"]
+  },
+  "findings": {
+    "technique": "MRI of the lumbar spine was performed using T1, T2, and STIR sequences in sagittal and axial planes without contrast.",
+    "comparison": "No prior spine imaging available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Vertebral Body Morphology",
+        "content": "Vertebral body heights are [preserved / diminished]. No compression fracture identified. Endplate changes are [minimal /moderate / severe].",
+        "normalVariant": true
+      },
+      {
+        "name": "Disc Levels",
+        "content": "At L1-L2: [no disc bulge / disc bulge / disc protrusion] with [no / mild / moderate / severe] canal stenosis.\nAt L2-L3: [no disc bulge / disc bulge / disc protrusion] with [no / mild / moderate / severe] canal stenosis.\nAt L3-L4: [no disc bulge / disc bulge / disc protrusion] with [no / mild / moderate / severe] canal stenosis.\nAt L4-L5: [no disc bulge / disc bulge / disc protrusion] with [no / mild / moderate / severe] canal stenosis.\nAt L5-S1: [no disc bulge / disc bulge / disc protrusion] with [no / mild / moderate / severe] canal stenosis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Spinal Canal",
+        "content": "The spinal canal [does not demonstrate / demonstrates] significant stenosis at all levels evaluated.",
+        "normalVariant": true
+      },
+      {
+        "name": "Neural Foramina",
+        "content": "Neural foramina [are patent / show mild / show moderate / show severe] narrowing bilaterally.",
+        "normalVariant": true
+      },
+      {
+        "name": "Conus Medullaris",
+        "content": "The conus medullaris terminates at [normal level / low-lying]. No abnormal signal within the cord.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. [No significant abnormality / Disc degeneration with mild canal stenosis] at L4-L5.\n2. [No acute process / Recommend clinical correlation].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

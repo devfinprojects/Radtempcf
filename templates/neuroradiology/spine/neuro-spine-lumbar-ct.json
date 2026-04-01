@@ -1,0 +1,45 @@
+{
+  "id": "neuro-spine-lumbar-ct",
+  "name": "Lumbar Spine CT",
+  "version": "1.0.0",
+  "description": "Lumbar spine CT for trauma and bony evaluation",
+  "modality": "ct",
+  "bodyRegion": "spine",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["spine", "lumbar", "ct", "trauma", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "CT of the lumbar spine without contrast was performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Vertebral Bodies",
+        "content": "Lumbar vertebral bodies [show normal alignment / no compression fracture / no bony lesion]. Vertebral body heights are preserved.",
+        "normalVariant": true
+      },
+      {
+        "name": "Transverse Processes",
+        "content": "Transverse processes are [intact / no fracture].",
+        "normalVariant": true
+      },
+      {
+        "name": "Spinal Canal",
+        "content": "Spinal canal is [patent / no stenosis / no retropulsion]. Facet joints are [normal / no hypertrophy].",
+        "normalVariant": true
+      },
+      {
+        "name": "Sacrum and Pelvis",
+        "content": "Sacrum and iliac bones [are intact / no fracture].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No acute lumbar spine fracture.\n2. Normal alignment.\n3. No acute finding.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

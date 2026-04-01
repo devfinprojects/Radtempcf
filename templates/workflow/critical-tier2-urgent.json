@@ -1,0 +1,87 @@
+{
+  "id": "critical-tier2-urgent",
+  "name": "Critical Result - Tier 2 (Urgent)",
+  "version": "1.0.0",
+  "description": "Tier 2 critical results requiring timely communication to referring provider - urgent conditions requiring prompt attention within 24-48 hours",
+  "category": "critical-results",
+  "tier": 2,
+  "priority": "P1",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["critical-results", "tier2", "urgent", "requires-attention"]
+  },
+  "criticalFindings": {
+    "communicationRequired": true,
+    "communicationMethod": "电话或短信",
+    "timeframe": "24小时内 - 必须在报告完成后24小时内联系",
+    "escalationPath": ["主治医师", "住院医师"],
+    "documentationRequired": true
+  },
+  "conditions": [
+    {
+      "code": "CTR101",
+      "name": "肺结节怀疑恶性（>8mm或增长≥2mm）",
+      "description": "CT显示肺结节怀疑恶性肿瘤",
+      "clinicalSignificance": "需要尽快活检或外科切除"
+    },
+    {
+      "code": "CTR102",
+      "name": "不明来源转移灶",
+      "description": "影像发现不明来源转移灶",
+      "clinicalSignificance": "需要进一步原发灶查找和分期"
+    },
+    {
+      "code": "CTR103",
+      "name": "腹腔脓肿或复杂感染",
+      "description": "CT/MRI显示腹腔脓肿",
+      "clinicalSignificance": "需要脓肿引流和抗生素治疗"
+    },
+    {
+      "code": "CTR104",
+      "name": "深静脉血栓形成",
+      "description": "超声或CT显示深静脉血栓",
+      "clinicalSignificance": "需要抗凝治疗"
+    },
+    {
+      "code": "CTR105",
+      "name": "髂股动脉严重狭窄（>70%）",
+      "description": "CTA显示髂股动脉严重狭窄",
+      "临床Significance": "需要血管介入治疗"
+    },
+    {
+      "code": "CTR106",
+      "name": "脑卒中早期征象",
+      "description": "CT显示脑卒中早期征象（脑沟消失/血管高密度）",
+      "clinicalSignificance": "需要神经科评估进行溶栓治疗"
+    },
+    {
+      "code": "CTR107",
+      "name": "急性胰腺炎伴坏死",
+      "description": "CT/MRI显示急性胰腺炎伴胰腺坏死>30%",
+      "clinicalSignificance": "需要重症监护和可能的外科干预"
+    }
+  ],
+  "communicationTemplate": {
+    "verbalNotification": {
+      "script": "您好，我是[放射科医师姓名]，正在报告[检查类型]检查。我发现了一例需要您关注的情况：[具体发现]。这一发现需要[时间框架]内的临床关注，建议[建议的处理措施]。请确认收到。",
+      "documentationElements": ["通知时间", "通知人", "接收人", "通知方式", "具体发现", "临床建议"]
+    },
+    "writtenDocumentation": {
+      "findings": "影像发现：[具体描述]",
+      "clinicalSignificance": "临床意义：[为什么需要关注]",
+      "recommendedAction": "建议措施：[具体建议]",
+      "communicationRecord": {
+        "notifiedBy": "",
+        "notifiedAt": "",
+        "notifiedMethod": "",
+        "recipientName": "",
+        "acknowledged": true,
+        "acknowledgedAt": ""
+      }
+    }
+  },
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

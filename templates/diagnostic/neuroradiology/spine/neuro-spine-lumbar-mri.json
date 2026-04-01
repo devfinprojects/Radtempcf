@@ -1,0 +1,78 @@
+{
+  "id": "neuro-spine-lumbar-mri",
+  "name": "Lumbar Spine MRI Without Contrast",
+  "version": "1.0.0",
+  "description": "Standard lumbar spine MRI report template without contrast for evaluation of spinal canal and nerve roots",
+  "modality": "mri",
+  "bodyRegion": "spine",
+  "subspecialty": "neuroradiology",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["spine", "lumbar", "mri", "neuroradiology", "l-spine", "spinal canal", "disc herniation"],
+    "cptCodes": ["72148"],
+    "radlexCodes": ["RID10501", "RID10502"]
+  },
+  "findings": {
+    "technique": "MRI of the lumbar spine was performed including T1-weighted, T2-weighted, and STIR sequences in sagittal and axial planes.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Vertebral Bodies",
+        "content": "The lumbar vertebral bodies from L1 through L5 demonstrate [normal height / no compression fracture / no bony lesion]. The bone marrow signal is [normal / no abnormal signal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Disc Levels",
+        "content": "At each disc level from L1-L2 through L5-S1, the intervertebral discs demonstrate [normal height / no bulge / no protrusion / no herniation]. No significant disc disease at any level.",
+        "normalVariant": true
+      },
+      {
+        "name": "Spinal Canal",
+        "content": "The spinal canal is [patent / adequate in diameter]. No significant central canal stenosis. No mass lesion in the canal.",
+        "normalVariant": true
+      },
+      {
+        "name": "Lateral Recesses",
+        "content": "The bilateral lateral recesses are [patent / adequate in size / no nerve root compression]. No lateral recess stenosis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Neural Foramina",
+        "content": "The bilateral neural foramina are [patent / adequate in size / no foraminal narrowing]. No nerve root compression.",
+        "normalVariant": true
+      },
+      {
+        "name": "Conus Medullaris",
+        "content": "The conus medullaris terminates at the [T12 / L1 / L2] level and demonstrates [normal T2 signal / no abnormal signal / no tethered cord].",
+        "normalVariant": true
+      },
+      {
+        "name": "Cauda Equina",
+        "content": "The cauda equina nerve roots are [floating freely / no compression / no abnormal enhancement]. The nerve roots are [normal in caliber / no atrophy].",
+        "normalVariant": true
+      },
+      {
+        "name": "Posterior Elements",
+        "content": "The posterior elements including the pedicles, laminae, facet joints, and spinous processes are [intact / no fracture / no lesion]. The ligamentum flavum is [not hypertrophied / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Paravertebral Soft Tissues",
+        "content": "The paravertebral soft tissues are [unremarkable / no abnormal signal / no mass]. No paraspinal abnormality.",
+        "normalVariant": true
+      },
+      {
+        "name": "Epidural Space",
+        "content": "The epidural space is [normal / no mass / no abnormal enhancement]. No epidural fibrosis or lipomatosis.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal lumbar spine MRI.\n2. No disc herniation, spinal canal stenosis, or nerve root compression identified.\n3. The conus medullaris is at normal T12/L1 level.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

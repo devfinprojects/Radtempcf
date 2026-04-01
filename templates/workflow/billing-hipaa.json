@@ -1,0 +1,201 @@
+{
+  "id": "workflow-billing-hipaa",
+  "name": "HIPAA Compliance",
+  "version": "1.0.0",
+  "description": "Health Insurance Portability and Accountability Act compliance requirements for radiology",
+  "category": "workflow-billing",
+  "priority": "P1",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["hipaa", "compliance", "privacy", "security", "phi"]
+  },
+  "hipaaRequirements": {
+    "privacyRule": {
+      "protectedHealthInformation": {
+        "included": [
+          "Patient name",
+          "Geographic information smaller than state",
+          "Dates (except year) for events",
+          "Phone numbers",
+          "Fax numbers",
+          "Email addresses",
+          "Social Security numbers",
+          "Medical record numbers",
+          "Health plan beneficiary numbers",
+          "Account numbers",
+          "Certificate/license numbers",
+          "Vehicle identifiers",
+          "Device identifiers",
+          "Web URLs",
+          "IP address numbers",
+          "Biometric identifiers",
+          "Full face photographs",
+          "Any other unique identifying number or code"
+        ]
+      },
+      "usesAndDisclosures": {
+        "treatment": {
+          "description": "Use and disclosure for treatment activities",
+          "authorizationRequired": false,
+          "safeguards": "Minimum necessary standard"
+        },
+        "payment": {
+          "description": "Use and disclosure for payment activities",
+          "authorizationRequired": false,
+          "safeguards": "Minimum Necessary standard"
+        },
+        "healthcareOperations": {
+          "description": "Use and disclosure for operations activities",
+          "authorizationRequired": false,
+          "safeguards": "Minimum necessary standard"
+        },
+        "otherPurposes": {
+          "description": "Uses and disclosures requiring patient authorization",
+          "requiresAuthorization": true,
+          "examples": [
+            "Marketing",
+            "Sale of PHI",
+            "Psychotherapy notes",
+            "Research (limited)"
+          ]
+        }
+      }
+    },
+    "securityRule": {
+      "administrativeSafeguards": {
+        "riskAnalysis": {
+          "required": true,
+          "frequency": "Annual review",
+          "scope": "Electronic PHI storage and transmission"
+        },
+        "riskManagement": {
+          "required": true,
+          "documentation": "Risk management plan"
+        },
+        "sanctionPolicy": {
+          "required": true,
+          "description": "Employee sanctions for HIPAA violations"
+        },
+        "workforceTraining": {
+          "required": true,
+          "frequency": "Initial and annual refresher",
+          "topics": ["Privacy", "Security", "Breach notification"]
+        }
+      },
+      "physicalSafeguards": {
+        "facilityAccess": {
+          "required": true,
+          "controls": "Facility access limiting procedures"
+        },
+        "workstationUse": {
+          "required": true,
+          "description": "Proper workstation use and handling policies"
+        },
+        "deviceAndMediaControls": {
+          "required": true,
+          "description": "Controls for hardware and media containing ePHI"
+        }
+      },
+      "technicalSafeguards": {
+        "accessControl": {
+          "required": true,
+          "implementation": [
+            "Unique user identification",
+            "Emergency access procedures",
+            "Automatic logoff",
+            "Encryption/decryption"
+          ]
+        },
+        "auditControls": {
+          "required": true,
+          "description": "Record and examine activity in systems containing ePHI"
+        },
+        "integrityControls": {
+          "required": true,
+          "description": "Protect ePHI from improper alteration or destruction"
+        },
+        "transmissionSecurity": {
+          "required": true,
+          "implementation": [
+            "Integrity controls",
+            "Encryption for transmission over networks"
+          ]
+        }
+      }
+    }
+  },
+  "radiologySpecific": {
+    "deidentification": {
+      "safeHarbor": {
+        "description": "18 identifiers to remove",
+        "directIdentifiers": [
+          "Names",
+          "Geographic subdivisions",
+          "Dates",
+          "Phone/fax/email",
+          "SSN",
+          "Medical record numbers",
+          "Health plan numbers",
+          "Account numbers",
+          "Certificate/license numbers",
+          "Device identifiers",
+          "Web URLs",
+          "IP addresses",
+          "Biometric identifiers",
+          "Photos",
+          "Other unique identifiers"
+        ],
+        "expertDetermination": {
+          "description": "Expert determines minimal risk",
+          "documentation": "Written certification required"
+        }
+      }
+    },
+    "minimumNecessary": {
+      "description": "Limit PHI disclosure to minimum needed",
+      "guidelines": [
+        "Only disclose necessary information",
+        "Use limited data sets when possible",
+        "Review and update policies regularly"
+      ]
+    },
+    "patientRights": {
+      "rightToAccess": {
+        "description": "Patient can request copies of their records",
+        "responseTime": "30 days",
+        "format": "Electronic or paper"
+      },
+      "rightToAmend": {
+        "description": "Patient can request amendments",
+        "responseTime": "60 days",
+        "denialProcess": "Written explanation required"
+      },
+      "rightToAccounting": {
+        "description": "Patient can request disclosure log",
+        "responseTime": "60 days",
+        "lookbackPeriod": "6 years"
+      },
+      "breachNotification": {
+        "description": "Patient notification required for breaches",
+        "timeframe": "60 days",
+        "content": "Breach description, types of info, mitigation steps"
+      }
+    }
+  },
+  "documentation": {
+    "policiesRequired": [
+      "Privacy policy",
+      "Security policy",
+      "Breach notification procedures",
+      "Risk analysis documentation",
+      "Business associate agreements",
+      "Training records",
+      "Access logs"
+    ],
+    "retentionPeriod": "6 years"
+  },
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

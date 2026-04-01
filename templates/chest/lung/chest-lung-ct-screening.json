@@ -1,0 +1,40 @@
+{
+  "id": "chest-lung-ct-screening",
+  "name": "Low-Dose CT Lung Screening",
+  "version": "1.0.0",
+  "description": "Low-dose CT for lung cancer screening in high-risk patients",
+  "modality": "ct",
+  "bodyRegion": "chest",
+  "subspecialty": "chest",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["chest", "lung", "screening", "ldct", "cancer"]
+  },
+  "findings": {
+    "technique": "Low-dose non-contrast CT of the chest was performed for lung cancer screening.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Lungs",
+        "content": "Lungs [are clear / no nodules / no masses]. No focal consolidation or interstitial process.",
+        "normalVariant": true
+      },
+      {
+        "name": "Lymph Nodes",
+        "content": "Mediastinal and hilar lymph nodes [are not enlarged / no significant adenopathy].",
+        "normalVariant": true
+      },
+      {
+        "name": "Pleura",
+        "content": "Pleural surfaces [are smooth / no pleural effusion / no thickening].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No pulmonary nodules identified.\n2. No evidence of lung cancer on low-dose screening CT.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

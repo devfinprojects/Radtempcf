@@ -1,0 +1,68 @@
+{
+  "id": "neuro-spine-lumbar-ct",
+  "name": "Lumbar Spine CT",
+  "version": "1.0.0",
+  "description": "CT of the lumbar spine for evaluation of bony anatomy and degenerative disease",
+  "modality": "ct",
+  "bodyRegion": "spine",
+  "subspecialty": "neuroradiology",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["spine", "lumbar", "ct", "neuroradiology", "l-spine", "bony"],
+    "cptCodes": ["72131"],
+    "radlexCodes": ["RID10501", "RID10502"]
+  },
+  "findings": {
+    "technique": "CT of the lumbar spine was performed without contrast in axial, sagittal, and coronal reconstructions.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Vertebral Bodies",
+        "content": "The lumbar vertebral bodies from L1 through L5 demonstrate [normal height / no compression fracture / no bony lesion]. The bone density is [normal / no osteoporosis].",
+        "normalVariant": true
+      },
+      {
+        "name": "Disc Spaces",
+        "content": "The intervertebral disc spaces from L1-L2 through L5-S1 demonstrate [preserved height / no significant disc space narrowing / no vacuum phenomenon]. No disc herniation.",
+        "normalVariant": true
+      },
+      {
+        "name": "Spinal Canal",
+        "content": "The spinal canal is [adequate in diameter / no central canal stenosis]. No bony stenosis or posterior element hypertrophy causing canal compromise.",
+        "normalVariant": true
+      },
+      {
+        "name": "Neural Foramina",
+        "content": "The bilateral neural foramina are [patent / adequate in size / no foraminal narrowing]. No bony foraminal stenosis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Facet Joints",
+        "content": "The bilateral facet joints demonstrate [no hypertrophy / no arthropathy / no malalignment]. The joint spaces are [preserved / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Pedicles and Pars",
+        "content": "The bilateral pedicles are [intact / no fracture / no lysis]. No pars interarticularis defect.",
+        "normalVariant": true
+      },
+      {
+        "name": "Transverse Processes",
+        "content": "The transverse processes are [intact / no fracture / no avulsion]. No abnormal mineralization.",
+        "normalVariant": true
+      },
+      {
+        "name": "Soft Tissues",
+        "content": "The paraspinal soft tissues are [unremarkable / no abnormal soft tissue mass]. No paraspinal calcification.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal lumbar spine CT.\n2. No fracture, dislocation, or significant degenerative change identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

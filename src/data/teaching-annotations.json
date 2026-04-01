@@ -1,0 +1,174 @@
+{
+  "$schema": "https://radreport.org/schemas/teaching.json",
+  "title": "Teaching Annotations Schema",
+  "description": "Schema for adding teaching annotations and educational content to radiology report templates",
+  "version": "1.0.0",
+  "lastUpdated": "2026-03-30",
+  "annotationTypes": {
+    "anatomy": {
+      "label": "Anatomy Note",
+      "icon": "anatomy",
+      "color": "#2563eb",
+      "description": "Highlights relevant anatomical structures",
+      "fields": [
+        "structureName",
+        "variantNote",
+        "clinicalSignificance",
+        "imagingLandmarks"
+      ]
+    },
+    "pathology": {
+      "label": "Pathology Note",
+      "icon": "pathology",
+      "color": "#dc2626",
+      "description": "Explains pathological findings",
+      "fields": [
+        "findingDescription",
+        "differentialDiagnosis",
+        "keyFeatures",
+        "clinicalCorrelation"
+      ]
+    },
+    "technique": {
+      "label": "Technique Note",
+      "icon": "camera",
+      "color": "#7c3aed",
+      "description": "Technical considerations for the study",
+      "fields": [
+        "protocolNote",
+        "sequenceDetails",
+        "contrastInformation",
+        "radiationDose"
+      ]
+    },
+    "pitfall": {
+      "label": "Pitfall Warning",
+      "icon": "warning",
+      "color": "#f59e0b",
+      "description": "Warnings about common interpretation pitfalls",
+      "fields": [
+        "pitfallDescription",
+        "howToAvoid",
+        "mimics",
+        "confirmatorySigns"
+      ]
+    },
+    "correlation": {
+      "label": "Correlation Note",
+      "icon": "link",
+      "color": "#16a34a",
+      "description": "Links to correlative imaging or clinical findings",
+      "fields": [
+        "modalityToCorrelate",
+        "priorStudies",
+        "clinicalHistory",
+        "followUpImaging"
+      ]
+    },
+    "literature": {
+      "label": "Literature Reference",
+      "icon": "book",
+      "color": "#0891b2",
+      "description": "References to relevant medical literature",
+      "fields": [
+        "referenceTitle",
+        "authors",
+        "journal",
+        "pmid",
+        "keyTakeaway"
+      ]
+    }
+  },
+  "annotationStructure": {
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier for the annotation"
+      },
+      "type": {
+        "type": "string",
+        "enum": ["anatomy", "pathology", "technique", "pitfall", "correlation", "literature"],
+        "description": "Type of annotation"
+      },
+      "target": {
+        "type": "string",
+        "description": "The template field or section this annotation applies to"
+      },
+      "content": {
+        "type": "string",
+        "description": "The main annotation content"
+      },
+      "details": {
+        "type": "object",
+        "description": "Type-specific fields",
+        "properties": {
+          "structureName": { "type": "string" },
+          "variantNote": { "type": "string" },
+          "clinicalSignificance": { "type": "string" },
+          "imagingLandmarks": { "type": "array", "items": { "type": "string" } },
+          "findingDescription": { "type": "string" },
+          "differentialDiagnosis": { "type": "array", "items": { "type": "string" } },
+          "keyFeatures": { "type": "array", "items": { "type": "string" } },
+          "clinicalCorrelation": { "type": "string" },
+          "protocolNote": { "type": "string" },
+          "sequenceDetails": { "type": "string" },
+          "contrastInformation": { "type": "string" },
+          "radiationDose": { "type": "string" },
+          "pitfallDescription": { "type": "string" },
+          "howToAvoid": { "type": "string" },
+          "mimics": { "type": "array", "items": { "type": "string" } },
+          "confirmatorySigns": { "type": "array", "items": { "type": "string" } },
+          "modalityToCorrelate": { "type": "string" },
+          "priorStudies": { "type": "array", "items": { "type": "string" } },
+          "clinicalHistory": { "type": "string" },
+          "followUpImaging": { "type": "string" },
+          "referenceTitle": { "type": "string" },
+          "authors": { "type": "array", "items": { "type": "string" } },
+          "journal": { "type": "string" },
+          "pmid": { "type": "string" },
+          "keyTakeaway": { "type": "string" }
+        }
+      },
+      "difficultyLevel": {
+        "type": "string",
+        "enum": ["beginner", "intermediate", "advanced"],
+        "description": "Appropriate difficulty level for this annotation"
+      },
+      "acgmeMilestones": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "competency": { "type": "string" },
+            "level": { "type": "string", "enum": ["1", "2", "3", "4", "5"] }
+          }
+        }
+      },
+      "teachingPoints": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Key teaching points for residents"
+      }
+    },
+    "required": ["id", "type", "target", "content"]
+  },
+  "displayOptions": {
+    "modes": {
+      "teaching": {
+        "showAll": true,
+        "highlightColor": true,
+        "expandableDetails": true
+      },
+      "clinical": {
+        "showAll": false,
+        "highlightColor": false,
+        "expandableDetails": false
+      },
+      "quickRef": {
+        "showTypes": ["pitfall", "technique"],
+        "highlightColor": true,
+        "expandableDetails": false
+      }
+    }
+  }
+}

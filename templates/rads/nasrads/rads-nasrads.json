@@ -1,0 +1,68 @@
+{
+  "id": "rads-nasrads",
+  "name": "NAS-RADS (Neonatal Adrenal Scoring System)",
+  "version": "1.0.0",
+  "description": "NAS-RADS classification template for neonatal adrenal lesion assessment on MRI",
+  "modality": "mri",
+  "bodyRegion": "adrenal",
+  "subspecialty": "pediatric",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["rads", "adrenal", "nas-rads", "neonatal", "pediatric"]
+  },
+  "rads": {
+    "system": "NAS-RADS",
+    "category": "NAS-RADS 2",
+    "score": 2,
+    "assessment": "Probably benign",
+    "recommendation": "Routine follow-up recommended",
+    "lesionLocation": "[Right/Left] adrenal gland",
+    "size": {
+      "value": 1.5,
+      "unit": "cm"
+    },
+    "date": "2026-03-30"
+  },
+  "findings": {
+    "technique": "Abdominal MRI performed in neonate without contrast. Sequences include T1, T2, and chemical shift imaging.",
+    "comparison": "Comparison made with [prenatal ultrasound / prior MRI] from [date].",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Lesion Characteristics",
+        "content": "Lesion is [homogeneous/heterogeneous]. Signal on T1: [hyperintense/isointense/hypointense]. Signal on T2: [hyperintense/isointense/hypointense].",
+        "normalVariant": false
+      },
+      {
+        "name": "Chemical Shift",
+        "content": "Chemical shift imaging: [signal drop present / no signal drop] consistent with [adrenal adenoma/hemorrhage/neuroblastoma].",
+        "normalVariant": false
+      },
+      {
+        "name": "Size",
+        "content": "Maximum diameter: [X]cm. [Volume / No volume] measurement: [X]ml.",
+        "normalVariant": false
+      },
+      {
+        "name": "Laterality",
+        "content": "Lesion is [right / left / bilateral]. [Unilateral / Bilateral] involvement.",
+        "normalVariant": false
+      },
+      {
+        "name": "Extra-adrenal Extension",
+        "content": "Extra-adrenal extension: [present/absent]. Kidney displacement: [present/absent]. Vascular involvement: [present/absent].",
+        "normalVariant": false
+      },
+      {
+        "name": "Metastatic Disease",
+        "content": "Liver metastasis: [present/absent]. Lymphadenopathy: [present/absent]. Bone metastasis: [present/absent].",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. NAS-RADS [X]: [category description]\n2. [Right/Left/Bilateral] adrenal lesion measuring [X]cm\n3. Features most consistent with [neuroblastoma/adenoma/hemorrhage]\n4. [Follow-up / Biopsy / Surgical consultation] recommended based on findings",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

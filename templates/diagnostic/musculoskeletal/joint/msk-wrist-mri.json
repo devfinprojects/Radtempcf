@@ -1,0 +1,68 @@
+{
+  "id": "msk-wrist-mri",
+  "name": "Wrist MRI",
+  "version": "1.0.0",
+  "description": "MRI of the wrist for evaluation of ligaments, TFCC, and carpal pathology",
+  "modality": "mri",
+  "bodyRegion": "musculoskeletal",
+  "subspecialty": "musculoskeletal",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["musculoskeletal", "mri", "wrist", "tfcc", "carpal", "ligament", "msk"],
+    "cptCodes": ["73221"],
+    "radlexCodes": ["RID10550", "RID10551"]
+  },
+  "findings": {
+    "technique": "MRI of the wrist was performed in multiple planes including T1, T2, PD, and STIR sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Scapholunate Ligament",
+        "content": "The scapholunate ligament demonstrates [intact / no tear / no sprain]. The ligament is [intact]",
+        "normalVariant": true
+      },
+      {
+        "name": "Lunotriquetral Ligament",
+        "content": "The lunotriquetral ligament demonstrates [intact / no tear / no sprain]. The ligament is [intact]",
+        "normalVariant": true
+      },
+      {
+        "name": "TFCC",
+        "content": "The triangular fibrocartilage complex demonstrates [intact / no tear / no perforation]. The TFCC is [intact]",
+        "normalVariant": true
+      },
+      {
+        "name": "Carpal Bones",
+        "content": "The carpal bones demonstrate [no fracture / no avascular necrosis / no carpal instability]. The bone marrow signal is [normal]",
+        "normalVariant": true
+      },
+      {
+        "name": "Extensor Tendons",
+        "content": "The extensor tendons demonstrate [no tear / no tendinopathy]. The tendons are [intact]",
+        "normalVariant": true
+      },
+      {
+        "name": "Flexor Tendons",
+        "content": "The flexor tendons demonstrate [no tear / no tendinopathy]. The tendons are [intact]",
+        "normalVariant": true
+      },
+      {
+        "name": "Joint",
+        "content": "The wrist joint demonstrates [no effusion / no osteochondral lesion / no cartilage defect]. No joint effusion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Ulnar styloid",
+        "content": "The ulnar styloid demonstrates [no fracture / no non-union]. The styloid process is [intact]",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal wrist MRI.\n2. No ligamentous injury, TFCC tear, or carpal instability identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

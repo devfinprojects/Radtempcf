@@ -1,0 +1,35 @@
+{
+  "id": "interventional-liver-biopsies",
+  "name": "Liver Biopsy",
+  "version": "1.0.0",
+  "description": "Image-guided liver biopsy for tissue diagnosis",
+  "modality": "us",
+  "bodyRegion": "abdomen",
+  "subspecialty": "interventional",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["interventional", "biopsy", "liver", "tissue", "diagnosis"]
+  },
+  "findings": {
+    "technique": "Ultrasound-guided liver biopsy was performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Biopsy Path",
+        "content": "Biopsy needle [trajectory planned to avoid major vessels / adequate tissue obtained].",
+        "normalVariant": true
+      },
+      {
+        "name": "Complications",
+        "content": "No immediate bleeding or injury. Patient stable.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Successful liver biopsy performed.\n2. Specimen sent for pathology.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

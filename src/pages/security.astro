@@ -1,0 +1,74 @@
+---
+// Security Policy Page
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Security Policy" description="Security policy for RadTempCF - Reporting security vulnerabilities">
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-8">Security Policy</h1>
+    
+    <div class="prose dark:prose-invert max-w-none">
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Reporting Security Vulnerabilities</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">
+          If you discover a security vulnerability in RadTempCF, please send an email to the project maintainers. All security vulnerabilities will be promptly addressed.
+        </p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">What to Include</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">Please include the following in your report:</p>
+        <ol class="list-decimal list-inside space-y-2 text-gray-700 dark:text-gray-300 ml-4">
+          <li>Type of vulnerability</li>
+          <li>Full paths of source file(s) related to the vulnerability</li>
+          <li>Location of the affected source code (tag/branch/commit or direct URL)</li>
+          <li>Any special configuration required to reproduce the issue</li>
+          <li>Step-by-step instructions to reproduce the issue</li>
+          <li>Proof-of-concept or exploit code (if possible)</li>
+          <li>Impact of the issue</li>
+        </ol>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Response Timeline</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">
+          We aim to acknowledge reports within 48 hours and provide a more detailed response within 7 days, including:
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 ml-4">
+          <li>Confirmation of the vulnerability</li>
+          <li>Our assessment of severity</li>
+          <li>Expected timeline for a fix</li>
+          <li>Credit to reporters (if desired)</li>
+        </ul>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Supported Versions</h2>
+        <table class="min-w-full border border-gray-300 dark:border-gray-700">
+          <thead class="bg-gray-100 dark:bg-gray-800">
+            <tr>
+              <th class="px-4 py-2 text-left border-b border-gray-300 dark:border-gray-700">Version</th>
+              <th class="px-4 py-2 text-left border-b border-gray-300 dark:border-gray-700">Supported</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="px-4 py-2 border-b border-gray-300 dark:border-gray-700">1.x.x</td>
+              <td class="px-4 py-2 border-b border-gray-300 dark:border-gray-700">✓</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Security Best Practices</h2>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 ml-4">
+          <li>Keep dependencies up to date</li>
+          <li>Never commit secrets or API keys</li>
+          <li>Use environment variables for sensitive data</li>
+          <li>Follow the principle of least privilege</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</BaseLayout>

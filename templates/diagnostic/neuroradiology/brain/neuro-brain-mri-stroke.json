@@ -1,0 +1,73 @@
+{
+  "id": "neuro-brain-mri-stroke",
+  "name": "Brain MRI Stroke Protocol",
+  "version": "1.0.0",
+  "description": "Dedicated brain MRI protocol for evaluation of acute stroke including DWI, PWI, and MRA",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "clinicalContext": "stroke",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "stroke", "dwi", "pwi", "mra", "neuroradiology", "acute stroke", "ischemia"],
+    "cptCodes": ["70551", "70553", "70544"],
+    "radlexCodes": ["RID10456", "RID10457", "RID28690"]
+  },
+  "findings": {
+    "technique": "Stroke protocol MRI including DWI, ADC mapping, perfusion-weighted imaging, MRA of head and neck, and T2/FLAIR sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Diffusion-Weighted Imaging",
+        "content": "Diffusion-weighted images demonstrate [no restricted diffusion / acute infarction in the left/right distribution]. The lesion measures approximately [X cm] and involves the [anterior circulation / posterior circulation / territory].",
+        "normalVariant": true
+      },
+      {
+        "name": "Apparent Diffusion Coefficient",
+        "content": "The ADC map demonstrates [corresponding low ADC / restricted diffusion] in the region of abnormal DWI signal. This is [consistent with acute infarction / artifactual].",
+        "normalVariant": true
+      },
+      {
+        "name": "Perfusion-Weighted Imaging",
+        "content": "Perfusion-weighted imaging demonstrates [no perfusion deficit / mismatch pattern / Tmax delay] in the [affected territory / penumbral region]. The penumbra is estimated at [X] mL.",
+        "normalVariant": true
+      },
+      {
+        "name": "T2 and FLAIR",
+        "content": "T2 and FLAIR sequences demonstrate [no hyperintensity / hyperintensity in the affected region] consistent with [acute changes / subacute infarction].",
+        "normalVariant": true
+      },
+      {
+        "name": "Intracranial MRA",
+        "content": "MR angiography of the intracranial arteries demonstrates [no occlusion / no stenosis / patent vessels]. The [MCA / PCA / ICA / basilar] is [patent / shows truncation].",
+        "normalVariant": true
+      },
+      {
+        "name": "Extracranial MRA",
+        "content": "MR angiography of the neck demonstrates [no significant stenosis / no occlusion / normal bilateral carotid and vertebral arteries]. The cervical carotids are [patent / show mild disease].",
+        "normalVariant": true
+      },
+      {
+        "name": "SWI",
+        "content": "Susceptibility-weighted images demonstrate [no microhemorrhage / no hemorrhage / no CMBs]. No hemosiderin staining.",
+        "normalVariant": true
+      },
+      {
+        "name": "Vascular",
+        "content": "The venous sinuses are patent. No dural venous sinus thrombosis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Other Findings",
+        "content": "No mass, hemorrhage, or other acute process unrelated to the acute infarct.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. MRI brain with acute stroke protocol.\n2. [Acute infarction involving X territory] with [mismatch pattern / no significant penumbra] on perfusion.\n3. [Patent / occluded] [vessel name] on MRA.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

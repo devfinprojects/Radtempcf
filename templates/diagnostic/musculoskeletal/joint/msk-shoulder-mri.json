@@ -1,0 +1,68 @@
+{
+  "id": "msk-shoulder-mri",
+  "name": "Shoulder MRI",
+  "version": "1.0.0",
+  "description": "MRI of the shoulder for evaluation of rotator cuff, labrum, and shoulder joint pathology",
+  "modality": "mri",
+  "bodyRegion": "musculoskeletal",
+  "subspecialty": "musculoskeletal",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["musculoskeletal", "mri", "shoulder", "rotator cuff", "labrum", "msk"],
+    "cptCodes": ["73221"],
+    "radlexCodes": ["RID10550", "RID10551"]
+  },
+  "findings": {
+    "technique": "MRI of the shoulder was performed in multiple planes including T1, T2, PD, and STIR sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Rotator Cuff",
+        "content": "The supraspinatus tendon demonstrates [no tear / no thinning / no discontinuity]. The infraspinatus and teres minor tendons are [intact / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Rotator Cuff Muscles",
+        "content": "The supraspinatus, infraspinatus, and subscapularis muscles demonstrate [no atrophy / no fatty infiltration / normal bulk].",
+        "normalVariant": true
+      },
+      {
+        "name": "Labrum",
+        "content": "The glenoid labrum demonstrates [no tear / no Bankart lesion / no SLAP lesion]. The labral attachment is [intact / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Biceps Tendon",
+        "content": "The biceps tendon is [intracapsular / no subluxation / no dislocation / no tear]. The biceps anchor is [intact / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Glenohumeral Ligaments",
+        "content": "The inferior glenohumeral ligament complex is [intact / no thickening / no tear]. The middle and superior glenohumeral ligaments are [normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Acromioclavicular Joint",
+        "content": "The AC joint demonstrates [no osteoarthritis / no inferior spurring / no separation]. The distal clavicle is [intact].",
+        "normalVariant": true
+      },
+      {
+        "name": "Bone",
+        "content": "The humeral head demonstrates [no Hill-Sachs lesion / no deformity]. The glenoid is [intact / no fracture]. No bone bruise.",
+        "normalVariant": true
+      },
+      {
+        "name": "Joint Effusion",
+        "content": "There is [minimal / no / small] joint effusion. No loose body identified.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal shoulder MRI.\n2. No rotator cuff tear, labral tear, or instability finding identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

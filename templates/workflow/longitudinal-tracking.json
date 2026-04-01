@@ -1,0 +1,110 @@
+{
+  "id": "workflow-longitudinal",
+  "name": "Longitudinal Tracking Template",
+  "version": "1.0.0",
+  "description": "Template for tracking patient findings across multiple imaging studies over time",
+  "category": "workflow-tracking",
+  "priority": "P3",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["longitudinal", "tracking", "follow-up", "comparison"]
+  },
+  "tracking": {
+    "purpose": "Track findings, measurements, and recommendations across time",
+    "useCases": [
+      "Nodule follow-up tracking",
+      "Treatment response monitoring",
+      "Disease progression assessment",
+      "Post-operative surveillance"
+    ]
+  },
+  "patientContext": {
+    "patientId": "",
+    "patientName": "",
+    "dateOfBirth": "",
+    "mrn": ""
+  },
+  "studyTracking": {
+    "studies": [
+      {
+        "studyId": "",
+        "accessionNumber": "",
+        "studyDate": "",
+        "modality": "",
+        "examType": "",
+        "referringPhysician": "",
+        "findings": [],
+        "impression": "",
+        "recommendations": []
+      }
+    ]
+  },
+  "findingTracking": {
+    "trackedFindings": [
+      {
+        "findingId": "",
+        "findingType": "",
+        "location": {
+          "anatomicalSite": "",
+          "laterality": "",
+          "specificLocation": ""
+        },
+        "characteristics": {
+          "size": {
+            "measurement": "",
+            "unit": "mm",
+            "technique": ""
+          },
+          "morphology": "",
+          "density": "",
+          "enhancementPattern": ""
+        },
+        "measurementsOverTime": [
+          {
+            "date": "",
+            "measurement": "",
+            "changeFromPrevious": "",
+            "percentChange": ""
+          }
+        ],
+        "comparisonNotes": "",
+        "stabilityAssessment": ""
+      }
+    ]
+  },
+  "followUpTracking": {
+    "recommendations": [
+      {
+        "recommendationId": "",
+        "findingId": "",
+        "recommendedImaging": "",
+        "interval": "",
+        "rationale": "",
+        "dueDate": "",
+        "status": "scheduled/completed/overdue",
+        "actualDate": "",
+        "outcome": ""
+      }
+    ]
+  },
+  "reporting": {
+    "comparisonView": true,
+    "trendCharts": true,
+    "intervalSummary": true,
+    "nextRecommendation": true
+  },
+  "alerts": {
+    "significantChange": {
+      "enabled": true,
+      "threshold": "20% increase in size"
+    },
+    "missedFollowUp": {
+      "enabled": true,
+      "notificationDays": 7
+    }
+  },
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

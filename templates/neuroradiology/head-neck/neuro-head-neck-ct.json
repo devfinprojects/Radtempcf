@@ -1,0 +1,60 @@
+{
+  "id": "neuro-head-neck-ct",
+  "name": "Head and Neck CT Without Contrast",
+  "version": "1.0.0",
+  "description": "Standard head and neck CT report template without contrast for evaluation of soft tissues and bones",
+  "modality": "ct",
+  "bodyRegion": "head-neck",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["head", "neck", "ct", "neuroradiology", "non-contrast"]
+  },
+  "findings": {
+    "technique": "CT of the head and neck was performed from the skull base through the suprasternal fossa without contrast.",
+    "comparison": "No prior imaging available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Orbits",
+        "content": "Orbits: Globes are [intact / show no abnormal opacity]. Extraocular muscles are [normal / enlarged]. Optic nerves are [normal / abnormal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Paranasal Sinuses",
+        "content": "Maxillary sinuses: [clear / fluid / mucosal thickening] bilaterally.\nEthmoid sinuses: [clear / fluid / mucosal thickening].\nFrontal sinuses: [clear / fluid / mucosal thickening].\nSphenoid sinus: [clear / fluid / mucosal thickening].",
+        "normalVariant": true
+      },
+      {
+        "name": "Nasopharynx",
+        "content": "Nasopharyngeal soft tissues [are unremarkable / show asymmetric thickening]. No mass is identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Oral Cavity",
+        "content": "The oral cavity and tongue [are unremarkable / show]. No abnormal mass or collection identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Larynx",
+        "content": "Laryngeal structures [are unremarkable / show]. Vocal cords [are mobile / show decreased mobility]. No airway compromise.",
+        "normalVariant": true
+      },
+      {
+        "name": "Neck Soft Tissues",
+        "content": "Neck soft tissues [show no abnormal lymphadenopathy / are unremarkable]. No mass or collection identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Cervical Lymph Nodes",
+        "content": "No pathologically enlarged cervical lymph nodes identified.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. [No acute abnormality / Sinusitis] identified.\n2. [No evidence of mass or lymphadenopathy / Recommend clinical correlation if clinically indicated].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

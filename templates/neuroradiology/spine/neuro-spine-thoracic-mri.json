@@ -1,0 +1,45 @@
+{
+  "id": "neuro-spine-thoracic-mri",
+  "name": "Thoracic Spine MRI",
+  "version": "1.0.0",
+  "description": "Thoracic spine MRI for cord and soft tissue evaluation",
+  "modality": "mri",
+  "bodyRegion": "spine",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["spine", "thoracic", "mri", "cord", "disc", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "MRI of the thoracic spine with sagittal T1, T2, and axial T2 sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Spinal Cord",
+        "content": "Spinal cord [has normal signal / no cord edema / no mass / no syrinx] throughout the thoracic spine.",
+        "normalVariant": true
+      },
+      {
+        "name": "Disc Levels",
+        "content": "Thoracic discs show [normal height / no significant bulge / no herniation] at all levels.",
+        "normalVariant": true
+      },
+      {
+        "name": "Conus Medullaris",
+        "content": "Conus medullaris terminates at [T12/L1 / normal level / no tethering / no mass].",
+        "normalVariant": true
+      },
+      {
+        "name": "Vertebral Bodies",
+        "content": "Vertebral bodies [have normal marrow signal / no lesion / no compression].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No cord abnormality.\n2. No significant disc herniation.\n3. Normal conus position.\n4. Normal thoracic spine MRI.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

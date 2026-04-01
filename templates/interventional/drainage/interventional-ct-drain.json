@@ -1,0 +1,35 @@
+{
+  "id": "interventional-ct-guided-drain",
+  "name": "CT-Guided Abscess Drainage",
+  "version": "1.0.0",
+  "description": "CT-guided percutaneous drainage of abscess",
+  "modality": "ct",
+  "bodyRegion": "abdomen",
+  "subspecialty": "interventional",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["interventional", "drainage", "abscess", "ct-guided"]
+  },
+  "findings": {
+    "technique": "CT-guided percutaneous abscess drainage was performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Catheter Placement",
+        "content": "Drainage catheter [successfully positioned within abscess cavity / adequate drainage obtained].",
+        "normalVariant": true
+      },
+      {
+        "name": "Complications",
+        "content": "No immediate complications. No bowel injury.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Successful CT-guided abscess drainage.\n2. Catheter in good position.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

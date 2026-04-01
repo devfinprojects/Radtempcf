@@ -1,0 +1,73 @@
+{
+  "id": "neuro-brain-mri-w-contrast",
+  "name": "Brain MRI With Contrast",
+  "version": "1.0.0",
+  "description": "Standard brain MRI report template with intravenous contrast for enhanced evaluation of intracranial pathology",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "contrast", "neuroradiology", "intracranial", "gadolinium"],
+    "cptCodes": ["70553"],
+    "radlexCodes": ["RID10458", "RID10459"]
+  },
+  "findings": {
+    "technique": "MRI of the brain was performed including T1-weighted, T2-weighted, FLAIR, diffusion-weighted, and susceptibility-weighted sequences. Post-contrast T1-weighted images were obtained in axial, coronal, and sagittal planes.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Pre-Contrast Sequences",
+        "content": "The pre-contrast sequences demonstrate [no mass lesion / no abnormal signal / no hemorrhage]. Gray-white matter differentiation is preserved.",
+        "normalVariant": true
+      },
+      {
+        "name": "Post-Contrast T1-Weighted Imaging",
+        "content": "Following gadolinium administration, there is [no abnormal enhancement / no meningeal enhancement / no cranial nerve enhancement]. No parenchymal or periventricular enhancement identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Ventricles",
+        "content": "The ventricular system is [normal in size / not dilated]. No intraventricular enhancement.",
+        "normalVariant": true
+      },
+      {
+        "name": "Meninges",
+        "content": "The meninges demonstrate [no abnormal enhancement / no dural thickening / no leptomeningeal enhancement].",
+        "normalVariant": true
+      },
+      {
+        "name": "Cranial Nerves",
+        "content": "The cranial nerves from CN I through CN XII demonstrate [no abnormal enhancement / are unremarkable]",
+        "normalVariant": true
+      },
+      {
+        "name": "Pituitary Sella Region",
+        "content": "The pituitary gland is [normal in size / normal signal]. The sella turcica is [unremarkable]. No abnormal enhancement in the suprasellar region.",
+        "normalVariant": true
+      },
+      {
+        "name": "Vascular",
+        "content": "The intracranial arteries are [unremarkable on TOF angiography / no aneurysm / no flow void abnormality]. The venous sinuses are patent.",
+        "normalVariant": true
+      },
+      {
+        "name": "Orbits and Optic Nerves",
+        "content": "The orbits and optic nerves demonstrate [no abnormal enhancement / are unremarkable]. Retro-orbital fat is clear.",
+        "normalVariant": true
+      },
+      {
+        "name": "Temporal Bones and IAC",
+        "content": "The internal auditory canals and temporal bones are [unremarkable]. The cochlear and vestibular structures demonstrate no abnormal enhancement.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal contrast-enhanced brain MRI.\n2. No mass, infection, or inflammatory process identified.\n3. No abnormal enhancement pattern to suggest neoplasm or infection.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

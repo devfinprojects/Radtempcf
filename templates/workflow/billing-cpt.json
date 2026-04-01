@@ -1,0 +1,218 @@
+{
+  "id": "workflow-billing-cpt",
+  "name": "CPT Billing Integration",
+  "version": "1.0.0",
+  "description": "CPT code mapping and billing integration for radiology procedures",
+  "category": "workflow-billing",
+  "priority": "P1",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["billing", "cpt", "reimbursement", "coding"]
+  },
+  "modalityMapping": {
+    "ct": {
+      "commonProcedures": [
+        {
+          "cptCode": "70450",
+          "description": "CT Head/Brain without contrast",
+          "units": 1,
+          "relativeValueUnits": 1.5
+        },
+        {
+          "cptCode": "70460",
+          "description": "CT Head/Brain with contrast",
+          "units": 1,
+          "relativeValueUnits": 2.0
+        },
+        {
+          "cptCode": "71250",
+          "description": "CT Chest without contrast",
+          "units": 1,
+          "relativeValueUnits": 1.5
+        },
+        {
+          "cptCode": "71260",
+          "description": "CT Chest with contrast",
+          "units": 1,
+          "relativeValueUnits": 2.0
+        },
+        {
+          "cptCode": "74177",
+          "description": "CT Abdomen/Pelvis with contrast",
+          "units": 1,
+          "relativeValueUnits": 2.5
+        },
+        {
+          "cptCode": "70496",
+          "description": "CT Angiography - Head",
+          "units": 1,
+          "relativeValueUnits": 3.0
+        },
+        {
+          "cptCode": "70498",
+          "description": "CT Angiography - Neck",
+          "units": 1,
+          "relativeValueUnits": 3.0
+        },
+        {
+          "cptCode": "71275",
+          "description": "CT Angiography - Chest",
+          "units": 1,
+          "relativeValueUnits": 3.5
+        }
+      ]
+    },
+    "mri": {
+      "commonProcedures": [
+        {
+          "cptCode": "70551",
+          "description": "MRI Brain without contrast",
+          "units": 1,
+          "relativeValueUnits": 2.5
+        },
+        {
+          "cptCode": "70553",
+          "description": "MRI Brain with contrast",
+          "units": 1,
+          "relativeValueUnits": 3.0
+        },
+        {
+          "cptCode": "70544",
+          "description": "MR Angiography - Head without contrast",
+          "units": 1,
+          "relativeValueUnits": 3.0
+        },
+        {
+          "cptCode": "70547",
+          "description": "MR Angiography - Neck without contrast",
+          "units": 1,
+          "relativeValueUnits": 3.0
+        },
+        {
+          "cptCode": "73221",
+          "description": "MRI Shoulder without contrast",
+          "units": 1,
+          "relativeValueUnits": 2.5
+        },
+        {
+          "cptCode": "73222",
+          "description": "MRI Shoulder with contrast",
+          "units": 1,
+          "relativeValueUnits": 3.0
+        },
+        {
+          "cptCode": "73721",
+          "description": "MRI Lower Extremity without contrast",
+          "units": 1,
+          "relativeValueUnits": 2.5
+        }
+      ]
+    },
+    "ultrasound": {
+      "commonProcedures": [
+        {
+          "cptCode": "76506",
+          "description": "Echo - Head",
+          "units": 1,
+          "relativeValueUnits": 1.0
+        },
+        {
+          "cptCode": "76604",
+          "description": "Echo - Chest",
+          "units": 1,
+          "relativeValueUnits": 1.0
+        },
+        {
+          "cptCode": "76700",
+          "description": "Abdominal Ultrasound - Complete",
+          "units": 1,
+          "relativeValueUnits": 1.5
+        },
+        {
+          "cptCode": "76770",
+          "description": "Abdominal Ultrasound - Limited",
+          "units": 1,
+          "relativeValueUnits": 1.0
+        },
+        {
+          "cptCode": "76856",
+          "description": "Pelvic Ultrasound - Complete",
+          "units": 1,
+          "relativeValueUnits": 1.5
+        },
+        {
+          "cptCode": "76872",
+          "description": "Obstetric Ultrasound - Single Image",
+          "units": 1,
+          "relativeValueUnits": 1.0
+        },
+        {
+          "cptCode": "93970",
+          "description": "Vascular Doppler - Extremities",
+          "units": 1,
+          "relativeValueUnits": 1.5
+        }
+      ]
+    },
+    "mammography": {
+      "commonProcedures": [
+        {
+          "cptCode": "77046",
+          "description": "Screening Mammography - Bilateral",
+          "units": 1,
+          "relativeValueUnits": 1.0
+        },
+        {
+          "cptCode": "77047",
+          "description": "Screening Mammography - Unilateral",
+          "units": 1,
+          "relativeValueUnits": 0.75
+        },
+        {
+          "cptCode": "77055",
+          "description": "Diagnostic Mammogram - Unilateral",
+          "units": 1,
+          "relativeValueUnits": 1.5
+        },
+        {
+          "cptCode": "77056",
+          "description": "Diagnostic Mammogram - Bilateral",
+          "units": 1,
+          "relativeValueUnits": 2.0
+        },
+        {
+          "cptCode": "77063",
+          "description": "Digital Breast Tomosynthesis",
+          "units": 1,
+          "relativeValueUnits": 0.5
+        }
+      ]
+    }
+  },
+  "modifierCodes": {
+    "immediate emergents": "25",
+    "technical component only": "TC",
+    "professional component only": "26",
+    "multiple studies same day": "76",
+    "repeated procedure": "77",
+    "contrast used": "JC"
+  },
+  "compliance": {
+    "medicalNecessity": true,
+    "documentationRequirements": [
+      "Clinical history",
+      "Relevant prior imaging",
+      "Indication for contrast (if applicable)"
+    ],
+    "auditFields": [
+      "Procedure ordered",
+      "Procedure performed",
+      "CPT code billed",
+      "Modality matches order"
+    ]
+  },
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "obgyn-us-second-trimester",
+  "name": "OB Ultrasound Second Trimester",
+  "version": "1.0.0",
+  "description": "Obstetric ultrasound for second trimester anatomy survey",
+  "modality": "us",
+  "bodyRegion": "obgyn",
+  "subspecialty": "obgyn",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["obgyn", "ob", "ultrasound", "pregnancy", "anatomy"]
+  },
+  "findings": {
+    "technique": "Comprehensive second trimester obstetric ultrasound was performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Fetal Biometry",
+        "content": "BPD: __ mm, HC: __ mm, AC: __ mm, FL: __ mm. Consistent with __ weeks gestation.",
+        "normalVariant": true
+      },
+      {
+        "name": "Anatomy Survey",
+        "content": "Brain: [normal / no ventriculomegaly]. Face: [intact / no cleft]. Chest: [normal heart and lungs]. Abdomen: [normal stomach and kidneys visible].",
+        "normalVariant": true
+      },
+      {
+        "name": "Placenta",
+        "content": "Placenta: [located fundally / no previa / no abruption].",
+        "normalVariant": true
+      },
+      {
+        "name": "Amniotic Fluid",
+        "content": "Amniotic fluid [is adequate / normal AFI].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Single live fetus consistent with __ weeks gestation.\n2. No obvious structural anomalies identified.\n3. Normal second trimester anatomy survey.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

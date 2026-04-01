@@ -1,0 +1,193 @@
+{
+  "templateId": "radlex-mapping-base",
+  "mappings": [
+    {
+      "term": "brain",
+      "radlexId": "RID10336",
+      "radlexTerm": "Brain",
+      "category": "anatomy"
+    },
+    {
+      "term": "head",
+      "radlexId": "RID10331",
+      "radlexTerm": "Head",
+      "category": "anatomy"
+    },
+    {
+      "term": "neck",
+      "radlexId": "RID10334",
+      "radlexTerm": "Neck",
+      "category": "anatomy"
+    },
+    {
+      "term": "spine",
+      "radlexId": "RID10338",
+      "radlexTerm": "Spinal Cord",
+      "category": "anatomy"
+    },
+    {
+      "term": "chest",
+      "radlexId": "RID10343",
+      "radlexTerm": "Thorax",
+      "category": "anatomy"
+    },
+    {
+      "term": "lung",
+      "radlexId": "RID10345",
+      "radlexTerm": "Lung",
+      "category": "anatomy"
+    },
+    {
+      "term": "mediastinum",
+      "radlexId": "RID10344",
+      "radlexTerm": "Mediastinum",
+      "category": "anatomy"
+    },
+    {
+      "term": "liver",
+      "radlexId": "RID10356",
+      "radlexTerm": "Liver",
+      "category": "anatomy"
+    },
+    {
+      "term": "kidney",
+      "radlexId": "RID10359",
+      "radlexTerm": "Kidney",
+      "category": "anatomy"
+    },
+    {
+      "term": "spleen",
+      "radlexId": "RID10357",
+      "radlexTerm": "Spleen",
+      "category": "anatomy"
+    },
+    {
+      "term": "pancreas",
+      "radlexId": "RID10358",
+      "radlexTerm": "Pancreas",
+      "category": "anatomy"
+    },
+    {
+      "term": "gallbladder",
+      "radlexId": "RID10362",
+      "radlexTerm": "Gallbladder",
+      "category": "anatomy"
+    },
+    {
+      "term": "CT",
+      "radlexId": "RID10312",
+      "radlexTerm": "Computed Tomography",
+      "category": "modality"
+    },
+    {
+      "term": "MRI",
+      "radlexId": "RID10315",
+      "radlexTerm": "Magnetic Resonance Imaging",
+      "category": "modality"
+    },
+    {
+      "term": "ultrasound",
+      "radlexId": "RID10316",
+      "radlexTerm": "Ultrasonography",
+      "category": "modality"
+    },
+    {
+      "term": "X-ray",
+      "radlexId": "RID10310",
+      "radlexTerm": "Radiography",
+      "category": "modality"
+    },
+    {
+      "term": "hemorrhage",
+      "radlexId": "RID3815",
+      "radlexTerm": "Hemorrhage",
+      "category": "finding"
+    },
+    {
+      "term": "mass",
+      "radlexId": "RID3860",
+      "radlexTerm": "Mass",
+      "category": "finding"
+    },
+    {
+      "term": "nodule",
+      "radlexId": "RID3861",
+      "radlexTerm": "Nodule",
+      "category": "finding"
+    },
+    {
+      "term": "effusion",
+      "radlexId": "RID3880",
+      "radlexTerm": "Effusion",
+      "category": "finding"
+    },
+    {
+      "term": "pneumothorax",
+      "radlexId": "RID4698",
+      "radlexTerm": "Pneumothorax",
+      "category": "finding"
+    },
+    {
+      "term": "hydronephrosis",
+      "radlexId": "RID4643",
+      "radlexTerm": "Hydronephrosis",
+      "category": "finding"
+    },
+    {
+      "term": "fracture",
+      "radlexId": "RID3840",
+      "radlexTerm": "Fracture",
+      "category": "finding"
+    },
+    {
+      "term": "metastasis",
+      "radlexId": "RID3907",
+      "radlexTerm": "Metastatic tumor",
+      "category": "disease"
+    },
+    {
+      "term": "carcinoma",
+      "radlexId": "RID3910",
+      "radlexTerm": "Carcinoma",
+      "category": "disease"
+    },
+    {
+      "term": "stroke",
+      "radlexId": "RID4600",
+      "radlexTerm": "Cerebrovascular accident",
+      "category": "disease"
+    },
+    {
+      "term": "aneurysm",
+      "radlexId": "RID4568",
+      "radlexTerm": "Aneurysm",
+      "category": "disease"
+    },
+    {
+      "term": "embolism",
+      "radlexId": "RID4570",
+      "radlexTerm": "Embolism",
+      "category": "disease"
+    },
+    {
+      "term": "thrombosis",
+      "radlexId": "RID4569",
+      "radlexTerm": "Thrombosis",
+      "category": "disease"
+    },
+    {
+      "term": "pneumonia",
+      "radlexId": "RID4657",
+      "radlexTerm": "Pneumonia",
+      "category": "disease"
+    },
+    {
+      "term": "emphysema",
+      "radlexId": "RID4660",
+      "radlexTerm": "Emphysema",
+      "category": "disease"
+    }
+  ],
+  "version": "1.0.0",
+  "lastUpdated": "2026-03-30T17:35:00.000Z"
+}

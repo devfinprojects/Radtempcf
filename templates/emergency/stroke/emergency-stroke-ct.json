@@ -1,0 +1,58 @@
+{
+  "id": "emergency-stroke-ct",
+  "name": "Emergency CT Stroke Protocol",
+  "version": "1.0.0",
+  "description": "Emergency CT head for evaluation of acute ischemic stroke",
+  "modality": "ct",
+  "bodyRegion": "brain",
+  "subspecialty": "emergency",
+  "clinicalContext": "stroke",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["emergency", "stroke", "ct", "ischemic", "acute stroke", "cerebral infarction"],
+    "cptCodes": ["70450"],
+    "radlexCodes": ["RID10310", "RID10311"]
+  },
+  "findings": {
+    "technique": "Non-contrast CT head was performed emergently for stroke evaluation. CT angiography of head and neck was also performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Hyperacute Ischemia",
+        "content": "There is [no early ischemic change / no loss of gray-white matter differentiation / no sulcal effacement / no focal hypodensity] to suggest acute infarction.",
+        "normalVariant": true
+      },
+      {
+        "name": "Hemorrhage",
+        "content": "There is [no intracranial hemorrhage / no hyperdensity / no hemorrhage / no SAH / no ICH] identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Vessel Hyperdensity",
+        "content": "There is [no vessel hyperdensity / no hyperdense MCA sign / no hyperdense basilar artery] to suggest acute thrombus.",
+        "normalVariant": true
+      },
+      {
+        "name": "Mass Effect",
+        "content": "There is [no mass effect / no midline shift / no herniation]. The ventricles are [not compressed].",
+        "normalVariant": true
+      },
+      {
+        "name": "CT Angiography",
+        "content": "CTA demonstrates [no large vessel occlusion / no intracranial occlusion]. The [MCA / ICA / basilar / vertebral] is [patent / occluded].",
+        "normalVariant": true
+      },
+      {
+        "name": "Aortic Arch",
+        "content": "The aortic arch and great vessels demonstrate [no dissection / no significant stenosis]. The carotid bifurcations are [patent].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No acute intracranial hemorrhage.\n2. [No large vessel occlusion / Large vessel occlusion in the X] identified on CTA.\n3. [No early ischemic changes / Findings consistent with acute ischemic infarction] in the [X] territory.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

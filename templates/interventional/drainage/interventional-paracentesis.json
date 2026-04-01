@@ -1,0 +1,35 @@
+{
+  "id": "interventional-paracentesis",
+  "name": "Paracentesis",
+  "version": "1.0.0",
+  "description": "Image-guided paracentesis for ascites drainage",
+  "modality": "us",
+  "bodyRegion": "abdomen",
+  "subspecialty": "interventional",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["interventional", "paracentesis", "ascites", "drainage", "ultrasound"]
+  },
+  "findings": {
+    "technique": "Ultrasound-guided paracentesis was performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Ascites",
+        "content": "Ascites [drained successfully / transudative/exudative appearance].",
+        "normalVariant": true
+      },
+      {
+        "name": "Abdominal Contents",
+        "content": "No bowel injury identified. Fluid drains freely.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Successful paracentesis performed.\n2. No immediate complications.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

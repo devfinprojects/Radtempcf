@@ -1,0 +1,40 @@
+{
+  "id": "msk-soft-tissue-us",
+  "name": "Soft Tissue Ultrasound",
+  "version": "1.0.0",
+  "description": "Standard soft tissue ultrasound template",
+  "modality": "ultrasound",
+  "bodyRegion": "soft-tissue",
+  "subspecialty": "musculoskeletal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["musculoskeletal", "soft-tissue", "ultrasound"]
+  },
+  "findings": {
+    "technique": "Ultrasound of the [anatomic region] was performed using grayscale and Doppler.",
+    "comparison": "No prior imaging for comparison.",
+    "limitations": "Limited by patient body habitus.",
+    "sections": [
+      {
+        "name": "Subcutaneous Tissue",
+        "content": "Subcutaneous tissue [is unremarkable / no abnormal collection / no mass] identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Muscle",
+        "content": "Muscle [is normal in echogenicity / no tear / no hematoma] identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Vascularity",
+        "content": "Vascular flow [is normal / no increased vascularity / no AV malformation].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. [No acute abnormality / Normal soft tissues].\n2. [Recommend clinical correlation if symptoms persist].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "chest-lung-ct-contrast",
+  "name": "Chest CT With Contrast",
+  "version": "1.0.0",
+  "description": "Chest CT with intravenous contrast for detailed evaluation of pulmonary parenchyma, mediastinum, and vasculature",
+  "modality": "ct",
+  "bodyRegion": "chest",
+  "subspecialty": "chest-thoracic",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["chest", "ct", "contrast", "lung", "mediastinum", "thoracic", "pulmonary"],
+    "cptCodes": ["71260"],
+    "radlexCodes": ["RID10312", "RID10313"]
+  },
+  "findings": {
+    "technique": "Contrast-enhanced CT of the chest was performed from the lung apices to the adrenal glands with thin-section reconstructions.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Trachea and Main Bronchi",
+        "content": "The trachea is [midline / no deviation]. The main bronchi are [patent / no obstruction / no stenosis]. No endobronchial lesion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Pulmonary Parenchyma",
+        "content": "The pulmonary parenchyma demonstrates [no consolidation / no nodules / no ground-glass opacity / no interstitial thickening]. The lung windows show [clear lung fields / no abnormality].",
+        "normalVariant": true
+      },
+      {
+        "name": "Pulmonary Vessels",
+        "content": "The pulmonary arteries are [patent / no embolism / no dilation]. The pulmonary veins are [normal / patent].",
+        "normalVariant": true
+      },
+      {
+        "name": "Mediastinum",
+        "content": "The mediastinal lymph nodes are [not enlarged / no lymphadenopathy]. The mediastinal fat is [unremarkable / no mass]. No abnormal mediastinal enhancement.",
+        "normalVariant": true
+      },
+      {
+        "name": "Heart and Pericardium",
+        "content": "The heart demonstrates [normal chamber size / no cardiomegaly / no pericardial effusion]. The pericardium is [intact / no thickening].",
+        "normalVariant": true
+      },
+      {
+        "name": "Pleura",
+        "content": "The bilateral pleura demonstrate [no thickening / no effusion / no plaque]. No pleural-based masses.",
+        "normalVariant": true
+      },
+      {
+        "name": "Chest Wall",
+        "content": "The chest wall demonstrates [no mass / no infiltration / no rib fracture]. The soft tissues are [unremarkable].",
+        "normalVariant": true
+      },
+      {
+        "name": "Osseous Structures",
+        "content": "The thoracic vertebrae and ribs demonstrate [no fracture / no lytic or blastic lesion]. No bony abnormality.",
+        "normalVariant": true
+      },
+      {
+        "name": "Upper Abdomen",
+        "content": "The liver, spleen, and adrenal glands are [unremarkable / no mass]. No upper abdominal abnormality.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal contrast-enhanced chest CT.\n2. No pulmonary nodule, mass, or infiltrate.\n3. No mediastinal lymphadenopathy or vascular abnormality.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

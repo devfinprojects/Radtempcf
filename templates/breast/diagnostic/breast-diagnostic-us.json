@@ -1,0 +1,35 @@
+{
+  "id": "breast-diagnostic-us",
+  "name": "Diagnostic Breast Ultrasound",
+  "version": "1.0.0",
+  "description": "Standard diagnostic breast ultrasound template",
+  "modality": "ultrasound",
+  "bodyRegion": "breast",
+  "subspecialty": "breast",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["breast", "ultrasound", "diagnostic"]
+  },
+  "findings": {
+    "technique": "Targeted ultrasound of the [right/left] breast was performed.",
+    "comparison": "Correlation with prior mammography [is provided / is pending].",
+    "limitations": "None.",
+    "sections": [
+      {
+        "name": "Target Area",
+        "content": "[Location]: [No solid mass / No cystic mass / No complex mass] identified.\n[If mass: measures __ x __ x __ cm, has [circumscribed/ microlobulated/ angular/ spiculated] margins]",
+        "normalVariant": true
+      },
+      {
+        "name": "Axilla",
+        "content": "Axilla: [No abnormal lymph nodes / Abnormal lymph nodes measuring __ cm] identified.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. BI-RADS: [Category]. [Describe finding].\n2. [Recommend biopsy / Recommend short-interval follow-up / Routine screening].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

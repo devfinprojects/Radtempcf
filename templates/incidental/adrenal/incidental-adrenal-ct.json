@@ -1,0 +1,53 @@
+{
+  "id": "incidental-adrenal-ct",
+  "name": "Incidental Adrenal Finding CT",
+  "version": "1.0.0",
+  "description": "CT report template for incidental adrenal findings following ACR recommendations",
+  "modality": "ct",
+  "bodyRegion": "abdomen",
+  "subspecialty": "incidental",
+  "clinicalContext": "incidental",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["incidental", "adrenal", "ct", "adenoma", "incidentaloma", "acr"],
+    "cptCodes": ["74177"],
+    "radlexCodes": ["RID10312", "RID10313"]
+  },
+  "findings": {
+    "technique": "Contrast-enhanced CT of the abdomen was performed with portal venous phase imaging.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Right Adrenal",
+        "content": "The right adrenal gland demonstrates [no mass / a X cm homogeneous mass / a X cm heterogeneous mass] with [low attenuation <10 HU / intermediate attenuation 10-20 HU / high attenuation >20 HU]. No irregular margins or invasion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Adrenal",
+        "content": "The left adrenal gland demonstrates [no mass / a X cm homogeneous mass / a X cm heterogeneous mass] with [low attenuation <10 HU / intermediate attenuation 10-20 HU / high attenuation >20 HU]. No irregular margins or invasion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Washout Characteristics",
+        "content": "If contrast given, the absolute washout is [X]% and relative washout is [X]% [consistent with adenoma / indeterminate / suggestive of adenoma].",
+        "normalVariant": true
+      },
+      {
+        "name": "Size",
+        "content": "The adrenal mass measures [X] cm in greatest dimension.",
+        "normalVariant": true
+      },
+      {
+        "name": "Other Findings",
+        "content": "No evidence of metastatic disease. No lymphadenopathy. The remainder of the study is unremarkable.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Incidental adrenal finding.\n2. [X] cm [right/left] adrenal mass with attenuation of [X] HU.\n3. Findings [are consistent with adenoma / require further evaluation with MRI or follow-up] per ACR incidental findings guidelines.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,178 @@
+{
+  "id": "workflow-billing-mqsa",
+  "name": "MQSA Compliance",
+  "version": "1.0.0",
+  "description": "Mammography Quality Standards Act compliance requirements and documentation",
+  "category": "workflow-billing",
+  "priority": "P1",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["mqsa", "compliance", "mammography", "quality", "regulation"]
+  },
+  "mqsaRequirements": {
+    "facilityCertification": {
+      "facilityName": "",
+      "mqsaFacilityId": "",
+      "certificationNumber": "",
+      "expirationDate": "",
+      "accreditingBody": ""
+    },
+    "personnel": {
+      "interpretingPhysicians": [
+        {
+          "name": "",
+          "credentials": "",
+          "mqsaPermitNumber": "",
+          "trainingHours": "",
+          "lastReviewDate": ""
+        }
+      ],
+      "technologists": [
+        {
+          "name": "",
+          "credentials": "",
+          "certificationNumber": "",
+          "lastReviewDate": ""
+        }
+      ],
+      "medicalPhysicist": {
+        "name": "",
+        "credentials": "",
+        "certificationNumber": "",
+        "lastReviewDate": ""
+      }
+    }
+  },
+  "qualityAssurance": {
+    "dailyQC": {
+      "phantomImage": {
+        "performed": true,
+        "date": "",
+        "exposure": "",
+        "density": "",
+        "contrast": "",
+        "Artifacts": "",
+        "acceptable": true
+      },
+      "processorQC": {
+        "performed": true,
+        "date": "",
+        "sensitometerStrip": "",
+        "acceptable": true
+      }
+    },
+    "weeklyQC": {
+      "processorCleanliness": true,
+      "viewboxesCleanliness": true,
+      "filmStorageCheck": true
+    },
+    "monthlyQC": {
+      "repeatAnalysis": {
+        "totalImages": 0,
+        "repeatRate": 0,
+        "acceptableThreshold": 5
+      },
+      "mammographyEquipmentInspection": true
+    },
+    "annualQC": {
+      "physicsSurvey": {
+        "date": "",
+        "physicistName": "",
+        "findings": "",
+        "compliant": true
+      },
+      "equipmentMaintenance": true,
+      "personnelEvaluations": true
+    }
+  },
+  "patientCommunication": {
+    "resultNotification": {
+      "biRads1Negative": {
+        "communicationMethod": "Written",
+        "timeframe": "30 days",
+        "content": "Results are normal"
+      },
+      "biRads2Benign": {
+        "communicationMethod": "Written",
+        "timeframe": "30 days",
+        "content": "Benign findings, routine screening recommended"
+      },
+      "biRads0NeedAdditional": {
+        "communicationMethod": "Written and verbal",
+        "timeframe": "3 working days",
+        "content": "Additional evaluation needed"
+      },
+      "biRads4Suspicious": {
+        "communicationMethod": "Written and verbal",
+        "timeframe": "3 working days",
+        "content": "Biopsy should be considered"
+      },
+      "biRads5HighlySuggestive": {
+        "communicationMethod": "Written and verbal",
+        "timeframe": "3 working days",
+        "content": "High probability of malignancy"
+      },
+      "biRads6KnownCancer": {
+        "communicationMethod": "Written",
+        "timeframe": "Appropriate timeframe",
+        "content": "Known cancer under treatment"
+      }
+    }
+  },
+  "reporting": {
+    "mammogramReport": {
+      "patientInformation": {
+        "patientId": "",
+        "dateOfBirth": "",
+        "dateOfMammogram": "",
+        "referringPhysician": ""
+      },
+      "technique": {
+        "views": [],
+        "contrast": false,
+        "additionalViews": []
+      },
+      "findings": {
+        "breastDensity": "",
+        "masses": [],
+        "calcifications": [],
+        "architecturalDistortion": [],
+        "asymmetries": [],
+        "associatedFindings": []
+      },
+      "biRadsAssessment": {
+        "category": "",
+        "assessment": "",
+        "recommendation": ""
+      },
+      "comparison": {
+        "priorStudies": [],
+        "comparisonDate": "",
+        "changeDescription": ""
+      }
+    },
+    "auditRequirements": {
+      "outcomesAudit": true,
+      "trackingOfPositiveResults": true,
+      "CancerDetectionRate": {
+        "target": "70% or greater for screening",
+        "minimum": 60
+      },
+      "RecallRate": {
+        "target": "10-15% for screening",
+        "maximum": 20
+      }
+    }
+  },
+  "documentation": {
+    "recordsRetention": "10 years",
+    "hipaaCompliant": true,
+    "equipmentMaintenanceLog": true,
+    "personnelFiles": true,
+    "qualityControlRecords": true
+  },
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

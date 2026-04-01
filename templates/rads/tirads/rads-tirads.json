@@ -1,0 +1,68 @@
+{
+  "id": "rads-tirads",
+  "name": "TI-RADS (Thyroid Imaging Reporting and Data System)",
+  "version": "1.0.0",
+  "description": "TI-RADS classification template for thyroid nodule assessment on ultrasound",
+  "modality": "ultrasound",
+  "bodyRegion": "thyroid",
+  "subspecialty": "head-neck",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["rads", "thyroid", "ti-rads", "ultrasound", "nodule"]
+  },
+  "rads": {
+    "system": "TI-RADS",
+    "category": "TI-RADS 4",
+    "score": 4,
+    "assessment": "Intermediate suspicion",
+    "recommendation": "FNA recommended if nodule >=1.0 cm",
+    "lesionLocation": "Right/Left lobe, [upper/mid/lower] pole",
+    "size": {
+      "value": 1.5,
+      "unit": "cm"
+    },
+    "date": "2026-03-30"
+  },
+  "findings": {
+    "technique": "High-resolution ultrasound of the thyroid performed using [linear transducer, X-MHz]. Gray-scale and color Doppler images obtained.",
+    "comparison": "Comparison made with [prior US / prior FNA] from [date].",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Composition",
+        "content": "Nodule composition: [cystic / spongiform / solid or nearly solid / mixed cystic and solid].",
+        "normalVariant": false
+      },
+      {
+        "name": "Echogenicity",
+        "content": "Echogenicity: [anechoic / hyperechoic / isoechoic / hypoechoic / very hypoechoic].",
+        "normalVariant": false
+      },
+      {
+        "name": "Shape",
+        "content": "Shape: [taller-than-wide / not taller-than-wide].",
+        "normalVariant": false
+      },
+      {
+        "name": "Margins",
+        "content": "Margins: [smooth / irregular / lobulated / irregular / halo].",
+        "normalVariant": false
+      },
+      {
+        "name": "Echogenic Foci",
+        "content": "Echogenic foci: [none / large comet-tail artifacts / peripheral calcification / macrocalcification / punctate echogenic foci].",
+        "normalVariant": false
+      },
+      {
+        "name": "Doppler",
+        "content": "Vascularity: [no internal vascularity / peripheral vascularity / internal vascularity].",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. TI-RADS [X]: [category description]\n2. [Location] nodule measuring [X]cm\n3. Composition: [X]. Echogenicity: [X]. Shape: [X]. Margins: [X]. Foci: [X]\n4. FNA recommended: [Yes / No] based on size threshold of [X]cm\n5. [Follow-up recommended in X months / Biopsy recommended]",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

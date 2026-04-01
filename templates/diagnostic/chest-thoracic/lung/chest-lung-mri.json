@@ -1,0 +1,53 @@
+{
+  "id": "chest-lung-mri",
+  "name": "Chest MRI",
+  "version": "1.0.0",
+  "description": "MRI of the chest for evaluation of mediastinal, pleural, and chest wall pathology",
+  "modality": "mri",
+  "bodyRegion": "chest",
+  "subspecialty": "chest-thoracic",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["chest", "mri", "mediastinum", "thoracic", "chest wall"],
+    "cptCodes": ["71550"],
+    "radlexCodes": ["RID10456", "RID10457"]
+  },
+  "findings": {
+    "technique": "MRI of the chest was performed with T1, T2, and STIR sequences in multiple planes.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Mediastinum",
+        "content": "The mediastinum demonstrates [no mass / no adenopathy / no abnormal signal]. The great vessels are [patent / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Heart",
+        "content": "The heart demonstrates [normal signal / no mass / no pericardial effusion]. The chamber walls are [normal / no thickening].",
+        "normalVariant": true
+      },
+      {
+        "name": "Lungs",
+        "content": "The lungs demonstrate [no masses / no abnormal signal / no consolidation]. No pleural-based masses.",
+        "normalVariant": true
+      },
+      {
+        "name": "Pleura",
+        "content": "The bilateral pleura demonstrate [no thickening / no effusion / no masses].",
+        "normalVariant": true
+      },
+      {
+        "name": "Chest Wall",
+        "content": "The chest wall demonstrates [no mass / no infiltration / no abnormal signal]. No rib involvement.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal chest MRI.\n2. No mediastinal, pleural, or chest wall abnormality identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

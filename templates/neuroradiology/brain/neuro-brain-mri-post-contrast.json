@@ -1,0 +1,45 @@
+{
+  "id": "neuro-brain-mri-post-contrast",
+  "name": "Brain MRI Post-Contrast",
+  "version": "1.0.0",
+  "description": "Brain MRI with gadolinium contrast for lesion enhancement evaluation",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "contrast", "gadolinium", "enhancement", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "T1-weighted images were obtained following intravenous gadolinium administration.",
+    "comparison": "No prior MRI studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Parenchymal Enhancement",
+        "content": "No abnormal parenchymal enhancement identified. No mass or lesion demonstrating contrast uptake.",
+        "normalVariant": true
+      },
+      {
+        "name": "Meningeal Enhancement",
+        "content": "No abnormal meningeal enhancement. Dura appears normal.",
+        "normalVariant": true
+      },
+      {
+        "name": "Vascular Enhancement",
+        "content": "No abnormal vascular enhancement. Cranial nerves show normal course and enhancement.",
+        "normalVariant": true
+      },
+      {
+        "name": "Ventricular Enhancement",
+        "content": "No ependymal or periventricular enhancement. Ventricular system is normal.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal post-contrast study.\n2. No abnormal enhancement to suggest neoplasm, inflammation, or infection.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

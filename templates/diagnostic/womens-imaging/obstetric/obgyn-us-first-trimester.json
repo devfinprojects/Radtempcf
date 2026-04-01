@@ -1,0 +1,68 @@
+{
+  "id": "obgyn-us-first-trimester",
+  "name": "OB Ultrasound First Trimester",
+  "version": "1.0.0",
+  "description": "First trimester obstetric ultrasound for evaluation of intrauterine pregnancy and fetal well-being",
+  "modality": "us",
+  "bodyRegion": "obstetric",
+  "subspecialty": "womens-imaging",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["obgyn", "ultrasound", "obstetric", "first trimester", "pregnancy", "fetus"],
+    "cptCodes": ["76801"],
+    "radlexCodes": ["RID10750", "RID10751"]
+  },
+  "findings": {
+    "technique": "Transabdominal and transvaginal ultrasound was performed to evaluate the first trimester pregnancy.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Uterus",
+        "content": "The uterus is [anteverted / retroverted / normal position] with [normal / no fibroids / no adenomyosis] myometrial echotexture.",
+        "normalVariant": true
+      },
+      {
+        "name": "Endometrium",
+        "content": "The endometrial complex is [appropriate for pregnancy / no abnormal findings].",
+        "normalVariant": true
+      },
+      {
+        "name": "Gestational Sac",
+        "content": "An intrauterine gestational sac is identified measuring [X mm] in greatest dimension. The sac demonstrates [a yolk sac / fetal pole / fetal heartbeat].",
+        "normalVariant": true
+      },
+      {
+        "name": "Crown-Rump Length",
+        "content": "The crown-rump length measures [X mm] corresponding to approximately [X weeks and X days] gestational age.",
+        "normalVariant": true
+      },
+      {
+        "name": "Fetal Heart Rate",
+        "content": "Fetal cardiac activity is identified with a heart rate of approximately [X] beats per minute.",
+        "normalVariant": true
+      },
+      {
+        "name": "Yolk Sac",
+        "content": "A yolk sac is identified and measures [X mm] in diameter. The yolk sac is [normal / not enlarged].",
+        "normalVariant": true
+      },
+      {
+        "name": "Adnexa",
+        "content": "The right and left adnexa are [unremarkable / no mass / no ectopic pregnancy]. The ovaries are [visualized / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Cervix",
+        "content": "The cervix measures [X cm] in length and appears [closed / no cervical incompetence].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Intrauterine pregnancy at approximately [X] weeks by crown-rump length.\n2. Fetal cardiac activity present.\n3. No evidence of ectopic pregnancy or molar gestation.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

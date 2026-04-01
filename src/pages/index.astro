@@ -1,0 +1,154 @@
+---
+// Landing Page - Main entry point
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Template categories with counts
+const categories = [
+  { name: 'CT', count: 150, icon: '🩻', href: '/modalities/ct', description: 'Computed Tomography' },
+  { name: 'MRI', count: 120, icon: '🧠', href: '/modalities/mri', description: 'Magnetic Resonance Imaging' },
+  { name: 'X-Ray', count: 100, icon: '📷', href: '/modalities/x-ray', description: 'Plain Radiographs' },
+  { name: 'Ultrasound', count: 80, icon: '🔊', href: '/modalities/ultrasound', description: 'Sonography' },
+  { name: 'Nuclear', count: 60, icon: '☢️', href: '/modalities/nuclear', description: 'Nuclear Medicine & PET' },
+  { name: 'Fluoroscopy', count: 40, icon: '💡', href: '/modalities/fluoroscopy', description: 'Fluoroscopic Studies' },
+];
+
+const features = [
+  { title: 'Structured Templates', description: 'Standardized radiology report templates with consistent formatting and terminology.', icon: '📋' },
+  { title: 'RADS Classifications', description: 'Complete LI-RADS, PI-RADS, TI-RADS, and more classification systems.', icon: '🏷️' },
+  { title: 'AI Integration', description: 'LLM prompts and NLP schemas for automated findings generation.', icon: '🤖' },
+  { title: 'Multi-Format Export', description: 'Export to Markdown, JSON, XML (MRRT), FHIR, PDF, and more.', icon: '📤' },
+  { title: 'Clinical Calculators', description: 'Dose calculators, scoring systems, and measurement tools.', icon: '🧮' },
+  { title: 'Open Source', description: 'MIT licensed, community-driven template development.', icon: '🔓' },
+];
+
+const stats = [
+  { value: '550+', label: 'Templates' },
+  { value: '6', label: 'Modalities' },
+  { value: '10+', label: 'RADS Systems' },
+  { value: '8', label: 'Export Formats' },
+];
+---
+
+<BaseLayout title="Home">
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          Radiology Report Templates
+        </h1>
+        <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
+          A comprehensive, open-source collection of structured radiology report templates for healthcare professionals. Standardized findings, classifications, and AI integration.
+        </p>
+        
+        <!-- Search Box -->
+        <form action="/templates" method="get" class="max-w-xl mx-auto mb-8">
+          <div class="relative">
+            <input 
+              type="text" 
+              name="search" 
+              placeholder="Search templates (e.g., brain MRI, lung CT)"
+              class="w-full px-6 py-4 text-lg rounded-lg shadow-lg border-2 border-transparent focus:border-blue-500 dark:bg-gray-800 dark:text-white"
+            />
+            <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">
+              Search
+            </button>
+          </div>
+        </form>
+        
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/templates" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+            Browse Templates
+          </a>
+          <a href="/docs/install" class="bg-white dark:bg-gray-800 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-12 bg-white dark:bg-gray-800">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        {stats.map(stat => (
+          <div class="text-center">
+            <div class="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400">{stat.value}</div>
+            <div class="text-gray-600 dark:text-gray-400">{stat.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Grid -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Browse by Modality</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {categories.map(category => (
+          <a href={category.href} class="block p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition">
+            <div class="text-4xl mb-4">{category.icon}</div>
+            <h3 class="text-xl font-semibold mb-2">{category.name}</h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-2">{category.description}</p>
+            <p class="text-blue-600 dark:text-blue-400 font-medium">{category.count} templates</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-16 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Key Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {features.map(feature => (
+          <div class="flex items-start">
+            <div class="text-3xl mr-4">{feature.icon}</div>
+            <div>
+              <h3 class="text-lg font-semibold mb-2">{feature.title}</h3>
+              <p class="text-gray-600 dark:text-gray-400">{feature.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Start Guide -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Quick Start</h2>
+      <div class="max-w-3xl mx-auto">
+        <div class="bg-gray-900 dark:bg-gray-800 rounded-lg p-6 font-mono text-sm">
+          <pre class="text-green-400"># Install the CLI tool
+npm install -g radtemp
+
+# Generate a template
+radtemp generate brain-mri
+
+# Export to different formats
+radtemp export brain-mri --format json
+radtemp export brain-mri --format markdown
+radtemp export brain-mri --format fhir</pre>
+        </div>
+        <p class="text-center mt-6">
+          <a href="/docs/install" class="text-blue-600 hover:underline">View Full Documentation →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-blue-600 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Get Started Today</h2>
+      <p class="text-xl mb-8">Join thousands of radiologists using RadReport Templates</p>
+      <a href="/templates" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+        Browse Templates
+      </a>
+    </div>
+  </section>
+</BaseLayout>

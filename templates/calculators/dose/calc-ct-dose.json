@@ -1,0 +1,48 @@
+{
+  "id": "calc-ct-dose",
+  "name": "CT Dose Calculator",
+  "version": "1.0.0",
+  "description": "Clinical calculator template for CT dose estimation and optimization",
+  "modality": "calculator",
+  "bodyRegion": "general",
+  "subspecialty": "quality",
+  "clinicalContext": "calculator",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["calculator", "ct", "dose", "radiation", "ctdi", "dlp"],
+    "cptCodes": [],
+    "radlexCodes": []
+  },
+  "findings": {
+    "technique": "CT dose calculation and analysis based on protocol parameters.",
+    "comparison": "N/A",
+    "limitations": "N/A",
+    "sections": [
+      {
+        "name": "Protocol Parameters",
+        "content": "Scan length: [X] cm | Number of slices: [X] | Collimation: [X] mm | Rotation time: [X] s | Pitch: [X]",
+        "normalVariant": true
+      },
+      {
+        "name": "Dose Metrics",
+        "content": "CTDIvol: [X] mGy | DLP: [X] mGy-cm | Effective dose: [X] mSv",
+        "normalVariant": true
+      },
+      {
+        "name": "Dose Comparison",
+        "content": "This scan is [above/below/below] the ACR dose reference levels for [examination type].",
+        "normalVariant": true
+      },
+      {
+        "name": "Optimization Opportunities",
+        "content": "Potential dose reduction strategies: [iterative reconstruction / dose modulation / reduced kVp / decreased scan length].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "CT Dose Assessment:\n1. CTDIvol: [X] mGy\n2. Effective dose estimate: [X] mSv\n3. [Dose is within/above] ACR reference levels.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

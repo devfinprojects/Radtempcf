@@ -1,0 +1,65 @@
+{
+  "id": "onco-thoracic-lung",
+  "name": "Lung Cancer Synoptic Report",
+  "version": "1.0.0",
+  "description": "Synoptic pathology report template for lung cancer",
+  "modality": "pathology",
+  "bodyRegion": "lung",
+  "subspecialty": "oncology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["oncology", "lung", "thoracic", "cancer", "synoptic", "pathology"]
+  },
+  "findings": {
+    "technique": "Lobectomy / wedge resection / segmentectomy / pneumonectomy specimen submitted for pathological examination. Specimen inked and serially sectioned.",
+    "comparison": "Clinical history: [lung mass / lung cancer staging]. Pre-operative imaging: [CT/PET showing mass in X lobe]. Prior biopsy: [positive/negative] for malignancy.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Specimen Type",
+        "content": "Specimen type: [Lobectomy / Segmentectomy / Wedge resection / Pneumonectomy] [right/left], [upper/middle/lower] lobe.",
+        "normalVariant": false
+      },
+      {
+        "name": "Histologic Type",
+        "content": "Histologic type: [Adenocarcinoma / Squamous cell carcinoma / Small cell carcinoma / Large cell carcinoma / Carcinoid tumor / Other]. Subtype: [lepidic / acinar / papillary / solid / micropapillary for adenocarcinoma].",
+        "normalVariant": false
+      },
+      {
+        "name": "Tumor Size",
+        "content": "Tumor size: [X]cm (greatest dimension). [Tumor location: X lobe, X segment]. [Pleural involvement: visceral pleura / parietal pleura / chest wall].",
+        "normalVariant": false
+      },
+      {
+        "name": "Grade",
+        "content": "Histologic grade: [Well / Moderately / Poorly] differentiated. [Associated with lepidic pattern / Scar-forming / other patterns].",
+        "normalVariant": false
+      },
+      {
+        "name": "Stromal Invasion",
+        "content": "Stromal invasion: [present/absent]. [Invasive size: X cm]. [Pattern: acinar / papillary / solid / micropapillary]. [STAS: present/absent].",
+        "normalVariant": false
+      },
+      {
+        "name": "Lymph Nodes",
+        "content": "Lymph nodes: [Station X] examined, [X] positive for metastasis. [Total nodes: X]. [Hilar / Mediastinal] nodes. [Extranodal extension: present/absent].",
+        "normalVariant": false
+      },
+      {
+        "name": "Margins",
+        "content": "Bronchial margin: [uninvolved / involved]. Vascular margin: [uninvolved / involved]. Parenchymal margin: [uninvolved / involved].",
+        "normalVariant": false
+      },
+      {
+        "name": "Molecular Testing",
+        "content": "EGFR mutation: [mutated / wild-type / not performed]. ALK rearrangement: [positive / negative / not performed]. PD-L1 TPS: [X]%.",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. [Histologic type], [subtype], [grade], measuring [X]cm\n2. [pT stage] with [pleural invasion: present/absent]. [STAS: present/absent]\n3. Lymph nodes: [X] positive out of [X] examined\n4. Margins: [status]\n5. Molecular: [EGFR: X, ALK: X, PD-L1: X%]\n6. [AJCC 8th edition stage: pT[X] pN[X] M[X]]",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

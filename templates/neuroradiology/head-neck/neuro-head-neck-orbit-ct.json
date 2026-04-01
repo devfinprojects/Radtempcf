@@ -1,0 +1,45 @@
+{
+  "id": "neuro-head-neck-orbit-ct",
+  "name": "Orbit CT",
+  "version": "1.0.0",
+  "description": "CT of the orbits for orbital pathology evaluation",
+  "modality": "ct",
+  "bodyRegion": "head-neck",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["head-neck", "orbit", "ct", "eye", "globe"]
+  },
+  "findings": {
+    "technique": "CT of the orbits without contrast was performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Globes",
+        "content": "Right globe [is intact / no rupture / no mass]. Left globe [is intact / no rupture / no mass].",
+        "normalVariant": true
+      },
+      {
+        "name": "Extraocular Muscles",
+        "content": "Extraocular muscles [are normal in size / not enlarged / symmetric].",
+        "normalVariant": true
+      },
+      {
+        "name": "Optic Nerves",
+        "content": "Optic nerves [are normal / no compression / no enhancement].",
+        "normalVariant": true
+      },
+      {
+        "name": "Orbital Fat",
+        "content": "Orbital fat [is clear / no infiltration / no mass].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal orbit CT.\n2. No orbital pathology identified.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

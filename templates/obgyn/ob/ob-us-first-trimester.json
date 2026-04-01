@@ -1,0 +1,45 @@
+{
+  "id": "ob-us-first-trimester",
+  "name": "OB Ultrasound - First Trimester",
+  "version": "1.0.0",
+  "description": "First trimester OB ultrasound template",
+  "modality": "ultrasound",
+  "bodyRegion": "pelvis",
+  "subspecialty": "obgyn",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["obstetrics", "pregnancy", "ultrasound", "first-trimester"]
+  },
+  "findings": {
+    "technique": "Transabdominal and/or transvaginal ultrasound was performed.",
+    "comparison": "No prior OB ultrasound for comparison.",
+    "limitations": "None.",
+    "sections": [
+      {
+        "name": "Gestational Sac",
+        "content": "Gestational sac: [Visualized / Measures __ mm / Located in uterine cavity].",
+        "normalVariant": true
+      },
+      {
+        "name": "Fetal Pole",
+        "content": "Fetal pole: [Present / CRL __ mm / Cardiac activity present at __ bpm].",
+        "normalVariant": true
+      },
+      {
+        "name": "Yolk Sac",
+        "content": "Yolk sac: [Present / Normal in appearance].",
+        "normalVariant": true
+      },
+      {
+        "name": "Adnexa",
+        "content": "Adnexa: [No adnexal mass / No ectopic pregnancy] identified.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. [Intrauterine pregnancy / Single live fetus at __ weeks __ days].\n2. [Estimated due date: __ / FHR: __ bpm].\n3. [Recommend routine prenatal care].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

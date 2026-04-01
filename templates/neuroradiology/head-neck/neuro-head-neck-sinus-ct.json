@@ -1,0 +1,45 @@
+{
+  "id": "neuro-head-neck-sinus-ct",
+  "name": "Sinus CT",
+  "version": "1.0.0",
+  "description": "CT of the paranasal sinuses for sinus disease evaluation",
+  "modality": "ct",
+  "bodyRegion": "head-neck",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["head-neck", "sinus", "ct", "sinusitis", "nasal"]
+  },
+  "findings": {
+    "technique": "CT of the paranasal sinuses without contrast was performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Frontal Sinuses",
+        "content": "Frontal sinuses [are aerated / clear / no fluid / no mucosal thickening].",
+        "normalVariant": true
+      },
+      {
+        "name": "Maxillary Sinuses",
+        "content": "Maxillary sinuses [are aerated / clear / no fluid / no mucosal thickening]. Ostia are patent.",
+        "normalVariant": true
+      },
+      {
+        "name": "Ethmoid Sinuses",
+        "content": "Ethmoid air cells [are aerated / clear / no fluid / no mucosal thickening].",
+        "normalVariant": true
+      },
+      {
+        "name": "Sphenoid Sinus",
+        "content": "Sphenoid sinus [is aerated / clear / no fluid / no mucosal thickening].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No acute sinusitis.\n2. Paranasal sinuses are clear.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

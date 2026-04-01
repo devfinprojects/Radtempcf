@@ -1,0 +1,68 @@
+{
+  "id": "neuro-brain-mri-dementia",
+  "name": "Brain MRI Dementia Protocol",
+  "version": "1.0.0",
+  "description": "Dedicated brain MRI protocol for evaluation of dementia including Alzheimer disease and vascular dementia",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "dementia", "alzheimer", "cognitive impairment", "neuroradiology"],
+    "cptCodes": ["70551", "70553"],
+    "radlexCodes": ["RID10456", "RID10457", "RID28710"]
+  },
+  "findings": {
+    "technique": "Dementia protocol MRI including volumetric T1, T2, FLAIR, and coronal sequences optimized for hippocampal and cortical evaluation.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Hippocampi",
+        "content": "The bilateral hippocampi demonstrate [no atrophy / mild hippocampal atrophy / moderate to severe hippocampal atrophy]. No hippocampal sclerosis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Entorhinal Cortex",
+        "content": "The entorhinal cortex demonstrates [no atrophy / no thinning / no abnormal signal]. The medial temporal lobe is otherwise [normal / shows atrophy].",
+        "normalVariant": true
+      },
+      {
+        "name": "Cortical Atrophy",
+        "content": "The cerebral cortex demonstrates [no diffuse cortical atrophy / diffuse cortical atrophy / focal cortical atrophy]. The pattern is [predominantly posterior / diffuse / focal].",
+        "normalVariant": true
+      },
+      {
+        "name": "White Matter",
+        "content": "The white matter demonstrates [no ischemic change / mild white matter hyperintensities / moderate white matter disease / severe white matter ischemic changes]. The Fazekas score is [0 / 1 / 2 / 3].",
+        "normalVariant": true
+      },
+      {
+        "name": "Lacunes and Microinfarcts",
+        "content": "There are [no lacunes / X lacunar infarcts] identified in the [basal ganglia / thalamus / white matter / brainstem]. No chronic microhemorrhages on SWI.",
+        "normalVariant": true
+      },
+      {
+        "name": "Ventricles",
+        "content": "The lateral ventricles demonstrate [no dilatation / mild ventricular dilatation / moderate to severe ventricular dilatation] consistent with [age-appropriate / ex vacuo] hydrocephalus.",
+        "normalVariant": true
+      },
+      {
+        "name": "Vascular",
+        "content": "The intracranial arteries demonstrate [no significant stenosis / atherosclerotic disease]. No flow-limiting stenosis identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Mass and Other",
+        "content": "No intracranial mass, hemorrhage, or suspicious lesion identified.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. MRI brain for dementia evaluation.\n2. [No evidence of neurodegenerative process / Findings suggestive of Alzheimer-type neurodegeneration].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

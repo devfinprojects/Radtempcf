@@ -1,0 +1,40 @@
+{
+  "id": "vascular-cta-carotid",
+  "name": "CTA Carotid Arteries",
+  "version": "1.0.0",
+  "description": "CT angiography of the carotid arteries for stroke and stenosis evaluation",
+  "modality": "ct",
+  "bodyRegion": "vascular",
+  "subspecialty": "vascular",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["vascular", "carotid", "cta", "stenosis", "stroke"]
+  },
+  "findings": {
+    "technique": "CT angiography of the neck and intracranial vessels was performed following intravenous contrast.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Internal Carotid Arteries",
+        "content": "Right ICA: [no stenosis / no plaque]. Left ICA: [no stenosis / no plaque]. No dissection.",
+        "normalVariant": true
+      },
+      {
+        "name": "External Carotid Arteries",
+        "content": "External carotid arteries [are patent / normal] bilaterally.",
+        "normalVariant": true
+      },
+      {
+        "name": "Vertebral Arteries",
+        "content": "Vertebral arteries [are patent / no stenosis] bilaterally.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No significant carotid stenosis.\n2. No vertebral artery stenosis.\n3. Normal carotid CTA.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

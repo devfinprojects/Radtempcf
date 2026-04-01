@@ -1,0 +1,68 @@
+{
+  "id": "rads-virads",
+  "name": "VI-RADS (Vesical Imaging Reporting and Data System)",
+  "version": "1.0.0",
+  "description": "VI-RADS classification template for bladder cancer assessment on multiparametric MRI",
+  "modality": "mri",
+  "bodyRegion": "bladder",
+  "subspecialty": "genitourinary",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["rads", "bladder", "vi-rads", "mri", "cancer"]
+  },
+  "rads": {
+    "system": "VI-RADS",
+    "category": "VI-RADS 3",
+    "score": 3,
+    "assessment": "Indeterminate for muscle invasion",
+    "recommendation": "Consider repeat biopsy or TURBT for staging",
+    "lesionLocation": "[Right/Left] lateral wall / trigone / dome / anterior wall",
+    "size": {
+      "value": 2.0,
+      "unit": "cm"
+    },
+    "date": "2026-03-30"
+  },
+  "findings": {
+    "technique": "Multiparametric bladder MRI performed including T2-weighted, DWI, and DCE sequences at [X]T field strength.",
+    "comparison": "Comparison made with [prior CT / prior cystoscopy] from [date].",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "T2-Weighted",
+        "content": "Lesion appears [polypoid / sessile / flat]. Signal intensity: [hyperintense / intermediate / hypointense] relative to urine. Invasion depth: [uncertain / up to lamina propria / into muscularis propria].",
+        "normalVariant": false
+      },
+      {
+        "name": "DWI",
+        "content": "DWI shows [restricted diffusion / no restricted diffusion] in lesion. Signal on high b-value images: [hyperintense / intermediate]. ADC value: [X] x10-3 mm2/s.",
+        "normalVariant": false
+      },
+      {
+        "name": "DCE",
+        "content": "Dynamic contrast enhancement: [early enhancement / late enhancement] pattern. [Continuous / interrupted]enhancement of lamina propria. Smooth / irregular interface with muscularis propria.",
+        "normalVariant": false
+      },
+      {
+        "name": "Muscle Invasion",
+        "content": "Muscle layer: [intact / focally disrupted / extensively involved]. Confidence for MI-UC: [low / intermediate / high].",
+        "normalVariant": false
+      },
+      {
+        "name": "Stroma Invasion",
+        "content": " Stromal invasion: [present / absent / uncertain]. If present, extent: [focal / extensive].",
+        "normalVariant": false
+      },
+      {
+        "name": "Additional Findings",
+        "content": "[Lymph nodes: abnormal/normal]. [Hydronephrosis: present/absent]. [Extravesical extension: present/absent].",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. VI-RADS [X]: [category description]\n2. [Lesion type] in [location] measuring [X]cm\n3. Muscle invasion: [present/absent/uncertain] (VI-RADS score: [X])\n4. [Lymph node / hydronephrosis / extravesical] status: [findings]\n5. [TURBT / cystectomy / follow-up] recommended based on findings",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

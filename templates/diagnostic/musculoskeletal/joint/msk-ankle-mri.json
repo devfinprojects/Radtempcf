@@ -1,0 +1,68 @@
+{
+  "id": "msk-ankle-mri",
+  "name": "Ankle MRI",
+  "version": "1.0.0",
+  "description": "MRI of the ankle for evaluation of ligaments, tendons, and joint pathology",
+  "modality": "mri",
+  "bodyRegion": "musculoskeletal",
+  "subspecialty": "musculoskeletal",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["musculoskeletal", "mri", "ankle", "ligament", "tendon", "msk"],
+    "cptCodes": ["73221"],
+    "radlexCodes": ["RID10550", "RID10551"]
+  },
+  "findings": {
+    "technique": "MRI of the ankle was performed in multiple planes including T1, T2, PD, and STIR sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Anterior Talofibular Ligament",
+        "content": "The ATFL demonstrates [intact / no tear / no sprain]. The ligament is [taut / normal]",
+        "normalVariant": true
+      },
+      {
+        "name": "Calcaneofibular Ligament",
+        "content": "The CFL demonstrates [intact / no tear / no sprain]. The ligament is [taut / normal]",
+        "normalVariant": true
+      },
+      {
+        "name": "Posterior Talofibular Ligament",
+        "content": "The PTFL demonstrates [intact / no tear / no sprain]. The ligament is [taut / normal]",
+        "normalVariant": true
+      },
+      {
+        "name": "Deltoid Ligament",
+        "content": "The deltoid ligament complex demonstrates [intact / no tear / no sprain]. No medial ankle instability.",
+        "normalVariant": true
+      },
+      {
+        "name": "Achilles Tendon",
+        "content": "The Achilles tendon demonstrates [no tear / no thickening / no tendinopathy]. The tendon is [intact / normal]",
+        "normalVariant": true
+      },
+      {
+        "name": "Posterior Tibialis Tendon",
+        "content": "The posterior tibialis tendon demonstrates [intact / no tear / no subluxation]. No tenosynovitis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Ankle Joint",
+        "content": "The ankle joint demonstrates [no effusion / no osteochondral lesion / no cartilage defect]. No joint effusion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Bone",
+        "content": "The talus, calcaneus, and tibia demonstrate [no fracture / no bone bruise / no osteochondral lesion].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal ankle MRI.\n2. No ligamentous injury, tendon tear, or osteochondral lesion identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

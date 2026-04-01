@@ -1,0 +1,40 @@
+{
+  "id": "neuro-brain-mri-swi",
+  "name": "Brain MRI SWI",
+  "version": "1.0.0",
+  "description": "Brain MRI susceptibility-weighted imaging for hemorrhage and venous detection",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "swi", "susceptibility", "hemorrhage", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "Susceptibility-weighted 3D gradient echo images were obtained.",
+    "comparison": "No prior MRI studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Parenchymal Hemorrhage",
+        "content": "No parenchymal hemorrhage identified. No areas of susceptibility artifact to suggest blood products.",
+        "normalVariant": true
+      },
+      {
+        "name": "Deep Venous Sinuses",
+        "content": "The dural venous sinuses show [normal flow void / patent / no filling defect]. No thrombosis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Calcifications",
+        "content": "No abnormal susceptibility to suggest pathological calcifications.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal SWI study.\n2. No hemorrhage or venous thrombosis identified.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

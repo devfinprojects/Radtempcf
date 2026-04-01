@@ -1,0 +1,55 @@
+{
+  "id": "abdo-liver-ct",
+  "name": "Abdomen CT With Contrast - Liver",
+  "version": "1.0.0",
+  "description": "Abdomen CT with contrast focused on liver evaluation",
+  "modality": "ct",
+  "bodyRegion": "liver",
+  "subspecialty": "abdominal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["abdomen", "liver", "ct", "contrast", "hepatic"]
+  },
+  "findings": {
+    "technique": "CT of the abdomen and pelvis with intravenous contrast was performed.",
+    "comparison": "No prior cross-sectional imaging of the liver for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Liver",
+        "content": "The liver [is normal in size / shows diffuse fatty infiltration / shows no focal lesion]. Hepatic vasculature [is patent / no thrombosis or invasion].\nNo biliary dilation identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Gallbladder",
+        "content": "The gallbladder [is present / contains no stones / shows no wall thickening]. No pericholecystic fluid.",
+        "normalVariant": true
+      },
+      {
+        "name": "Biliary Ducts",
+        "content": "Intrahepatic bile ducts [are not dilated / no dilation]. Extrahepatic bile duct [is normal in caliber / measures __ mm].",
+        "normalVariant": true
+      },
+      {
+        "name": "Pancreas",
+        "content": "The pancreas [is normal in size and contour / shows no mass or dilation of the pancreatic duct]. No acute pancreatitis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Spleen",
+        "content": "The spleen [is normal in size / no laceration or hemorrhage]. No abnormality.",
+        "normalVariant": true
+      },
+      {
+        "name": "Kidneys",
+        "content": "Right kidney: [No hydronephrosis / No renal mass / Normal]. Left kidney: [No hydronephrosis / No renal mass / Normal].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. [No hepatic mass or focal lesion /Liver is unremarkable].\n2. [No abnormality identified / Recommend clinical correlation].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

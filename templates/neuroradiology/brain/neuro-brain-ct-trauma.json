@@ -1,0 +1,45 @@
+{
+  "id": "neuro-brain-ct-trauma",
+  "name": "Brain CT Trauma Protocol",
+  "version": "1.0.0",
+  "description": "Brain CT for trauma evaluation with emphasis on hemorrhage and fractures",
+  "modality": "ct",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "ct", "trauma", "head injury", "hemorrhage", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "CT of the head without contrast was performed for trauma evaluation.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Parenchymal Hemorrhage",
+        "content": "No intraparenchymal hemorrhage. No contusions or lacerations identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Extra-Axial Hemorrhage",
+        "content": "No epidural or subdural hematoma. No subarachnoid hemorrhage. No extra-axial fluid collections.",
+        "normalVariant": true
+      },
+      {
+        "name": "Fractures",
+        "content": "No skull fractures identified. No depressed or open fractures.",
+        "normalVariant": true
+      },
+      {
+        "name": "Mass Effect",
+        "content": "No midline shift. No herniation. Ventricles are normal. No compression of basal cisterns.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No acute intracranial hemorrhage.\n2. No skull fracture.\n3. Normal trauma CT study.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

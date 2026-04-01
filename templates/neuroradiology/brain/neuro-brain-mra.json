@@ -1,0 +1,40 @@
+{
+  "id": "neuro-brain-mra",
+  "name": "Brain MR Angiography",
+  "version": "1.0.0",
+  "description": "Brain MR angiography for non-invasive evaluation of intracranial vasculature",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mra", "magnetic resonance angiography", "vessels", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "Time-of-flight MR angiography of the intracranial vessels was performed without contrast.",
+    "comparison": "No prior MRA studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Anterior Circulation",
+        "content": "Internal carotid arteries: [patent / no stenosis / no dissection]. Middle cerebral arteries: [normal caliber / no stenosis / no aneurysm].",
+        "normalVariant": true
+      },
+      {
+        "name": "Posterior Circulation",
+        "content": "Vertebral arteries: [symmetric / patent]. Basilar artery: [patent / normal]. Posterior cerebral arteries: [normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Circle of Willis",
+        "content": "Circle of Willis is [intact / complete]. No saccular aneurysms identified.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No aneurysm identified.\n2. No significant arterial stenosis or occlusion.\n3. Normal intracranial MRA.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

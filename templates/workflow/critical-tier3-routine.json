@@ -1,0 +1,78 @@
+{
+  "id": "critical-tier3-routine",
+  "name": "Critical Result - Tier 3 (Routine)",
+  "version": "1.0.0",
+  "description": "Tier 3 critical results - incidental findings that should be communicated at next scheduled visit",
+  "category": "critical-results",
+  "tier": 3,
+  "priority": "P1",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["critical-results", "tier3", "incidental", "routine"]
+  },
+  "criticalFindings": {
+    "communicationRequired": false,
+    "communicationMethod": "标准影像报告",
+    "timeframe": "常规报告周期 - 在下次门诊时沟通即可",
+    "escalationPath": ["门诊随访"],
+    "documentationRequired": false
+  },
+  "conditions": [
+    {
+      "code": "CTR201",
+      "name": "甲状腺结节（>1cm或可疑特征）",
+      "description": "CT/超声显示甲状腺结节",
+      "clinicalSignificance": "建议门诊随访甲状腺功能"
+    },
+    {
+      "code": "CTR202",
+      "name": "肾上腺腺瘤（<4cm）",
+      "description": "CT显示肾上腺结节",
+      "clinicalSignificance": "建议门诊随访"
+    },
+    {
+      "code": "CTR203",
+      "name": "肾囊肿（复杂囊肿Bosniak II）",
+      "description": "CT显示肾脏复杂囊肿",
+      "clinicalSignificance": "建议门诊随访"
+    },
+    {
+      "code": "CTR204",
+      "name": "肝血管瘤（>5cm）",
+      "description": "CT/MRI显示肝血管瘤",
+      "clinicalSignificance": "建议门诊随访"
+    },
+    {
+      "code": "CTR205",
+      "name": "肺部微结节（<6mm）",
+      "description": "CT显示肺部小结节",
+      "clinicalSignificance": "建议年度随访"
+    },
+    {
+      "code": "CTR206",
+      "name": "乳腺BI-RADS 3（可能良性）",
+      "description": "乳腺影像显示BI-RADS 3改变",
+      "clinicalSignificance": "建议短期随访（6个月）"
+    },
+    {
+      "code": "CTR207",
+      "name": "前列腺PI-RADS 3（ equivocal）",
+      "description": "前列腺MRI显示PI-RADS 3改变",
+      "clinicalSignificance": "建议多参数MRI随访或活检"
+    }
+  ],
+  "communicationTemplate": {
+    "findings": {
+      "incidentalFinding": "",
+      "location": "",
+      "size": "",
+      "characteristics": "",
+      "recommendation": "建议在常规门诊随访时讨论此发现。",
+      "followUpImaging": ""
+    }
+  },
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

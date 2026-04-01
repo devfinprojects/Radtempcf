@@ -1,0 +1,53 @@
+{
+  "id": "fluoroscopy-upper-gi",
+  "name": "Fluoroscopy Upper GI",
+  "version": "1.0.0",
+  "description": "Fluoroscopic examination of the upper gastrointestinal tract",
+  "modality": "fluoro",
+  "bodyRegion": "gi",
+  "subspecialty": "gastrointestinal",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["fluoroscopy", "upper gi", "esophagus", "stomach", "duodenum", "barium"],
+    "cptCodes": ["74210"],
+    "radlexCodes": ["RID10290", "RID10291"]
+  },
+  "findings": {
+    "technique": "Fluoroscopic examination of the upper GI tract was performed with barium contrast.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Esophagus",
+        "content": "The esophagus demonstrates [normal caliber / no narrowing / no ulceration / no mass]. The motility is [normal / no dysmotility]. No reflux identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "GE Junction",
+        "content": "The gastroesophageal junction is [competent / no hiatal hernia / no reflux]. The Z-line is [at normal position / not patulous].",
+        "normalVariant": true
+      },
+      {
+        "name": "Stomach",
+        "content": "The stomach demonstrates [normal distensibility / no filling defect / no ulcer / no mass]. The gastric folds are [normal / not thickened].",
+        "normalVariant": true
+      },
+      {
+        "name": "Pylorus",
+        "content": "The pylorus is [patent / opens normally / no obstruction]. No pyloric stenosis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Duodenum",
+        "content": "The duodenum (C-loop and D-loop) is [normal / no abnormality]. The ampulla of Vater is [visualized / normal].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal fluoroscopic upper GI examination.\n2. No abnormality of the esophagus, stomach, or duodenum.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "rads-birads-mammo",
+  "name": "BI-RADS (Breast Imaging Reporting and Data System)",
+  "version": "1.0.0",
+  "description": "BI-RADS classification template for breast imaging assessment",
+  "modality": "mammography",
+  "bodyRegion": "breast",
+  "subspecialty": "breast",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["rads", "breast", "bi-rads", "mammography", "mri", "cancer"]
+  },
+  "rads": {
+    "system": "BI-RADS",
+    "category": "BI-RADS 4",
+    "score": 4,
+    "assessment": "Suspicious abnormality - biopsy should be considered",
+    "recommendation": "Biopsy recommended",
+    "lesionLocation": "[Right/Left] breast, [upper outer/upper inner/lower outer/lower inner/central] quadrant",
+    "size": {
+      "value": 1.5,
+      "unit": "cm"
+    },
+    "date": "2026-03-30"
+  },
+  "findings": {
+    "technique": "[Digital mammography / 3D tomosynthesis / breast MRI / breast ultrasound] performed. [CC and MLO views / standard sequences] obtained.",
+    "comparison": "Comparison made with [prior mammogram / prior MRI / prior US] from [date].",
+    "limitations": "Dense breast tissue [present/absent] may limit sensitivity.",
+    "sections": [
+      {
+        "name": "Breast Composition",
+        "content": "Breast density: [a: almost entirely fatty / b: scattered areas of fibroglandular density / c: heterogeneously dense / d: extremely dense].",
+        "normalVariant": false
+      },
+      {
+        "name": "Mass",
+        "content": "Mass: [present/absent]. Shape: [oval/round/irregular]. Margins: [circumscribed/obscured/microlobulated/indistinct/spiculated]. Density: [high/isodense/low/fat-containing].",
+        "normalVariant": false
+      },
+      {
+        "name": "Calcifications",
+        "content": "Calcifications: [present/absent]. Morphology: [typically benign/suspicious]. Distribution: [diffuse/regional/grouped/linear/segmental].",
+        "normalVariant": false
+      },
+      {
+        "name": "Architectural Distortion",
+        "content": "Architectural distortion: [present/absent]. Associated with [mass/calcifications/no associated finding].",
+        "normalVariant": false
+      },
+      {
+        "name": "Asymmetry",
+        "content": "Asymmetry: [present/absent]. Type: [asymmetry/focal asymmetry/developed asymmetry]. [Concerning / Not concerning] for malignancy.",
+        "normalVariant": false
+      },
+      {
+        "name": "Additional Findings",
+        "content": "Skin changes: [present/absent]. Nipple retraction: [present/absent]. Axillary lymphadenopathy: [present/absent].",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. BI-RADS [X]: [category description]\n2. [Location] abnormality measuring [X]cm\n3. [Description of findings]\n4. [Clinical / Imaging] correlation recommended\n5. [Biopsy / Surgical consultation / Follow-up] recommended",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

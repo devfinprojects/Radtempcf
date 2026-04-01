@@ -1,0 +1,40 @@
+{
+  "id": "breast-screening-mammo",
+  "name": "Screening Mammography",
+  "version": "1.0.0",
+  "description": "Standard screening mammography template",
+  "modality": "mammography",
+  "bodyRegion": "breast",
+  "subspecialty": "breast",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["breast", "mammography", "screening"]
+  },
+  "findings": {
+    "technique": "Bilateral digital mammography was performed in standard CC and MLO projections.",
+    "comparison": "No prior mammography for comparison.",
+    "limitations": "Dense breast tissue may limit sensitivity.",
+    "sections": [
+      {
+        "name": "Right Breast",
+        "content": "Right breast: [No masses / No calcifications / No architectural distortion] identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Breast",
+        "content": "Left breast: [No masses / No calcifications / No architectural distortion] identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Axillae",
+        "content": "Bilateral axillae: [No abnormal lymph nodes / No axillary mass] identified.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. BI-RADS 1: Negative. Recommend routine screening in 1 year.\n2. [No findings requiring workup].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "cardiac-cta-coronary",
+  "name": "Cardiac CT Coronary Angiography",
+  "version": "1.0.0",
+  "description": "CT coronary angiography for evaluation of coronary artery stenosis",
+  "modality": "ct",
+  "bodyRegion": "chest",
+  "subspecialty": "cardiac",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["cardiac", "coronary", "cta", "heart", "angiography"]
+  },
+  "findings": {
+    "technique": "CT coronary angiography was performed with ECG-gating and intravenous contrast.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Left Main",
+        "content": "Left main coronary artery [is patent / no stenosis / no plaque].",
+        "normalVariant": true
+      },
+      {
+        "name": "LAD",
+        "content": "Left anterior descending artery [is patent / no significant stenosis]. No calcified or non-calcified plaque.",
+        "normalVariant": true
+      },
+      {
+        "name": "LCx",
+        "content": "Left circumflex artery [is patent / no significant stenosis].",
+        "normalVariant": true
+      },
+      {
+        "name": "RCA",
+        "content": "Right coronary artery [is patent / no significant stenosis].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No coronary artery stenosis.\n2. Normal CT coronary angiogram.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

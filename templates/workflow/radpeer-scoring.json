@@ -1,0 +1,114 @@
+{
+  "id": "workflow-radpeer",
+  "name": "RADPEER Scoring Template",
+  "version": "1.0.0",
+  "description": "RADPEER standardized peer review scoring system for radiology quality assurance",
+  "category": "workflow-peer-review",
+  "priority": "P2",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["radpeer", "peer-review", "quality", "scoring"]
+  },
+  "scoringSystem": {
+    "name": "RADPEER",
+    "version": "2.0",
+    "description": "Standardized peer review scoring system for radiology"
+  },
+  "scores": [
+    {
+      "score": "1",
+      "category": "Concordant",
+      "description": "Interpretation agrees with reviewer - no discrepancy",
+      "action": "None required",
+      "percentageExpected": 75
+    },
+    {
+      "score": "2",
+      "category": "Concordant - Different Specificity",
+      "description": "Interpretation agrees but more specific diagnosis could have been made",
+      "action": "Educational feedback",
+      "percentageExpected": 20
+    },
+    {
+      "score": "3a",
+      "category": "Discordant - Unlikely Clinically Significant",
+      "description": "Minor discrepancy unlikely to affect patient outcome",
+      "action": "Review and documentation",
+      "percentageExpected": 4
+    },
+    {
+      "score": "3b",
+      "category": "Discordant - Likely Clinically Significant",
+      "description": "Significant discrepancy that may affect patient outcome",
+      "action": "Formal review and quality improvement",
+      "percentageExpected": 1
+    },
+    {
+      "score": "4",
+      "category": "Discordant - Failed to Identify",
+      "description": "Finding identified by reviewer was not reported by original interpreter",
+      "action": "Comprehensive quality review",
+      "percentageExpected": 0.5
+    }
+  ],
+  "reviewProcess": {
+    "randomSampling": {
+      "percentage": 10,
+      "modalityWeights": {
+        "ct": 15,
+        "mri": 12,
+        "ultrasound": 8,
+        "xray": 5,
+        "mammography": 10
+      }
+    },
+    "targetedReview": {
+      "triggeredBy": [
+        "Clinical outcome discrepancy",
+        "Referring physician feedback",
+        "Patient complaint",
+        "Adverse event"
+      ]
+    },
+    "blindedReview": {
+      "enabled": true,
+      "description": "Reviewer blinded to original interpretation"
+    },
+    "nonBlindedReview": {
+      "enabled": true,
+      "description": "Reviewer aware of original interpretation for educational purposes"
+    }
+  },
+  "reporting": {
+    "quarterlyMetrics": [
+      "Total studies reviewed",
+      "Score distribution percentages",
+      "Average score",
+      "Major discrepancy rate (3b + 4)",
+      "Action taken summary"
+    ],
+    "annualMetrics": [
+      "Trend analysis",
+      "Modality-specific analysis",
+      "Radiologist-specific performance",
+      "Quality improvement initiatives"
+    ]
+  },
+  "scoringForm": {
+    "studyId": "",
+    "reviewingRadiologist": "",
+    "originalRadiologist": "",
+    "modality": "",
+    "studyType": "",
+    "score": "",
+    "findingDescription": "",
+    "clinicalSignificance": "",
+    "actionTaken": "",
+    "discussionDate": "",
+    "educationalNotes": ""
+  },
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

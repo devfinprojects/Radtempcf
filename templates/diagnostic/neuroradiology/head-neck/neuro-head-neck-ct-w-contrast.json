@@ -1,0 +1,78 @@
+{
+  "id": "neuro-head-neck-ct-w-contrast",
+  "name": "Neck CT With Contrast",
+  "version": "1.0.0",
+  "description": "Neck CT with intravenous contrast for evaluation of soft tissue structures, lymph nodes, and vasculature",
+  "modality": "ct",
+  "bodyRegion": "neck",
+  "subspecialty": "neuroradiology",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["neck", "ct", "contrast", "head", "neck", "neuroradiology", "thyroid", "lymph nodes"],
+    "cptCodes": ["70491"],
+    "radlexCodes": ["RID10312", "RID10313"]
+  },
+  "findings": {
+    "technique": "CT of the neck was performed with intravenous contrast from the skull base through the supraclavicular fossae.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Nasopharynx and Oropharynx",
+        "content": "The nasopharynx and oropharynx demonstrate [no mass / no ulceration / no asymmetry]. The mucosal surfaces are [intact / unremarkable].",
+        "normalVariant": true
+      },
+      {
+        "name": "Tonsils and Adenoids",
+        "content": "The bilateral tonsils and adenoids demonstrate [no abnormal enlargement / no mass / symmetric]. No suspicious lesion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Salivary Glands",
+        "content": "The parotid, submandibular, and sublingual glands demonstrate [no mass / no stone / no inflammation]. No salivary gland pathology.",
+        "normalVariant": true
+      },
+      {
+        "name": "Thyroid Gland",
+        "content": "The thyroid gland demonstrates [no mass / no nodule / no enlargement]. No abnormal enhancement. The gland is [homogeneous / unremarkable].",
+        "normalVariant": true
+      },
+      {
+        "name": "Larynx and Hypopharynx",
+        "content": "The larynx and hypopharynx demonstrate [no mass / no ulceration / no airway compromise]. The vocal cords are [symmetric / mobile].",
+        "normalVariant": true
+      },
+      {
+        "name": "Cervical Lymph Nodes",
+        "content": "There are [no pathologically enlarged lymph nodes / no lymphadenopathy]. The cervical lymph node chains are [unremarkable / no abnormal nodes].",
+        "normalVariant": true
+      },
+      {
+        "name": "Carotid Arteries",
+        "content": "The bilateral internal and common carotid arteries demonstrate [no aneurysm / no stenosis / no dissection]. No atherosclerotic plaque causing significant stenosis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Vertebral Arteries",
+        "content": "The bilateral vertebral arteries demonstrate [normal caliber / no dissection / no stenosis]. No flow-limiting disease.",
+        "normalVariant": true
+      },
+      {
+        "name": "Internal Jugular Veins",
+        "content": "The bilateral internal jugular veins are [patent / no thrombosis / no compression]. No internal jugular vein abnormality.",
+        "normalVariant": true
+      },
+      {
+        "name": "Prevertebral and Paraspinal Soft Tissues",
+        "content": "The prevertebral and paraspinal soft tissues are [unremarkable / no abnormal enhancement / no mass].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal contrast-enhanced neck CT.\n2. No mass, lymphadenopathy, or vascular abnormality identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -26,6 +26,12 @@ jobs:
       - name: Validate JSON schemas
         run: npm run validate
 
+      - name: Validate RadLex terms
+        run: npm run validate:radlex
+
+      - name: Validate SNOMED codes
+        run: npm run validate:snomed
+
       - name: Run tests
         run: npm test
 

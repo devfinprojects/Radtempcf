@@ -1,0 +1,45 @@
+{
+  "id": "incidental-renal",
+  "name": "Renal Incidentaloma",
+  "version": "1.0.0",
+  "description": "Report template for incidental renal lesions identified on imaging performed for other indications",
+  "modality": "ct",
+  "bodyRegion": "abdomen",
+  "subspecialty": "abdominal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["incidental", "renal", "kidney", "mass", "renal incidentaloma"]
+  },
+  "findings": {
+    "technique": "CT [abdomen/chest/CTA] performed for [other clinical indication]. Renal protocol images [performed/not performed].",
+    "comparison": "No prior renal imaging available for comparison. [Prior imaging from X date reviewed] - [lesion is new/stable/interval change].",
+    "limitations": "None - adequate visualization of kidneys.",
+    "sections": [
+      {
+        "name": "Renal Lesion",
+        "content": "Incidental renal [mass/cyst/nodule] identified in [right/left] kidney. Size: [X]cm. Location: [upper/mid/lower] pole or interpolar. Exophytic: [yes/no].",
+        "normalVariant": false
+      },
+      {
+        "name": "Characterization",
+        "content": "Attenuation: [X]HU (pre-contrast). [Cystic (simple/complex) / Solid / Mixed]. For cystic lesions: Bosniak category: [I / II / IIF / III / IV].",
+        "normalVariant": false
+      },
+      {
+        "name": "Solid Lesion Features",
+        "content": "Margin: [well-defined / irregular / infiltrative]. Enhancement: [none / mild / moderate / marked] (~[X]HU post-contrast). Necrosis: [present/absent]. Calcifications: [present/absent].",
+        "normalVariant": false
+      },
+      {
+        "name": "Additional Findings",
+        "content": "Additional renal lesions: [present/absent]. [Contralateral kidney: unremarkable / contains lesion]. [Collecting system: uninvolved / involved]. [Renal vein: patent / tumor thrombus]. [Perinephric stranding: present/absent].",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. Incidental renal [mass/cyst] in [right/left] kidney measuring [X]cm\n2. [Cystic lesion: Bosniak category X / Solid lesion] - [likely benign (benign cyst/angiomyolipoma) / indeterminate / concerning for renal cell carcinoma]\n3. [Follow-up in 3-6 months / MRI / Biopsy / Surgical consultation] recommended\n4. [No evidence of venous thrombosis / Renal vein thrombosis present] if applicable",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

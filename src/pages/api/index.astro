@@ -1,0 +1,131 @@
+---
+// API Documentation Page
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const endpoints = [
+  { 
+    method: 'GET', 
+    path: '/api/templates', 
+    description: 'List all available templates with optional filtering',
+    params: 'search, modality, bodyRegion, rads, limit, offset'
+  },
+  { 
+    method: 'GET', 
+    path: '/api/templates/:id', 
+    description: 'Get a specific template by ID',
+    params: 'id, format (json|markdown|xml|fhir)'
+  },
+  { 
+    method: 'GET', 
+    path: '/api/modalities', 
+    description: 'List all imaging modalities',
+    params: ''
+  },
+  { 
+    method: 'GET', 
+    path: '/api/modalities/:id', 
+    description: 'Get templates for a specific modality',
+    params: 'id'
+  },
+  { 
+    method: 'GET', 
+    path: '/api/rads', 
+    description: 'List all RADS classification systems',
+    params: ''
+  },
+  { 
+    method: 'GET', 
+    path: '/api/rads/:system', 
+    description: 'Get RADS classification criteria',
+    params: 'system (li|pi|ti|ri|vi|bi)'
+  },
+  { 
+    method: 'GET', 
+    path: '/api/export', 
+    description: 'Export templates in various formats',
+    params: 'ids, format, includeMetadata'
+  },
+];
+---
+
+<BaseLayout title="API Documentation">
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4">API Documentation</h1>
+    <p class="text-xl text-gray-600 dark:text-gray-400 mb-12">
+      RESTful API for programmatic access to templates, RADS classifications, and export functionality.
+    </p>
+    
+    <!-- Base URL -->
+    <div class="bg-gray-900 dark:bg-gray-800 rounded-lg p-4 mb-8">
+      <p class="text-gray-400">Base URL</p>
+      <code class="text-green-400">https://api.radreport.org/v1</code>
+    </div>
+    
+    <!-- Endpoints -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6">Endpoints</h2>
+      <div class="space-y-4">
+        {endpoints.map(endpoint => (
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+            <div class="flex items-center gap-4 mb-2">
+              <span class={`px-2 py-1 rounded text-sm font-mono ${
+                endpoint.method === 'GET' ? 'bg-green-100 dark:bg-green-900 text-green-800' :
+                endpoint.method === 'POST' ? 'bg-blue-100 dark:bg-blue-900 text-blue-800' :
+                'bg-yellow-100 dark:bg-yellow-900 text-yellow-800'
+              }`}>
+                {endpoint.method}
+              </span>
+              <code class="text-lg font-mono">{endpoint.path}</code>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 mb-2">{endpoint.description}</p>
+            {endpoint.params && (
+              <p class="text-sm text-gray-500">Parameters: {endpoint.params}</p>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
+    
+    <!-- Example Request -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6">Example Request</h2>
+      <div class="bg-gray-900 dark:bg-gray-800 rounded-lg p-4 overflow-x-auto">
+        <pre class="text-green-400"># Get all CT templates
+curl -X GET "https://api.radreport.org/v1/templates?modality=CT"</pre>
+      </div>
+    </section>
+    
+    <!-- Example Response -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6">Example Response</h2>
+      <div class="bg-gray-900 dark:bg-gray-800 rounded-lg p-4 overflow-x-auto">
+        <pre class="text-blue-400">{/*
+  "success": true,
+  "data": [
+    {
+      "id": "brain-ct-stroke",
+      "name": "Brain CT - Stroke",
+      "modality": "CT",
+      "bodyRegion": "Brain",
+      "category": "Neuroradiology"
+    }
+  ],
+  "meta": {
+    "total": 150,
+    "limit": 20,
+    "offset": 0
+  }
+*/}</pre>
+      </div>
+    </section>
+    
+    <!-- Rate Limits -->
+    <div class="bg-yellow-50 dark:bg-yellow-900 rounded-lg p-6">
+      <h3 class="font-semibold mb-2">⚠️ Rate Limits</h3>
+      <p class="text-gray-700 dark:text-gray-300">
+        Public API: 100 requests/minute. Authenticated: 1000 requests/minute.
+        Contact api@radreport.org for higher limits.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,63 @@
+{
+  "id": "rads-lirads",
+  "name": "LI-RADS (Liver Imaging Reporting and Data System)",
+  "version": "1.0.0",
+  "description": "LI-RADS classification template for hepatocellular carcinoma surveillance in high-risk patients",
+  "modality": "ct-mri",
+  "bodyRegion": "liver",
+  "subspecialty": "abdominal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["rads", "liver", "hcc", "li-rads", "cirrhosis"]
+  },
+  "rads": {
+    "system": "LI-RADS",
+    "category": "LR-4",
+    "score": 4,
+    "assessment": "Probably hepatocellular carcinoma",
+    "recommendation": "Consider biopsy or alternative imaging for confirmation",
+    "lesionLocation": "Segment [X]",
+    "size": {
+      "value": 2.5,
+      "unit": "cm"
+    },
+    "date": "2026-03-30"
+  },
+  "findings": {
+    "technique": "Multiparametric MRI of the liver performed with axial T1, T2, DWI, and contrast-enhanced sequences including arterial, portal venous, and delayed phases.",
+    "comparison": "Comparison made with [prior CT/MRI] from [date]. [New/Interval change] findings described.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Arterial Phase",
+        "content": "Lesion in [segment] demonstrates [marked / mild / non-massive] arterial phase hyperenhancement measuring [X]cm.",
+        "normalVariant": false
+      },
+      {
+        "name": "Portal Venous Phase",
+        "content": "Lesion demonstrates [low / moderate / high] signal on portal venous phase [with / without] washout appearance.",
+        "normalVariant": false
+      },
+      {
+        "name": "Delayed Phase",
+        "content": "Lesion demonstrates [capsule appearance / peripheral enhancement / no definite enhancement] on delayed phase.",
+        "normalVariant": false
+      },
+      {
+        "name": "DWI",
+        "content": "Lesion demonstrates [restricted diffusion / no restricted diffusion] on DWI sequences.",
+        "normalVariant": false
+      },
+      {
+        "name": "辅助特征",
+        "content": "Additional features: [ Tumor in vein / arterial hyperenhancement not in tumor / LR-M appearance ] [Present/Absent].",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. LI-RADS LR-[X]: [category description]\n2. Lesion in [segment] measuring [X]cm\n3. [Follow-up recommended / Biopsy recommended / No definite features of HCC]\n4. Underlying cirrhosis with [portal hypertension / no portal hypertension]",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

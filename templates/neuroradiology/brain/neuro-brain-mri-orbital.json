@@ -1,0 +1,45 @@
+{
+  "id": "neuro-brain-mri-orbital",
+  "name": "Brain MRI Orbital Protocol",
+  "version": "1.0.0",
+  "description": "Brain MRI dedicated orbital protocol for evaluation of orbits and optic apparatus",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "orbit", "optic", "eye", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "MRI orbits with fat-suppressed T1, T2, and post-contrast sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Optic Nerves",
+        "content": "Right optic nerve: [normal / no enhancement / no tortuosity]. Left optic nerve: [normal / no enhancement / no tortuosity].",
+        "normalVariant": true
+      },
+      {
+        "name": "Globes",
+        "content": "Right globe: [normal / no mass / no retinal detachment]. Left globe: [normal / no mass / no retinal detachment].",
+        "normalVariant": true
+      },
+      {
+        "name": "Extraocular Muscles",
+        "content": "Extraocular muscles are [normal in size / not enlarged / symmetric].",
+        "normalVariant": true
+      },
+      {
+        "name": "Orbital Fat",
+        "content": "Orbital fat is [clear / no infiltration / no abnormal enhancement].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal orbital MRI.\n2. No orbital mass or pathology identified.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,32 @@
+name = "radreport-templates"
+compatibility_date = "2026-03-29"
+compatibility_flags = ["nodejs_compat"]
+
+# KV Namespace for caching
+[[kv_namespaces]]
+binding = "TEMPLATES_CACHE"
+id = "4e260c0794ba4ecb82c050e9aed90318"
+
+# D1 Database
+[[d1_databases]]
+binding = "DB"
+database_name = "radreport-templates"
+database_id = "c52b5e60-088d-40fd-bebf-da73e57e1631"
+
+[env.production]
+name = "radreport-templates-prod"
+
+[env.production.vars]
+ENVIRONMENT = "production"
+
+# Domain and SSL Configuration
+[[env.production.routes]]
+pattern = "radreport.org"
+zone_name = "radreport.org"
+
+[[env.production.routes]]
+pattern = "api.radreport.org"
+zone_name = "radreport.org"
+
+[vars]
+API_VERSION = "1.0.0"

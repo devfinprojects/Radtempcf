@@ -1,0 +1,58 @@
+{
+  "id": "vascular-cta-abdomen",
+  "name": "CT Angiography Abdomen",
+  "version": "1.0.0",
+  "description": "CT angiography of the abdominal aorta and visceral vessels",
+  "modality": "cta",
+  "bodyRegion": "abdomen",
+  "subspecialty": "vascular",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["vascular", "cta", "abdomen", "aorta", "mesenteric", "renal"],
+    "cptCodes": ["74177"],
+    "radlexCodes": ["RID12910", "RID12911"]
+  },
+  "findings": {
+    "technique": "CT angiography of the abdomen was performed with intravenous contrast from the diaphragmatic dome through the femoral arteries.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Abdominal Aorta",
+        "content": "The abdominal aorta measures [X] cm in maximal diameter and demonstrates [no aneurysm / no dissection / no ulceration]. No atherosclerotic plaque causing significant stenosis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Celiac Artery",
+        "content": "The celiac artery and its branches (splenic, common hepatic, left gastric) are [patent / no stenosis / no aneurysm].",
+        "normalVariant": true
+      },
+      {
+        "name": "Superior Mesenteric Artery",
+        "content": "The SMA is [patent / no stenosis / no dissection]. The branch vessels are [normal / patent].",
+        "normalVariant": true
+      },
+      {
+        "name": "Inferior Mesenteric Artery",
+        "content": "The IMA is [patent / no stenosis / no occlusion]. No ischemic bowel.",
+        "normalVariant": true
+      },
+      {
+        "name": "Renal Arteries",
+        "content": "The bilateral renal arteries demonstrate [no stenosis / no aneurysm]. The kidneys are [perfused / no infarction].",
+        "normalVariant": true
+      },
+      {
+        "name": "Iliac Arteries",
+        "content": "The bilateral common iliac arteries are [patent / no stenosis / no aneurysm]. The external iliac arteries are [patent].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal CT angiography of the abdomen.\n2. No aneurysm, dissection, or significant stenosis of the abdominal aorta or visceral vessels.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

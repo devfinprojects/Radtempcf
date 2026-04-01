@@ -1,0 +1,45 @@
+{
+  "id": "ir-biopsy-ct",
+  "name": "CT-Guided Biopsy",
+  "version": "1.0.0",
+  "description": "Interventional radiology CT-guided biopsy procedure report template",
+  "modality": "ct",
+  "bodyRegion": "various",
+  "subspecialty": "interventional-radiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["interventional", "biopsy", "ct-guided", " pathology"]
+  },
+  "findings": {
+    "technique": "CT-guided [core needle/fine needle] biopsy performed using [gauge] needle. Patient positioned [prone/supine/lateral] for optimal target access. Pre-procedure CT confirmed target lesion in [location] measuring [X]cm.",
+    "comparison": "Pre-procedure imaging demonstrates [lesion description] in [anatomic location] concerning for [malignancy/benign process].",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Target Localization",
+        "content": "Target lesion localized at [level] in [anterior/posterior]/[right/left/midline]. Estimated depth from skin: [X]cm.",
+        "normalVariant": false
+      },
+      {
+        "name": "Approach",
+        "content": "[Posterior/Anterior/Lateral] approach chosen to avoid [lung/pleura/vessel/bowel]. Needle trajectory planned to minimize [pneumothorax risk/bleeding risk].",
+        "normalVariant": false
+      },
+      {
+        "name": "Biopsy Performed",
+        "content": "[X] passes obtained using [automatic/manual] firing needle. Specimens submitted for [pathology/microbiology/flow cytometry].",
+        "normalVariant": false
+      },
+      {
+        "name": "Post-Procedure",
+        "content": "Post-procedure CT [demonstrates no complications / demonstrates small pneumothorax / demonstrates hematoma] at biopsy site. Patient [tolerated / did not tolerate] procedure well.",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. CT-guided [core/FNA] biopsy of [location] lesion performed.\n2. [X] passes obtained with [X] specimens submitted for pathologic analysis.\n3. [No immediate complications / Complications as noted]: [describe].\n4. Specimens submitted for [pathology/microbiology] analysis. Final diagnosis pending.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

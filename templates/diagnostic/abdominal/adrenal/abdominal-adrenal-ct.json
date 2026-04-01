@@ -1,0 +1,48 @@
+{
+  "id": "abdominal-adrenal-ct",
+  "name": "Adrenal CT",
+  "version": "1.0.0",
+  "description": "CT of the adrenal glands for evaluation of adrenal pathology",
+  "modality": "ct",
+  "bodyRegion": "abdomen",
+  "subspecialty": "abdominal",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["abdomen", "ct", "adrenal", "adrenal gland", "abdominal"],
+    "cptCodes": ["74177"],
+    "radlexCodes": ["RID10312", "RID10313"]
+  },
+  "findings": {
+    "technique": "Contrast-enhanced CT of the abdomen was performed with adrenal protocol imaging.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Right Adrenal Gland",
+        "content": "The right adrenal gland demonstrates [normal morphology / no mass / no thickening]. The gland is [normal in size / not enlarged].",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Adrenal Gland",
+        "content": "The left adrenal gland demonstrates [normal morphology / no mass / no thickening]. The gland is [normal in size / not enlarged].",
+        "normalVariant": true
+      },
+      {
+        "name": "Adrenal Morphology",
+        "content": "The adrenal glands demonstrate [typical inverted Y or V shape / no abnormal enhancement]. No adrenal hyperplasia.",
+        "normalVariant": true
+      },
+      {
+        "name": "Other Findings",
+        "content": "The kidneys, liver, and pancreas are [unremarkable / no mass]. No abdominal lymphadenopathy.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal adrenal CT.\n2. No adrenal mass, nodule, or hyperplasia identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

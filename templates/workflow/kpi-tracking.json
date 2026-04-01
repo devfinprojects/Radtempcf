@@ -1,0 +1,104 @@
+{
+  "id": "workflow-kpi-tracking",
+  "name": "KPI Tracking Dashboard",
+  "version": "1.0.0",
+  "description": "KPI tracking template for radiology department performance monitoring",
+  "category": "workflow-metrics",
+  "priority": "P2",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["kpi", "tracking", "dashboard", "performance"]
+  },
+  "dashboard": {
+    "title": "Radiology KPI Dashboard",
+    "refreshInterval": "daily",
+    "metrics": [
+      {
+        "id": "kpi-001",
+        "name": "Average Turnaround Time",
+        "currentValue": 0,
+        "targetValue": 120,
+        "unit": "minutes",
+        "status": "green",
+        "trend": "stable",
+        "lastUpdated": ""
+      },
+      {
+        "id": "kpi-002",
+        "name": "Critical Results Compliance",
+        "currentValue": 0,
+        "targetValue": 100,
+        "unit": "percentage",
+        "status": "green",
+        "trend": "improving",
+        "lastUpdated": ""
+      },
+      {
+        "id": "kpi-003",
+        "name": "Report Discrepancy Rate",
+        "currentValue": 0,
+        "targetValue": 3,
+        "unit": "percentage",
+        "status": "green",
+        "trend": "stable",
+        "lastUpdated": ""
+      },
+      {
+        "id": "kpi-004",
+        "name": "Addendum Rate",
+        "currentValue": 0,
+        "targetValue": 5,
+        "unit": "percentage",
+        "status": "green",
+        "trend": "improving",
+        "lastUpdated": ""
+      },
+      {
+        "id": "kpi-005",
+        "name": "Template Utilization",
+        "currentValue": 0,
+        "targetValue": 90,
+        "unit": "percentage",
+        "status": "green",
+        "trend": "improving",
+        "lastUpdated": ""
+      },
+      {
+        "id": "kpi-006",
+        "name": "Peer Review Coverage",
+        "currentValue": 0,
+        "targetValue": 10,
+        "unit": "percentage",
+        "status": "green",
+        "trend": "stable",
+        "lastUpdated": ""
+      }
+    ]
+  },
+  "alerts": {
+    "thresholdWarning": 80,
+    "thresholdCritical": 60,
+    "notificationEmail": "quality@radiology.example.com"
+  },
+  "reports": {
+    "dailySummary": {
+      "enabled": true,
+      "recipients": ["radiology-lead@radiology.example.com"],
+      "metrics": ["turnaroundTime", "criticalResultsCommunication"]
+    },
+    "weeklyReport": {
+      "enabled": true,
+      "recipients": ["department-chief@radiology.example.com"],
+      "metrics": ["addendumRate", "templateUtilization", "discrepancyRate"]
+    },
+    "monthlyAnalysis": {
+      "enabled": true,
+      "recipients": ["quality-committee@radiology.example.com"],
+      "metrics": ["all"]
+    }
+  },
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

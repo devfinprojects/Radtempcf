@@ -1,0 +1,40 @@
+{
+  "id": "neuro-brain-ct-venogram",
+  "name": "Brain CT Venogram",
+  "version": "1.0.0",
+  "description": "Brain CT venography for evaluation of cerebral venous system and dural sinuses",
+  "modality": "ct",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "ctv", "venogram", "venous", "sinus", "thrombosis", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "CT venography of the cerebral venous system was performed following intravenous contrast.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Dural Sinuses",
+        "content": "Superior sagittal sinus: [patent / no filling defect]. Transverse sinuses: [patent / symmetric]. Sigmoid sinuses: [patent].",
+        "normalVariant": true
+      },
+      {
+        "name": "Internal Cerebral Veins",
+        "content": "Internal cerebral veins: [normal / patent]. No thrombosis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Deep Venous System",
+        "content": "Basal vein of Rosenthal: [normal]. Straight sinus: [patent]. No deep venous thrombosis.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No venous sinus thrombosis.\n2. Normal CT venogram.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,238 @@
+---
+// Template Detail Page
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  const templateIds = [
+    'chest-xray-chest',
+    'chest-lung-ct',
+    'neuro-brain-ct',
+    'abdo-ct',
+    'emergency-stroke-ct'
+  ];
+  return templateIds.map(id => ({
+    params: { id }
+  }));
+}
+
+const { id } = Astro.params;
+
+// Sample template data (would be loaded from templates)
+const template = {
+  id: id || 'unknown',
+  name: 'Brain CT - Stroke',
+  modality: 'CT',
+  bodyRegion: 'Brain',
+  rads: null,
+  category: 'Neuroradiology',
+  version: '1.0.0',
+  lastUpdated: '2026-03-15',
+  author: 'RadReport Team',
+  license: 'MIT',
+  findings: `EXAM: CT Brain without contrast
+
+HISTORY: 72-year-old female with acute onset right-sided weakness
+
+TECHNIQUE: Axial images of the brain were obtained without intravenous contrast due to no clinical indication for contrast.
+
+FINDINGS:
+
+Parenchyma: There is no intracranial hemorrhage. No mass effect or midline shift. The ventricles and sulci are appropriate for the patient's age.
+
+Ventricles: The third, fourth, and lateral ventricles are normal in configuration and size.
+
+Gray-white matter differentiation: Preserved.
+
+Bone windows: The calvarium is intact. No fracture identified.
+
+Other: No abnormal attenuation identified.
+
+IMPRESSION:
+
+1. No acute intracranial hemorrhage.
+
+2. No mass effect or midline shift.
+
+3. No acute infarct identified on non-contrast CT.
+
+4. Clinical correlation recommended. Consider MRI if high clinical suspicion for acute ischemic event.`,
+  impression: `1. No acute intracranial hemorrhage.
+2. No acute ischemic changes on current CT.
+3. Recommend clinical correlation and consider MRI if indicated.`,
+  recommendations: ['Consider MRI if clinical suspicion for stroke remains high', 'Follow-up CT if clinically indicated'],
+};
+
+const formatOptions = [
+  { format: 'markdown', label: 'Markdown', icon: '📝' },
+  { format: 'json', label: 'JSON', icon: '🔧' },
+  { format: 'xml', label: 'XML (MRRT)', icon: '📄' },
+  { format: 'fhir', label: 'FHIR R4', icon: '🏥' },
+  { format: 'pdf', label: 'PDF', icon: '📑' },
+];
+---
+
+<BaseLayout title={template.name}>
+  <div class="container mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="text-sm mb-6">
+      <ol class="flex items-center space-x-2">
+        <li><a href="/" class="text-blue-600 hover:underline">Home</a></li>
+        <li class="text-gray-400">/</li>
+        <li><a href="/templates" class="text-blue-600 hover:underline">Templates</a></li>
+        <li class="text-gray-400">/</li>
+        <li class="text-gray-600 dark:text-gray-400">{template.name}</li>
+      </ol>
+    </nav>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Main Content -->
+      <div class="lg:col-span-2">
+        <h1 class="text-3xl font-bold mb-4">{template.name}</h1>
+        
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full">
+            {template.modality}
+          </span>
+          <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full">
+            {template.bodyRegion}
+          </span>
+          <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full">
+            {template.category}
+          </span>
+          <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full">
+            v{template.version}
+          </span>
+        </div>
+        
+        <!-- Template Content -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 mb-6">
+          <h2 class="text-xl font-semibold mb-4">Findings</h2>
+          <pre class="whitespace-pre-wrap font-mono text-sm bg-gray-50 dark:bg-gray-900 p-4 rounded overflow-x-auto">{template.findings}</pre>
+        </div>
+        
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 mb-6">
+          <h2 class="text-xl font-semibold mb-4">Impression</h2>
+          <pre class="whitespace-pre-wrap font-mono text-sm bg-gray-50 dark:bg-gray-900 p-4 rounded">{template.impression}</pre>
+        </div>
+        
+        {template.recommendations.length > 0 && (
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+            <h2 class="text-xl font-semibold mb-4">Recommendations</h2>
+            <ul class="list-disc list-inside space-y-2">
+              {template.recommendations.map(rec => (
+                <li class="text-gray-700 dark:text-gray-300">{rec}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+      
+      <!-- Sidebar -->
+      <div class="lg:col-span-1">
+        <!-- Actions -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 mb-6 sticky top-24">
+          <h3 class="text-lg font-semibold mb-4">Actions</h3>
+          
+          <button 
+            id="copy-btn"
+            class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition mb-4 flex items-center justify-center gap-2"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
+            Copy to Clipboard
+          </button>
+          
+          <div class="space-y-2">
+            {formatOptions.map(opt => (
+              <a 
+                href={`/templates/${id}?format=${opt.format}`}
+                class="flex items-center gap-2 p-3 border rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition"
+              >
+                <span>{opt.icon}</span>
+                <span>{opt.label}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+        
+        <!-- Metadata -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 mb-6">
+          <h3 class="text-lg font-semibold mb-4">Metadata</h3>
+          <dl class="space-y-3">
+            <div class="flex justify-between">
+              <dt class="text-gray-600 dark:text-gray-400">Version</dt>
+              <dd>{template.version}</dd>
+            </div>
+            <div class="flex justify-between">
+              <dt class="text-gray-600 dark:text-gray-400">Last Updated</dt>
+              <dd>{template.lastUpdated}</dd>
+            </div>
+            <div class="flex justify-between">
+              <dt class="text-gray-600 dark:text-gray-400">Author</dt>
+              <dd>{template.author}</dd>
+            </div>
+            <div class="flex justify-between">
+              <dt class="text-gray-600 dark:text-gray-400">License</dt>
+              <dd>{template.license}</dd>
+            </div>
+          </dl>
+        </div>
+        
+        <!-- Share -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+          <h3 class="text-lg font-semibold mb-4">Share</h3>
+          <div class="flex gap-2">
+            <button class="flex-1 p-2 border rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700" title="Share on Twitter">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.142a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </button>
+            <button class="flex-1 p-2 border rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700" title="Share on LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </button>
+            <button class="flex-1 p-2 border rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700" title="Share via Email">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Version History -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 mt-6">
+          <h3 class="text-lg font-semibold mb-4">Version History</h3>
+          <ul class="space-y-3">
+            <li class="flex justify-between text-sm">
+              <span class="text-gray-600 dark:text-gray-400">v1.0.0</span>
+              <span class="text-gray-500">2026-03-15</span>
+            </li>
+            <li class="flex justify-between text-sm">
+              <span class="text-gray-600 dark:text-gray-400">v0.9.0</span>
+              <span class="text-gray-500">2026-02-01</span>
+            </li>
+            <li class="flex justify-between text-sm">
+              <span class="text-gray-600 dark:text-gray-400">v0.8.0</span>
+              <span class="text-gray-500">2026-01-15</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script is:inline>
+    const copyBtn = document.getElementById('copy-btn');
+    copyBtn?.addEventListener('click', async () => {
+      const findings = document.querySelector('pre').textContent;
+      await navigator.clipboard.writeText(findings);
+      copyBtn.textContent = 'Copied!';
+      setTimeout(() => {
+        copyBtn.innerHTML = '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg> Copy to Clipboard';
+      }, 2000);
+    });
+  </script>
+</BaseLayout>

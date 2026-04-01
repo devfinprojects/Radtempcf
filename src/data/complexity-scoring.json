@@ -1,0 +1,156 @@
+{
+  "$schema": "https://radreport.org/schemas/complexity.json",
+  "title": "Radiology Report Complexity Scoring System",
+  "description": "A scoring system to assess the complexity of radiology reports based on case difficulty, findings, and clinical context",
+  "version": "1.0.0",
+  "lastUpdated": "2026-03-30",
+  "complexityLevels": {
+    "1_minimal": {
+      "label": "Minimal Complexity",
+      "score": 1,
+      "description": "Straightforward findings with clear diagnosis",
+      "indicators": [
+        "Normal studies",
+        "Uncomplicated acute findings (e.g., simple fracture)",
+        "Straightforward incidental findings",
+        "Single modality, single body part",
+        "No correlation needed"
+      ],
+      "typicalTemplates": [
+        "Chest X-ray - Routine",
+        "Extremity X-ray - Trauma"
+      ]
+    },
+    "2_low": {
+      "label": "Low Complexity",
+      "score": 2,
+      "description": "Straightforward with limited differential",
+      "indicators": [
+        "Common pathologies with classic imaging appearance",
+        "Limited differential diagnosis (2-3 possibilities)",
+        "Clear recommendations",
+        "Single modality",
+        "Basic clinical correlation"
+      ],
+      "typicalTemplates": [
+        "CT Brain - Stroke",
+        "Chest CT - Pneumonia"
+      ]
+    },
+    "3_moderate": {
+      "label": "Moderate Complexity",
+      "score": 3,
+      "description": "Findings require clinical correlation and differential",
+      "indicators": [
+        "Multiple findings requiring integration",
+        "Broader differential diagnosis",
+        "Correlation with prior studies important",
+        "May require additional imaging",
+        "Standard recommendations"
+      ],
+      "typicalTemplates": [
+        "CT Abdomen - Abdominal Pain",
+        "MRI Brain - Rule Out Demyelination"
+      ]
+    },
+    "4_high": {
+      "label": "High Complexity",
+      "score": 4,
+      "description": "Complex cases with multiple findings and broad differential",
+      "indicators": [
+        "Multiple organ systems involved",
+        "Extensive differential diagnosis",
+        "Correlation with multiple prior studies",
+        "Multidisciplinary consultation often needed",
+        "Complex management recommendations"
+      ],
+      "typicalTemplates": [
+        "CT Chest-Abdomen-Pelvis - Oncologic Staging",
+        "MRI Brain - Neurodegenerative Workup"
+      ]
+    },
+    "5_expert": {
+      "label": "Expert/Referral Level",
+      "score": 5,
+      "description": "Most complex cases requiring specialized expertise",
+      "indicators": [
+        "Rare or unusual pathologies",
+        "Multiple prior negative workups",
+        "Complex medical history affecting interpretation",
+        "Requires subspecialty expertise",
+        "May involve research protocols or clinical trials"
+      ],
+      "typicalTemplates": [
+        "PET-CT - Unknown Primary",
+        "Whole Body MRI - Cancer of Unknown Origin"
+      ]
+    }
+  },
+  "scoringFactors": {
+    "anatomicComplexity": {
+      "label": "Anatomic Complexity",
+      "description": "Number and complexity of anatomic areas evaluated",
+      "weights": {
+        "singleRegion": 1,
+        "multipleRegions": 2,
+        "wholeBody": 3
+      }
+    },
+    "findingComplexity": {
+      "label": "Finding Complexity",
+      "description": "Number and nature of findings",
+      "weights": {
+        "normal": 0,
+        "singleAbnormality": 1,
+        "fewFindings": 2,
+        "multipleFindings": 3
+      }
+    },
+    "diagnosticUncertainty": {
+      "label": "Diagnostic Uncertainty",
+      "description": "Degree of certainty in diagnosis",
+      "weights": {
+        "certain": 0,
+        "probable": 1,
+        "possible": 2,
+        "differential": 3
+      }
+    },
+    "clinicalCorrelation": {
+      "label": "Clinical Correlation Required",
+      "description": "Need for clinical information to interpret",
+      "weights": {
+        "minimal": 0,
+        "moderate": 1,
+        "extensive": 2
+      }
+    },
+    "recommendationComplexity": {
+      "label": "Recommendation Complexity",
+      "description": "Complexity of follow-up recommendations",
+      "weights": {
+        "none": 0,
+        "routineFollowUp": 1,
+        "additionalImaging": 2,
+        "multidisciplinary": 3
+      }
+    }
+  },
+  "calculation": {
+    "formula": "Total Score = (Anatomic × 0.2) + (Finding × 0.3) + (Uncertainty × 0.25) + (Clinical × 0.15) + (Recommendation × 0.1)",
+    "ranges": {
+      "1-1.4": "1_minimal",
+      "1.5-2.4": "2_low",
+      "2.5-3.4": "3_moderate",
+      "3.5-4.4": "4_high",
+      "4.5-5.0": "5_expert"
+    }
+  },
+  "applications": [
+    "Resident education and competency assessment",
+    "Workload distribution and quality assurance",
+    "Credentialing and privileging decisions",
+    "RVU calculation and billing optimization",
+    "Peer review prioritization"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "abdo-adrenal-ct",
+  "name": "Abdomen CT Adrenal Protocol",
+  "version": "1.0.0",
+  "description": "CT of the abdomen with adrenal protocol for adrenal gland evaluation",
+  "modality": "ct",
+  "bodyRegion": "abdomen",
+  "subspecialty": "abdominal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["abdomen", "adrenal", "ct", "contrast", "adrenal gland"]
+  },
+  "findings": {
+    "technique": "CT of the abdomen with adrenal protocol including thin-section imaging.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Right Adrenal",
+        "content": "Right adrenal gland [is normal in size / no mass / no nodule / normal morphology].",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Adrenal",
+        "content": "Left adrenal gland [is normal in size / no mass / no nodule / normal morphology].",
+        "normalVariant": true
+      },
+      {
+        "name": "Kidneys",
+        "content": "Both kidneys [are unremarkable / no masses / no hydronephrosis].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal adrenal glands.\n2. No adrenal masses or nodules.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

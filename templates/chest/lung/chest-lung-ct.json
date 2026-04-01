@@ -1,0 +1,55 @@
+{
+  "id": "chest-lung-ct",
+  "name": "Chest CT Without Contrast",
+  "version": "1.0.0",
+  "description": "Standard chest CT report template for lung evaluation without contrast",
+  "modality": "ct",
+  "bodyRegion": "chest",
+  "subspecialty": "chest",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["chest", "lung", "ct", "thoracic", "non-contrast"]
+  },
+  "findings": {
+    "technique": "CT of the chest was performed from the lung apices through the adrenals without intravenous contrast.",
+    "comparison": "No prior chest CT for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Lungs",
+        "content": "Right lung: [No focal consolidation / No pulmonary nodule / No pleural effusion] identified.\nLeft lung: [No focal consolidation / No pulmonary nodule / No pleural effusion] identified.\nLung parenchyma otherwise [clear / shows emphysematous changes].",
+        "normalVariant": true
+      },
+      {
+        "name": "Trachea and Main Bronchi",
+        "content": "The trachea and main bronchi are [patent / show no evidence of obstruction or stenosis].",
+        "normalVariant": true
+      },
+      {
+        "name": "Pleura",
+        "content": "No pleural effusion or pneumothorax identified. Pleural surfaces are [unremarkable / show minimal pleural thickening].",
+        "normalVariant": true
+      },
+      {
+        "name": "Mediastinum",
+        "content": "The mediastinal [lymph nodes are not enlarged / no lymphadenopathy identified]. [The aortic arch is normal in caliber / No abnormality of the great vessels].",
+        "normalVariant": true
+      },
+      {
+        "name": "Heart",
+        "content": "The heart [is normal in size / no pericardial effusion / no abnormal findings]. Coronary artery calcification is [minimal / moderate].",
+        "normalVariant": true
+      },
+      {
+        "name": "Upper Abdomen",
+        "content": "The liver, spleen, and adrenal glands [are unremarkable / no abnormalities identified].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No acute cardiopulmonary process identified.\n2. [No pulmonary nodule requiring follow-up / Recommend routine screening].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

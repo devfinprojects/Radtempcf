@@ -1,0 +1,45 @@
+{
+  "id": "musk-knee-mri",
+  "name": "Knee MRI",
+  "version": "1.0.0",
+  "description": "MRI of the knee for meniscus, ligament, and cartilage evaluation",
+  "modality": "mri",
+  "bodyRegion": "musculoskeletal",
+  "subspecialty": "musculoskeletal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["musculoskeletal", "knee", "mri", "meniscus", "ligament"]
+  },
+  "findings": {
+    "technique": "MRI of the knee was performed with T1, T2, PD, and fat-saturated sequences in multiple planes.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Menisci",
+        "content": "Medial meniscus [intact / no tear]. Lateral meniscus [intact / no tear]. No degenerative changes.",
+        "normalVariant": true
+      },
+      {
+        "name": "Ligaments",
+        "content": "ACL [intact / no tear]. PCL [intact / no tear]. MCL [intact]. LCL [intact].",
+        "normalVariant": true
+      },
+      {
+        "name": "Cartilage",
+        "content": "Articular cartilage [is intact / no fissuring / no full-thickness defect].",
+        "normalVariant": true
+      },
+      {
+        "name": "Bone",
+        "content": "Bone marrow [no edema / no contusion / no fracture]. No osteochondral lesions.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No meniscal tear.\n2. No ligamentous injury.\n3. Normal knee MRI.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

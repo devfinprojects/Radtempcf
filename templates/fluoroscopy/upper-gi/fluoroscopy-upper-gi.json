@@ -1,0 +1,40 @@
+{
+  "id": "fluoroscopy-upper-gi",
+  "name": "Upper GI Series",
+  "version": "1.0.0",
+  "description": "Fluoroscopic upper GI series for esophageal and gastric evaluation",
+  "modality": "fluoroscopy",
+  "bodyRegion": "abdomen",
+  "subspecialty": "abdominal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["fluoroscopy", "upper gi", "esophagus", "stomach", "barium"]
+  },
+  "findings": {
+    "technique": "Contrast examination of the upper GI tract was performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Esophagus",
+        "content": "Esophagus [normal caliber / no stricture / no mass / normal peristalsis].",
+        "normalVariant": true
+      },
+      {
+        "name": "Stomach",
+        "content": "Stomach [normal contour / no mass / no ulcer / normal emptying].",
+        "normalVariant": true
+      },
+      {
+        "name": "Duodenum",
+        "content": "Duodenum [normal / no deformity / no mass].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal upper GI series.\n2. No evidence of mass, ulcer, or obstruction.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

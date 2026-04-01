@@ -1,0 +1,128 @@
+{
+  "id": "workflow-peer-review",
+  "name": "Peer Review Templates",
+  "version": "1.0.0",
+  "description": "Peer review workflow templates for radiology quality assurance and improvement",
+  "category": "workflow-peer-review",
+  "priority": "P2",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["peer-review", "quality", "workflow", "radiology"]
+  },
+  "reviewTypes": [
+    {
+      "type": "prospective",
+      "description": "Review before finalization - real-time feedback",
+      "useCases": [
+        "Complex cases requiring second opinion",
+        "Training and education",
+        "Quality improvement initiatives"
+      ],
+      "workflow": {
+        "initiatedBy": "Original interpreting radiologist",
+        "reviewerAssignment": "Random or specific subspecialty",
+        "timeframe": "Prior to final report",
+        "feedbackFormat": "Direct discussion or written comments"
+      }
+    },
+    {
+      "type": "retrospective",
+      "description": "Review after finalization - systematic quality monitoring",
+      "useCases": [
+        "Random quality sampling",
+        "RADPEER program",
+        "Focused reviews based on outcomes"
+      ],
+      "workflow": {
+        "samplingRate": 10,
+        "reviewerAssignment": "Rotating assignment",
+        "timeframe": "Within 7 days of finalization",
+        "feedbackFormat": "Written in quality system"
+      }
+    },
+    {
+      "type": "concurrent",
+      "description": "Review during interpretation - real-time consultation",
+      "useCases": [
+        "Critical findings verification",
+        "Difficult anatomy",
+        "Rare findings confirmation"
+      ],
+      "workflow": {
+        "initiatedBy": "Any radiologist or technologist",
+        "reviewerAssignment": "Available subspecialist",
+        "timeframe": "Immediate",
+        "feedbackFormat": "Real-time verbal and documented"
+      }
+    }
+  ],
+  "reviewForm": {
+    "basicInfo": {
+      "studyId": "",
+      "accessionNumber": "",
+      "patientId": "",
+      "modality": "",
+      "examType": "",
+      "originalInterpreter": "",
+      "reviewingRadiologist": "",
+      "reviewDate": "",
+      "reviewType": ""
+    },
+    "clinicalHistory": {
+      "relevantHistory": "",
+      "clinicalQuestion": ""
+    },
+    "imagingFindings": {
+      "originalFindings": "",
+      "reviewerFindings": ""
+    },
+    "interpretation": {
+      "originalImpression": "",
+      "reviewerImpression": ""
+    },
+    "discrepancyAssessment": {
+      "discrepancyFound": false,
+      "discrepancyType": "",
+      "clinicalSignificance": "",
+      "radpeerScore": "",
+      "actionRequired": ""
+    },
+    "discussion": {
+      "discussionOccurred": false,
+      "discussionDate": "",
+      "participants": [],
+      "outcome": "",
+      "educationalPoints": []
+    },
+    "finalOutcome": {
+      "status": "",
+      "reportModified": false,
+      "addendumAdded": false,
+      "noChangeRequired": false,
+      "notes": ""
+    }
+  },
+  "escalationPath": {
+    "minorDiscrepancy": {
+      "action": "Documentation and educational feedback",
+      "escalateTo": "Section chief"
+    },
+    "moderateDiscrepancy": {
+      "action": "Formal review and discussion",
+      "escalateTo": "Quality committee"
+    },
+    "majorDiscrepancy": {
+      "action": "Comprehensive review and remediation plan",
+      "escalateTo": "Department chair"
+    }
+  },
+  "documentation": {
+    "recordRetention": "7 years",
+    "anonymizedForQA": true,
+    "reportingStructure": "Monthly summary to quality committee"
+  },
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

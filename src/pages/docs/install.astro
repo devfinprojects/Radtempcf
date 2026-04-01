@@ -1,0 +1,109 @@
+---
+// Installation Guide Page
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Installation">
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4">Installation Guide</h1>
+    <p class="text-xl text-gray-600 dark:text-gray-400 mb-12">
+      Get started with RadReport Templates in your project.
+    </p>
+    
+    <!-- Prerequisites -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6">Prerequisites</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+        <li>Node.js 18.0 or later</li>
+        <li>npm, yarn, or pnpm package manager</li>
+        <li>Git for version control</li>
+      </ul>
+    </section>
+    
+    <!-- Install via npm -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6">Install via npm</h2>
+      <div class="bg-gray-900 dark:bg-gray-800 rounded-lg p-4">
+        <pre class="text-green-400"># Global installation
+npm install -g radtemp
+
+# Or as a project dependency
+npm install --save radtempcf</pre>
+      </div>
+    </section>
+    
+    <!-- Install from source -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6">Install from Source</h2>
+      <div class="bg-gray-900 dark:bg-gray-800 rounded-lg p-4">
+        <pre class="text-green-400"># Clone the repository
+git clone https://github.com/radreport/templates.git
+cd templates
+
+# Install dependencies
+npm install
+
+# Build the project
+npm run build</pre>
+      </div>
+    </section>
+    
+    <!-- Quick Start -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6">Quick Start</h2>
+      <ol class="list-decimal list-inside space-y-4 text-gray-700 dark:text-gray-300">
+        <li>
+          <strong>Initialize a new template:</strong>
+          <div class="bg-gray-900 dark:bg-gray-800 rounded-lg p-4 mt-2">
+            <pre class="text-green-400">radtemp init my-template</pre>
+          </div>
+        </li>
+        <li>
+          <strong>Generate from template:</strong>
+          <div class="bg-gray-900 dark:bg-gray-800 rounded-lg p-4 mt-2">
+            <pre class="text-green-400">radtemp generate brain-mri</pre>
+          </div>
+        </li>
+        <li>
+          <strong>Export to various formats:</strong>
+          <div class="bg-gray-900 dark:bg-gray-800 rounded-lg p-4 mt-2">
+            <pre class="text-green-400">radtemp export brain-mri --format json
+radtemp export brain-mri --format markdown
+radtemp export brain-mri --format fhir</pre>
+          </div>
+        </li>
+      </ol>
+    </section>
+    
+    <!-- Configuration -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6">Configuration</h2>
+      <p class="text-gray-700 dark:text-gray-300 mb-4">
+        Create a <code>radtemp.config.js</code> file in your project root:
+      </p>
+      <div class="bg-gray-900 dark:bg-gray-800 rounded-lg p-4">
+        <pre class="text-blue-400">{/*
+export default {
+  templates: './templates',
+  output: './dist',
+  formats: ['json', 'markdown', 'xml', 'fhir'],
+  validation: true,
+  ai: {
+    provider: 'openai',
+    model: 'gpt-4'
+  }
+};*/}</pre>
+      </div>
+    </section>
+    
+    <!-- Next Steps -->
+    <div class="bg-blue-50 dark:bg-blue-900 rounded-lg p-6">
+      <h3 class="text-xl font-semibold mb-4">Next Steps</h3>
+      <ul class="space-y-2">
+        <li>→ <a href="/docs/usage" class="text-blue-600 hover:underline">Usage Documentation</a></li>
+        <li>→ <a href="/docs/templates" class="text-blue-600 hover:underline">Template Creation Guide</a></li>
+        <li>→ <a href="/docs/formats" class="text-blue-600 hover:underline">Format Conversion</a></li>
+      </ul>
+    </div>
+  </div>
+</BaseLayout>

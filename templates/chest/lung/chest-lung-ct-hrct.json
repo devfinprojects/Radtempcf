@@ -1,0 +1,45 @@
+{
+  "id": "chest-lung-ct-hrct",
+  "name": "High-Resolution CT Chest",
+  "version": "1.0.0",
+  "description": "High-resolution CT of the chest for interstitial lung disease evaluation",
+  "modality": "ct",
+  "bodyRegion": "chest",
+  "subspecialty": "chest",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["chest", "lung", "hrct", "interstitial", "ild"]
+  },
+  "findings": {
+    "technique": "High-resolution CT of the chest was performed in supine and prone positions.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Lung Parenchyma",
+        "content": "Lung parenchyma [shows no interstitial thickening / no honeycombing / no ground-glass opacities].",
+        "normalVariant": true
+      },
+      {
+        "name": "Distribution",
+        "content": "No peripheral or basal distribution of interstitial changes.",
+        "normalVariant": true
+      },
+      {
+        "name": "Bronchiectasis",
+        "content": "No traction bronchiectasis or bronchial wall thickening.",
+        "normalVariant": true
+      },
+      {
+        "name": "Pleura",
+        "content": "Pleural surfaces [are smooth / no pleural thickening / no effusion].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No interstitial lung disease.\n2. Normal HRCT chest.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "interventional-tace",
+  "name": "Transarterial Chemoembolization",
+  "version": "1.0.0",
+  "description": "TACE procedure for hepatocellular carcinoma treatment",
+  "modality": "angiography",
+  "bodyRegion": "abdomen",
+  "subspecialty": "interventional",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["interventional", "tace", "liver", "hcc", "chemoembolization"]
+  },
+  "findings": {
+    "technique": "Transarterial chemoembolization was performed for liver tumor.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Hepatic Artery",
+        "content": "Hepatic artery [patent / catheter positioned in right/left hepatic artery].",
+        "normalVariant": true
+      },
+      {
+        "name": "Tumor Supply",
+        "content": "Tumor vascular supply [selectively catheterized / embolic agent delivered].",
+        "normalVariant": true
+      },
+      {
+        "name": "Non-target",
+        "content": "No non-target embolization. Extrahepatic collaterals not engaged.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Successful TACE performed.\n2. Selective delivery to tumor-feeding vessels.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "neuro-spine-cervical-ct",
+  "name": "Cervical Spine CT",
+  "version": "1.0.0",
+  "description": "Cervical spine CT for trauma and bony evaluation",
+  "modality": "ct",
+  "bodyRegion": "spine",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["spine", "cervical", "ct", "trauma", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "CT of the cervical spine without contrast was performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Vertebral Bodies",
+        "content": "Cervical vertebral bodies [show normal alignment / no compression fracture / no bony lesion]. Vertebral body heights are preserved.",
+        "normalVariant": true
+      },
+      {
+        "name": "Intervertebral Discs",
+        "content": "Disc spaces are [preserved / normal height / no herniation].",
+        "normalVariant": true
+      },
+      {
+        "name": "Spinal Canal",
+        "content": "Spinal canal is [patent / no stenosis / no mass effect on cord].",
+        "normalVariant": true
+      },
+      {
+        "name": "Posterior Elements",
+        "content": "Pedicles, laminae, and spinous processes [are intact / no fracture / no dislocation].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No acute cervical spine fracture.\n2. Normal alignment.\n3. No acute finding.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "neuro-brain-ct",
+  "name": "Brain CT Without Contrast",
+  "version": "1.0.0",
+  "description": "Standard brain CT report template without contrast",
+  "modality": "ct",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "ct", "neuroradiology", "non-contrast"]
+  },
+  "findings": {
+    "technique": "Axial images were obtained from the skull base through the vertex without contrast administration.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Parenchyma",
+        "content": "The cerebral parenchyma demonstrates [normal attenuation / no hemorrhage / no mass effect / no abnormal contrast enhancement].",
+        "normalVariant": true
+      },
+      {
+        "name": "Ventricles",
+        "content": "The ventricular system is [normal in size / dilated / unremarkable]. No hydrocephalus identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Midline Structures",
+        "content": "Midline structures are [midline / shifted]. No evidence of herniation.",
+        "normalVariant": true
+      },
+      {
+        "name": "Gray-White Differentiation",
+        "content": "Gray-white matter differentiation is [preserved / obscured].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal study.\n2. No acute intracranial process identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

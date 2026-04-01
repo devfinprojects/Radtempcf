@@ -1,0 +1,149 @@
+{
+  "id": "workflow-quality-metrics",
+  "name": "Quality Metrics & KPIs Definition",
+  "version": "1.0.0",
+  "description": "Quality metrics and KPIs for radiology workflow performance tracking",
+  "category": "workflow-metrics",
+  "priority": "P2",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["quality", "metrics", "kpi", "performance"]
+  },
+  "metrics": {
+    "turnaroundTime": {
+      "name": "Report Turnaround Time",
+      "description": "Time from study completion to preliminary report availability",
+      "unit": "minutes",
+      "targets": {
+        "routine": 120,
+        "stat": 30,
+        "critical": 15
+      },
+      "aggregation": {
+        "type": "percentile",
+        "values": ["p50", "p90", "p95"]
+      }
+    },
+    "criticalResultsCommunication": {
+      "name": "Critical Results Communication Compliance",
+      "description": "Percentage of critical results properly communicated within required timeframe",
+      "unit": "percentage",
+      "target": 100,
+      "tiers": {
+        "tier1": {
+          "timeframe": "15 minutes",
+          "target": 100
+        },
+        "tier2": {
+          "timeframe": "24 hours",
+          "target": 100
+        },
+        "tier3": {
+          "timeframe": "routine",
+          "target": 95
+        }
+      }
+    },
+    "addendumRate": {
+      "name": "Addendum Rate",
+      "description": "Percentage of reports requiring addenda after finalization",
+      "unit": "percentage",
+      "target": "<5",
+      "categories": {
+        "clinicalCorrection": {
+          "description": "Addendum due to clinical information change",
+          "target": "<2"
+        },
+        "peerReview": {
+          "description": "Addendum due to peer review findings",
+          "target": "<2"
+        },
+        "qualityIssue": {
+          "description": "Addendum due to quality issues",
+          "target": "<1"
+        }
+      }
+    },
+    "discrepancyRate": {
+      "name": "Discrepancy Rate",
+      "description": "Rate of discrepancies between preliminary and final reports",
+      "unit": "percentage",
+      "target": "<3",
+      "severity": {
+        "major": {
+          "description": "Significant discrepancy affecting patient care",
+          "target": "<0.5"
+        },
+        "minor": {
+          "description": "Minor discrepancy not affecting patient care",
+          "target": "<2.5"
+        }
+      }
+    },
+    "criticalFindingRate": {
+      "name": "Critical Finding Detection Rate",
+      "description": "Percentage of studies with critical findings",
+      "unit": "percentage",
+      "byModality": {
+        "ct": 2.5,
+        "mri": 1.5,
+        "ultrasound": 1.0,
+        "xray": 0.5
+      }
+    },
+    "templateUtilization": {
+      "name": "Template Utilization Rate",
+      "description": "Percentage of reports using structured templates",
+      "unit": "percentage",
+      "target": 90
+    },
+    "radpeerScoreDistribution": {
+      "name": "RADPEER Score Distribution",
+      "description": "Distribution of RADPEER scores across peer-reviewed studies",
+      "targetDistribution": {
+        "score1": 75,
+        "score2": 20,
+        "score3": 4,
+        "score4": 1
+      }
+    },
+    "reportCompleteness": {
+      "name": "Report Completeness Score",
+      "description": "Completeness of structured report fields",
+      "unit": "percentage",
+      "target": 95,
+      "fields": {
+        "clinicalHistory": {
+          "target": 100,
+          "weight": 0.15
+        },
+        "technique": {
+          "target": 100,
+          "weight": 0.1
+        },
+        "findings": {
+          "target": 100,
+          "weight": 0.35
+        },
+        "impression": {
+          "target": 100,
+          "weight": 0.25
+        },
+        "recommendations": {
+          "target": 90,
+          "weight": 0.15
+        }
+      }
+    }
+  },
+  "reportingPeriod": {
+    "daily": ["turnaroundTime", "criticalResultsCommunication"],
+    "weekly": ["addendumRate", "templateUtilization"],
+    "monthly": ["discrepancyRate", "radpeerScoreDistribution", "criticalFindingRate"],
+    "quarterly": ["reportCompleteness"]
+  },
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

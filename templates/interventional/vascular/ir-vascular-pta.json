@@ -1,0 +1,45 @@
+{
+  "id": "ir-vascular-pta",
+  "name": "Vascular PTA (Percutaneous Transluminal Angioplasty)",
+  "version": "1.0.0",
+  "description": "Interventional radiology vascular PTA procedure report template",
+  "modality": "angiography",
+  "bodyRegion": "vascular",
+  "subspecialty": "interventional-radiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["interventional", "vascular", "pta", "angioplasty"]
+  },
+  "findings": {
+    "technique": "Percutaneous transluminal angioplasty performed under fluoroscopic guidance via [radial / femoral / brachial] access. Balloon sized appropriately to target vessel.",
+    "comparison": "Procedure performed for [stenosis / occlusion] of [vessel name] as demonstrated on pre-procedural imaging.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Access",
+        "content": "Access obtained via [right/left] [radial/femoral/brachial] artery using [21G] micropuncture set.",
+        "normalVariant": false
+      },
+      {
+        "name": "Target Vessel",
+        "content": "Target [vessel name] demonstrates [percentage] stenosis [pre-procedure / post-procedure] measuring [X]mm in diameter.",
+        "normalVariant": false
+      },
+      {
+        "name": "Angioplasty Results",
+        "content": "[Ballooninflated to X atm for X seconds / Stent deployed / No dissection or perforation identified]. Final residual stenosis estimated at [percentage].",
+        "normalVariant": false
+      },
+      {
+        "name": "Runoff",
+        "content": "Three-phase runoff [demonstrates / does not demonstrate] brisk flow through the treated segment with [no distal embolization / evidence of distal embolization requiring intervention].",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. Successful PTA of [vessel name] with [residual stenosis <30%/significant residual stenosis requiring further intervention].\n2. [No complications / Access site complication / Dissection / Perforation] noted.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "dental-panoramic-xray",
+  "name": "Panoramic Dental X-Ray",
+  "version": "1.0.0",
+  "description": "Panoramic radiograph for comprehensive dental evaluation",
+  "modality": "xr",
+  "bodyRegion": "dental",
+  "subspecialty": "dental-maxillofacial",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["dental", "panoramic", "xray", "xr", "dental imaging", "orthopantomogram"],
+    "cptCodes": ["D0230"],
+    "radlexCodes": ["RID10290", "RID10291"]
+  },
+  "findings": {
+    "technique": "A panoramic radiograph (orthopantomogram) was obtained for dental evaluation.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Maxillary Teeth",
+        "content": "The maxillary teeth from right to left demonstrate [no caries / no periapical pathology / no missing teeth / no impactions]. The roots are [intact / no root resorption].",
+        "normalVariant": true
+      },
+      {
+        "name": "Mandibular Teeth",
+        "content": "The mandibular teeth from right to left demonstrate [no caries / no periapical pathology / no missing teeth / no impactions]. The roots are [intact / no root resorption].",
+        "normalVariant": true
+      },
+      {
+        "name": "Maxillary Sinus",
+        "content": "The bilateral maxillary sinuses are [clear / no sinus opacity / no mucosal thickening / no cyst].",
+        "normalVariant": true
+      },
+      {
+        "name": "Mandibular Canal",
+        "content": "The mandibular canal is [patent / no erosion / no pathology]. The inferior alveolar nerve is [not involved].",
+        "normalVariant": true
+      },
+      {
+        "name": "Temporomandibular Joints",
+        "content": "The bilateral temporomandibular joints demonstrate [no degenerative changes / no joint space narrowing / no abnormality].",
+        "normalVariant": true
+      },
+      {
+        "name": "Bony Structures",
+        "content": "The maxilla and mandible demonstrate [no bony lesions / no cystic changes / no tumors]. The cortical margins are [intact].",
+        "normalVariant": true
+      },
+      {
+        "name": "Soft Tissues",
+        "content": "The soft tissues of the face and neck are [unremarkable / no calcifications / no abnormal soft tissue masses].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal panoramic dental radiograph.\n2. No dental pathology, impaction, or bony abnormality identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

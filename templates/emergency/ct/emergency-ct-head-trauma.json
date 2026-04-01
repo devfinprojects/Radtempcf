@@ -1,0 +1,40 @@
+{
+  "id": "emergency-ct-head-trauma",
+  "name": "Emergency Head CT Trauma",
+  "version": "1.0.0",
+  "description": "Emergency head CT for trauma evaluation",
+  "modality": "ct",
+  "bodyRegion": "brain",
+  "subspecialty": "emergency",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["emergency", "head", "ct", "trauma", "urgent"]
+  },
+  "findings": {
+    "technique": "Non-contrast head CT was performed emergently for trauma evaluation.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Intracranial",
+        "content": "No acute intracranial hemorrhage. No midline shift. No mass effect.",
+        "normalVariant": true
+      },
+      {
+        "name": "Fractures",
+        "content": "No skull fracture identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Ventricles",
+        "content": "Ventricles are normal in size. No hydrocephalus.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No acute intracranial hemorrhage.\n2. No skull fracture.\n3. Normal emergent head CT.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

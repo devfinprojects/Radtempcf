@@ -1,0 +1,45 @@
+{
+  "id": "neuro-spine-cervical-mri",
+  "name": "Cervical Spine MRI",
+  "version": "1.0.0",
+  "description": "Cervical spine MRI for cord and soft tissue evaluation",
+  "modality": "mri",
+  "bodyRegion": "spine",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["spine", "cervical", "mri", "cord", "disc", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "MRI of the cervical spine with sagittal T1, T2, and axial T2 sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Spinal Cord",
+        "content": "Spinal cord [has normal signal / no cord edema / no mass / no syrinx].",
+        "normalVariant": true
+      },
+      {
+        "name": "Disc Levels",
+        "content": "C2-C3: [normal / no herniation]. C3-C4: [normal / no herniation]. C4-C5: [normal / no herniation]. C5-C6: [normal / no herniation]. C6-C7: [normal / no herniation]. C7-T1: [normal / no herniation].",
+        "normalVariant": true
+      },
+      {
+        "name": "Foramina",
+        "content": "Neural foramina are [patent / no stenosis] bilaterally.",
+        "normalVariant": true
+      },
+      {
+        "name": "Vertebral Bodies",
+        "content": "Vertebral bodies [have normal marrow signal / no lesion / no compression].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No cord abnormality.\n2. No significant disc herniation.\n3. Normal cervical spine MRI.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

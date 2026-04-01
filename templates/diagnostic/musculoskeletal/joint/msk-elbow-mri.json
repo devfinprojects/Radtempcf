@@ -1,0 +1,68 @@
+{
+  "id": "msk-elbow-mri",
+  "name": "Elbow MRI",
+  "version": "1.0.0",
+  "description": "MRI of the elbow for evaluation of ligaments, tendons, and joint pathology",
+  "modality": "mri",
+  "bodyRegion": "musculoskeletal",
+  "subspecialty": "musculoskeletal",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["musculoskeletal", "mri", "elbow", "ligament", "tendon", "msk"],
+    "cptCodes": ["73221"],
+    "radlexCodes": ["RID10550", "RID10551"]
+  },
+  "findings": {
+    "technique": "MRI of the elbow was performed in multiple planes including T1, T2, PD, and STIR sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Lateral Collateral Ligament",
+        "content": "The LCL (lateral ulnar collateral ligament) demonstrates [intact / no tear / no sprain]. The ligament is [taut / normal]",
+        "normalVariant": true
+      },
+      {
+        "name": "Medial Collateral Ligament",
+        "content": "The MCL demonstrates [intact / no tear / no sprain]. The anterior bundle is [intact]",
+        "normalVariant": true
+      },
+      {
+        "name": "Common Extensor Origin",
+        "content": "The common extensor origin demonstrates [no tear / no tendinopathy / no lateral epicondylitis]. The extensor tendons are [intact]",
+        "normalVariant": true
+      },
+      {
+        "name": "Common Flexor Origin",
+        "content": "The common flexor origin demonstrates [no tear / no tendinopathy / no medial epicondylitis]. The flexor tendons are [intact]",
+        "normalVariant": true
+      },
+      {
+        "name": "Biceps Tendon",
+        "content": "The biceps tendon demonstrates [no tear / no tendinopathy]. The distal biceps tendon is [intact]",
+        "normalVariant": true
+      },
+      {
+        "name": "Triceps Tendon",
+        "content": "The triceps tendon demonstrates [no tear / no tendinopathy]. The tendon is [intact]",
+        "normalVariant": true
+      },
+      {
+        "name": "Joint",
+        "content": "The elbow joint demonstrates [no effusion / no osteochondral lesion / no cartilage defect]. No joint effusion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Bone",
+        "content": "The humerus, radius, and ulna demonstrate [no fracture / no bone bruise / no osteochondral lesion].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal elbow MRI.\n2. No ligamentous injury, tendon tear, or osteochondral lesion identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

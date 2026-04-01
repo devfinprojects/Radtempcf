@@ -1,0 +1,53 @@
+{
+  "id": "breast-screening-mammo",
+  "name": "Breast Screening Mammography",
+  "version": "1.0.0",
+  "description": "Screening mammography report template for breast cancer screening in asymptomatic patients",
+  "modality": "mg",
+  "bodyRegion": "breast",
+  "subspecialty": "breast-imaging",
+  "clinicalContext": "screening",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["breast", "mammography", "screening", "bi-rads", "cancer screening", "women's imaging"],
+    "cptCodes": ["77067"],
+    "radlexCodes": ["RID10650", "RID10651"]
+  },
+  "findings": {
+    "technique": "Digital screening mammography was performed with standard craniocaudal and mediolateral oblique views of bilateral breasts.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None. The patient has no prior mammograms available for comparison.",
+    "sections": [
+      {
+        "name": "Breast Composition",
+        "content": "The breast composition is classified as [fatty / scattered density / heterogeneously dense / extremely dense] (ACR Density Category [a/b/c/d]).",
+        "normalVariant": true
+      },
+      {
+        "name": "Right Breast",
+        "content": "The right breast demonstrates [no masses / no calcifications / no architectural distortion / no asymmetries]. No suspicious findings.",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Breast",
+        "content": "The left breast demonstrates [no masses / no calcifications / no architectural distortion / no asymmetries]. No suspicious findings.",
+        "normalVariant": true
+      },
+      {
+        "name": "Axillae",
+        "content": "The bilateral axillae demonstrate [no enlarged lymph nodes / no suspicious lymphadenopathy]. No axillary masses.",
+        "normalVariant": true
+      },
+      {
+        "name": "Skin and Nipple",
+        "content": "The skin and nipple are [unremarkable / no skin thickening / no nipple retraction]. No abnormal findings.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "BI-RADS Category 1: Negative. No suspicious findings identified on screening mammogram.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "rads-birads-mammo",
+  "name": "BI-RADS Mammography Assessment",
+  "version": "1.0.0",
+  "description": "BI-RADS assessment template for mammography reporting with standardized categories",
+  "modality": "mg",
+  "bodyRegion": "breast",
+  "subspecialty": "rads",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["bi-rads", "mammography", "assessment", "rads", "breast imaging"],
+    "cptCodes": ["77067"],
+    "radlexCodes": ["RID10650", "RID10651"]
+  },
+  "findings": {
+    "technique": "Digital mammography was performed with standard views.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Breast Composition",
+        "content": "Breast composition: [a: fatty / b: scattered density / c: heterogeneously dense / d: extremely dense]",
+        "normalVariant": true
+      },
+      {
+        "name": "Finding Description",
+        "content": "Location: [right/left] breast, [X] o'clock position. Depth: [anterior/middle/posterior]. Associated findings: [none/skin retraction/nipple retraction/skin thickening/axillary adenopathy].",
+        "normalVariant": true
+      },
+      {
+        "name": "Calcifications",
+        "content": "Calcifications: [none present/skin/coarse/punctate/indeterminate/suspicious] calcifications in [distribution].",
+        "normalVariant": true
+      },
+      {
+        "name": "Assessment Category",
+        "content": "BI-RADS Category: [0: incomplete - need additional imaging / 1: negative / 2: benign finding / 3: probably benign / 4: suspicious / 5: highly suggestive of malignancy / 6: known biopsy-proven malignancy]",
+        "normalVariant": true
+      },
+      {
+        "name": "Recommendation",
+        "content": "Recommendation: [short-interval follow-up / additional imaging / percutaneous biopsy / surgical consultation]",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "BI-RADS Category [X]: [Assessment]. Recommendation: [Recommended action].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

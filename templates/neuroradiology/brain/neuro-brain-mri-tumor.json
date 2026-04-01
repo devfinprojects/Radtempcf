@@ -1,0 +1,45 @@
+{
+  "id": "neuro-brain-mri-tumor",
+  "name": "Brain MRI Tumor Protocol",
+  "version": "1.0.0",
+  "description": "Comprehensive brain MRI protocol for tumor evaluation with pre and post-contrast sequences",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "tumor", "neoplasm", "contrast", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "MRI brain with tumor protocol including pre-contrast T1, T2, FLAIR, DWI, post-contrast T1, and SWI.",
+    "comparison": "No prior MRI studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Pre-Contrast Sequences",
+        "content": "No mass or lesion identified. Normal brain parenchymal signal. No abnormal T2/FLAIR hyperintensity.",
+        "normalVariant": true
+      },
+      {
+        "name": "Post-Contrast Sequences",
+        "content": "No abnormal enhancement. No ring-enhancing or nodular lesions. No abnormal meningeal enhancement.",
+        "normalVariant": true
+      },
+      {
+        "name": "Diffusion",
+        "content": "No restricted diffusion to suggest high-grade tumor. Normal diffusion pattern.",
+        "normalVariant": true
+      },
+      {
+        "name": "Susceptibility",
+        "content": "No susceptibility artifact to suggest hemorrhage or calcification within tumor.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No mass or tumor identified.\n2. Normal post-contrast study.\n3. No abnormal enhancement to suggest intracranial neoplasm.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

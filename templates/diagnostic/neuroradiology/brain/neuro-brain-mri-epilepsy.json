@@ -1,0 +1,73 @@
+{
+  "id": "neuro-brain-mri-epilepsy",
+  "name": "Brain MRI Epilepsy Protocol",
+  "version": "1.0.0",
+  "description": "Dedicated brain MRI protocol for evaluation of epilepsy including thin-section hippocampal and temporal lobe imaging",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "epilepsy", "hippocampus", "temporal lobe", "neuroradiology", "seizure"],
+    "cptCodes": ["70551", "70553"],
+    "radlexCodes": ["RID10456", "RID10457", "RID10458"]
+  },
+  "findings": {
+    "technique": "Dedicated epilepsy protocol MRI including thin-slice T1, T2, FLAIR, coronal oblique FLAIR through hippocampus, diffusion tensor imaging, and post-contrast sequences when indicated.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Hippocampi",
+        "content": "The right hippocampus demonstrates [normal T2 signal / no hippocampal sclerosis / normal morphology]. The left hippocampus demonstrates [normal T2 signal / no hippocampal sclerosis / normal morphology]. No asymmetric atrophy.",
+        "normalVariant": true
+      },
+      {
+        "name": "Temporal Lobes",
+        "content": "The bilateral temporal lobes demonstrate [normal cortical thickness / no focal cortical dysplasia / no temporal lobe atrophy]. The temporal horn is [not dilated / symmetric].",
+        "normalVariant": true
+      },
+      {
+        "name": "Parainsula and Amygdala",
+        "content": "The bilateral amygdalae demonstrate [normal T2 signal / no abnormality]. The parainsular region is [unremarkable / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Cortex",
+        "content": "The cerebral cortex demonstrates [normal gray-white matter differentiation / no focal cortical dysplasia / no heterotopic gray matter]. No malformation of cortical development.",
+        "normalVariant": true
+      },
+      {
+        "name": "White Matter",
+        "content": "The white matter demonstrates [no abnormal T2 signal / no demyelination / no white matter lesion]. No focal white matter abnormality.",
+        "normalVariant": true
+      },
+      {
+        "name": "Mesial Temporal Structures",
+        "content": "The fornix and mammillary bodies are [intact / normal]. No abnormal signal in the mesial temporal structures.",
+        "normalVariant": true
+      },
+      {
+        "name": "Ventricles",
+        "content": "The lateral ventricles are [normal in size / not dilated]. The temporal horns are [not prominent / symmetric].",
+        "normalVariant": true
+      },
+      {
+        "name": "Extra-Temporal",
+        "content": "The frontal, parietal, and occipital lobes are [unremarkable / no abnormality]. No extra-temporal focus for epileptogenic activity.",
+        "normalVariant": true
+      },
+      {
+        "name": "Vascular",
+        "content": "No vascular malformation such as cavernous malformation or developmental venous anomaly identified.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal dedicated epilepsy protocol MRI.\n2. No hippocampal sclerosis, focal cortical dysplasia, or malformation of cortical development identified.\n3. No vascular malformation to suggest epileptogenic focus.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

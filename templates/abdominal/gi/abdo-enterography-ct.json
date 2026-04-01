@@ -1,0 +1,35 @@
+{
+  "id": "abdo-enterography-ct",
+  "name": "CT Enterography",
+  "version": "1.0.0",
+  "description": "CT enterography for small bowel evaluation",
+  "modality": "ct",
+  "bodyRegion": "abdomen",
+  "subspecialty": "abdominal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["abdomen", "ct", "enterography", "small bowel"]
+  },
+  "findings": {
+    "technique": "CT enterography was performed with oral and intravenous contrast.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Small Bowel",
+        "content": "Small bowel [no wall thickening / no dilation / no mass].",
+        "normalVariant": true
+      },
+      {
+        "name": "Mesentery",
+        "content": "Mesentery [no stranding / no lymphadenopathy].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal CT enterography.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

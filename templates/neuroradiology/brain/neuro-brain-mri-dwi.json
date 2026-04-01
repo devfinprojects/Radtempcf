@@ -1,0 +1,40 @@
+{
+  "id": "neuro-brain-mri-dwi",
+  "name": "Brain MRI Diffusion (DWI)",
+  "version": "1.0.0",
+  "description": "Brain MRI diffusion-weighted imaging for acute stroke and restricted diffusion detection",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "dwi", "diffusion", "stroke", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "Echo planar diffusion-weighted images were obtained in three orthogonal directions with ADC map reconstruction.",
+    "comparison": "No prior MRI studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Diffusion",
+        "content": "Diffusion-weighted images demonstrate [no restricted diffusion / no areas of hyperintensity on DWI / no acute infarct].",
+        "normalVariant": true
+      },
+      {
+        "name": "ADC Map",
+        "content": "ADC map shows [no low signal / no restricted diffusion / no corresponding dark areas].",
+        "normalVariant": true
+      },
+      {
+        "name": "Pattern",
+        "content": "No territorial infarction pattern identified. No lacunar infarcts seen.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal diffusion study.\n2. No acute restricted diffusion to suggest acute infarction.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

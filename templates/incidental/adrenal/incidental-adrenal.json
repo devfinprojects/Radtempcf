@@ -1,0 +1,45 @@
+{
+  "id": "incidental-adrenal",
+  "name": "Adrenal Incidentaloma",
+  "version": "1.0.0",
+  "description": "Report template for incidental adrenal lesions identified on imaging performed for other indications",
+  "modality": "ct",
+  "bodyRegion": "abdomen",
+  "subspecialty": "abdominal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["incidental", "adrenal", "adenoma", "adrenal incidentaloma"]
+  },
+  "findings": {
+    "technique": "CT [abdomen/chest/CTA] performed for [other clinical indication]. Dedicated adrenal windowing reviewed.",
+    "comparison": "No prior adrenal imaging available for comparison. [Prior imaging from X date reviewed] - [lesion is new/stable/interval change].",
+    "limitations": "None - adequate visualization of adrenal glands.",
+    "sections": [
+      {
+        "name": "Adrenal Lesion",
+        "content": "Incidental adrenal lesion identified in [right/left] adrenal. Size: [X]cm. Pre-contrast attenuation: [X]HU. Portovenous phase: [X]HU. Delayed (10 min): [X]HU.",
+        "normalVariant": false
+      },
+      {
+        "name": "Characterization",
+        "content": "Washout calculation: [(pre - delayed) / (pre - enhancement) = X%]. [Washout >60%: likely adenoma / Washout <60%: indeterminate or malignant]. Chemical shift MRI: [signal drop / no signal drop].",
+        "normalVariant": false
+      },
+      {
+        "name": "Morphology",
+        "content": "Margin: [smooth / irregular]. Shape: [round / oval]. Internal characteristics: [homogeneous / heterogeneous / cystic / fatty]. Calcifications: [present/absent].",
+        "normalVariant": false
+      },
+      {
+        "name": "Additional Findings",
+        "content": "Additional adrenal lesions: [present/absent]. [Contralateral gland: unremarkable / contains lesion]. [Retroperitoneal lymphadenopathy: present/absent]. [Liver: unremarkable / contains metastasis].",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. Incidental adrenal [lesion/nodule/mass] in [right/left] gland measuring [X]cm\n2. Attenuation: [X]HU - [likely adenoma (benign) / indeterminate / concerning for malignancy]\n3. [Washout: X% / Absolute washout: X% / Relative washout: X%]\n4. [Follow-up in 6-12 months / MRI characterization / FDG PET / Biopsy / Surgical consultation] recommended",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

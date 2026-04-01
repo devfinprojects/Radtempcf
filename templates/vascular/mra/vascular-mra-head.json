@@ -1,0 +1,30 @@
+{
+  "id": "vascular-mra-head",
+  "name": "MRA Head",
+  "version": "1.0.0",
+  "description": "MR angiography of the head",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "vascular",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["vascular", "mra", "head", "brain"]
+  },
+  "findings": {
+    "technique": "MRA of the head was performed using TOF technique.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Arteries",
+        "content": "Intracranial arteries [no aneurysm / no stenosis].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal MRA head.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

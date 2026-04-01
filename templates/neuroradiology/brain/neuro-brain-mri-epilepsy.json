@@ -1,0 +1,45 @@
+{
+  "id": "neuro-brain-mri-epilepsy",
+  "name": "Brain MRI Epilepsy Protocol",
+  "version": "1.0.0",
+  "description": "Brain MRI epilepsy protocol with thin-section coronal T2, FLAIR, and dedicated hippocampal imaging",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "epilepsy", "seizure", "hippocampus", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "MRI brain with epilepsy protocol including thin-section coronal T2, FLAIR, and 3D T1 sequences.",
+    "comparison": "No prior MRI studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Hippocampi",
+        "content": "Right hippocampus: [normal size / normal signal / no atrophy / no sclerosis]. Left hippocampus: [normal size / normal signal / no atrophy / no sclerosis].",
+        "normalVariant": true
+      },
+      {
+        "name": "Temporal Lobes",
+        "content": "Temporal lobes show [normal morphology / no cortical dysplasia / no heterotopia / no mass].",
+        "normalVariant": true
+      },
+      {
+        "name": "Mesial Temporal Structures",
+        "content": "Amygdalae are [symmetric / normal / no abnormal signal]. No mesial temporal sclerosis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Extra-Temporal",
+        "content": "No extra-temporal cortical malformations. No abnormal signal in other brain regions.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No evidence of hippocampal sclerosis.\n2. No cortical dysplasia or developmental lesion identified.\n3. Normal epilepsy protocol study.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

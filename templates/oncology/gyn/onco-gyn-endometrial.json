@@ -1,0 +1,70 @@
+{
+  "id": "onco-gyn-endometrial",
+  "name": "Endometrial Cancer Synoptic Report",
+  "version": "1.0.0",
+  "description": "Synoptic pathology report template for endometrial (uterine) cancer",
+  "modality": "pathology",
+  "bodyRegion": "uterus",
+  "subspecialty": "oncology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["oncology", "endometrial", "gyn", "uterine", "cancer", "synoptic", "pathology"]
+  },
+  "findings": {
+    "technique": "Total hysterectomy / endometrial biopsy / dilation and curettage specimen submitted for pathological examination. Specimen inked and serially sectioned.",
+    "comparison": "Clinical history: [abnormal uterine bleeding / postmenopausal bleeding / cervical mass]. Prior imaging: [MRI/CT/ultrasound] showing [finding]. Prior biopsy: [positive/negative].",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Specimen Type",
+        "content": "Specimen type: [Total abdominal hysterectomy / Laparoscopic hysterectomy / Radical hysterectomy / Endometrial biopsy / D&C]. Omentectomy: [performed/not performed].",
+        "normalVariant": false
+      },
+      {
+        "name": "Histologic Type",
+        "content": "Histologic type: [Endometrioid adenocarcinoma / Serous carcinoma / Clear cell carcinoma / Carcinosarcoma / Mixed carcinoma / Dedifferentiated carcinoma / Other].",
+        "normalVariant": false
+      },
+      {
+        "name": "Tumor Size",
+        "content": "Tumor size: [X]cm (greatest dimension). [Tumor location: fundus / lower uterine segment / corpus / diffuse]. [Myometrial invasion: X mm / X %].",
+        "normalVariant": false
+      },
+      {
+        "name": "Grade",
+        "content": "FIGO Grade: [1 (well) / 2 (moderately) / 3 (poorly)]. [Endometrioid: architecture grade + nuclear grade = final grade]. [Non-endometrioid: automatically grade 3].",
+        "normalVariant": false
+      },
+      {
+        "name": "Myometrial Invasion",
+        "content": "Myometrial invasion depth: [none (stage IA) / <50% (stage IB) / >50% (stage IC)]. [Inner myometrium / outer myometrium]. [Lymphovascular invasion: present/absent].",
+        "normalVariant": false
+      },
+      {
+        "name": "Cervical Involvement",
+        "content": "Cervical stroma: [involved / not involved]. [Glandular / stromal] involvement. [Endocervical gland involvement only / stromal invasion].",
+        "normalVariant": false
+      },
+      {
+        "name": "Lymph Nodes",
+        "content": "Lymph nodes: [Pelvic / Para-aortic] nodes examined: [X]. Positive: [X]. [Omental nodes: examined X, positive X]. [Extranodal extension: present/absent].",
+        "normalVariant": false
+      },
+      {
+        "name": "Additional Findings",
+        "content": "Adnexa: [right/left] [unremarkable / involved by tumor]. Omentum: [unremarkable / involved by tumor]. [Peritoneal washings: negative/positive].",
+        "normalVariant": false
+      },
+      {
+        "name": "Molecular Classification",
+        "content": "POLE mutation: [mutated / wild-type]. MMR deficiency: [dMMR (MLH1, PMS2, MSH2, MSH6 loss) / pMMR]. p53 mutation: [abnormal / wild-type].",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. [Histologic type], FIGO Grade [X], measuring [X]cm\n2. Myometrial invasion: [depth], [stage: IA/IB/IC]\n3. Cervical involvement: [present/absent]\n4. Lymph nodes: [X] positive out of [X] examined\n5. Lymphovascular invasion: [Present/Absent]\n6. Molecular: [POLE: X, MMR: X, p53: X]\n7. [FIGO 2023 stage: pT[X] pN[X] M[X]]",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

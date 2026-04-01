@@ -1,0 +1,50 @@
+{
+  "id": "abdo-gi-ct",
+  "name": "Abdomen CT With Contrast - GI",
+  "version": "1.0.0",
+  "description": "Abdomen CT with contrast focused on gastrointestinal evaluation",
+  "modality": "ct",
+  "bodyRegion": "gastrointestinal",
+  "subspecialty": "abdominal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["abdomen", "gi", "gastrointestinal", "ct", "contrast", "bowel"]
+  },
+  "findings": {
+    "technique": "CT of the abdomen and pelvis with oral and intravenous contrast was performed.",
+    "comparison": "No prior imaging for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Stomach",
+        "content": "The stomach [is appropriately distended / shows normal wall thickening / no mass or filling defect]. Gastric wall enhancement is [normal / uniform].",
+        "normalVariant": true
+      },
+      {
+        "name": "Small Bowel",
+        "content": "Small bowel loops [are not dilated / show normal caliber / no transition point identified]. Wall thickening [is not present / no abnormal enhancement]. No bowel obstruction.\nNo free air or significant free fluid.",
+        "normalVariant": true
+      },
+      {
+        "name": "Colon",
+        "content": "The colon [is appropriately distended / shows no colonic wall thickening / no mass or filling defect]. No bowel obstruction. No diverticulitis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Appendix",
+        "content": "The appendix [is not identified / is normal in appearance / no appendicitis].",
+        "normalVariant": true
+      },
+      {
+        "name": "Peritoneum",
+        "content": "No free air. No significant free fluid. No peritoneal nodules or masses identified.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. [No acute bowel abnormality / No bowel obstruction or inflammation].\n2. [No free air or free fluid / No acute intra-abdominal process].\n3. [Normal study / Recommend clinical correlation].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

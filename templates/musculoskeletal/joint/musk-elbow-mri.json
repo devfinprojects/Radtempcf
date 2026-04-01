@@ -1,0 +1,40 @@
+{
+  "id": "musk-elbow-mri",
+  "name": "Elbow MRI",
+  "version": "1.0.0",
+  "description": "MRI of the elbow for ligament, tendon, and osteochondral evaluation",
+  "modality": "mri",
+  "bodyRegion": "musculoskeletal",
+  "subspecialty": "musculoskeletal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["musculoskeletal", "elbow", "mri", "ligament", "tendon"]
+  },
+  "findings": {
+    "technique": "MRI of the elbow was performed with T1, T2, and fat-saturated sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Collateral Ligaments",
+        "content": "UCL [intact / no tear]. LCL [intact / no tear].",
+        "normalVariant": true
+      },
+      {
+        "name": "Tendons",
+        "content": "Biceps and triceps tendons [intact / no tear]. Common flexor and extensor origins [intact].",
+        "normalVariant": true
+      },
+      {
+        "name": "Osteochondral",
+        "content": " Capitellum [no osteochondral lesion / no bone marrow edema].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No ligamentous injury.\n2. No tendon tear.\n3. Normal elbow MRI.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

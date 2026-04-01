@@ -1,0 +1,78 @@
+{
+  "id": "neuro-spine-cervical-ct",
+  "name": "Cervical Spine CT Without Contrast",
+  "version": "1.0.0",
+  "description": "Standard cervical spine CT report template without contrast for evaluation of bony anatomy",
+  "modality": "ct",
+  "bodyRegion": "spine",
+  "subspecialty": "neuroradiology",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["spine", "cervical", "ct", "neuroradiology", "c-spine", "bony"],
+    "cptCodes": ["72125"],
+    "radlexCodes": ["RID10501", "RID10502"]
+  },
+  "findings": {
+    "technique": "CT of the cervical spine was performed without contrast in axial and sagittal reconstructions.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Vertebral Bodies",
+        "content": "The cervical vertebral bodies from C1 through C7 demonstrate [normal height / no compression fracture / no bony lesion]. The bone density is [normal / no lytic or blastic lesion].",
+        "normalVariant": true
+      },
+      {
+        "name": "Vertebral Artery Grooves",
+        "content": "The vertebral artery grooves are [intact / no abnormal configuration]. The transverse foramina are [patent / symmetric].",
+        "normalVariant": true
+      },
+      {
+        "name": "Pedicles",
+        "content": "The bilateral pedicles are [intact / no fracture / no lytic lesion]. No pedicle thinning or erosion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Laminae",
+        "content": "The laminae are [intact / no fracture / no bony defect]. No laminar fracture.",
+        "normalVariant": true
+      },
+      {
+        "name": "Spinous Processes",
+        "content": "The spinous processes are [intact / no fracture / no non-union]. No abnormal calcification.",
+        "normalVariant": true
+      },
+      {
+        "name": "Facet Joints",
+        "content": "The facet joints demonstrate [no malalignment / no subluxation / no degenerative changes]. The joint spaces are [preserved / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Intervertebral Disc Spaces",
+        "content": "The intervertebral disc spaces are [preserved / normal height]. No disc space narrowing or vacuum phenomenon.",
+        "normalVariant": true
+      },
+      {
+        "name": "Spinal Canal",
+        "content": "The spinal canal is [adequate in diameter / no bony stenosis]. No posterior element hypertrophy causing canal compromise.",
+        "normalVariant": true
+      },
+      {
+        "name": "Neural Foramina",
+        "content": "The bilateral neural foramina are [patent / adequate in size / no bony narrowing]. No foraminal stenosis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Soft Tissues",
+        "content": "The prevertebral and paraspinal soft tissues are [unremarkable / no abnormal soft tissue mass]. No abnormal soft tissue swelling.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal cervical spine CT.\n2. No fracture, dislocation, or bony abnormality identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

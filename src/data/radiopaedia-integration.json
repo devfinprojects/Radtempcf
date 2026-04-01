@@ -1,0 +1,211 @@
+{
+  "$schema": "https://radreport.org/schemas/radiopaedia.json",
+  "title": "Radiopaedia Integration Schema",
+  "description": "Schema for integrating Radiopaedia educational resources with radiology report templates",
+  "version": "1.0.0",
+  "lastUpdated": "2026-03-30",
+  "baseUrl": "https://radiopaedia.org",
+  "categories": {
+    "neuroradiology": {
+      "brain": {
+        "articles": [
+          {
+            "title": "Intracranial haemorrhage",
+            "url": "https://radiopaedia.org/articles/intracranial-haemorrhage",
+            "relatedTemplates": ["neuro-brain-ct", "neuro-brain-mri"]
+          },
+          {
+            "title": "Ischemic stroke",
+            "url": "https://radiopaedia.org/articles/ischemic-stroke",
+            "relatedTemplates": ["neuro-brain-ct", "neuro-brain-mri"]
+          },
+          {
+            "title": "Brain tumours",
+            "url": "https://radiopaedia.org/articles/brain-tumours-overview",
+            "relatedTemplates": ["neuro-brain-ct", "neuro-brain-mri"]
+          },
+          {
+            "title": "Dementia",
+            "url": "https://radiopaedia.org/articles/dementia",
+            "relatedTemplates": ["neuro-brain-mri"]
+          }
+        ]
+      },
+      "spine": {
+        "articles": [
+          {
+            "title": "Spinal cord injury",
+            "url": "https://radiopaedia.org/articles/spinal-cord-injury",
+            "relatedTemplates": ["neuro-spine-mri", "neuro-spine-ct"]
+          },
+          {
+            "title": "Spinal tumours",
+            "url": "https://radiopaedia.org/articles/spinal-tumours",
+            "relatedTemplates": ["neuro-spine-mri"]
+          },
+          {
+            "title": "Spondylosis",
+            "url": "https://radiopaedia.org/articles/spondylosis",
+            "relatedTemplates": ["neuro-spine-mri", "neuro-spine-xray"]
+          }
+        ]
+      },
+      "headNeck": {
+        "articles": [
+          {
+            "title": "Orbital tumours",
+            "url": "https://radiopaedia.org/articles/orbital-tumours",
+            "relatedTemplates": ["neuro-head-neck-ct", "neuro-head-neck-mri"]
+          },
+          {
+            "title": "Salivary gland tumours",
+            "url": "https://radiopaedia.org/articles/salivary-gland-tumours",
+            "relatedTemplates": ["neuro-head-neck-ct", "neuro-head-neck-us"]
+          }
+        ]
+      }
+    },
+    "chest": {
+      "lung": {
+        "articles": [
+          {
+            "title": "Lung cancer",
+            "url": "https://radiopaedia.org/articles/lung-cancer-1",
+            "relatedTemplates": ["chest-lung-ct", "chest-lung-xray"]
+          },
+          {
+            "title": "Pneumonia",
+            "url": "https://radiopaedia.org/articles/pneumonia",
+            "relatedTemplates": ["chest-lung-ct", "chest-lung-xray"]
+          },
+          {
+            "title": "Pulmonary embolism",
+            "url": "https://radiopaedia.org/articles/pulmonary-embolism",
+            "relatedTemplates": ["chest-lung-ct", "chest-lung-cta"]
+          }
+        ]
+      },
+      "mediastinum": {
+        "articles": [
+          {
+            "title": "Mediastinal masses",
+            "url": "https://radiopaedia.org/articles/mediastinal-masses",
+            "relatedTemplates": ["chest-mediastinum-ct", "chest-mediastinum-mri"]
+          },
+          {
+            "title": "Thymoma",
+            "url": "https://radiopaedia.org/articles/thymoma",
+            "relatedTemplates": ["chest-mediastinum-ct"]
+          }
+        ]
+      }
+    },
+    "abdominal": {
+      "liver": {
+        "articles": [
+          {
+            "title": "Hepatocellular carcinoma",
+            "url": "https://radiopaedia.org/articles/hepatocellular-carcinoma",
+            "relatedTemplates": ["abdo-liver-ct", "abdo-liver-mri"]
+          },
+          {
+            "title": "Liver metastases",
+            "url": "https://radiopaedia.org/articles/liver-metastases",
+            "relatedTemplates": ["abdo-liver-ct", "abdo-liver-mri"]
+          },
+          {
+            "title": "Cirrhosis",
+            "url": "https://radiopaedia.org/articles/cirrhosis",
+            "relatedTemplates": ["abdo-liver-ct", "abdo-liver-us"]
+          }
+        ]
+      },
+      "kidney": {
+        "articles": [
+          {
+            "title": "Renal cell carcinoma",
+            "url": "https://radiopaedia.org/articles/renal-cell-carcinoma",
+            "relatedTemplates": ["abdo-kidney-ct", "abdo-kidney-mri"]
+          },
+          {
+            "title": "Kidney stones",
+            "url": "https://radiopaedia.org/articles/nephrolithiasis",
+            "relatedTemplates": ["abdo-kidney-ct", "abdo-kidney-xray"]
+          },
+          {
+            "title": "Renal cysts",
+            "url": "https://radiopaedia.org/articles/renal-cysts",
+            "relatedTemplates": ["abdo-kidney-us", "abdo-kidney-ct"]
+          }
+        ]
+      },
+      "gi": {
+        "articles": [
+          {
+            "title": "Colorectal cancer",
+            "url": "https://radiopaedia.org/articles/colorectal-cancer",
+            "relatedTemplates": ["abdo-gi-ct", "abdo-gi-colonoscopy"]
+          },
+          {
+            "title": "Appendicitis",
+            "url": "https://radiopaedia.org/articles/appendicitis",
+            "relatedTemplates": ["abdo-gi-ct", "abdo-gi-us"]
+          },
+          {
+            "title": "Bowel obstruction",
+            "url": "https://radiopaedia.org/articles/bowel-obstruction",
+            "relatedTemplates": ["abdo-gi-ct", "abdo-gi-xray"]
+          }
+        ]
+      }
+    },
+    "musculoskeletal": {
+      "bone": {
+        "articles": [
+          {
+            "title": "Fractures",
+            "url": "https://radiopaedia.org/articles/fractures",
+            "relatedTemplates": ["msk-bone-xray", "msk-bone-ct"]
+          },
+          {
+            "title": "Bone tumours",
+            "url": "https://radiopaedia.org/articles/bone-tumours",
+            "relatedTemplates": ["msk-bone-xray", "msk-bone-mri"]
+          }
+        ]
+      },
+      "joint": {
+        "articles": [
+          {
+            "title": "Osteoarthritis",
+            "url": "https://radiopaedia.org/articles/osteoarthritis",
+            "relatedTemplates": ["msk-joint-xray", "msk-joint-mri"]
+          },
+          {
+            "title": "Sports injuries",
+            "url": "https://radiopaedia.org/articles/sports-injuries",
+            "relatedTemplates": ["msk-joint-mri", "msk-joint-us"]
+          }
+        ]
+      }
+    }
+  },
+  "integrationFeatures": {
+    "caseLinks": {
+      "description": "Direct links from templates to relevant Radiopaedia cases",
+      "implementation": "Add 'radiopaediaCases' field to template schema"
+    },
+    "articleReferences": {
+      "description": "Educational article references in template descriptions",
+      "implementation": "Include 'relatedArticles' array in template metadata"
+    },
+    "teachingPoints": {
+      "description": "Incorporate Radiopaedia teaching points in templates",
+      "implementation": "Add 'teachingNotes' section to template structure"
+    },
+    "searchIntegration": {
+      "description": "Search Radiopaedia content from template browser",
+      "implementation": "API endpoint for Radiopaedia search"
+    }
+  }
+}

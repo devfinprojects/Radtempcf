@@ -1,0 +1,45 @@
+{
+  "id": "neuro-brain-mri-pituitary",
+  "name": "Brain MRI Pituitary Protocol",
+  "version": "1.0.0",
+  "description": "Brain MRI dedicated pituitary protocol with dynamic contrast imaging",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "pituitary", "sella", "adenoma", "hypothalamus"]
+  },
+  "findings": {
+    "technique": "MRI sella with thin-section sagittal and coronal T1, T2, and dynamic post-contrast sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Pituitary Gland",
+        "content": "Pituitary gland is [normal in size / homogeneous signal / no focal lesion]. No microadenoma or macroadenoma identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Pituitary Stalk",
+        "content": "Pituitary stalk is [midline / normal / no deviation / no thickening].",
+        "normalVariant": true
+      },
+      {
+        "name": "Sella Region",
+        "content": "Sella turcica is [normal / no bone destruction]. Cavernous sinus: [patent / no invasion].",
+        "normalVariant": true
+      },
+      {
+        "name": "Optic Chiasm",
+        "content": "Optic chiasm is [normal / no elevation / no compression].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal pituitary MRI.\n2. No pituitary adenoma or sellar mass identified.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

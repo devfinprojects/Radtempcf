@@ -1,0 +1,45 @@
+{
+  "id": "neuro-spine-post-contrast",
+  "name": "Spine MRI Post-Contrast",
+  "version": "1.0.0",
+  "description": "Spine MRI with gadolinium contrast for lesion evaluation",
+  "modality": "mri",
+  "bodyRegion": "spine",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["spine", "mri", "contrast", "gadolinium", "tumor", "infection"]
+  },
+  "findings": {
+    "technique": "MRI of the spine with post-contrast T1-weighted fat-saturated sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Spinal Cord Enhancement",
+        "content": "Spinal cord [shows no abnormal enhancement / no mass / no lesion].",
+        "normalVariant": true
+      },
+      {
+        "name": "Meningeal Enhancement",
+        "content": "No abnormal meningeal enhancement. Dura is normal.",
+        "normalVariant": true
+      },
+      {
+        "name": "Vertebral Body Enhancement",
+        "content": "Vertebral bodies [show normal enhancement pattern / no abnormal enhancement to suggest metastasis or infection].",
+        "normalVariant": true
+      },
+      {
+        "name": "Paraspinal Soft Tissues",
+        "content": "Paraspinal soft tissues [are unremarkable / no abnormal enhancement / no mass].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No abnormal enhancement to suggest tumor or infection.\n2. Normal post-contrast spine MRI.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "vascular-cta-pulmonary",
+  "name": "CT Angiography - Pulmonary",
+  "version": "1.0.0",
+  "description": "Pulmonary CTA template for PE evaluation",
+  "modality": "ct",
+  "bodyRegion": "pulmonary",
+  "subspecialty": "vascular",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["vascular", "cta", "pulmonary", "pe", "embolism"]
+  },
+  "findings": {
+    "technique": "CT pulmonary angiography was performed with intravenous contrast.",
+    "comparison": "No prior imaging for comparison.",
+    "limitations": "None.",
+    "sections": [
+      {
+        "name": "Main Pulmonary Artery",
+        "content": "Main PA: [No filling defect / No central PE] identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Right Pulmonary Artery",
+        "content": "RPA: [Patent / No filling defect].",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Pulmonary Artery",
+        "content": "LPA: [Patent / No filling defect].",
+        "normalVariant": true
+      },
+      {
+        "name": "Segmental Arteries",
+        "content": "Segmental arteries: [All patent / No segmental PE identified].",
+        "normalVariant": true
+      },
+      {
+        "name": "Lungs",
+        "content": "Lungs: [No infarction / No Hampton hump / No Westermark sign].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. [No pulmonary embolism / No evidence of PE].\n2. [Normal study / Recommend clinical correlation].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

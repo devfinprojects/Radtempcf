@@ -1,0 +1,55 @@
+{
+  "id": "nm-pet-whole-body",
+  "name": "Whole Body PET/CT",
+  "version": "1.0.0",
+  "description": "Whole body PET/CT template",
+  "modality": "nuclear",
+  "bodyRegion": "whole-body",
+  "subspecialty": "nuclear",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["nuclear", "pet", "whole-body", "oncology"]
+  },
+  "findings": {
+    "technique": "FDG PET/CT was performed from vertex to thighs.",
+    "comparison": "Prior PET/CT dated [date] available for comparison.",
+    "limitations": "None.",
+    "sections": [
+      {
+        "name": "Brain",
+        "content": "Brain: [No abnormal FDG uptake / Normal physiologic activity].",
+        "normalVariant": true
+      },
+      {
+        "name": "Head and Neck",
+        "content": "Head and neck: [No abnormal uptake / No pathologic nodes].",
+        "normalVariant": true
+      },
+      {
+        "name": "Chest",
+        "content": "Chest: [No abnormal FDG uptake / No lung mass / No pathologic nodes].",
+        "normalVariant": true
+      },
+      {
+        "name": "Abdomen",
+        "content": "Abdomen: [No abnormal uptake / No mass / No organ metastases].",
+        "normalVariant": true
+      },
+      {
+        "name": "Pelvis",
+        "content": "Pelvis: [No abnormal uptake / No pelvic mass].",
+        "normalVariant": true
+      },
+      {
+        "name": "Skeleton",
+        "content": "Skeleton: [No abnormal uptake / No bone metastases].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. [No evidence of metastatic disease / No abnormal findings].\n2. [Deauville score: __ / Complete metabolic response].\n3. [Recommend routine follow-up].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

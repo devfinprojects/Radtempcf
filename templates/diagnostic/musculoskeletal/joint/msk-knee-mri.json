@@ -1,0 +1,78 @@
+{
+  "id": "msk-knee-mri",
+  "name": "Knee MRI",
+  "version": "1.0.0",
+  "description": "MRI of the knee for evaluation of menisci, ligaments, and joint pathology",
+  "modality": "mri",
+  "bodyRegion": "musculoskeletal",
+  "subspecialty": "musculoskeletal",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["musculoskeletal", "mri", "knee", "meniscus", "ligament", "acl", "msk"],
+    "cptCodes": ["73221"],
+    "radlexCodes": ["RID10550", "RID10551"]
+  },
+  "findings": {
+    "technique": "MRI of the knee was performed in multiple planes including T1, T2, PD, and STIR sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Anterior Cruciate Ligament",
+        "content": "The ACL demonstrates [intact / no tear / no fiber discontinuity]. The ACL is [midline / no angulation].",
+        "normalVariant": true
+      },
+      {
+        "name": "Posterior Cruciate Ligament",
+        "content": "The PCL demonstrates [intact / no tear / no fiber discontinuity]. The PCL is [taut / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Medial Meniscus",
+        "content": "The medial meniscus demonstrates [no tear / no degeneration / no horizontal tear / no bucket-handle tear]. The meniscal body and horns are [intact / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Lateral Meniscus",
+        "content": "The lateral meniscus demonstrates [no tear / no degeneration / no horizontal tear / no bucket-handle tear]. The meniscal body and horns are [intact / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Medial Collateral Ligament",
+        "content": "The MCL demonstrates [intact / no tear / no thickening / no sprain]. The proximal and distal insertions are intact.",
+        "normalVariant": true
+      },
+      {
+        "name": "Lateral Collateral Ligament",
+        "content": "The LCL demonstrates [intact / no tear / no thickening / no sprain]. The fibular collateral ligament is intact.",
+        "normalVariant": true
+      },
+      {
+        "name": "Patellar Tendon",
+        "content": "The patellar tendon demonstrates [no tear / no thickening / no tendinopathy]. The tibial tubercle is [intact].",
+        "normalVariant": true
+      },
+      {
+        "name": "Quadriceps Tendon",
+        "content": "The quadriceps tendon demonstrates [no tear / no thickening / no tendinopathy]. The patellar attachment is intact.",
+        "normalVariant": true
+      },
+      {
+        "name": "Bone",
+        "content": "The femoral condyles, tibial plateau, and patella demonstrate [no fracture / no bone bruise / no osteochondral lesion]. No joint effusion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Articular Cartilage",
+        "content": "The articular cartilage over the femoral condyles, tibial plateau, and patella demonstrates [normal thickness / no defect / no degeneration].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal knee MRI.\n2. No meniscal tear, ligamentous injury, or osteochondral lesion identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

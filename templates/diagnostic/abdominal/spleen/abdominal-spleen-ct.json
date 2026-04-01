@@ -1,0 +1,48 @@
+{
+  "id": "abdominal-spleen-ct",
+  "name": "Spleen CT",
+  "version": "1.0.0",
+  "description": "CT of the spleen for evaluation of splenic pathology",
+  "modality": "ct",
+  "bodyRegion": "abdomen",
+  "subspecialty": "abdominal",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["abdomen", "ct", "spleen", "splenic", "abdominal"],
+    "cptCodes": ["74177"],
+    "radlexCodes": ["RID10312", "RID10313"]
+  },
+  "findings": {
+    "technique": "Contrast-enhanced CT of the abdomen was performed with portal venous phase imaging.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Spleen",
+        "content": "The spleen measures approximately [X] cm in greatest dimension and demonstrates [normal attenuation / homogeneous enhancement / no mass / no laceration]. No intrasplenic lesion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Splenic Hilum",
+        "content": "The splenic hilum demonstrates [no abnormal vasculature / no varix / no pseudoaneurysm]. The splenic artery and vein are [patent].",
+        "normalVariant": true
+      },
+      {
+        "name": "Perisplenic Space",
+        "content": "The perisplenic space demonstrates [no hemorrhage / no perisplenic hematoma / no free fluid]. No perisplenic abnormality.",
+        "normalVariant": true
+      },
+      {
+        "name": "Other Findings",
+        "content": "The liver, pancreas, and kidneys are [unremarkable / no mass]. No abdominal lymphadenopathy.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal spleen CT.\n2. No mass, laceration, or other splenic abnormality identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

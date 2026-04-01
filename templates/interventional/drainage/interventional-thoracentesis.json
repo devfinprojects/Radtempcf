@@ -1,0 +1,35 @@
+{
+  "id": "interventional-thoracentesis",
+  "name": "Thoracentesis",
+  "version": "1.0.0",
+  "description": "Image-guided thoracentesis for pleural fluid drainage",
+  "modality": "us",
+  "bodyRegion": "chest",
+  "subspecialty": "interventional",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["interventional", "thoracentesis", "pleural", "drainage", "ultrasound"]
+  },
+  "findings": {
+    "technique": "Ultrasound-guided thoracentesis was performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Pleural Space",
+        "content": "Pleural fluid [drained successfully / transudative/exudative appearance].",
+        "normalVariant": true
+      },
+      {
+        "name": "Lung Re-expansion",
+        "content": "Lung [re-expands after drainage / no pneumothorax].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Successful thoracentesis performed.\n2. No immediate complications.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

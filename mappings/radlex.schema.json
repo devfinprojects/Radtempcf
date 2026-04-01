@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/devfinprojects/Radtempcf/main/mappings/radlex.schema.json",
+  "title": "RadLex Term Mapping",
+  "description": "Mapping of radiology template terms to RadLex identifiers",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "templateId": {
+      "type": "string",
+      "description": "Reference to template ID"
+    },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["term", "radlexId", "radlexTerm"],
+        "properties": {
+          "term": {
+            "type": "string",
+            "description": "Original template term"
+          },
+          "radlexId": {
+            "type": "string",
+            "pattern": "^RID\\d+$",
+            "description": "RadLex identifier (RID)"
+          },
+          "radlexTerm": {
+            "type": "string",
+            "description": "Official RadLex term name"
+          },
+          "category": {
+            "type": "string",
+            "enum": ["anatomy", "finding", "modality", "procedure", "disease", "equipment"]
+          }
+        }
+      }
+    },
+    "version": {
+      "type": "string",
+      "default": "1.0.0"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

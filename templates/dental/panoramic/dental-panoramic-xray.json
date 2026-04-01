@@ -1,0 +1,40 @@
+{
+  "id": "dental-panoramic-xray",
+  "name": "Panoramic Dental X-Ray",
+  "version": "1.0.0",
+  "description": "Panoramic radiograph for comprehensive dental evaluation",
+  "modality": "xr",
+  "bodyRegion": "dental",
+  "subspecialty": "dental",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["dental", "panoramic", "xray", "orthopantomogram", "dental"]
+  },
+  "findings": {
+    "technique": "Panoramic radiograph (OPG) was obtained.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Teeth",
+        "content": "All teeth [are present / no caries / no periapical pathology]. No missing teeth except expected.",
+        "normalVariant": true
+      },
+      {
+        "name": "Mandible",
+        "content": "Mandible [is intact / no fracture / no lesion]. Mental foramen is normal.",
+        "normalVariant": true
+      },
+      {
+        "name": "Maxilla",
+        "content": "Maxilla [is intact / no pathology / no sinusitis].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal panoramic dental study.\n2. No dental pathology identified.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "interventional-vertebroplasty",
+  "name": "Vertebroplasty",
+  "version": "1.0.0",
+  "description": "Percutaneous vertebroplasty for vertebral compression fracture",
+  "modality": "ct",
+  "bodyRegion": "spine",
+  "subspecialty": "interventional",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["interventional", "vertebroplasty", "spine", "compression fracture"]
+  },
+  "findings": {
+    "technique": "Percutaneous vertebroplasty was performed under CT/fluoroscopic guidance.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Cement Placement",
+        "content": "Bone cement [successfully injected / adequate fill / no leak].",
+        "normalVariant": true
+      },
+      {
+        "name": "Complications",
+        "content": "No cement leakage into spinal canal or veins. No infection.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Successful vertebroplasty performed.\n2. Good cement distribution achieved.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,149 @@
+---
+// Base Layout - Main layout component for all pages
+export interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const { title, description = 'Radiology Report Templates - A comprehensive collection of radiology report templates', image = '/og-image.png' } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content={Astro.generator} />
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalURL} />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={new URL(image, Astro.site)} />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content={canonicalURL} />
+  <meta property="twitter:title" content={title} />
+  <meta property="twitter:description" content={description} />
+  <meta property="twitter:image" content={new URL(image, Astro.site)} />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  
+  <title>{title} | RadReport Templates</title>
+  
+  <!-- Theme Script -->
+  <script is:inline>
+    const theme = localStorage.getItem('theme') || 'system';
+    if (theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+</head>
+
+<body class="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+  <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-sm">
+    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="/" class="text-2xl font-bold text-blue-600 dark:text-blue-400">
+        RadReport
+      </a>
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="/templates" class="hover:text-blue-600 dark:hover:text-blue-400">Templates</a>
+        <a href="/modalities" class="hover:text-blue-600 dark:hover:text-blue-400">Modalities</a>
+        <a href="/rads" class="hover:text-blue-600 dark:hover:text-blue-400">RADS</a>
+        <a href="/ai" class="hover:text-blue-600 dark:hover:text-blue-400">AI</a>
+        <a href="/calculators" class="hover:text-blue-600 dark:hover:text-blue-400">Calculators</a>
+        <a href="/api" class="hover:text-blue-600 dark:hover:text-blue-400">API</a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <button id="theme-toggle" aria-label="Toggle theme" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+          <svg class="w-5 h-5 dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+          </svg>
+          <svg class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" />
+          </svg>
+        </button>
+        <a href="https://github.com/radreport/templates" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700" target="_blank" rel="noopener noreferrer">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="bg-gray-100 dark:bg-gray-800 mt-16">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-lg font-semibold mb-4">RadReport Templates</h3>
+          <p class="text-gray-600 dark:text-gray-400">A comprehensive collection of radiology report templates for healthcare professionals.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Resources</h4>
+          <ul class="space-y-2">
+            <li><a href="/templates" class="text-gray-600 dark:text-gray-400 hover:text-blue-600">Templates</a></li>
+            <li><a href="/docs/install" class="text-gray-600 dark:text-gray-400 hover:text-blue-600">Documentation</a></li>
+            <li><a href="/api" class="text-gray-600 dark:text-gray-400 hover:text-blue-600">API Reference</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">RADS Classifications</h4>
+          <ul class="space-y-2">
+            <li><a href="/rads/li" class="text-gray-600 dark:text-gray-400 hover:text-blue-600">LI-RADS</a></li>
+            <li><a href="/rads/pi" class="text-gray-600 dark:text-gray-400 hover:text-blue-600">PI-RADS</a></li>
+            <li><a href="/rads/ti" class="text-gray-600 dark:text-gray-400 hover:text-blue-600">TI-RADS</a></li>
+            <li><a href="/rads/ri" class="text-gray-600 dark:text-gray-400 hover:text-blue-600">RI-RADS</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2">
+            <li><a href="/license" class="text-gray-600 dark:text-gray-400 hover:text-blue-600">License</a></li>
+            <li><a href="/security" class="text-gray-600 dark:text-gray-400 hover:text-blue-600">Security Policy</a></li>
+            <li><a href="/citation" class="text-gray-600 dark:text-gray-400 hover:text-blue-600">Citation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-200 dark:border-gray-700 mt-8 pt-8 text-center text-gray-600 dark:text-gray-400">
+        <p>&copy; {new Date().getFullYear()} RadReport Templates. MIT License.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script is:inline>
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle?.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      const isDark = document.documentElement.classList.contains('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
+
+<style is:global>
+  :root {
+    --color-primary: #2563eb;
+    --color-primary-dark: #3b82f6;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+</style>

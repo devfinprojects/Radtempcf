@@ -1,0 +1,45 @@
+{
+  "id": "neuro-brain-mri-dementia",
+  "name": "Brain MRI Dementia Protocol",
+  "version": "1.0.0",
+  "description": "Brain MRI protocol for dementia evaluation including volumetric analysis and hippocampal imaging",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "dementia", "alzheimer", "cognitive", "neuroradiology"]
+  },
+  "findings": {
+    "technique": "MRI brain with volumetric T1, FLAIR, and dedicated hippocampal sequences for dementia assessment.",
+    "comparison": "No prior MRI studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Ventricular System",
+        "content": "Ventricles are [mildly dilated / normal in size / no hydrocephalus]. Ventricular enlargement is [proportional / out of proportion] to age.",
+        "normalVariant": true
+      },
+      {
+        "name": "Hippocampi",
+        "content": "Hippocampal volumes [are preserved / show atrophy / are within normal limits]. No hippocampal sclerosis.",
+        "normalVariant": true
+      },
+      {
+        "name": "White Matter",
+        "content": "White matter [shows no significant white matter disease / no extensive white matter hyperintensities / is unremarkable].",
+        "normalVariant": true
+      },
+      {
+        "name": "Cortical Atrophy",
+        "content": "Cortical atrophy is [mild / moderate / severe / age-appropriate]. No focal cortical lesions.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No evidence of Alzheimer's-type pattern of atrophy.\n2. No significant white matter disease.\n3. Ventricular size is appropriate for age.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

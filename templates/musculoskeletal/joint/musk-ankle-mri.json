@@ -1,0 +1,40 @@
+{
+  "id": "musk-ankle-mri",
+  "name": "Ankle MRI",
+  "version": "1.0.0",
+  "description": "MRI of the ankle for ligament, tendon, and osteochondral evaluation",
+  "modality": "mri",
+  "bodyRegion": "musculoskeletal",
+  "subspecialty": "musculoskeletal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["musculoskeletal", "ankle", "mri", "tendon", "ligament"]
+  },
+  "findings": {
+    "technique": "MRI of the ankle was performed with T1, T2, and fat-saturated sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Ligaments",
+        "content": "Anterior talofibular ligament [intact]. Calcaneofibular ligament [intact]. Posterior talofibular ligament [intact].",
+        "normalVariant": true
+      },
+      {
+        "name": "Tendons",
+        "content": "Achilles tendon [intact / no tear / no tendinosis]. Tibialis posterior [intact]. Peroneal tendons [intact].",
+        "normalVariant": true
+      },
+      {
+        "name": "Talus",
+        "content": "Talar dome [no osteochondral lesion / no bone marrow edema].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No ligamentous injury.\n2. No tendon tear.\n3. Normal ankle MRI.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

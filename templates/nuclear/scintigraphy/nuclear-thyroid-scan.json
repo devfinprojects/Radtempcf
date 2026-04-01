@@ -1,0 +1,35 @@
+{
+  "id": "nuclear-thyroid-scan",
+  "name": "Thyroid Nuclear Scan",
+  "version": "1.0.0",
+  "description": "Nuclear medicine thyroid scan for function evaluation",
+  "modality": "nuclear",
+  "bodyRegion": "neck",
+  "subspecialty": "nuclear",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["nuclear", "thyroid", "scan", "radioiodine", "function"]
+  },
+  "findings": {
+    "technique": "Thyroid scintigraphy was performed with Tc-99m pertechnetate.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Thyroid Gland",
+        "content": "Thyroid gland [is normal in size / symmetric / homogeneous tracer uptake]. No cold nodules.",
+        "normalVariant": true
+      },
+      {
+        "name": "Uptake",
+        "content": "Thyroid uptake [is within normal limits / __% at 2 hours]. Normal function.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal thyroid scan.\n2. No cold nodules to suggest malignancy.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

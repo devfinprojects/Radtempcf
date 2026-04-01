@@ -1,0 +1,35 @@
+{
+  "id": "abdo-spleen-mri",
+  "name": "Abdomen MRI Spleen",
+  "version": "1.0.0",
+  "description": "MRI of the abdomen focused on spleen evaluation",
+  "modality": "mri",
+  "bodyRegion": "abdomen",
+  "subspecialty": "abdominal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["abdomen", "mri", "spleen", "splenic"]
+  },
+  "findings": {
+    "technique": "MRI of the abdomen was performed with T1, T2, and post-contrast sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Spleen",
+        "content": "Spleen [normal in size / normal signal / no focal lesions].",
+        "normalVariant": true
+      },
+      {
+        "name": "Vessels",
+        "content": "Splenic vessels [patent / no thrombosis].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal spleen on MRI.\n2. No focal lesions.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "interventional-angiography-diagnostic",
+  "name": "Diagnostic Angiography",
+  "version": "1.0.0",
+  "description": "Diagnostic catheter-based angiography for vascular evaluation",
+  "modality": " angiography",
+  "bodyRegion": "vascular",
+  "subspecialty": "interventional",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["interventional", "angiography", "diagnostic", "catheter", "vascular"]
+  },
+  "findings": {
+    "technique": "Diagnostic angiography was performed via femoral approach.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Aorta",
+        "content": "Aorta [no aneurysm / no dissection / normal caliber].",
+        "normalVariant": true
+      },
+      {
+        "name": "Bilateral Iliac",
+        "content": "Iliac arteries [patent / no stenosis] bilaterally.",
+        "normalVariant": true
+      },
+      {
+        "name": "Runoff",
+        "content": "Femoral, popliteal, and tibial vessels [patent / no significant disease].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal diagnostic angiography.\n2. No significant arterial stenosis or aneurysm.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

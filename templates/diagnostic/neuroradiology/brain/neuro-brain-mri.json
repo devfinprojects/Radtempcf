@@ -1,0 +1,78 @@
+{
+  "id": "neuro-brain-mri",
+  "name": "Brain MRI Without Contrast",
+  "version": "1.0.0",
+  "description": "Standard brain MRI report template without contrast for evaluation of intracranial pathology",
+  "modality": "mri",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mri", "neuroradiology", "intracranial", "non-contrast"],
+    "cptCodes": ["70551"],
+    "radlexCodes": ["RID10456", "RID10457"]
+  },
+  "findings": {
+    "technique": "MRI of the brain was performed including T1-weighted, T2-weighted, FLAIR, diffusion-weighted, and susceptibility-weighted sequences. No contrast was administered.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "T1-Weighted Imaging",
+        "content": "The T1-weighted images demonstrate [normal gray-white matter differentiation / no mass lesion / no hemorrhage]. No abnormal T1 hyperintensity.",
+        "normalVariant": true
+      },
+      {
+        "name": "T2-Weighted and FLAIR Imaging",
+        "content": "The T2 and FLAIR sequences demonstrate [no abnormal hyperintensity / no white matter lesions / no cortical signal abnormality]. The ventricular system is normal in size.",
+        "normalVariant": true
+      },
+      {
+        "name": "Diffusion-Weighted Imaging",
+        "content": "Diffusion-weighted images demonstrate [no restricted diffusion / no acute infarction / no diffusion restriction]. Apparent diffusion coefficient maps are [consistently hyperintense / show corresponding restriction].",
+        "normalVariant": true
+      },
+      {
+        "name": "Susceptibility-Weighted Imaging",
+        "content": "Susceptibility-weighted images demonstrate [no microhemorrhage / no cavernous malformation / no hemorrhage / no calcification].",
+        "normalVariant": true
+      },
+      {
+        "name": "Ventricles and CSF Spaces",
+        "content": "The lateral ventricles are [normal in size / not dilated]. The third and fourth ventricles are [patent / normal]. No hydrocephalus. Sulcal pattern is appropriate for age.",
+        "normalVariant": true
+      },
+      {
+        "name": "Midline Structures",
+        "content": "Midline structures are [midline / no shift]. The corpus callosum is [intact / normal]. No mass effect or herniation.",
+        "normalVariant": true
+      },
+      {
+        "name": "Basal Ganglia and Thalami",
+        "content": "The basal ganglia and thalami demonstrate [normal T2 signal / no abnormality]. No cystic change or calcification.",
+        "normalVariant": true
+      },
+      {
+        "name": "Cerebellum and Brainstem",
+        "content": "The cerebellum and brainstem demonstrate [normal architecture / no abnormality]. The cerebellar peduncles are [symmetric / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Orbits",
+        "content": "The orbits and optic nerves are [unremarkable / normal]. The retro-orbital fat is [clear / no abnormality].",
+        "normalVariant": true
+      },
+      {
+        "name": "Temporal Bones and IAC",
+        "content": "The temporal bones and internal auditory canals are [unremarkable / normal]. The cochlear and vestibular structures are [normal / symmetric].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal brain MRI.\n2. No mass, infarction, hemorrhage, or demyelinating process identified.\n3. No abnormal enhancement would be expected on post-contrast sequences.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

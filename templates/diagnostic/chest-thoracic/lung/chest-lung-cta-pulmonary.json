@@ -1,0 +1,68 @@
+{
+  "id": "chest-lung-cta-pulmonary",
+  "name": "CT Angiography Pulmonary",
+  "version": "1.0.0",
+  "description": "CT angiography of the pulmonary arteries for evaluation of pulmonary embolism",
+  "modality": "cta",
+  "bodyRegion": "chest",
+  "subspecialty": "chest-thoracic",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["chest", "cta", "pulmonary", "angiography", "pulmonary embolism", "pe", "thoracic"],
+    "cptCodes": ["71275"],
+    "radlexCodes": ["RID12910", "RID12911"]
+  },
+  "findings": {
+    "technique": "CT angiography of the pulmonary arteries was performed following intravenous contrast administration with bolus tracking.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Main Pulmonary Artery",
+        "content": "The main pulmonary artery is [normal in caliber / not enlarged / no filling defect]. No central pulmonary embolism.",
+        "normalVariant": true
+      },
+      {
+        "name": "Right Pulmonary Artery",
+        "content": "The right main pulmonary artery demonstrates [no filling defect / no intraluminal filling defect / no acute pulmonary embolism]. The segmental branches are [patent / no defect].",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Pulmonary Artery",
+        "content": "The left main pulmonary artery demonstrates [no filling defect / no intraluminal filling defect / no acute pulmonary embolism]. The segmental branches are [patent / no defect].",
+        "normalVariant": true
+      },
+      {
+        "name": "Segmental Branches",
+        "content": "All segmental pulmonary arterial branches are [patent / no filling defect / no embolism]. No segmental pulmonary artery occlusion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Right Heart",
+        "content": "The right atrium and right ventricle are [normal in size / not dilated / no evidence of right heart strain]. No paradoxical embolism.",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Heart",
+        "content": "The left atrium and left ventricle are [normal in size / no cardiomegaly]. The coronary arteries are [not evaluated / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Lung Parenchyma",
+        "content": "The lung parenchyma demonstrates [no wedge-shaped opacities / no Hampton hump / no infarction]. The lungs are otherwise [unremarkable / clear].",
+        "normalVariant": true
+      },
+      {
+        "name": "Other Findings",
+        "content": "No aortic aneurysm or dissection. No significant mediastinal lymphadenopathy.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal CT angiography of the pulmonary arteries.\n2. No pulmonary embolism identified in the main, lobar, or segmental pulmonary arteries.\n3. No evidence of right heart strain.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

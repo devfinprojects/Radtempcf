@@ -1,0 +1,55 @@
+---
+// Citation Page
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const bibtex = `@software{RadTempCF,
+  author = {RadTempCF Contributors},
+  title = {RadTempCF: Radiology Templates Cloudflare},
+  year = {2024},
+  url = {https://github.com/devfinprojects/Radtempcf},
+  version = {1.0.0}
+}`;
+---
+
+<BaseLayout title="Citation" description="How to cite RadTempCF in academic research">
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-8">Citing RadTempCF</h1>
+    
+    <p class="text-xl text-gray-600 dark:text-gray-400 mb-8">
+      If you use RadTempCF in your research, please cite it as follows.
+    </p>
+
+    <div class="space-y-8">
+      <section class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+        <h2 class="text-2xl font-semibold mb-4">BibTeX</h2>
+        <pre class="bg-gray-100 dark:bg-gray-900 p-4 rounded text-sm overflow-x-auto"><code>{bibtex}</code></pre>
+      </section>
+
+      <section class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+        <h2 class="text-2xl font-semibold mb-4">APA</h2>
+        <p class="text-gray-700 dark:text-gray-300">
+          RadTempCF Contributors. (2024). <em>RadTempCF: Radiology Templates Cloudflare</em> (Version 1.0.0) [Software]. Retrieved from https://github.com/devfinprojects/Radtempcf
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">Contributing to Academic Research</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">
+          If you use this software in your academic work, please consider:
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 ml-4">
+          <li>Citing the repository</li>
+          <li>Acknowledging the contributors</li>
+          <li>Reporting any issues or improvements</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">License for Academic Use</h2>
+        <p class="text-gray-700 dark:text-gray-300">
+          This project is licensed under the MIT License, which permits free use in academic research.
+        </p>
+      </section>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,40 @@
+{
+  "id": "dental-cbct-jaw",
+  "name": "CBCT Jaw",
+  "version": "1.0.0",
+  "description": "Cone-beam CT of the jaw for dental implant planning and pathology evaluation",
+  "modality": "ct",
+  "bodyRegion": "dental",
+  "subspecialty": "dental",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["dental", "cbct", "jaw", "implant", "3d"]
+  },
+  "findings": {
+    "technique": "Cone-beam CT of the jaw was performed for dental evaluation.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Alveolar Bone",
+        "content": "Alveolar bone [has adequate height and width for implant placement / no resorption / no pathology].",
+        "normalVariant": true
+      },
+      {
+        "name": "Sinus",
+        "content": "Maxillary sinus [is clear / no sinusitis / no pathology].",
+        "normalVariant": true
+      },
+      {
+        "name": "Mandibular Canal",
+        "content": "Mandibular canal [is intact / normal course / no pathology]. Inferior alveolar nerve is protected.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal CBCT study.\n2. Adequate bone for dental implant planning.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

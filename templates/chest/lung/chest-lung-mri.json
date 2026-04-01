@@ -1,0 +1,45 @@
+{
+  "id": "chest-lung-mri",
+  "name": "Chest MRI",
+  "version": "1.0.0",
+  "description": "MRI of the chest for mediastinal and vascular evaluation",
+  "modality": "mri",
+  "bodyRegion": "chest",
+  "subspecialty": "chest",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["chest", "lung", "mri", "mediastinum", "vascular"]
+  },
+  "findings": {
+    "technique": "MRI of the chest with T1, T2, and post-contrast sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Mediastinum",
+        "content": "Mediastinal structures [are unremarkable / no mass / no lymphadenopathy].",
+        "normalVariant": true
+      },
+      {
+        "name": "Heart",
+        "content": "Cardiac chambers [are normal in size / no mass / no pericardial effusion].",
+        "normalVariant": true
+      },
+      {
+        "name": "Great Vessels",
+        "content": "Aorta and pulmonary arteries [are normal / no dissection / no aneurysm].",
+        "normalVariant": true
+      },
+      {
+        "name": "Lungs",
+        "content": "Lung parenchyma [is unremarkable / no mass / no consolidation].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal chest MRI.\n2. No mediastinal mass or vascular abnormality.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

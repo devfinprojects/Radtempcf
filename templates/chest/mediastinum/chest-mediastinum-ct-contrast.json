@@ -1,0 +1,45 @@
+{
+  "id": "chest-mediastinum-ct-contrast",
+  "name": "Chest CT Mediastinum With Contrast",
+  "version": "1.0.0",
+  "description": "Chest CT with contrast focused on mediastinal evaluation",
+  "modality": "ct",
+  "bodyRegion": "chest",
+  "subspecialty": "chest",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["chest", "mediastinum", "ct", "contrast", "lymph nodes"]
+  },
+  "findings": {
+    "technique": "CT of the chest with intravenous contrast was performed with mediastinal windows.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Mediastinal Fat",
+        "content": "Mediastinal fat [is clear / no mass / no infiltration].",
+        "normalVariant": true
+      },
+      {
+        "name": "Lymph Nodes",
+        "content": "Mediastinal lymph nodes [are not enlarged / no pathologic adenopathy]. Short-axis diameter <10mm.",
+        "normalVariant": true
+      },
+      {
+        "name": "Thymus",
+        "content": "Thymus [is normal / no mass / no thymoma].",
+        "normalVariant": true
+      },
+      {
+        "name": "Heart and Vessels",
+        "content": "Heart chambers [are normal / no mass]. Great vessels [are normal / no aneurysm].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No mediastinal mass or lymphadenopathy.\n2. Normal mediastinal CT.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

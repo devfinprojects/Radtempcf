@@ -1,0 +1,63 @@
+{
+  "id": "neuro-brain-ct-w-contrast",
+  "name": "Brain CT With Contrast",
+  "version": "1.0.0",
+  "description": "Standard brain CT report template with intravenous contrast",
+  "modality": "ct",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "ct", "contrast", "neuroradiology", "intracranial"],
+    "cptCodes": ["70450", "70460"],
+    "radlexCodes": ["RID10312", "RID10313"]
+  },
+  "findings": {
+    "technique": "Axial images were obtained from the skull base through the vertex following intravenous administration of iodinated contrast. Multiplanar reconstructions were performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Parenchyma",
+        "content": "The cerebral parenchyma demonstrates [normal attenuation / no hemorrhage / no mass effect / no abnormal contrast enhancement]. Gray-white matter differentiation is preserved.",
+        "normalVariant": true
+      },
+      {
+        "name": "Ventricles",
+        "content": "The ventricular system is [normal in size / dilated / unremarkable]. No hydrocephalus identified. No abnormal ventricular enhancement.",
+        "normalVariant": true
+      },
+      {
+        "name": "Midline Structures",
+        "content": "Midline structures are [midline / shifted]. No evidence of herniation.",
+        "normalVariant": true
+      },
+      {
+        "name": "Basal Ganglia",
+        "content": "The basal ganglia and thalami demonstrate [normal attenuation / no abnormal enhancement].",
+        "normalVariant": true
+      },
+      {
+        "name": "Vascular",
+        "content": "The intracranial arteries demonstrate [normal contrast opacification / no aneurysm / no stenosis / no occlusion]. The venous sinuses are patent.",
+        "normalVariant": true
+      },
+      {
+        "name": "Meninges",
+        "content": "The meninges demonstrate [no abnormal enhancement / no dural thickening]",
+        "normalVariant": true
+      },
+      {
+        "name": "Bone Windows",
+        "content": "The calvarium and skull base demonstrate [no lytic or blastic lesions / no fractures]. The temporal bones are [unremarkable / show mastoid air cell opacification].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal contrast-enhanced brain CT.\n2. No intracranial mass, hemorrhage, or abnormal enhancement identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

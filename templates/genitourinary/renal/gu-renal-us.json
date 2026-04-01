@@ -1,0 +1,40 @@
+{
+  "id": "gu-renal-us",
+  "name": "Renal Ultrasound",
+  "version": "1.0.0",
+  "description": "Renal ultrasound template",
+  "modality": "ultrasound",
+  "bodyRegion": "kidney",
+  "subspecialty": "genitourinary",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["genitourinary", "renal", "kidney", "ultrasound"]
+  },
+  "findings": {
+    "technique": "Ultrasound of the kidneys was performed.",
+    "comparison": "No prior imaging for comparison.",
+    "limitations": "Limited by patient body habitus.",
+    "sections": [
+      {
+        "name": "Right Kidney",
+        "content": "Right kidney: [Measures __ cm / No hydronephrosis / No renal mass].",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Kidney",
+        "content": "Left kidney: [Measures __ cm / No hydronephrosis / No renal mass].",
+        "normalVariant": true
+      },
+      {
+        "name": "Bladder",
+        "content": "Bladder: [Adequately distended / No wall thickening / No mass].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. [No hydronephrosis / No renal mass].\n2. [Normal exam / Recommend follow-up if clinically indicated].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,120 @@
+---
+// Calculators Page
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const calculators = [
+  { 
+    name: 'CT Dose Calculator', 
+    description: 'Calculate CTDI and DLP for CT scans',
+    category: 'Dose',
+    link: '/calculators/ct-dose'
+  },
+  { 
+    name: 'DLP to Effective Dose', 
+    description: 'Convert DLP to effective dose for various body regions',
+    category: 'Dose',
+    link: '/calculators/dlp-effective'
+  },
+  { 
+    name: 'Fluoro Dose Calculator', 
+    description: 'Calculate dose for fluoroscopy procedures',
+    category: 'Dose',
+    link: '/calculators/fluoro-dose'
+  },
+  { 
+    name: 'Calcium Score', 
+    description: 'Coronary artery calcium scoring calculator',
+    category: 'Imaging',
+    link: '/calculators/calcium-score'
+  },
+  { 
+    name: 'Kidney Volume', 
+    description: 'Calculate kidney volume from imaging measurements',
+    category: 'Imaging',
+    link: '/calculators/kidney-volume'
+  },
+  { 
+    name: 'Liver Volume', 
+    description: 'Calculate liver volume from CT/MRI measurements',
+    category: 'Imaging',
+    link: '/calculators/liver-volume'
+  },
+];
+---
+
+<BaseLayout title="Calculators">
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4">Clinical Calculators</h1>
+    <p class="text-xl text-gray-600 dark:text-gray-400 mb-12">
+      Radiology-specific calculators for dose calculations, measurement conversions, and clinical scoring.
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {calculators.map(calc => (
+        <a href={calc.link} class="block bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition p-6">
+          <span class="inline-block px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded mb-3">
+            {calc.category}
+          </span>
+          <h3 class="text-lg font-semibold mb-2">{calc.name}</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">{calc.description}</p>
+        </a>
+      ))}
+    </div>
+    
+    <!-- Quick Calculator -->
+    <div class="mt-12 bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+      <h2 class="text-xl font-semibold mb-4">Quick CT Dose Calculator</h2>
+      <form id="dose-form" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div>
+          <label for="ctdi" class="block text-sm font-medium mb-1">CTDI (mGy)</label>
+          <input 
+            type="number" 
+            id="ctdi" 
+            step="0.1"
+            class="w-full px-3 py-2 border rounded-lg dark:bg-gray-700 dark:border-gray-600"
+            placeholder="25.0"
+          />
+        </div>
+        <div>
+          <label for="dlp" class="block text-sm font-medium mb-1">DLP (mGy·cm)</label>
+          <input 
+            type="number" 
+            id="dlp" 
+            step="1"
+            class="w-full px-3 py-2 border rounded-lg dark:bg-gray-700 dark:border-gray-600"
+            placeholder="500"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">&nbsp;</label>
+          <button 
+            type="submit"
+            class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
+          >
+            Calculate
+          </button>
+        </div>
+      </form>
+      <div id="result" class="mt-4 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg hidden">
+        <p class="font-semibold">Effective Dose: <span id="effective-dose">--</span> mSv</p>
+      </div>
+    </div>
+  </div>
+  
+  <script is:inline>
+    const form = document.getElementById('dose-form');
+    const result = document.getElementById('result');
+    const effectiveDose = document.getElementById('effective-dose');
+    
+    form?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const dlInput = document.getElementById('dlp');
+      const dose = parseFloat(dlInput.value) || 0;
+      // Conversion factor for chest ~0.017
+      const conversionFactor = 0.017;
+      const effective = (dose * conversionFactor / 1000).toFixed(2);
+      effectiveDose.textContent = effective;
+      result.classList.remove('hidden');
+    });
+  </script>
+</BaseLayout>

@@ -1,0 +1,58 @@
+{
+  "id": "genitourinary-bladder-ct",
+  "name": "Bladder CT",
+  "version": "1.0.0",
+  "description": "CT of the bladder for evaluation of bladder wall, lumen, and surrounding structures",
+  "modality": "ct",
+  "bodyRegion": "genitourinary",
+  "subspecialty": "genitourinary",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["genitourinary", "bladder", "ct", "urinary"],
+    "cptCodes": ["74177"],
+    "radlexCodes": ["RID10312", "RID10313"]
+  },
+  "findings": {
+    "technique": "Contrast-enhanced CT of the pelvis was performed with axial and coronal reconstructions.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Bladder Wall",
+        "content": "The bladder wall demonstrates [normal thickness / no wall thickening / no focal lesion]. The wall is [smooth / not irregular].",
+        "normalVariant": true
+      },
+      {
+        "name": "Bladder Lumen",
+        "content": "The bladder lumen is [not distended / no filling defect / no stone / no mass].",
+        "normalVariant": true
+      },
+      {
+        "name": "Ureteral Orifices",
+        "content": "The bilateral ureteral orifices are [visualized / patent / no obstruction]. No hydroureter.",
+        "normalVariant": true
+      },
+      {
+        "name": "Perivesical Space",
+        "content": "The perivesical soft tissues are [unremarkable / no stranding / no infiltration]. No perivesical mass.",
+        "normalVariant": true
+      },
+      {
+        "name": "Pelvic Lymph Nodes",
+        "content": "The pelvic lymph nodes are [not enlarged / no lymphadenopathy]. No suspicious nodes.",
+        "normalVariant": true
+      },
+      {
+        "name": "Prostate",
+        "content": "The prostate (in males) is [normal in size / no enlargement / no mass]. No abnormal density.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal CT bladder.\n2. No bladder wall thickening, mass, or filling defect identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

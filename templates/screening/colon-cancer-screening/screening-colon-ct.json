@@ -1,0 +1,48 @@
+{
+  "id": "screening-colon-ct",
+  "name": "CT Colonography (Virtual Colonoscopy)",
+  "version": "1.0.0",
+  "description": "CT colonography for colorectal cancer screening",
+  "modality": "ctc",
+  "bodyRegion": "gi",
+  "subspecialty": "screening",
+  "clinicalContext": "screening",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["screening", "colon", "ctc", "virtual colonoscopy", "colorectal cancer"],
+    "cptCodes": ["74263"],
+    "radlexCodes": ["RID10310", "RID10311"]
+  },
+  "findings": {
+    "technique": "CT colonography was performed in supine and prone positions following colonic preparation and air insufflation.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Colon",
+        "content": "The colon demonstrates [no masses / no polyps / no filling defects]. The colonic lumen is [adequately distended / well-visualized].",
+        "normalVariant": true
+      },
+      {
+        "name": "Rectum",
+        "content": "The rectum is [normal / no mass / no polyps]. The rectal wall is [not thickened].",
+        "normalVariant": true
+      },
+      {
+        "name": "Cecum",
+        "content": "The cecum and appendix are [normal / no appendiceal mass / no cecal pathology].",
+        "normalVariant": true
+      },
+      {
+        "name": "Extracolonic",
+        "content": "The extracolonic structures demonstrate [no significant abnormality / no renal mass / no liver lesion]. No incidental finding requiring action.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. CT colonography is negative. No polyp or mass identified.\n2. Recommended routine screening per guidelines.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

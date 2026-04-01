@@ -1,0 +1,70 @@
+{
+  "id": "onco-gu-prostate",
+  "name": "Prostate Cancer Synoptic Report",
+  "version": "1.0.0",
+  "description": "Synoptic pathology report template for prostate cancer",
+  "modality": "pathology",
+  "bodyRegion": "prostate",
+  "subspecialty": "oncology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["oncology", "prostate", "gu", "cancer", "synoptic", "pathology"]
+  },
+  "findings": {
+    "technique": "Radical prostatectomy / core biopsy specimen submitted for pathological examination. Specimen inked and serially sectioned.",
+    "comparison": "Clinical history: [elevated PSA / prostate cancer diagnosis]. Pre-operative PSA: [X] ng/mL. Prior biopsy: [positive/negative] at [location]. MRI: [PI-RADS X] lesion at [location].",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Specimen Type",
+        "content": "Specimen type: [Radical prostatectomy (open/laparoscopic/robotic) / TURP / Core biopsy]",
+        "normalVariant": false
+      },
+      {
+        "name": "Histologic Type",
+        "content": "Histologic type: [Acinar adenocarcinoma / Ductal adenocarcinoma / Urothelial carcinoma / Other]. [Primary pattern: X%] [Secondary pattern: X% if present].",
+        "normalVariant": false
+      },
+      {
+        "name": "Gleason Score",
+        "content": "Gleason score (ISUP Grade Group): [Primary 3+3=6 / 3+4=7 / 4+3=7 / 3+5=8 / 4+5=9 / 5+5=10]. Grade Group: [1 / 2 / 3 / 4 / 5].",
+        "normalVariant": false
+      },
+      {
+        "name": "Tumor Extent",
+        "content": "Extent of carcinoma: [focal / multifocal]. [Percentage of prostate involved: X%]. [Bilateral disease: present/absent].",
+        "normalVariant": false
+      },
+      {
+        "name": "Extraprostatic Extension",
+        "content": "Extraprostatic extension (EPE): [Present / Absent]. Location: [posterior / anterior / lateral / apex]. [Extent: focal / established]. [Seminal vesicle invasion: present/absent].",
+        "normalVariant": false
+      },
+      {
+        "name": "Margins",
+        "content": "Surgical margin: [Negative / Positive (focal / extensive)]. [Positive margin location: X]. [Margin involvement: X mm].",
+        "normalVariant": false
+      },
+      {
+        "name": "Lymph Nodes",
+        "content": "Lymph nodes: [X] examined, [X] positive for metastasis. [Bilateral pelvic lymph node dissection: performed/not performed]. [Extranodal extension: present/absent].",
+        "normalVariant": false
+      },
+      {
+        "name": "Pathologic Stage",
+        "content": "pT stage: [pT2 (organ confined) / pT2a / pT2b / pT2c / pT3a / pT3b / pT4]. pN stage: [pN0 / pN1].",
+        "normalVariant": false
+      },
+      {
+        "name": "Ancillary Studies",
+        "content": "Immunohistochemistry: [PIN4 cocktail / p63 / p504s]. [Perineural invasion: present/absent]. [Cribriform pattern: present/absent].",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. [Histologic type], Gleason [X] (ISUP Grade Group [X])\n2. [pT stage], [Margins: positive/negative], [EPE: present/absent]\n3. Lymph nodes: [X] positive out of [X] examined\n4. [Seminal vesicle / bladder neck] involvement: [present/absent]\n5. [AJCC 8th edition stage: pT[X] pN[X] M[X]]",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

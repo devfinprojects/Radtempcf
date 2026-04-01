@@ -1,0 +1,193 @@
+{
+  "templateId": "snomed-mapping-base",
+  "mappings": [
+    {
+      "term": "brain",
+      "snomedCtId": "22849000",
+      "snomedTerm": "Brain",
+      "semanticTag": "anatomical structure"
+    },
+    {
+      "term": "head",
+      "snomedCtId": "69536005",
+      "snomedTerm": "Head",
+      "semanticTag": "anatomical structure"
+    },
+    {
+      "term": "neck",
+      "snomedCtId": "45048006",
+      "snomedTerm": "Neck",
+      "semanticTag": "anatomical structure"
+    },
+    {
+      "term": "spine",
+      "snomedCtId": "76479007",
+      "snomedTerm": "Spinal cord",
+      "semanticTag": "anatomical structure"
+    },
+    {
+      "term": "chest",
+      "snomedCtId": "51182008",
+      "snomedTerm": "Thorax",
+      "semanticTag": "anatomical structure"
+    },
+    {
+      "term": "lung",
+      "snomedCtId": "39607008",
+      "snomedTerm": "Lung",
+      "semanticTag": "anatomical structure"
+    },
+    {
+      "term": "mediastinum",
+      "snomedCtId": "3415001",
+      "snomedTerm": "Mediastinum",
+      "semanticTag": "anatomical structure"
+    },
+    {
+      "term": "liver",
+      "snomedCtId": "102595004",
+      "snomedTerm": "Liver",
+      "semanticTag": "anatomical structure"
+    },
+    {
+      "term": "kidney",
+      "snomedCtId": "64030011",
+      "snomedTerm": "Kidney",
+      "semanticTag": "anatomical structure"
+    },
+    {
+      "term": "spleen",
+      "snomedCtId": "71836001",
+      "snomedTerm": "Spleen",
+      "semanticTag": "anatomical structure"
+    },
+    {
+      "term": "pancreas",
+      "snomedCtId": "15776009",
+      "snomedTerm": "Pancreas",
+      "semanticTag": "anatomical structure"
+    },
+    {
+      "term": "gallbladder",
+      "snomedCtId": "27922004",
+      "snomedTerm": "Gallbladder",
+      "semanticTag": "anatomical structure"
+    },
+    {
+      "term": "CT",
+      "snomedCtId": "363358005",
+      "snomedTerm": "Computed tomography",
+      "semanticTag": "procedure"
+    },
+    {
+      "term": "MRI",
+      "snomedCtId": "363356007",
+      "snomedTerm": "Magnetic resonance imaging",
+      "semanticTag": "procedure"
+    },
+    {
+      "term": "ultrasound",
+      "snomedCtId": "363169007",
+      "snomedTerm": "Ultrasonography",
+      "semanticTag": "procedure"
+    },
+    {
+      "term": "X-ray",
+      "snomedCtId": "363187007",
+      "snomedTerm": "Plain radiography",
+      "semanticTag": "procedure"
+    },
+    {
+      "term": "hemorrhage",
+      "snomedCtId": "50960005",
+      "snomedTerm": "Hemorrhage",
+      "semanticTag": "finding"
+    },
+    {
+      "term": "mass",
+      "snomedCtId": "4147007",
+      "snomedTerm": "Mass",
+      "semanticTag": "morphologic abnormality"
+    },
+    {
+      "term": "nodule",
+      "snomedCtId": "36944009",
+      "snomedTerm": "Nodule",
+      "semanticTag": "morphologic abnormality"
+    },
+    {
+      "term": "effusion",
+      "snomedCtId": "40930008",
+      "snomedTerm": "Effusion",
+      "semanticTag": "finding"
+    },
+    {
+      "term": "pneumothorax",
+      "snomedCtId": "196026002",
+      "snomedTerm": "Pneumothorax",
+      "semanticTag": "finding"
+    },
+    {
+      "term": "hydronephrosis",
+      "snomedCtId": "43364009",
+      "snomedTerm": "Hydronephrosis",
+      "semanticTag": "finding"
+    },
+    {
+      "term": "fracture",
+      "snomedCtId": "56218009",
+      "snomedTerm": "Fracture",
+      "semanticTag": "finding"
+    },
+    {
+      "term": "metastasis",
+      "snomedCtId": "128462008",
+      "snomedTerm": "Secondary malignant tumor",
+      "semanticTag": "disorder"
+    },
+    {
+      "term": "carcinoma",
+      "snomedCtId": "363358005",
+      "snomedTerm": "Carcinoma",
+      "semanticTag": "disorder"
+    },
+    {
+      "term": "stroke",
+      "snomedCtId": "422504002",
+      "snomedTerm": "Cerebrovascular accident",
+      "semanticTag": "disorder"
+    },
+    {
+      "term": "aneurysm",
+      "snomedCtId": "60019008",
+      "snomedTerm": "Aneurysm",
+      "semanticTag": "disorder"
+    },
+    {
+      "term": "embolism",
+      "snomedCtId": "34407009",
+      "snomedTerm": "Embolism",
+      "semanticTag": "disorder"
+    },
+    {
+      "term": "thrombosis",
+      "snomedCtId": "439650005",
+      "snomedTerm": "Thrombosis",
+      "semanticTag": "disorder"
+    },
+    {
+      "term": "pneumonia",
+      "snomedCtId": "233604007",
+      "snomedTerm": "Pneumonia",
+      "semanticTag": "disorder"
+    },
+    {
+      "term": "emphysema",
+      "snomedCtId": "87433001",
+      "snomedTerm": "Pulmonary emphysema",
+      "semanticTag": "disorder"
+    }
+  ],
+  "version": "1.0.0",
+  "lastUpdated": "2026-03-30T17:35:00.000Z"
+}

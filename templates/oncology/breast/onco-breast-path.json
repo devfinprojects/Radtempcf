@@ -1,0 +1,60 @@
+{
+  "id": "onco-breast-path",
+  "name": "Breast Cancer Synoptic Report",
+  "version": "1.0.0",
+  "description": "Synoptic pathology report template for breast cancer",
+  "modality": "pathology",
+  "bodyRegion": "breast",
+  "subspecialty": "oncology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["oncology", "breast", "cancer", "synoptic", "pathology"]
+  },
+  "findings": {
+    "technique": "Core needle biopsy / Surgical excision specimen submitted for pathological examination. Specimen labeled with [clinical information].",
+    "comparison": "Clinical history: [X]. Prior imaging: [mammogram/ultrasound/MRI] showing [finding].",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Specimen Type",
+        "content": "Specimen type: [Core needle biopsy / Lumpectomy / Mastectomy / Sentinel lymph node dissection]",
+        "normalVariant": false
+      },
+      {
+        "name": "Tumor Type",
+        "content": "Histologic type: [Infiltrating ductal carcinoma / Infiltrating lobular carcinoma / Ductal carcinoma in situ / Other]. Grade: [1/2/3] (Bloom-Richardson). Mitotic count: [X] per 10 HPF.",
+        "normalVariant": false
+      },
+      {
+        "name": "Tumor Size",
+        "content": "Invasive tumor size: [X]cm. [DCIS component: present/absent]. Extent: [X]% of tumor area.",
+        "normalVariant": false
+      },
+      {
+        "name": "Margins",
+        "content": "Margins: [Negative / Close (<2mm) / Positive] for invasive carcinoma. [Negative / Close / Positive] for DCIS. [Ink margin: involved by X mm].",
+        "normalVariant": false
+      },
+      {
+        "name": "Lymph Nodes",
+        "content": "Lymph nodes: [X] examined. [X] positive for metastasis. [Extranodal extension: present/absent]. Largest metastasis: [X]cm.",
+        "normalVariant": false
+      },
+      {
+        "name": "Biomarkers",
+        "content": "ER: [Positive (X%) / Negative]. PR: [Positive (X%) / Negative]. HER2: [Positive (3+) / Equivocal (2+) / Negative (0-1+)]. Ki-67 proliferation index: [X]%.",
+        "normalVariant": false
+      },
+      {
+        "name": "Additional Findings",
+        "content": "Lymphovascular invasion: [Present / Absent]. Perineural invasion: [Present / Absent]. DCIS: [type and grade].",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. [Invasive carcinoma type], Grade [X], measuring [X]cm\n2. [DCIS: present/absent], [grade], [extent]\n3. Margins: [status]\n4. Lymph nodes: [X] positive out of [X] examined\n5. Biomarkers: ER [X], PR [X], HER2 [X], Ki-67 [X]%\n6. [AJCC stage: pT[X] pN[X] pM[X]]",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

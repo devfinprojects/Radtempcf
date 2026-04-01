@@ -1,0 +1,35 @@
+{
+  "id": "vascular-duplex-carotid",
+  "name": "Carotid Duplex Ultrasound",
+  "version": "1.0.0",
+  "description": "Carotid duplex ultrasound for stenosis evaluation",
+  "modality": "us",
+  "bodyRegion": "neck",
+  "subspecialty": "vascular",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["vascular", "carotid", "duplex", "ultrasound", "stenosis"]
+  },
+  "findings": {
+    "technique": "Carotid duplex ultrasound was performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Right CCA",
+        "content": "Right CCA [no stenosis / <50% stenosis].",
+        "normalVariant": true
+      },
+      {
+        "name": "Left CCA",
+        "content": "Left CCA [no stenosis / <50% stenosis].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No significant carotid stenosis.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "calc-lung-rads",
+  "name": "Lung-RADS Calculator",
+  "version": "1.0.0",
+  "description": "Lung Imaging Reporting and Data System (Lung-RADS) assessment calculator for lung cancer screening CT",
+  "modality": "calculator",
+  "bodyRegion": "chest",
+  "subspecialty": "chest",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["calculator", "lung-rads", "lung cancer", "screening", "ct"]
+  },
+  "calculator": {
+    "name": "Lung-RADS Assessment",
+    "description": "Standardized classification for reporting CT lung cancer screening results",
+    "inputs": [
+      {
+        "name": "noduleType",
+        "type": "select",
+        "label": "Nodule Type",
+        "options": ["Solid", "Part-solid", "Ground glass", "Calcified"]
+      },
+      {
+        "name": "noduleSize",
+        "type": "number",
+        "label": "Nodule Size (mm)",
+        "unit": "mm"
+      },
+      {
+        "name": "noduleCount",
+        "type": "number",
+        "label": "Number of Nodules",
+        "options": ["Single", "Multiple"]
+      },
+      {
+        "name": "previousScreening",
+        "type": "select",
+        "label": "Previous Screening Available",
+        "options": ["Yes - stable", "Yes - growth", "No - new finding"]
+      },
+      {
+        "name": "clinicalConcern",
+        "type": "select",
+        "label": "Clinical Concern",
+        "options": ["Low", "Moderate", "High"]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "category",
+        "label": "Lung-RADS Category",
+        "description": "Assigned category based on nodule characteristics"
+      },
+      {
+        "name": "recommendation",
+        "label": "Management Recommendation",
+        "description": "Recommended follow-up based on Lung-RADS guidelines"
+      },
+      {
+        "name": "followUpInterval",
+        "label": "Recommended Follow-up Interval",
+        "description": "Time until next screening CT"
+      }
+    ],
+    "formula": "Category = f(noduleType, size, count, stability)",
+    "categories": [
+      {
+        "code": "1",
+        "name": "Negative",
+        "description": "No nodules or benign findings",
+        "recommendation": "Continue annual screening"
+      },
+      {
+        "code": "2",
+        "name": "Benign Appearance",
+        "description": "Nodules with very low malignancy risk",
+        "recommendation": "Continue annual screening"
+      },
+      {
+        "code": "3",
+        "name": "Probably Benign",
+        "description": "Intermediate probability of malignancy",
+        "recommendation": "6-month follow-up CT"
+      },
+      {
+        "code": "4A",
+        "name": "Suspicious",
+        "description": "Suspicious for malignancy",
+        "recommendation": "3-month follow-up CT or PET/CT"
+      },
+      {
+        "code": "4B",
+        "name": "Very Suspicious",
+        "description": "High probability of malignancy",
+        "recommendation": "CT with contrast and/or biopsy"
+      },
+      {
+        "code": "4X",
+        "name": "Additional Work-up",
+        "description": "Additional criteria for aggressive behavior",
+        "recommendation": "Multidisciplinary review and tissue diagnosis"
+      }
+    ]
+  },
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

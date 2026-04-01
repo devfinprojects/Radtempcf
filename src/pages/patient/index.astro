@@ -1,0 +1,377 @@
+---
+// Patient Portal - Patient-centric features page
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// Patient features page data
+const pageTitle = "Patient Portal";
+const pageDescription = "Access patient-friendly summaries, follow-up tracking, and personalized letters from your radiology reports.";
+
+// Features list
+const features = [
+  {
+    id: 'summary',
+    title: 'Patient Summaries',
+    description: 'View your radiology reports in easy-to-understand language at three reading levels: basic, intermediate, and advanced.',
+    icon: '📖',
+    link: '#summaries',
+  },
+  {
+    id: 'translations',
+    title: 'Multi-language Support',
+    description: 'Access summaries in 11 languages including Spanish, German, French, Chinese, Japanese, Arabic, and more.',
+    icon: '🌍',
+    link: '#languages',
+  },
+  {
+    id: 'followup',
+    title: 'Follow-up Tracking',
+    description: 'Track recommended follow-up appointments and receive reminders for pending recommendations.',
+    icon: '📅',
+    link: '#followup',
+  },
+  {
+    id: 'letter',
+    title: 'Patient Letters',
+    description: 'Generate personalized letters to share with your primary care provider or for your records.',
+    icon: '✉️',
+    link: '#letters',
+  },
+];
+
+// Supported languages
+const languages = [
+  { code: 'en', name: 'English', rtl: false },
+  { code: 'es', name: 'Español (Spanish)', rtl: false },
+  { code: 'de', name: 'Deutsch (German)', rtl: false },
+  { code: 'fr', name: 'Français (French)', rtl: false },
+  { code: 'pt', name: 'Português (Portuguese)', rtl: false },
+  { code: 'zh', name: '中文 (Chinese)', rtl: false },
+  { code: 'ja', name: '日本語 (Japanese)', rtl: false },
+  { code: 'ko', name: '한국어 (Korean)', rtl: false },
+  { code: 'ar', name: 'العربية (Arabic)', rtl: true },
+  { code: 'hi', name: 'हिन्दी (Hindi)', rtl: false },
+  { code: 'ru', name: 'Русский (Russian)', rtl: false },
+];
+
+// Reading levels
+const readingLevels = [
+  { level: 'basic', name: 'Basic', description: '5th grade reading level - simple terms, short sentences' },
+  { level: 'intermediate', name: 'Intermediate', description: '8th grade reading level - moderate complexity' },
+  { level: 'advanced', name: 'Advanced', description: '12th grade reading level - full medical terminology' },
+];
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <div class="patient-portal">
+    <header class="portal-header">
+      <h1>{pageTitle}</h1>
+      <p class="lead">{pageDescription}</p>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+      <h2>Features</h2>
+      <div class="features-grid">
+        {features.map(feature => (
+          <div class="feature-card">
+            <span class="feature-icon">{feature.icon}</span>
+            <h3>{feature.title}</h3>
+            <p>{feature.description}</p>
+            <a href={feature.link} class="feature-link">Learn more →</a>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Summaries Section -->
+    <section id="summaries" class="summaries-section">
+      <h2>Patient Summaries</h2>
+      <p>Radiology reports converted to plain language at three reading levels:</p>
+      
+      <div class="reading-levels">
+        {readingLevels.map(rl => (
+          <div class="reading-level">
+            <h3>{rl.name}</h3>
+            <p>{rl.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="languages-section">
+      <h2>Supported Languages</h2>
+      <p>Access your patient summaries in your preferred language:</p>
+      
+      <div class="languages-grid">
+        {languages.map(lang => (
+          <div class={`language-item ${lang.rtl ? 'rtl' : ''}`}>
+            <span class="language-name">{lang.name}</span>
+            {lang.rtl && <span class="rtl-badge">RTL</span>}
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Follow-up Section -->
+    <section id="followup" class="followup-section">
+      <h2>Follow-up Tracking</h2>
+      <p>Track and manage follow-up recommendations from your radiology reports:</p>
+      
+      <div class="urgency-legend">
+        <h3>Urgency Levels</h3>
+        <ul>
+          <li><span class="urgency-badge immediate">Immediate</span> - Requires action within 24-48 hours</li>
+          <li><span class="urgency-badge urgent">Urgent</span> - Requires action within 1-2 weeks</li>
+          <li><span class="urgency-badge routine">Routine</span> - Schedule within recommended timeframe</li>
+          <li><span class="urgency-badge optional">Optional</span> - Discuss at next appointment</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Letters Section -->
+    <section id="letters" class="letters-section">
+      <h2>Patient Letters</h2>
+      <p>Generate personalized letters for:</p>
+      <ul>
+        <li>Sharing results with your primary care provider</li>
+        <li>Keeping for your personal records</li>
+        <li>Understanding your follow-up recommendations</li>
+      </ul>
+    </section>
+
+    <!-- API Integration -->
+    <section id="api" class="api-section">
+      <h2>API Integration</h2>
+      <p>For developers integrating patient-centric features:</p>
+      
+      <pre><code>{/*
+import { generateSummary, translateSummary, trackFollowUp, generateLetter } from './api/patient';
+
+// Generate a basic summary
+const summary = generateSummary(reportData, {
+  readingLevel: 'basic',
+  language: 'en',
+  includeFindings: true,
+  includeImpression: true,
+});
+
+// Translate to Spanish
+const spanishSummary = translateSummary(summary, 'es');
+
+// Track a follow-up
+const followUp = trackFollowUp(reportId, 'Cardiology follow-up', 'routine', '3 months');
+
+// Generate a patient letter
+const letter = generateLetter(reportData, {
+  patientName: 'John Doe',
+  readingLevel: 'basic',
+  language: 'en',
+  includeFollowUps: true,
+});
+*/}</code></pre>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .patient-portal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .portal-header {
+    text-align: center;
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--border-color, #e5e7eb);
+    margin-bottom: 2rem;
+  }
+
+  .portal-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+    color: var(--text-secondary, #6b7280);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: var(--bg-secondary, #f9fafb);
+    border-radius: 8px;
+  }
+
+  section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--heading-color, #111827);
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-card p {
+    color: var(--text-secondary, #6b7280);
+    margin-bottom: 1rem;
+  }
+
+  .feature-link {
+    color: var(--accent-color, #2563eb);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .reading-levels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .reading-level {
+    padding: 1rem;
+    background: white;
+    border-radius: 6px;
+    border-left: 4px solid var(--accent-color, #2563eb);
+  }
+
+  .reading-level h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .reading-level p {
+    font-size: 0.9rem;
+    color: var(--text-secondary, #6b7280);
+  }
+
+  .languages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .language-item {
+    padding: 0.75rem;
+    background: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .language-item.rtl {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .language-name {
+    font-size: 0.9rem;
+  }
+
+  .rtl-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+    background: var(--accent-color, #2563eb);
+    color: white;
+    border-radius: 4px;
+  }
+
+  .urgency-legend ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .urgency-legend li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .urgency-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .urgency-badge.immediate {
+    background: #fee2e2;
+    color: #dc2626;
+  }
+
+  .urgency-badge.urgent {
+    background: #ffedd5;
+    color: #ea580c;
+  }
+
+  .urgency-badge.routine {
+    background: #dbeafe;
+    color: #2563eb;
+  }
+
+  .urgency-badge.optional {
+    background: #dcfce7;
+    color: #16a34a;
+  }
+
+  .letters-section ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .letters-section li {
+    padding: 0.5rem 0;
+  }
+
+  .api-section pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-top: 1rem;
+  }
+
+  .api-section code {
+    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+</style>

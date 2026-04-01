@@ -1,0 +1,45 @@
+{
+  "id": "musk-shoulder-mri",
+  "name": "Shoulder MRI",
+  "version": "1.0.0",
+  "description": "MRI of the shoulder for rotator cuff and joint evaluation",
+  "modality": "mri",
+  "bodyRegion": "musculoskeletal",
+  "subspecialty": "musculoskeletal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["musculoskeletal", "shoulder", "mri", "rotator cuff", "joint"]
+  },
+  "findings": {
+    "technique": "MRI of the shoulder was performed with T1, T2, and fat-saturated sequences in multiple planes.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Rotator Cuff",
+        "content": "Supraspinatus [intact / no tear / no tendinosis]. Infraspinatus [intact]. Subscapularis [intact]. No full-thickness tears.",
+        "normalVariant": true
+      },
+      {
+        "name": "Labrum",
+        "content": "Glenoid labrum [intact / no tear / no degeneration]. No Bankart lesion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Biceps Tendon",
+        "content": "Biceps tendon [is in proper position / no subluxation / no tenosynovitis].",
+        "normalVariant": true
+      },
+      {
+        "name": "Acromioclavicular Joint",
+        "content": "AC joint [no osteoarthritis / no separation].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No rotator cuff tear.\n2. No labral tear.\n3. Normal shoulder MRI.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

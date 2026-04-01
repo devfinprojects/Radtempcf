@@ -1,0 +1,78 @@
+{
+  "id": "neuro-temporal-bone-ct",
+  "name": "Temporal Bone CT",
+  "version": "1.0.0",
+  "description": "High-resolution CT of the temporal bone for evaluation of middle ear, inner ear, and mastoid pathology",
+  "modality": "ct",
+  "bodyRegion": "temporal bone",
+  "subspecialty": "neuroradiology",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["temporal bone", "ct", "ear", "mastoid", "cochlea", "neuroradiology", "hearing loss"],
+    "cptCodes": ["70450"],
+    "radlexCodes": ["RID10310", "RID10311"]
+  },
+  "findings": {
+    "technique": "High-resolution CT of the temporal bones was performed in the axial and coronal planes with bone algorithm reconstructions.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "External Auditory Canal",
+        "content": "The bilateral external auditory canals are [patent / no stenosis / no erosion]. No foreign body or debris.",
+        "normalVariant": true
+      },
+      {
+        "name": "Middle Ear Cavity",
+        "content": "The bilateral middle ear cavities are [aerated / no fluid / no mass]. The ossicles (malleus, incus, stapes) are [intact / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Mastoid Air Cells",
+        "content": "The bilateral mastoid air cells are [well-pneumatized / no opacification / no coalescence]. No mastoiditis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Cochlea",
+        "content": "The bilateral cochleae demonstrate [normal bony architecture / no deformity / no ossification]. The cochlear turns are [patent / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Vestibular Apparatus",
+        "content": "The bilateral semicircular canals are [intact / normal]. The vestibule is [normal / no abnormal calcification].",
+        "normalVariant": true
+      },
+      {
+        "name": "Internal Auditory Canals",
+        "content": "The bilateral internal auditory canals are [patent / adequate in diameter]. No mass or lesion in the canals.",
+        "normalVariant": true
+      },
+      {
+        "name": "Facial Nerve",
+        "content": "The bilateral facial nerve canals are [intact / no dehiscence / no abnormal course]. The geniculate ganglion is [normal / unremarkable].",
+        "normalVariant": true
+      },
+      {
+        "name": " ossicles",
+        "content": "The ossicular chain is [intact / no discontinuity / no erosion]. The stapes footplate is [mobile / not fixated].",
+        "normalVariant": true
+      },
+      {
+        "name": "Eustachian Tubes",
+        "content": "The bilateral eustachian tubes are [patent / open]. No obstruction identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Petroquous Apex",
+        "content": "The bilateral petrous apices demonstrate [no abnormality / no erosion / no cystic change]. No petrous apicitis.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal temporal bone CT.\n2. No middle ear effusion, mastoiditis, or inner ear abnormality identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

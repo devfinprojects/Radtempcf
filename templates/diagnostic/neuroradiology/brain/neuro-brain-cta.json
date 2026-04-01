@@ -1,0 +1,73 @@
+{
+  "id": "neuro-brain-cta",
+  "name": "CT Angiography Head",
+  "version": "1.0.0",
+  "description": "CT angiography of the intracranial arteries for evaluation of aneurysm, stenosis, or vascular malformation",
+  "modality": "cta",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "cta", "angiography", "neuroradiology", "vascular", "aneurysm"],
+    "cptCodes": ["70496"],
+    "radlexCodes": ["RID12910", "RID12911"]
+  },
+  "findings": {
+    "technique": "CT angiography was performed following intravenous contrast administration. Images were acquired from the aortic arch to the vertex with thin-slice reconstructions and 3D volume-rendered images.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Aortic Arch and Great Vessels",
+        "content": "The aortic arch demonstrates [normal configuration / arch anomaly]. The brachiocephalic trunk, left common carotid, and left subclavian arteries originate normally. No significant stenosis or aneurysm.",
+        "normalVariant": true
+      },
+      {
+        "name": "Carotid Bifurcations",
+        "content": "The bilateral carotid bifurcations are [patent / show mild atherosclerotic disease]. No focal stenosis or dissection.",
+        "normalVariant": true
+      },
+      {
+        "name": "Intracranial Internal Carotid Arteries",
+        "content": "The intracranial ICAs demonstrate [normal caliber and course / no aneurysm / no stenosis / no dissection]. The carotid terminus is normal.",
+        "normalVariant": true
+      },
+      {
+        "name": "Anterior Cerebral Arteries",
+        "content": "The A1 segments of the bilateral anterior cerebral arteries are [present / hypoplastic]. The A2 segments are [normal / show fenestration]. No aneurysm.",
+        "normalVariant": true
+      },
+      {
+        "name": "Middle Cerebral Arteries",
+        "content": "The M1 segments of the bilateral middle cerebral arteries demonstrate [normal caliber / no stenosis / no aneurysm]. The M2 branches are [symmetric / show variant anatomy].",
+        "normalVariant": true
+      },
+      {
+        "name": "Posterior Cerebral Arteries",
+        "content": "The P1 segments of the bilateral posterior cerebral arteries are [present / hypoplastic]. The P2-P4 segments are [normal / show fenestration]. No aneurysm.",
+        "normalVariant": true
+      },
+      {
+        "name": "Vertebrobasilar System",
+        "content": "The vertebral arteries demonstrate [symmetric caliber / left/right dominance / hypoplasia]. The basilar artery is [normal / shows fenestration]. No aneurysm or stenosis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Circle of Willis",
+        "content": "The circle of Willis is [complete / incomplete]. The anterior communicating artery is [present / absent]. The posterior communicating arteries are [patent / show fetal configuration].",
+        "normalVariant": true
+      },
+      {
+        "name": "Venous Sinuses",
+        "content": "The dural venous sinuses including the superior sagittal, transverse, and sigmoid sinuses are [patent / show hypoplasia / thrombosis]",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal CT angiography of the head.\n2. No aneurysm, stenosis, or vascular malformation identified.\n3. The circle of Willis is anatomically complete.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

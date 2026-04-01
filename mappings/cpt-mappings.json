@@ -1,0 +1,229 @@
+{
+  "templateId": "cpt-mapping-base",
+  "mappings": [
+    {
+      "procedure": "CT Brain without contrast",
+      "cptCode": "70450",
+      "cptDescription": "CT head/brain without contrast material",
+      "category": "radiology"
+    },
+    {
+      "procedure": "CT Brain with contrast",
+      "cptCode": "70460",
+      "cptDescription": "CT head/brain with contrast material",
+      "category": "radiology"
+    },
+    {
+      "procedure": "CT Brain without and with contrast",
+      "cptCode": "70470",
+      "cptDescription": "CT head/brain without and with contrast material",
+      "category": "radiology"
+    },
+    {
+      "procedure": "CT Spine (cervical)",
+      "cptCode": "72125",
+      "cptDescription": "CT cervical spine without contrast",
+      "category": "radiology"
+    },
+    {
+      "procedure": "CT Spine (thoracic)",
+      "cptCode": "72128",
+      "cptDescription": "CT thoracic spine without contrast",
+      "category": "radiology"
+    },
+    {
+      "procedure": "CT Spine (lumbar)",
+      "cptCode": "72131",
+      "cptDescription": "CT lumbar spine without contrast",
+      "category": "radiology"
+    },
+    {
+      "procedure": "CT Chest without contrast",
+      "cptCode": "71250",
+      "cptDescription": "CT chest without contrast material",
+      "category": "radiology"
+    },
+    {
+      "procedure": "CT Chest with contrast",
+      "cptCode": "71260",
+      "cptDescription": "CT chest with contrast material",
+      "category": "radiology"
+    },
+    {
+      "procedure": "CT Chest without and with contrast",
+      "cptCode": "71270",
+      "cptDescription": "CT chest without and with contrast material",
+      "category": "radiology"
+    },
+    {
+      "procedure": "CT Abdomen without contrast",
+      "cptCode": "74177",
+      "cptDescription": "CT abdomen and pelvis without contrast",
+      "category": "radiology"
+    },
+    {
+      "procedure": "CT Abdomen with contrast",
+      "cptCode": "74178",
+      "cptDescription": "CT abdomen and pelvis with contrast",
+      "category": "radiology"
+    },
+    {
+      "procedure": "CT Abdomen without and with contrast",
+      "cptCode": "74178",
+      "cptDescription": "CT abdomen and pelvis without and with contrast",
+      "category": "radiology"
+    },
+    {
+      "procedure": "CT Angiography (any vessel)",
+      "cptCode": "70496",
+      "cptDescription": "CT angiography, head",
+      "category": "radiology"
+    },
+    {
+      "procedure": "CT Angiography chest",
+      "cptCode": "71275",
+      "cptDescription": "CT angiography, chest",
+      "category": "radiology"
+    },
+    {
+      "procedure": "CT Angiography abdomen",
+      "cptCode": "74174",
+      "cptDescription": "CT angiography, abdomen and pelvis",
+      "category": "radiology"
+    },
+    {
+      "procedure": "MRI Brain without contrast",
+      "cptCode": "70551",
+      "cptDescription": "MRI brain without contrast",
+      "category": "radiology"
+    },
+    {
+      "procedure": "MRI Brain with contrast",
+      "cptCode": "70553",
+      "cptDescription": "MRI brain with contrast",
+      "category": "radiology"
+    },
+    {
+      "procedure": "MRI Spine (cervical)",
+      "cptCode": "72141",
+      "cptDescription": "MRI cervical spine without contrast",
+      "category": "radiology"
+    },
+    {
+      "procedure": "MRI Spine (thoracic)",
+      "cptCode": "72146",
+      "cptDescription": "MRI thoracic spine without contrast",
+      "category": "radiology"
+    },
+    {
+      "procedure": "MRI Spine (lumbar)",
+      "cptCode": "72148",
+      "cptDescription": "MRI lumbar spine without contrast",
+      "category": "radiology"
+    },
+    {
+      "procedure": "MRI Chest",
+      "cptCode": "71550",
+      "cptDescription": "MRI chest without contrast",
+      "category": "radiology"
+    },
+    {
+      "procedure": "MRI Abdomen",
+      "cptCode": "74181",
+      "cptDescription": "MRI abdomen without contrast",
+      "category": "radiology"
+    },
+    {
+      "procedure": "MRI Pelvis",
+      "cptCode": "72195",
+      "cptDescription": "MRI pelvis without contrast",
+      "category": "radiology"
+    },
+    {
+      "procedure": "MRA Brain",
+      "cptCode": "70544",
+      "cptDescription": "MR angiography, head",
+      "category": "radiology"
+    },
+    {
+      "procedure": "MRA Neck",
+      "cptCode": "70547",
+      "cptDescription": "MR angiography, neck",
+      "category": "radiology"
+    },
+    {
+      "procedure": "Ultrasound Abdomen",
+      "cptCode": "76700",
+      "cptDescription": "Ultrasound, abdominal, real-time with image documentation",
+      "category": "radiology"
+    },
+    {
+      "procedure": "Ultrasound Pelvis",
+      "cptCode": "76856",
+      "cptDescription": "Ultrasound, pelvic, real-time with image documentation",
+      "category": "radiology"
+    },
+    {
+      "procedure": "Ultrasound Thyroid",
+      "cptCode": "76536",
+      "cptDescription": "Ultrasound, thyroid and/or parathyroid, real-time with image documentation",
+      "category": "radiology"
+    },
+    {
+      "procedure": "Mammography screening",
+      "cptCode": "77067",
+      "cptDescription": "Mammography, screening, bilateral",
+      "category": "radiology"
+    },
+    {
+      "procedure": "Mammography diagnostic",
+      "cptCode": "77065",
+      "cptDescription": "Mammography, diagnostic, unilateral",
+      "category": "radiology"
+    },
+    {
+      "procedure": "X-ray Chest (2 views)",
+      "cptCode": "71046",
+      "cptDescription": "Chest X-ray, 2 views",
+      "category": "radiology"
+    },
+    {
+      "procedure": "X-ray Chest (1 view)",
+      "cptCode": "71045",
+      "cptDescription": "Chest X-ray, 1 view",
+      "category": "radiology"
+    },
+    {
+      "procedure": "X-ray Skeletal",
+      "cptCode": "70010",
+      "cptDescription": "Radiologic examination, skull, 2 views",
+      "category": "radiology"
+    },
+    {
+      "procedure": "Contrast injection",
+      "cptCode": "36140",
+      "cptDescription": "Introduction of needle or intracatheter, artery",
+      "category": "contrast"
+    },
+    {
+      "procedure": "Contrast material, per 100cc",
+      "cptCode": "99070",
+      "cptDescription": "Supplies and materials (e.g., contrast agents)",
+      "category": "contrast"
+    },
+    {
+      "procedure": "PET/CT",
+      "cptCode": "78815",
+      "cptDescription": "PET/CT, tumor imaging",
+      "category": "radiology"
+    },
+    {
+      "procedure": "Nuclear medicine study",
+      "cptCode": "78415",
+      "cptDescription": "Nuclear medicine, bone imaging",
+      "category": "radiology"
+    }
+  ],
+  "version": "1.0.0",
+  "lastUpdated": "2026-03-30T17:35:00.000Z"
+}

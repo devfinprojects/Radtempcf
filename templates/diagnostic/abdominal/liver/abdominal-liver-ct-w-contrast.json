@@ -1,0 +1,78 @@
+{
+  "id": "abdominal-liver-ct-w-contrast",
+  "name": "Abdomen CT With Contrast",
+  "version": "1.0.0",
+  "description": "Contrast-enhanced CT of the abdomen for evaluation of hepatic, biliary, and upper abdominal pathology",
+  "modality": "ct",
+  "bodyRegion": "abdomen",
+  "subspecialty": "abdominal",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["abdomen", "ct", "contrast", "liver", "abdominal", "hepatobiliary"],
+    "cptCodes": ["74177"],
+    "radlexCodes": ["RID10312", "RID10313"]
+  },
+  "findings": {
+    "technique": "Contrast-enhanced CT of the abdomen was performed with portal venous phase imaging from the diaphragm through the pelvis.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Liver",
+        "content": "The liver demonstrates [normal attenuation / no mass / no lesion / homogeneous enhancement]. The hepatic vasculature is [patent / normal]. No biliary ductal dilation.",
+        "normalVariant": true
+      },
+      {
+        "name": "Gallbladder",
+        "content": "The gallbladder is [present / not distended / no stones / no wall thickening]. No pericholecystic fluid or adenomyomatosis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Biliary Ducts",
+        "content": "The intrahepatic and extrahepatic bile ducts are [not dilated / normal caliber]. No stricture or filling defect.",
+        "normalVariant": true
+      },
+      {
+        "name": "Spleen",
+        "content": "The spleen is [normal in size / not enlarged / no mass / no laceration]. No intrasplenic lesion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Pancreas",
+        "content": "The pancreas demonstrates [normal morphology / no mass / no pancreatitis / no ductal dilation]. The pancreatic duct is [not dilated / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Kidneys",
+        "content": "The bilateral kidneys demonstrate [normal cortical attenuation / no mass / no stone / no hydronephrosis]. No renal lesion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Adrenal Glands",
+        "content": "The bilateral adrenal glands are [normal in size / no mass / no hyperplasia]. No adrenal lesion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Aorta and IVC",
+        "content": "The abdominal aorta is [normal in caliber / no aneurysm / no dissection]. The inferior vena cava is [patent / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Bowel",
+        "content": "The stomach, duodenum, and small bowel demonstrate [no mass / no obstruction / no bowel wall thickening]. No pneumoperitoneum.",
+        "normalVariant": true
+      },
+      {
+        "name": "Pelvic Organs",
+        "content": "The pelvic organs including the bladder, uterus/ovaries, and prostate are [unremarkable / no mass]. No abnormal enhancement.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal contrast-enhanced CT abdomen.\n2. No mass, cyst, or inflammatory process identified in the upper abdomen.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

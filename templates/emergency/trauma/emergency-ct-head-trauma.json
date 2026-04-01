@@ -1,0 +1,78 @@
+{
+  "id": "emergency-ct-head-trauma",
+  "name": "Emergency CT Head Trauma",
+  "version": "1.0.0",
+  "description": "Emergency CT head for evaluation of acute intracranial trauma, hemorrhage, and fracture",
+  "modality": "ct",
+  "bodyRegion": "brain",
+  "subspecialty": "emergency",
+  "clinicalContext": "emergency",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["emergency", "ct", "head", "trauma", "hemorrhage", "intracranial", "stroke"],
+    "cptCodes": ["70450"],
+    "radlexCodes": ["RID10310", "RID10311"]
+  },
+  "findings": {
+    "technique": "CT of the head was performed without contrast as an emergent study for trauma evaluation.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Epidural Hematoma",
+        "content": "There is [no epidural hematoma / no hyperdense collection] overlying the brain parenchyma.",
+        "normalVariant": true
+      },
+      {
+        "name": "Subdural Hematoma",
+        "content": "There is [no subdural hematoma / no hyperdense crescentic collection] along the cerebral convexities.",
+        "normalVariant": true
+      },
+      {
+        "name": "Subarachnoid Hemorrhage",
+        "content": "There is [no subarachnoid hemorrhage / no hyperdensity in the sulci / no SAH] identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Intraparenchymal Hemorrhage",
+        "content": "There is [no intraparenchymal hemorrhage / no intracerebral hemorrhage / no ICH] identified within the brain parenchyma.",
+        "normalVariant": true
+      },
+      {
+        "name": "Intraventricular Hemorrhage",
+        "content": "There is [no intraventricular hemorrhage / no blood in the ventricles] identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Contusion",
+        "content": "There is [no cerebral contusion / no coup injury / no contre-coup injury] identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Fracture",
+        "content": "There is [no calvarial fracture / no skull fracture] identified. The temporal bones are [intact].",
+        "normalVariant": true
+      },
+      {
+        "name": "Mass Effect",
+        "content": "There is [no mass effect / no midline shift / no herniation]. The ventricles are [not compressed / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Basal Cisterns",
+        "content": "The basal cisterns are [patent / open / no compression]. No transtentorial or tonsillar herniation.",
+        "normalVariant": true
+      },
+      {
+        "name": "Soft Tissues",
+        "content": "The scalp soft tissues demonstrate [no swelling / no hematoma / no laceration].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No acute intracranial hemorrhage, mass effect, or skull fracture.\n2. Normal emergent CT head for trauma evaluation.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

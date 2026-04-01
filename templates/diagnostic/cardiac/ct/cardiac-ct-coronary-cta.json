@@ -1,0 +1,73 @@
+{
+  "id": "cardiac-ct-coronary-cta",
+  "name": "Cardiac CT Coronary Angiography",
+  "version": "1.0.0",
+  "description": "CT coronary angiography for evaluation of coronary artery anatomy and stenosis",
+  "modality": "ct",
+  "bodyRegion": "cardiac",
+  "subspecialty": "cardiac",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["cardiac", "ct", "coronary", "cta", "angiography", "heart", "coronary artery"],
+    "cptCodes": ["75572"],
+    "radlexCodes": ["RID12910", "RID12911"]
+  },
+  "findings": {
+    "technique": "Retrospectively gated CT coronary angiography was performed following sublingual nitroglycerin and beta-blockade to achieve target heart rate.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Coronary Calcium Score",
+        "content": "The coronary calcium score is [0 / <10 / 10-100 / 100-400 / >400 Agatston units]. No calcified plaque identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Main Coronary Artery",
+        "content": "The left main coronary artery demonstrates [no stenosis / <25% stenosis / 25-49% stenosis / 50-70% stenosis / >70% stenosis]. The lumen is [patent / calcified / non-calcified plaque].",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Anterior Descending",
+        "content": "The LAD demonstrates [no stenosis / <25% stenosis / 25-49% stenosis / 50-70% stenosis / >70% stenosis]. The vessel is [dominant / non-dominant].",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Circumflex",
+        "content": "The LCx demonstrates [no stenosis / <25% stenosis / 25-49% stenosis / 50-70% stenosis / >70% stenosis]. The marginal branches are [patent / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Right Coronary Artery",
+        "content": "The RCA demonstrates [no stenosis / <25% stenosis / 25-49% stenosis / 50-70% stenosis / >70% stenosis]. The vessel is [dominant / codominant].",
+        "normalVariant": true
+      },
+      {
+        "name": "Cardiac Chambers",
+        "content": "The left ventricle demonstrates [normal wall thickness / no hypertrophy / normal cavity size]. The right ventricle is [normal / no enlargement].",
+        "normalVariant": true
+      },
+      {
+        "name": "Myocardium",
+        "content": "The myocardial tissue demonstrates [no late enhancement / no perfusion defect / no abnormality]. No abnormal wall motion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Pericardium",
+        "content": "The pericardium is [unremarkable / no effusion / no thickening / no constriction].",
+        "normalVariant": true
+      },
+      {
+        "name": "Valves",
+        "content": "The aortic and mitral valves demonstrate [no calcification / no stenosis / no regurgitation]. The valve areas are [normal].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal CT coronary angiography.\n2. No coronary artery stenosis >50% identified.\n3. Coronary calcium score of [X] Agatston units.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "rads-orads",
+  "name": "O-RADS (Ovarian-Adnexal Reporting and Data System)",
+  "version": "1.0.0",
+  "description": "O-RADS classification template for ovarian/adnexal lesion assessment on ultrasound",
+  "modality": "ultrasound",
+  "bodyRegion": "adnexa",
+  "subspecialty": "obgyn",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["rads", "ovary", "o-rads", "ultrasound", "adnexal"]
+  },
+  "rads": {
+    "system": "O-RADS",
+    "category": "O-RADS 3",
+    "score": 3,
+    "assessment": "Intermediate risk lesion",
+    "recommendation": "Follow-up in 6-12 months recommended",
+    "lesionLocation": "[Right/Left] ovary",
+    "size": {
+      "value": 4.0,
+      "unit": "cm"
+    },
+    "date": "2026-03-30"
+  },
+  "findings": {
+    "technique": "Pelvic ultrasound performed using [transvaginal/transabdominal/dual] approach. Gray-scale and color Doppler imaging performed. IOTA criteria applied where applicable.",
+    "comparison": "Comparison made with [prior US / prior CT / prior MRI] from [date].",
+    "limitations": "Limited transvaginal evaluation due to [patient factor].",
+    "sections": [
+      {
+        "name": "Lesion Type",
+        "content": "Lesion type: [unilocular cyst / multilocular cyst / solid lesion / mixed lesion].",
+        "normalVariant": false
+      },
+      {
+        "name": "Wall Characteristics",
+        "content": "Wall: [thin (<3mm) / thick (>=3mm)] smooth / irregular. Papillary projection: [present / absent].",
+        "normalVariant": false
+      },
+      {
+        "name": "Echogenicity",
+        "content": "Echogenicity: [anechoic / low level / debris / ground glass / echoic / complex].",
+        "normalVariant": false
+      },
+      {
+        "name": "Acoustic Shadows",
+        "content": "Acoustic shadowing: [present / absent].",
+        "normalVariant": false
+      },
+      {
+        "name": "Doppler",
+        "content": "Vascularity: [no flow / peripheral flow / minimal central flow / moderate central flow / abundant central flow].",
+        "normalVariant": false
+      },
+      {
+        "name": "Ascites",
+        "content": "Ascites: [present / absent]. [Mild / Moderate / Large] volume if present.",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. O-RADS [X]: [category description]\n2. [Lesion type] in [location] measuring [X]cm\n3. [Lesion characteristics]\n4. Risk of malignancy: [X]%\n5. [Follow-up / Surgical consultation / Biopsy] recommended",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

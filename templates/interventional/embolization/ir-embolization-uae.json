@@ -1,0 +1,50 @@
+{
+  "id": "ir-embolization-uae",
+  "name": "Uterine Artery Embolization (UAE)",
+  "version": "1.0.0",
+  "description": "Interventional radiology uterine artery embolization procedure report template",
+  "modality": "angiography",
+  "bodyRegion": "pelvis",
+  "subspecialty": "interventional-radiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["interventional", "embolization", "uae", "uterine", "fibroid"]
+  },
+  "findings": {
+    "technique": "Bilateral uterine artery embolization performed for treatment of symptomatic uterine fibroids. Procedure performed via [femoral/radial] access using [4F/5F] catheter. [PVA particles/microspheres/gel foam] used as embolic agent.",
+    "comparison": "Pre-procedure MRI demonstrates [X] fibroid(s) in [location] with largest measuring [X]cm. Patient presents with [symptoms].",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Vascular Access",
+        "content": "Right femoral artery access obtained using [5F] sheath. [Roberts uterine catheter/Microcatheter] used for selective catheterization.",
+        "normalVariant": false
+      },
+      {
+        "name": "Pelvic Angiogram",
+        "content": "Pelvic angiogram demonstrates [normal ovarian collateral supply / prominent uterine artery] supplying [fibroid vascularity].",
+        "normalVariant": false
+      },
+      {
+        "name": "Right UAE",
+        "content": "Right uterine artery successfully catheterized. [X]ml of embolic agent delivered until [complete stasis/near-complete stasis] in feeding vessels.",
+        "normalVariant": false
+      },
+      {
+        "name": "Left UAE",
+        "content": "Left uterine artery successfully catheterized. [X]ml of embolic agent delivered until [complete stasis/near-complete stasis] in feeding vessels.",
+        "normalVariant": false
+      },
+      {
+        "name": "Final Assessment",
+        "content": "Final pelvic angiogram demonstrates [successful devascularization of fibroids / continued collateral supply]. No non-target embolization identified.",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. Successful bilateral UAE performed for symptomatic uterine fibroids.\n2. [Complete/Near-complete] devascularization of fibroid(s) achieved.\n3. No evidence of non-target embolization.\n4. Patient [tolerated / did not tolerate] procedure well.\n5. Post-procedure care: [pain management/observation/follow-up].",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

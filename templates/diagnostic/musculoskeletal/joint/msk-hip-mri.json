@@ -1,0 +1,68 @@
+{
+  "id": "msk-hip-mri",
+  "name": "Hip MRI",
+  "version": "1.0.0",
+  "description": "MRI of the hip for evaluation of acetabular labrum, femoral head, and joint pathology",
+  "modality": "mri",
+  "bodyRegion": "musculoskeletal",
+  "subspecialty": "musculoskeletal",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["musculoskeletal", "mri", "hip", "labrum", "femoral head", "avascular necrosis"],
+    "cptCodes": ["73221"],
+    "radlexCodes": ["RID10550", "RID10551"]
+  },
+  "findings": {
+    "technique": "MRI of the hip was performed in multiple planes including T1, T2, PD, and STIR sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Acetabular Labrum",
+        "content": "The acetabular labrum is [intact / no tear / no degeneration]. The labral attachment is [intact / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Femoral Head",
+        "content": "The femoral head demonstrates [spherical contour / no flattening / no collapse]. The articular cartilage is [intact / no defect].",
+        "normalVariant": true
+      },
+      {
+        "name": "Acetabular Cartilage",
+        "content": "The acetabular articular cartilage demonstrates [normal thickness / no defect / no fibrillation].",
+        "normalVariant": true
+      },
+      {
+        "name": "Femoral Neck",
+        "content": "The femoral neck is [intact / no fracture / no stress reaction]. No bone marrow edema.",
+        "normalVariant": true
+      },
+      {
+        "name": "Joint Space",
+        "content": "The joint space is [preserved / normal width / no narrowing]. No effusion.",
+        "normalVariant": true
+      },
+      {
+        "name": "Ligamentum Teres",
+        "content": "The ligamentum teres is [intact / no tear / no hypertrophy].",
+        "normalVariant": true
+      },
+      {
+        "name": "Iliopsoas Tendon",
+        "content": "The iliopsoas tendon is [intact / no tearing / normal course]. No iliopsoas bursitis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Bone Marrow",
+        "content": "The bone marrow demonstrates [normal signal / no edema / no necrosis]. No AVN.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal hip MRI.\n2. No labral tear, cartilage defect, or avascular necrosis identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

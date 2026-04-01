@@ -1,0 +1,63 @@
+{
+  "id": "vascular-cta-carotid",
+  "name": "CT Angiography Carotid",
+  "version": "1.0.0",
+  "description": "CT angiography of the carotid arteries for evaluation of carotid stenosis and plaque morphology",
+  "modality": "cta",
+  "bodyRegion": "vascular",
+  "subspecialty": "vascular",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["vascular", "cta", "carotid", "angiography", "stenosis", "atherosclerosis"],
+    "cptCodes": ["70498"],
+    "radlexCodes": ["RID12910", "RID12911"]
+  },
+  "findings": {
+    "technique": "CT angiography of the carotid and vertebral arteries was performed from the aortic arch through the circle of Willis.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Aortic Arch",
+        "content": "The aortic arch demonstrates [normal configuration / no aneurysm / no dissection]. The great vessels originate normally.",
+        "normalVariant": true
+      },
+      {
+        "name": "Right Common Carotid Artery",
+        "content": "The right common carotid artery demonstrates [no stenosis / <25% stenosis / 25-49% stenosis / 50-69% stenosis / 70-99% stenosis / occlusion]. The vessel wall shows [no plaque / calcified plaque / soft plaque].",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Common Carotid Artery",
+        "content": "The left common carotid artery demonstrates [no stenosis / <25% stenosis / 25-49% stenosis / 50-69% stenosis / 70-99% stenosis / occlusion]. The vessel wall shows [no plaque / calcified plaque / soft plaque].",
+        "normalVariant": true
+      },
+      {
+        "name": "Right Internal Carotid Artery",
+        "content": "The right internal carotid artery demonstrates [no stenosis / <25% stenosis / 25-49% stenosis / 50-69% stenosis / 70-99% stenosis / occlusion]. The carotid bulb is [normal / shows plaque].",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Internal Carotid Artery",
+        "content": "The left internal carotid artery demonstrates [no stenosis / <25% stenosis / 25-49% stenosis / 50-69% stenosis / 70-99% stenosis / occlusion]. The carotid bulb is [normal / shows plaque].",
+        "normalVariant": true
+      },
+      {
+        "name": "Vertebral Arteries",
+        "content": "The bilateral vertebral arteries demonstrate [no stenosis / <25% stenosis / 25-49% stenosis / 50-69% stenosis / 70-99% stenosis / occlusion]. The vertebral arteries are [symmetric / left dominant / right dominant].",
+        "normalVariant": true
+      },
+      {
+        "name": "External Carotid Arteries",
+        "content": "The bilateral external carotid arteries are [patent / normal]. No significant stenosis.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal CT angiography of the carotid arteries.\n2. No critical stenosis identified in the bilateral carotid or vertebral arteries.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

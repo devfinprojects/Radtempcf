@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/devfinprojects/Radtempcf/main/mappings/snomed.schema.json",
+  "title": "SNOMED CT Term Mapping",
+  "description": "Mapping of radiology template terms to SNOMED CT concepts",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "templateId": {
+      "type": "string",
+      "description": "Reference to template ID"
+    },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["term", "snomedCtId", "snomedTerm"],
+        "properties": {
+          "term": {
+            "type": "string",
+            "description": "Original template term"
+          },
+          "snomedCtId": {
+            "type": "string",
+            "pattern": "^\\d{7,18}$",
+            "description": "SNOMED CT concept ID"
+          },
+          "snomedTerm": {
+            "type": "string",
+            "description": "Official SNOMED CT term name"
+          },
+          "semanticTag": {
+            "type": "string",
+            "enum": ["finding", "disorder", "anatomical structure", "procedure", "morphologic abnormality", "substance"]
+          }
+        }
+      }
+    },
+    "version": {
+      "type": "string",
+      "default": "1.0.0"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

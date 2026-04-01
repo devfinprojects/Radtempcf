@@ -1,0 +1,45 @@
+{
+  "id": "neuro-head-neck-neck-ct",
+  "name": "Neck CT with Contrast",
+  "version": "1.0.0",
+  "description": "CT of the neck with contrast for soft tissue and lymph node evaluation",
+  "modality": "ct",
+  "bodyRegion": "head-neck",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["head-neck", "neck", "ct", "contrast", "lymph nodes"]
+  },
+  "findings": {
+    "technique": "CT of the neck with intravenous contrast was performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Pharynx and Larynx",
+        "content": "Pharynx and larynx [are unremarkable / no mass / no obstruction]. No vocal cord paralysis.",
+        "normalVariant": true
+      },
+      {
+        "name": "Thyroid",
+        "content": "Thyroid [is homogeneous / no focal lesions / no masses].",
+        "normalVariant": true
+      },
+      {
+        "name": "Lymph Nodes",
+        "content": "Cervical lymph nodes [are not enlarged / no pathologic adenopathy]. No clusters of abnormal nodes.",
+        "normalVariant": true
+      },
+      {
+        "name": "Salivary Glands",
+        "content": "Parotid and submandibular glands [are unremarkable / no mass / no stones].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No mass or lymphadenopathy.\n2. Normal neck CT.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

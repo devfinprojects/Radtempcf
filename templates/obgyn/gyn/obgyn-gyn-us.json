@@ -1,0 +1,40 @@
+{
+  "id": "obgyn-gyn-us",
+  "name": "Gynecologic Ultrasound",
+  "version": "1.0.0",
+  "description": "Transvaginal ultrasound for gynecologic evaluation",
+  "modality": "us",
+  "bodyRegion": "pelvis",
+  "subspecialty": "obgyn",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["obgyn", "gynecology", "ultrasound", "transvaginal", "pelvis"]
+  },
+  "findings": {
+    "technique": "Transvaginal and pelvic ultrasound was performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Uterus",
+        "content": "Uterus [normal size / no fibroids / no polyps / normal endometrium].",
+        "normalVariant": true
+      },
+      {
+        "name": "Ovaries",
+        "content": "Right ovary [normal / no cyst / no mass]. Left ovary [normal / no cyst / no mass].",
+        "normalVariant": true
+      },
+      {
+        "name": "Adnexa",
+        "content": "Adnexal regions [no masses / no abnormal blood flow].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal gynecologic ultrasound.\n2. No ovarian masses or pathology.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

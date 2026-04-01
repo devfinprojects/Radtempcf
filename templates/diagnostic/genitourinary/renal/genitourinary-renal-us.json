@@ -1,0 +1,58 @@
+{
+  "id": "genitourinary-renal-us",
+  "name": "Renal Ultrasound",
+  "version": "1.0.0",
+  "description": "Ultrasound of the kidneys for evaluation of renal parenchyma, collecting system, and vasculature",
+  "modality": "us",
+  "bodyRegion": "genitourinary",
+  "subspecialty": "genitourinary",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["genitourinary", "renal", "ultrasound", "kidney", "us", "renal ultrasound"],
+    "cptCodes": ["76770"],
+    "radlexCodes": ["RID10700", "RID10701"]
+  },
+  "findings": {
+    "technique": "Ultrasound of the bilateral kidneys was performed with grayscale and Doppler imaging.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Right Kidney",
+        "content": "The right kidney measures approximately [X cm] in length and demonstrates [normal cortical echogenicity / no hydronephrosis / no stone / no mass]. The renal sinus is [normal / not echogenic].",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Kidney",
+        "content": "The left kidney measures approximately [X cm] in length and demonstrates [normal cortical echogenicity / no hydronephrosis / no stone / no mass]. The renal sinus is [normal / not echogenic].",
+        "normalVariant": true
+      },
+      {
+        "name": "Collecting System",
+        "content": "The bilateral renal collecting systems are [not dilated / no mild dilation / no moderate-severe hydronephrosis]. No renal calculus.",
+        "normalVariant": true
+      },
+      {
+        "name": "Renal Vasculature",
+        "content": "The bilateral renal arteries demonstrate [normal flow velocities / no stenosis]. The renal veins are [patent / no thrombosis].",
+        "normalVariant": true
+      },
+      {
+        "name": "Bladder",
+        "content": "The bladder is [not distended / walls not thickened / no mass / no stone]. The ureteral jets are [present bilaterally / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Perirenal Space",
+        "content": "The perirenal spaces are [unremarkable / no fluid collection / no mass].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal renal ultrasound.\n2. No hydronephrosis, renal mass, or stone identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "neuro-head-neck-temporal-bone-ct",
+  "name": "Temporal Bone CT",
+  "version": "1.0.0",
+  "description": "CT of the temporal bone for otic capsule and middle ear evaluation",
+  "modality": "ct",
+  "bodyRegion": "head-neck",
+  "subspecialty": "neuroradiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["head-neck", "temporal bone", "ct", "ear", "otologic"]
+  },
+  "findings": {
+    "technique": "CT of the temporal bones without contrast was performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Middle Ear",
+        "content": "Middle ear spaces [are aerated / no fluid / no mass]. Ossicles are [intact / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Inner Ear",
+        "content": "Cochlea [has normal morphology / turns are intact]. Vestibule and semicircular canals [are normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Mastoid",
+        "content": "Mastoid air cells [are aerated / clear / no disease]. No cholesteatoma identified.",
+        "normalVariant": true
+      },
+      {
+        "name": "EAC",
+        "content": "External auditory canal [is patent / no stenosis / no mass].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal temporal bone CT.\n2. No evidence of ear pathology.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

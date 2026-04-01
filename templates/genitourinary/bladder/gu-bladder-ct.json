@@ -1,0 +1,35 @@
+{
+  "id": "genitourinary-bladder-ct",
+  "name": "CT Urogram Bladder",
+  "version": "1.0.0",
+  "description": "CT urogram focused on bladder evaluation",
+  "modality": "ct",
+  "bodyRegion": "genitourinary",
+  "subspecialty": "genitourinary",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["genitourinary", "bladder", "ct", "urogram"]
+  },
+  "findings": {
+    "technique": "CT urography was performed with intravenous contrast and delayed images.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Bladder",
+        "content": "Bladder [has normal wall thickness / no filling defect / no mass]. No urothelial thickening.",
+        "normalVariant": true
+      },
+      {
+        "name": "Ureters",
+        "content": "Ureters [are patent / no dilation / no filling defect] bilaterally. No hydronephrosis.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal bladder.\n2. No urothelial lesion identified.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "neuro-brain-mra",
+  "name": "MR Angiography Head",
+  "version": "1.0.0",
+  "description": "MR angiography of the intracranial arteries for non-invasive evaluation of vascular anatomy",
+  "modality": "mra",
+  "bodyRegion": "brain",
+  "subspecialty": "neuroradiology",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["brain", "mra", "mri", "angiography", "vascular", "neuroradiology", "non-contrast"],
+    "cptCodes": ["70544"],
+    "radlexCodes": ["RID12910", "RID12911"]
+  },
+  "findings": {
+    "technique": "Time-of-flight MR angiography was performed of the intracranial arteries without contrast administration.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Internal Carotid Arteries",
+        "content": "The bilateral internal carotid arteries demonstrate [normal caliber / no narrowing / no aneurysm]. The petrous and cavernous segments are [normal / show mild tortuosity].",
+        "normalVariant": true
+      },
+      {
+        "name": "Anterior Cerebral Arteries",
+        "content": "The A1 segments of the bilateral anterior cerebral arteries are [present / hypoplastic]. The A2 segments and distal branches are [normal / symmetric].",
+        "normalVariant": true
+      },
+      {
+        "name": "Middle Cerebral Arteries",
+        "content": "The M1 segments of the bilateral middle cerebral arteries demonstrate [normal caliber / no stenosis]. The M2 branches are [symmetric / normal].",
+        "normalVariant": true
+      },
+      {
+        "name": "Posterior Cerebral Arteries",
+        "content": "The P1 segments of the bilateral posterior cerebral arteries are [present / hypoplastic / show fetal configuration]. The P2-P4 segments are [normal / patent].",
+        "normalVariant": true
+      },
+      {
+        "name": "Vertebrobasilar System",
+        "content": "The vertebral arteries demonstrate [symmetric caliber / left dominance / right dominance / hypoplasia]. The basilar artery is [normal / shows fenestration]. No aneurysm.",
+        "normalVariant": true
+      },
+      {
+        "name": "Circle of Willis",
+        "content": "The circle of Willis is [complete / incomplete]. The anterior communicating artery is [patent / absent]. The posterior communicating arteries are [patent / show fetal configuration].",
+        "normalVariant": true
+      },
+      {
+        "name": "Aneurysm",
+        "content": "There is [no aneurysm / no saccular aneurysm / no fusiform dilation] identified at any location including the [MCA bifurcation / anterior communicating / posterior communicating / basilar apex].",
+        "normalVariant": true
+      },
+      {
+        "name": "Stenosis",
+        "content": "There is [no flow-limiting stenosis / no significant atherosclerotic disease] in the intracranial arteries.",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal MR angiography of the head.\n2. The circle of Willis is anatomically complete.\n3. No aneurysm or significant stenosis identified.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

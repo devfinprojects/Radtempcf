@@ -1,0 +1,40 @@
+{
+  "id": "breast-us",
+  "name": "Breast Ultrasound",
+  "version": "1.0.0",
+  "description": "Diagnostic breast ultrasound for mass evaluation",
+  "modality": "us",
+  "bodyRegion": "breast",
+  "subspecialty": "breast",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["breast", "ultrasound", "diagnostic", "mass", "cyst"]
+  },
+  "findings": {
+    "technique": "Targeted ultrasound of the breast was performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Right Breast",
+        "content": "Right breast [no solid masses / no complicated cysts / no abnormal findings].",
+        "normalVariant": true
+      },
+      {
+        "name": "Left Breast",
+        "content": "Left breast [no solid masses / no complicated cysts / no abnormal findings].",
+        "normalVariant": true
+      },
+      {
+        "name": "Axillae",
+        "content": "Bilateral axillae [no suspicious lymph nodes].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal bilateral breast ultrasound.\n2. No sonographic abnormalities.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

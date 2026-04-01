@@ -1,0 +1,175 @@
+{
+  "templateId": "icd10-mapping-base",
+  "mappings": [
+    {
+      "term": "intracranial hemorrhage",
+      "icd10Code": "I60",
+      "icd10Term": "Nontraumatic subarachnoid hemorrhage",
+      "category": "diagnosis"
+    },
+    {
+      "term": "cerebral infarction",
+      "icd10Code": "I63",
+      "icd10Term": "Cerebral infarction",
+      "category": "diagnosis"
+    },
+    {
+      "term": "stroke",
+      "icd10Code": "I64",
+      "icd10Term": "Stroke, not specified as hemorrhage or infarction",
+      "category": "diagnosis"
+    },
+    {
+      "term": "pneumonia",
+      "icd10Code": "J18",
+      "icd10Term": "Pneumonia, unspecified organism",
+      "category": "diagnosis"
+    },
+    {
+      "term": "pneumothorax",
+      "icd10Code": "J93",
+      "icd10Term": "Pneumothorax",
+      "category": "diagnosis"
+    },
+    {
+      "term": "pleural effusion",
+      "icd10Code": "J91",
+      "icd10Term": "Pleural effusion in diseases classified elsewhere",
+      "category": "diagnosis"
+    },
+    {
+      "term": "lung nodule",
+      "icd10Code": "R91",
+      "icd10Term": "Abnormal finding on diagnostic imaging of lung",
+      "category": "finding"
+    },
+    {
+      "term": "pulmonary embolism",
+      "icd10Code": "I26",
+      "icd10Term": "Pulmonary embolism",
+      "category": "diagnosis"
+    },
+    {
+      "term": "hydronephrosis",
+      "icd10Code": "N13",
+      "icd10Term": "Hydronephrosis",
+      "category": "diagnosis"
+    },
+    {
+      "term": "renal cyst",
+      "icd10Code": "N28",
+      "icd10Term": "Cyst of kidney",
+      "category": "diagnosis"
+    },
+    {
+      "term": "kidney stone",
+      "icd10Code": "N20",
+      "icd10Term": "Calculus of kidney and ureter",
+      "category": "diagnosis"
+    },
+    {
+      "term": "hepatic cyst",
+      "icd10Code": "K76",
+      "icd10Term": "Other diseases of liver",
+      "category": "diagnosis"
+    },
+    {
+      "term": "cirrhosis",
+      "icd10Code": "K74",
+      "icd10Term": "Fibrosis and cirrhosis of liver",
+      "category": "diagnosis"
+    },
+    {
+      "term": "hepatitis",
+      "icd10Code": "K75",
+      "icd10Term": "Other inflammatory liver diseases",
+      "category": "diagnosis"
+    },
+    {
+      "term": "pancreatitis",
+      "icd10Code": "K85",
+      "icd10Term": "Acute pancreatitis",
+      "category": "diagnosis"
+    },
+    {
+      "term": "cholecystitis",
+      "icd10Code": "K81",
+      "icd10Term": "Cholecystitis",
+      "category": "diagnosis"
+    },
+    {
+      "term": "gallstone",
+      "icd10Code": "K80",
+      "icd10Term": "Cholelithiasis",
+      "category": "diagnosis"
+    },
+    {
+      "term": "appendicitis",
+      "icd10Code": "K35",
+      "icd10Term": "Acute appendicitis",
+      "category": "diagnosis"
+    },
+    {
+      "term": "fracture",
+      "icd10Code": "S82",
+      "icd10Term": "Fracture of lower leg",
+      "category": "diagnosis"
+    },
+    {
+      "term": "bone metastasis",
+      "icd10Code": "C79",
+      "icd10Term": "Secondary malignant neoplasm of other sites",
+      "category": "diagnosis"
+    },
+    {
+      "term": "lung cancer",
+      "icd10Code": "C34",
+      "icd10Term": "Malignant neoplasm of bronchus and lung",
+      "category": "diagnosis"
+    },
+    {
+      "term": "breast cancer",
+      "icd10Code": "C50",
+      "icd10Term": "Malignant neoplasm of breast",
+      "category": "diagnosis"
+    },
+    {
+      "term": "prostate cancer",
+      "icd10Code": "C61",
+      "icd10Term": "Malignant neoplasm of prostate",
+      "category": "diagnosis"
+    },
+    {
+      "term": "colon cancer",
+      "icd10Code": "C18",
+      "icd10Term": "Malignant neoplasm of colon",
+      "category": "diagnosis"
+    },
+    {
+      "term": "emphysema",
+      "icd10Code": "J43",
+      "icd10Term": "Emphysema",
+      "category": "diagnosis"
+    },
+    {
+      "term": "aneurysm",
+      "icd10Code": "I72",
+      "icd10Term": "Other aneurysm",
+      "category": "diagnosis"
+    },
+    {
+      "term": "thyroid nodule",
+      "icd10Code": "E04",
+      "icd10Term": "Other nontoxic nodular goiter",
+      "category": "diagnosis"
+    },
+    {
+      "term": "adrenal mass",
+      "icd10Code": "D35",
+      "icd10Term": "Benign neoplasm of other endocrine glands",
+      "category": "diagnosis"
+    }
+  ],
+  "version": "1.0.0",
+  "lastUpdated": "2026-03-30T17:35:00.000Z"
+}

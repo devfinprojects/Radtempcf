@@ -1,0 +1,40 @@
+{
+  "id": "chest-lung-pet-ct",
+  "name": "PET-CT Chest",
+  "version": "1.0.0",
+  "description": "PET-CT of the chest for metabolic evaluation and staging",
+  "modality": "pet-ct",
+  "bodyRegion": "chest",
+  "subspecialty": "chest",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["chest", "pet-ct", "lung", "metabolism", "staging"]
+  },
+  "findings": {
+    "technique": "PET-CT of the chest was performed with FDG injection.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Lungs",
+        "content": "Lungs [no FDG-avid nodules / no abnormal metabolic activity]. No mass with elevated SUV.",
+        "normalVariant": true
+      },
+      {
+        "name": "Mediastinum",
+        "content": "Mediastinal lymph nodes [no abnormal FDG uptake / no pathologic adenopathy].",
+        "normalVariant": true
+      },
+      {
+        "name": "Bone",
+        "content": "Skeleton [no focal FDG-avid lesions to suggest metastasis].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. No FDG-avid pulmonary lesions.\n2. No pathologic lymph nodes.\n3. No evidence of metastatic disease.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

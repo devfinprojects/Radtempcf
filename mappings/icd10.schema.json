@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/devfinprojects/Radtempcf/main/mappings/icd10.schema.json",
+  "title": "ICD-10 Code Mapping",
+  "description": "Mapping of radiology template findings to ICD-10 codes",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "templateId": {
+      "type": "string",
+      "description": "Reference to template ID"
+    },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["term", "icd10Code", "icd10Term"],
+        "properties": {
+          "term": {
+            "type": "string",
+            "description": "Original template term"
+          },
+          "icd10Code": {
+            "type": "string",
+            "pattern": "^[A-Z]\\d{2}(\\.\\d{1,4})?$",
+            "description": "ICD-10 code"
+          },
+          "icd10Term": {
+            "type": "string",
+            "description": "Official ICD-10 term name"
+          },
+          "category": {
+            "type": "string",
+            "enum": ["diagnosis", "symptom", "finding", "external cause"]
+          }
+        }
+      }
+    },
+    "version": {
+      "type": "string",
+      "default": "1.0.0"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

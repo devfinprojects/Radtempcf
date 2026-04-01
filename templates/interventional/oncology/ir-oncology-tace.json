@@ -1,0 +1,45 @@
+{
+  "id": "ir-oncology-tace",
+  "name": "Transarterial Chemoembolization (TACE)",
+  "version": "1.0.0",
+  "description": "Interventional oncology TACE procedure report template for liver malignancies",
+  "modality": "angiography",
+  "bodyRegion": "liver",
+  "subspecialty": "interventional-radiology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["interventional", "oncology", "tace", "chemoembolization", "liver"]
+  },
+  "findings": {
+    "technique": "Transarterial chemoembolization performed via [femoral/radial] access using [catheter name] selectively catheterized to [hepatic artery/segmental branch]. Chemoembolic agent consisting of [drug] mixed with [lipiodol/embolic particles] delivered to target lesion.",
+    "comparison": "Pre-procedure imaging demonstrated [lesion size] lesion in [segment] with [arterial enhancement/portal venous washout] consistent with [HCC/metastasis].",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Vascular Access",
+        "content": "Access obtained via [right/left] femoral artery using [5F] catheter. Selective catheterization of [celiac/superior mesenteric] artery performed.",
+        "normalVariant": false
+      },
+      {
+        "name": "Celiac Angiogram",
+        "content": "Celiac angiogram [demonstrates normal anatomy / variant anatomy identified]. [Tumor blush/feeding vessels] identified in [segment].",
+        "normalVariant": false
+      },
+      {
+        "name": "Embolization",
+        "content": "Chemoembolic agent delivered to [target lesion]. [X]ml of suspension used. Endpoint: [flow stagnation / complete stasis] achieved in feeding vessels.",
+        "normalVariant": false
+      },
+      {
+        "name": "Final Angiogram",
+        "content": "Final angiogram [demonstrates successful devascularization of tumor / demonstrates residual tumor staining requiring additional embolic agent].",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. Successful TACE performed for [X] lesion in [segment] of liver.\n2. [Complete tumor devascularization / Partial devascularization] achieved.\n3. [No non-target embolization / Non-target embolization to [vessel]] noted.\n4. Patient [tolerated / did not tolerate] procedure well.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

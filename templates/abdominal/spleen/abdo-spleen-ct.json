@@ -1,0 +1,40 @@
+{
+  "id": "abdo-spleen-ct",
+  "name": "Abdomen CT Spleen Protocol",
+  "version": "1.0.0",
+  "description": "CT of the abdomen focused on spleen evaluation",
+  "modality": "ct",
+  "bodyRegion": "abdomen",
+  "subspecialty": "abdominal",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["abdomen", "spleen", "ct", "contrast", "splenic"]
+  },
+  "findings": {
+    "technique": "CT of the abdomen and pelvis with intravenous contrast was performed.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Spleen",
+        "content": "Spleen [is normal in size / normal parenchymal density / no focal lesions / no laceration].",
+        "normalVariant": true
+      },
+      {
+        "name": "Splenic Vessels",
+        "content": "Splenic artery and vein [are patent / no thrombosis].",
+        "normalVariant": true
+      },
+      {
+        "name": "Perispleen",
+        "content": "Perisplenic region [is clear / no hematoma / no free fluid].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal spleen.\n2. No splenic pathology identified.",
+  "createdAt": "2026-03-31T00:00:00.000Z",
+  "updatedAt": "2026-03-31T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,152 @@
+---
+// PI-RADS Classification Page
+// Prostate Imaging Reporting and Data System
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const piRadsCategories = [
+  {
+    score: 1,
+    category: 'Very Low',
+    description: 'Clinically significant cancer is highly unlikely to be present',
+    mpMRIFindings: 'Very small focus of abnormality or no obvious abnormality',
+    management: 'Discontinue further workup. Follow-up if clinically indicated.'
+  },
+  {
+    score: 2,
+    category: 'Low',
+    description: 'Clinically significant cancer is unlikely to be present',
+    mpMRIFindings: 'Focal abnormality, but highly characteristic of benign findings',
+    management: 'Discontinue further workup. Follow-up if clinically indicated.'
+  },
+  {
+    score: 3,
+    category: 'Intermediate - Indeterminate',
+    description: 'Clinically significant cancer is equivocal (probability ~50%)',
+    mpMRIFindings: 'Findings suspicious for cancer, but not definitive',
+    management: 'Consider targeted biopsy based on clinical factors and PSA density'
+  },
+  {
+    score: 4,
+    category: 'Suspicious',
+    description: 'Clinically significant cancer is likely to be present (probability ~75%)',
+    mpMRIFindings: 'Focal definite abnormality highly suspicious for cancer',
+    management: 'Targeted biopsy recommended'
+  },
+  {
+    score: 5,
+    category: 'Very Suspicious',
+    description: 'Clinically significant cancer is highly likely to be present (probability >90%)',
+    mpMRIFindings: 'Definitive tumor signature with extraprostatic extension',
+    management: 'Targeted biopsy strongly recommended'
+  }
+];
+
+const technicalParams = [
+  { name: 'Field Strength', value: '3 Tesla preferred, 1.5 Tesla acceptable' },
+  { name: 'Coil', value: 'Endorectal coil optional at 3T, recommended at 1.5T' },
+  { name: 'Sequences', value: 'T2W, DWI, DCE-MRI' },
+  { name: 'b-values', value: '≥1400 s/mm² for DWI' },
+  { name: 'Slice Thickness', value: '3mm or less' }
+];
+---
+
+<BaseLayout 
+  title="PI-RADS v2.0 - Prostate Imaging Reporting and Data System"
+  description="PI-RADS provides a standardized approach for evaluating prostate cancer risk using multiparametric MRI"
+>
+  <div class="container mx-auto px-4 py-8">
+    <nav class="text-sm mb-4">
+      <a href="/rads" class="text-blue-600 hover:underline">← Back to RADS Classifications</a>
+    </nav>
+
+    <h1 class="text-3xl font-bold mb-2">PI-RADS v2.0</h1>
+    <p class="text-xl text-gray-600 dark:text-gray-400 mb-8">
+      Prostate Imaging Reporting and Data System
+    </p>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+      <div class="lg:col-span-2">
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">Overview</h2>
+          <p class="text-gray-700 dark:text-gray-300 mb-4">
+            PI-RADS (Prostate Imaging Reporting and Data System) is a standardized scoring system for assessing 
+            the likelihood of clinically significant prostate cancer on multiparametric MRI (mpMRI). 
+            Version 2.0 was published in 2015 by the American College of Radiology.
+          </p>
+          <p class="text-gray-700 dark:text-gray-300">
+            The system assigns scores from 1 to 5 based on the presence and characteristics of findings 
+            on T2-weighted imaging, diffusion-weighted imaging (DWI), and dynamic contrast-enhanced (DCE) MRI.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">PI-RADS Assessment Categories</h2>
+          <div class="space-y-4">
+            {piRadsCategories.map((cat) => (
+              <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+                <div class="flex items-center justify-between mb-2">
+                  <span class={`font-bold text-lg px-3 py-1 rounded ${
+                    cat.score <= 2 ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200' :
+                    cat.score === 3 ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200' :
+                    'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200'
+                  }`}>
+                    PI-RADS {cat.score}
+                  </span>
+                  <span class="font-semibold">{cat.category}</span>
+                </div>
+                <p class="text-gray-700 dark:text-gray-300 mb-2">{cat.description}</p>
+                <div class="text-sm text-gray-600 dark:text-gray-400">
+                  <strong>mpMRI Findings:</strong> {cat.mpMRIFindings}
+                </div>
+                <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                  <strong>Management:</strong> {cat.management}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">Clinical Applications</h2>
+          <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 ml-4">
+            <li>Detection of clinically significant prostate cancer</li>
+            <li>Guidance for targeted biopsy</li>
+            <li>Patient risk stratification</li>
+            <li>Treatment planning</li>
+            <li>Active surveillance decision-making</li>
+          </ul>
+        </section>
+      </div>
+
+      <div>
+        <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 sticky top-4">
+          <h3 class="text-xl font-semibold mb-4">Technical Parameters</h3>
+          <dl class="space-y-3">
+            {technicalParams.map((param) => (
+              <>
+                <dt class="font-medium text-gray-900 dark:text-white">{param.name}</dt>
+                <dd class="text-gray-600 dark:text-gray-400 text-sm">{param.value}</dd>
+              </>
+            ))}
+          </dl>
+
+          <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+            <h4 class="font-semibold mb-2">Version Information</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">PI-RADS v2.0 (2015)</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+              <a href="https://www.acr.org" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
+                American College of Radiology
+              </a>
+            </p>
+          </div>
+
+          <div class="mt-6">
+            <a href="/templates/calculators/radiology/calc-lung-rads" class="block text-center bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+              View Related Templates
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

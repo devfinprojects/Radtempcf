@@ -1,0 +1,65 @@
+{
+  "id": "onco-gi-colon",
+  "name": "Colon Cancer Synoptic Report",
+  "version": "1.0.0",
+  "description": "Synoptic pathology report template for colon cancer",
+  "modality": "pathology",
+  "bodyRegion": "colon",
+  "subspecialty": "oncology",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["oncology", "colon", "gi", "cancer", "synoptic", "pathology"]
+  },
+  "findings": {
+    "technique": "Segmental colectomy / polypectomy specimen submitted for pathological examination. Specimen received fresh and inked.",
+    "comparison": "Clinical history: [carcinoma of colon / polyp removal]. Prior colonoscopy: [finding]. Pre-operative imaging: [CT/MRI] staging.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Specimen Type",
+        "content": "Specimen type: [Right hemicolectomy / Left hemicolectomy / Sigmoidectomy / Low anterior resection / Polypectomy]",
+        "normalVariant": false
+      },
+      {
+        "name": "Tumor Type",
+        "content": "Histologic type: [Adenocarcinoma / Mucinous adenocarcinoma / Signet ring cell carcinoma / other]. Grade: [Well / Moderately / Poorly / Undifferentiated] differentiated.",
+        "normalVariant": false
+      },
+      {
+        "name": "Tumor Size",
+        "content": "Tumor size: [X]cm (greatest dimension). [Tumor is centered at / polyp base involved by] carcinoma.",
+        "normalVariant": false
+      },
+      {
+        "name": "Tumor Invasion",
+        "content": "Depth of invasion: [pT1 / pT2 / pT3 / pT4a / pT4b]. [Muscularis propria: involved/not involved]. [Serosa: involved/not involved]. [Adjacent organ: involved/not involved].",
+        "normalVariant": false
+      },
+      {
+        "name": "Margins",
+        "content": "Proximal margin: [uninvolved by carcinoma / involved]. Distal margin: [uninvolved by carcinoma / involved]. Circumferential margin: [uninvolved (>1mm) / involved].",
+        "normalVariant": false
+      },
+      {
+        "name": "Lymph Nodes",
+        "content": "Lymph nodes: [X] examined, [X] positive for metastasis. [Pericolic / Perirectal / Intermediate] nodes. [Highest metastatic node: level X].",
+        "normalVariant": false
+      },
+      {
+        "name": "Lymphovascular/Perineural Invasion",
+        "content": "Lymphovascular invasion: [Present / Absent]. Perineural invasion: [Present / Absent].",
+        "normalVariant": false
+      },
+      {
+        "name": "MSI Testing",
+        "content": "Microsatellite instability (MSI) status: [MSS (microsatellite stable) / MSI-H (high) / MSI-L (low)]. MLH1: [retained/lost]. MSH2: [retained/lost]. MSH6: [retained/lost]. PMS2: [retained/lost].",
+        "normalVariant": false
+      }
+    ]
+  },
+  "impression": "1. [Histologic type], [Grade], [pT stage], measuring [X]cm\n2. Margins: [status]\n3. Lymph nodes: [X] positive out of [X] examined\n4. Lymphovascular invasion: [Present/Absent]. Perineural invasion: [Present/Absent]\n5. MSI status: [X]\n6. [AJCC stage: pT[X] pN[X] M[X]]",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "cardiac-mri",
+  "name": "Cardiac MRI",
+  "version": "1.0.0",
+  "description": "Cardiac MRI for comprehensive evaluation of cardiac anatomy, function, and tissue characterization",
+  "modality": "mri",
+  "bodyRegion": "cardiac",
+  "subspecialty": "cardiac",
+  "clinicalContext": "diagnostic",
+  "metadata": {
+    "author": "RadReport Templates",
+    "license": "MIT",
+    "tags": ["cardiac", "mri", "cmr", "cardiac mri", "heart", "function"],
+    "cptCodes": ["75557"],
+    "radlexCodes": ["RID10456", "RID10457"]
+  },
+  "findings": {
+    "technique": "Cardiac MRI was performed with cine imaging, late gadolinium enhancement, and flow quantification sequences.",
+    "comparison": "No prior studies available for comparison.",
+    "limitations": "None",
+    "sections": [
+      {
+        "name": "Left Ventricle",
+        "content": "The left ventricle demonstrates [normal LVEF / preserved systolic function] with [X]% ejection fraction. The LV mass is [normal / not hypertrophied]. No regional wall motion abnormality.",
+        "normalVariant": true
+      },
+      {
+        "name": "Right Ventricle",
+        "content": "The right ventricle demonstrates [normal RVEF / preserved systolic function] with [X]% ejection fraction. No RV dilatation or dysfunction.",
+        "normalVariant": true
+      },
+      {
+        "name": "Myocardial Tissue",
+        "content": "The myocardial tissue demonstrates [no late gadolinium enhancement / no fibrosis / no infarction]. No myocardial edema or infiltration.",
+        "normalVariant": true
+      },
+      {
+        "name": "Valves",
+        "content": "The aortic valve is [trileaflet / no stenosis / no regurgitation]. The mitral valve is [normal / no regurgitation / no prolapse].",
+        "normalVariant": true
+      },
+      {
+        "name": "Coronary Arteries",
+        "content": "The coronary arteries demonstrate [no aneurysm / no anomalous origin / no flow abnormality] on MRA.",
+        "normalVariant": true
+      },
+      {
+        "name": "Pericardium",
+        "content": "The pericardium is [intact / no thickening / no effusion / no constriction].",
+        "normalVariant": true
+      },
+      {
+        "name": "Great Vessels",
+        "content": "The aorta is [normal in caliber / no dilation / no coarctation]. The pulmonary artery is [normal / no stenosis].",
+        "normalVariant": true
+      }
+    ]
+  },
+  "impression": "1. Normal cardiac MRI.\n2. Normal biventricular systolic function.\n3. No myocardial fibrosis or infarction.",
+  "createdAt": "2026-03-30T00:00:00.000Z",
+  "updatedAt": "2026-03-30T00:00:00.000Z",
+  "author": "RadReport Templates"
+}
